@@ -10654,6 +10654,39 @@ entries:
     version: 0.3.3-9a3dd5dbc1f236373c536d497afcb852f919e112
   - apiVersion: v1
     appVersion: v0.38.1
+    created: "2020-07-06T13:11:22.049744087Z"
+    dependencies:
+    - condition: kubeStateMetrics.enabled
+      name: kube-state-metrics
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 2.8.*
+    - condition: nodeExporter.enabled
+      name: prometheus-node-exporter
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 1.10.*
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 5.1.*
+    description: Provides easy monitoring definitions for Kubernetes services, and
+      deployment and management of Prometheus instances.
+    digest: caef69a5272fbc3b650979cdf24596d1db87bb15613a5b96fb9fa16204c0b958
+    home: https://github.com/giantswarm/prometheus-operator-app
+    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
+    keywords:
+    - operator
+    - prometheus
+    name: prometheus-operator-app
+    sources:
+    - https://raw.githubusercontent.com/giantswarm/prometheus-operator-app/v0.3.3-8de30811a38690c8d06ef06e51959eb50f66b5cb/README.md
+    - https://github.com/coreos/kube-prometheus
+    - https://github.com/coreos/prometheus-operator
+    - https://coreos.com/operators/prometheus
+    urls:
+    - https://giantswarm.github.com/default-test-catalog/prometheus-operator-app-0.3.3-8de30811a38690c8d06ef06e51959eb50f66b5cb.tgz
+    version: 0.3.3-8de30811a38690c8d06ef06e51959eb50f66b5cb
+  - apiVersion: v1
+    appVersion: v0.38.1
     created: "2020-06-16T11:44:30.898680141Z"
     description: Provides easy monitoring definitions for Kubernetes services, and
       deployment and management of Prometheus instances.
@@ -11339,4 +11372,4 @@ entries:
     urls:
     - https://giantswarm.github.com/default-test-catalog/test-app-0.0.0-0af9b8f9106c8d9167ccfca073560efcbe071870.tgz
     version: 0.0.0-0af9b8f9106c8d9167ccfca073560efcbe071870
-generated: "2020-07-06T13:01:42.417578462Z"
+generated: "2020-07-06T13:11:22.026678935Z"
