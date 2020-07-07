@@ -11334,6 +11334,48 @@ entries:
     version: 0.3.3-7eadefd7126baa5859516764e5759f2b7246525f
   - apiVersion: v1
     appVersion: 0.38.1
+    created: "2020-07-07T16:39:40.927003386Z"
+    dependencies:
+    - condition: kubeStateMetrics.enabled
+      name: kube-state-metrics
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 2.8.*
+    - condition: nodeExporter.enabled
+      name: prometheus-node-exporter
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 1.10.*
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 5.3.*
+    description: Provides easy monitoring definitions for Kubernetes services, and
+      deployment and management of Prometheus instances.
+    digest: 7a7248a97e1752056b5a82bc1e85f93004cde6e173a054ad25f1a2c45b8e1509
+    home: https://github.com/giantswarm/prometheus-operator-app
+    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
+    keywords:
+    - operator
+    - prometheus
+    maintainers:
+    - name: vsliouniaev
+    - name: bismarck
+    - email: gianrubio@gmail.com
+      name: gianrubio
+    - email: yasser@giantswarm.io
+      name: yasn77
+    - email: cedric@giantswarm.io
+      name: ced0ps
+    name: prometheus-operator-app
+    sources:
+    - https://raw.githubusercontent.com/giantswarm/prometheus-operator-app/v0.3.3-7a2e94e7a05f4b2b4ea746d088a81c51792a68f9/README.md
+    - https://github.com/coreos/kube-prometheus
+    - https://github.com/coreos/prometheus-operator
+    - https://coreos.com/operators/prometheus
+    urls:
+    - https://giantswarm.github.com/default-test-catalog/prometheus-operator-app-0.3.3-7a2e94e7a05f4b2b4ea746d088a81c51792a68f9.tgz
+    version: 0.3.3-7a2e94e7a05f4b2b4ea746d088a81c51792a68f9
+  - apiVersion: v1
+    appVersion: 0.38.1
     created: "2020-07-07T16:35:16.90157831Z"
     dependencies:
     - condition: kubeStateMetrics.enabled
@@ -12178,4 +12220,4 @@ entries:
     urls:
     - https://giantswarm.github.com/default-test-catalog/test-app-0.0.0-0af9b8f9106c8d9167ccfca073560efcbe071870.tgz
     version: 0.0.0-0af9b8f9106c8d9167ccfca073560efcbe071870
-generated: "2020-07-07T16:36:26.170936467Z"
+generated: "2020-07-07T16:39:40.906473171Z"
