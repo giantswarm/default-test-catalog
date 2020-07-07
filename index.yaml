@@ -11167,6 +11167,48 @@ entries:
     - https://giantswarm.github.com/default-test-catalog/prometheus-operator-app-0.3.3-863b4eda344ee480ad621eb7f28bbc62c0fcd43d.tgz
     version: 0.3.3-863b4eda344ee480ad621eb7f28bbc62c0fcd43d
   - apiVersion: v1
+    appVersion: 0.38.1
+    created: "2020-07-07T13:03:24.831330353Z"
+    dependencies:
+    - condition: kubeStateMetrics.enabled
+      name: kube-state-metrics
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 2.8.*
+    - condition: nodeExporter.enabled
+      name: prometheus-node-exporter
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 1.10.*
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 5.3.*
+    description: Provides easy monitoring definitions for Kubernetes services, and
+      deployment and management of Prometheus instances.
+    digest: 3e4a4a49dbfa14215d1f9602337b01fd017daf90f081605618f7f12574d77e7a
+    home: https://github.com/giantswarm/prometheus-operator-app
+    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
+    keywords:
+    - operator
+    - prometheus
+    maintainers:
+    - name: vsliouniaev
+    - name: bismarck
+    - email: gianrubio@gmail.com
+      name: gianrubio
+    - email: yasser@giantswarm.io
+      name: yasn77
+    - email: cedric@giantswarm.io
+      name: ced0ps
+    name: prometheus-operator-app
+    sources:
+    - https://raw.githubusercontent.com/giantswarm/prometheus-operator-app/v0.3.3-59717122fb8ede3b1c889f2da669ccbda138420c/README.md
+    - https://github.com/coreos/kube-prometheus
+    - https://github.com/coreos/prometheus-operator
+    - https://coreos.com/operators/prometheus
+    urls:
+    - https://giantswarm.github.com/default-test-catalog/prometheus-operator-app-0.3.3-59717122fb8ede3b1c889f2da669ccbda138420c.tgz
+    version: 0.3.3-59717122fb8ede3b1c889f2da669ccbda138420c
+  - apiVersion: v1
     appVersion: v0.38.1
     created: "2020-06-16T11:44:30.898680141Z"
     description: Provides easy monitoring definitions for Kubernetes services, and
@@ -11853,4 +11895,4 @@ entries:
     urls:
     - https://giantswarm.github.com/default-test-catalog/test-app-0.0.0-0af9b8f9106c8d9167ccfca073560efcbe071870.tgz
     version: 0.0.0-0af9b8f9106c8d9167ccfca073560efcbe071870
-generated: "2020-07-07T12:54:59.349058242Z"
+generated: "2020-07-07T13:03:24.806654217Z"
