@@ -12467,6 +12467,39 @@ entries:
     version: 0.3.3-6c9ea51e07390e2d704f53949eb501956901684b
   - apiVersion: v1
     appVersion: 0.38.1
+    created: "2020-07-14T12:06:12.551627957Z"
+    dependencies:
+    - condition: kubeStateMetrics.enabled
+      name: kube-state-metrics
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 2.8.*
+    - condition: nodeExporter.enabled
+      name: prometheus-node-exporter
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 1.10.*
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 5.3.*
+    description: Provides easy monitoring definitions for Kubernetes services, and
+      deployment and management of Prometheus instances.
+    digest: 8b0d205777db9fc75a1395d78ae97cfa95c45dfe47f9b15c40be1f3ce0c2be6c
+    home: https://github.com/giantswarm/prometheus-operator-app
+    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
+    keywords:
+    - operator
+    - prometheus
+    name: prometheus-operator-app
+    sources:
+    - https://raw.githubusercontent.com/giantswarm/prometheus-operator-app/v0.3.3-658213357599382eb377c794fb6dd006cd935738/README.md
+    - https://github.com/coreos/kube-prometheus
+    - https://github.com/coreos/prometheus-operator
+    - https://coreos.com/operators/prometheus
+    urls:
+    - https://giantswarm.github.com/default-test-catalog/prometheus-operator-app-0.3.3-658213357599382eb377c794fb6dd006cd935738.tgz
+    version: 0.3.3-658213357599382eb377c794fb6dd006cd935738
+  - apiVersion: v1
+    appVersion: 0.38.1
     created: "2020-07-08T12:44:13.873021493Z"
     dependencies:
     - condition: kubeStateMetrics.enabled
@@ -13368,4 +13401,4 @@ entries:
     urls:
     - https://giantswarm.github.com/default-test-catalog/test-app-0.0.0-0af9b8f9106c8d9167ccfca073560efcbe071870.tgz
     version: 0.0.0-0af9b8f9106c8d9167ccfca073560efcbe071870
-generated: "2020-07-14T12:02:41.517295679Z"
+generated: "2020-07-14T12:06:12.522273769Z"
