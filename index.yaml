@@ -14165,6 +14165,39 @@ entries:
     - https://giantswarm.github.com/default-test-catalog/prometheus-operator-app-0.3.4.tgz
     version: 0.3.4
   - apiVersion: v1
+    appVersion: 0.38.1
+    created: "2020-07-30T09:13:58.546614097Z"
+    dependencies:
+    - condition: kubeStateMetrics.enabled
+      name: kube-state-metrics
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 2.8.*
+    - condition: nodeExporter.enabled
+      name: prometheus-node-exporter
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 1.10.*
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 5.3.*
+    description: Provides easy monitoring definitions for Kubernetes services, and
+      deployment and management of Prometheus instances.
+    digest: 0a2a156abda8c884547d8a06321f02b49e1aea7d07b70c020860f2c80bd0a1c9
+    home: https://github.com/giantswarm/prometheus-operator-app
+    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
+    keywords:
+    - operator
+    - prometheus
+    name: prometheus-operator-app
+    sources:
+    - https://raw.githubusercontent.com/giantswarm/prometheus-operator-app/v0.3.4-7b5c52f7e25279c13a7efc9fca375cb0bc0e4f2e/README.md
+    - https://github.com/coreos/kube-prometheus
+    - https://github.com/coreos/prometheus-operator
+    - https://coreos.com/operators/prometheus
+    urls:
+    - https://giantswarm.github.com/default-test-catalog/prometheus-operator-app-0.3.4-7b5c52f7e25279c13a7efc9fca375cb0bc0e4f2e.tgz
+    version: 0.3.4-7b5c52f7e25279c13a7efc9fca375cb0bc0e4f2e
+  - apiVersion: v1
     appVersion: v0.38.1
     created: "2020-07-06T13:31:24.65616749Z"
     dependencies:
@@ -15838,4 +15871,4 @@ entries:
     urls:
     - https://giantswarm.github.com/default-test-catalog/test-app-0.0.0-0af9b8f9106c8d9167ccfca073560efcbe071870.tgz
     version: 0.0.0-0af9b8f9106c8d9167ccfca073560efcbe071870
-generated: "2020-07-30T04:39:34.338388167Z"
+generated: "2020-07-30T09:13:58.522742161Z"
