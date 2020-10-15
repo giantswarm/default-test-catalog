@@ -22720,6 +22720,60 @@ entries:
       artifacthub.io/operator: "true"
     apiVersion: v1
     appVersion: 0.38.1
+    created: "2020-10-15T11:30:14.075801696Z"
+    dependencies:
+    - condition: kubeStateMetrics.enabled
+      name: kube-state-metrics
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 2.8.*
+    - condition: nodeExporter.enabled
+      name: prometheus-node-exporter
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 1.11.*
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 5.7.*
+    description: kube-prometheus-stack collects Kubernetes manifests, Grafana dashboards,
+      and Prometheus rules combined with documentation and scripts to provide easy
+      to operate end-to-end Kubernetes cluster monitoring with Prometheus using the
+      Prometheus Operator.
+    digest: 96e9b3ee9e01f044d2fbb55b4640199629abbf453927f71d590aa20c5fc1b15f
+    home: https://github.com/giantswarm/prometheus-operator-app
+    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
+    keywords:
+    - operator
+    - prometheus
+    - kube-prometheus
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: vsliouniaev
+    - name: bismarck
+    - email: gianrubio@gmail.com
+      name: gianrubio
+    - email: github.gkarthiks@gmail.com
+      name: gkarthiks
+    - email: scott@r6by.com
+      name: scottrigby
+    - email: miroslav.hadzhiev@gmail.com
+      name: Xtigyro
+    name: prometheus-operator-app
+    sources:
+    - https://raw.githubusercontent.com/giantswarm/prometheus-operator-app/v0.3.4-d4580ee0ca3e152733da79a454ab3b5305e502e7/README.md
+    - https://github.com/prometheus-community/helm-charts
+    - https://github.com/prometheus-operator/kube-prometheus
+    urls:
+    - https://giantswarm.github.com/default-test-catalog/prometheus-operator-app-0.3.4-d4580ee0ca3e152733da79a454ab3b5305e502e7.tgz
+    version: 0.3.4-d4580ee0ca3e152733da79a454ab3b5305e502e7
+  - annotations:
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/prometheus-community/helm-charts
+        - name: Upstream Project
+          url: https://github.com/prometheus-operator/kube-prometheus
+      artifacthub.io/operator: "true"
+    apiVersion: v1
+    appVersion: 0.38.1
     created: "2020-10-07T12:45:38.425959212Z"
     dependencies:
     - condition: kubeStateMetrics.enabled
@@ -25177,4 +25231,4 @@ entries:
     urls:
     - https://giantswarm.github.com/default-test-catalog/test-app-0.0.0-0af9b8f9106c8d9167ccfca073560efcbe071870.tgz
     version: 0.0.0-0af9b8f9106c8d9167ccfca073560efcbe071870
-generated: "2020-10-15T11:25:06.160067821Z"
+generated: "2020-10-15T11:30:14.050450971Z"
