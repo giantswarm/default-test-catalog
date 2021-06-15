@@ -33266,6 +33266,30 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/external-dns-app-1.2.0-09f1f269c1e065039ebe6c1ac63f5c7813181183.tgz
     version: 1.2.0-09f1f269c1e065039ebe6c1ac63f5c7813181183
+  falco:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2021-06-15T13:50:02.115910144Z"
+    dependencies:
+    - name: falco
+      repository: file://.
+      version: 1.12.0
+    - name: falco-exporter
+      repository: file://.
+      version: 0.5.1
+    - name: falcosidekick
+      repository: file://.
+      version: 0.3.7
+    description: A Helm chart for falco
+    digest: 8c9338fde02bbb0556821fa758ac125f1923d1153424f5e252ecb662fa3efd70
+    home: https://github.com/giantswarm/falco-app
+    icon: https://s.giantswarm.io/app-icons/1/png/default-app-light.png
+    name: falco
+    sources:
+    - https://github.com/some-org/some-repo
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/falco-0.0.0-7caa22c55fa366a53e69cabacd8a38c298f09bd8.tgz
+    version: 0.0.0-7caa22c55fa366a53e69cabacd8a38c298f09bd8
   helm-2to3-migration:
   - apiVersion: v1
     appVersion: 0.5.0
@@ -65080,4 +65104,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/test-app-0.0.0-0af9b8f9106c8d9167ccfca073560efcbe071870.tgz
     version: 0.0.0-0af9b8f9106c8d9167ccfca073560efcbe071870
-generated: "2021-06-15T13:23:20.36708784Z"
+generated: "2021-06-15T13:50:02.099206745Z"
