@@ -5695,6 +5695,28 @@ entries:
     version: 1.2.1-5c35d5e36e7758b04968910f7159d713583f24c5
   cert-manager-app:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.7.1-eabaa8f52ffea4b81a0c2ac00242f5e658578dbf.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.7.1-eabaa8f52ffea4b81a0c2ac00242f5e658578dbf.tgz-meta/README.md
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.7.1-eabaa8f52ffea4b81a0c2ac00242f5e658578dbf.tgz-meta/values.schema.json
+    apiVersion: v1
+    appVersion: 1.3.1
+    created: "2021-06-24T11:09:51.363203543Z"
+    dependencies:
+    - name: cert-manager-giantswarm-clusterissuer
+      repository: ""
+      version: 1.1.0
+    description: A Helm chart for cert-manager
+    digest: 37032b33cabdde2e2bebda18babf46bd39e542c2ffac6675dc27a5aa27064801
+    home: https://github.com/giantswarm/cert-manager-app
+    icon: https://s.giantswarm.io/app-icons/1/png/cert-manager-app-light.png
+    kubeVersion: '>=1.16.0-0'
+    name: cert-manager-app
+    sources:
+    - https://github.com/jetstack/cert-manager
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.7.1-eabaa8f52ffea4b81a0c2ac00242f5e658578dbf.tgz
+    version: 2.7.1-eabaa8f52ffea4b81a0c2ac00242f5e658578dbf
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.7.1-e90db26069de9e17bcf4a4696ae25a2af6203f81.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.7.1-e90db26069de9e17bcf4a4696ae25a2af6203f81.tgz-meta/README.md
       application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.7.1-e90db26069de9e17bcf4a4696ae25a2af6203f81.tgz-meta/values.schema.json
@@ -67009,4 +67031,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/test-app-0.0.0-0af9b8f9106c8d9167ccfca073560efcbe071870.tgz
     version: 0.0.0-0af9b8f9106c8d9167ccfca073560efcbe071870
-generated: "2021-06-24T11:08:54.420329538Z"
+generated: "2021-06-24T11:09:51.355825165Z"
