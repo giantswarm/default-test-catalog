@@ -1664,6 +1664,30 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.10.0-55feb737953c5a8416ca575b7e12b2ed124c4915.tgz
     version: 2.10.0-55feb737953c5a8416ca575b7e12b2ed124c4915
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.10.0-32538d6b50efe92a45c99299340500bd31ad47b3.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.10.0-32538d6b50efe92a45c99299340500bd31ad47b3.tgz-meta/README.md
+      application.giantswarm.io/team: halo
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.10.0-32538d6b50efe92a45c99299340500bd31ad47b3.tgz-meta/values.schema.json
+      config.giantswarm.io/version: 1.x.x
+    apiVersion: v1
+    appVersion: 1.5.3
+    created: "2021-09-15T07:19:20.421172795Z"
+    dependencies:
+    - name: cert-manager-giantswarm-clusterissuer
+      repository: ""
+      version: 1.1.0
+    description: A Helm chart for cert-manager
+    digest: 609b207887977d34b3df428b9d31589b9858c9039187b6f7efde055bd860dd7f
+    home: https://github.com/giantswarm/cert-manager-app
+    icon: https://s.giantswarm.io/app-icons/1/png/cert-manager-app-light.png
+    kubeVersion: '>=1.16.0-0'
+    name: cert-manager-app
+    sources:
+    - https://github.com/jetstack/cert-manager
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.10.0-32538d6b50efe92a45c99299340500bd31ad47b3.tgz
+    version: 2.10.0-32538d6b50efe92a45c99299340500bd31ad47b3
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.9.0-ff37b03ce2a44b9331bec3ab31c60a868913fd70.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.9.0-ff37b03ce2a44b9331bec3ab31c60a868913fd70.tgz-meta/README.md
       application.giantswarm.io/team: halo
@@ -8548,4 +8572,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/prometheus-operator-app-0.10.0-0b88773b99ad4db33ce63a918537d2f9b08882d8.tgz
     version: 0.10.0-0b88773b99ad4db33ce63a918537d2f9b08882d8
-generated: "2021-09-15T07:15:59.547270921Z"
+generated: "2021-09-15T07:19:20.410429373Z"
