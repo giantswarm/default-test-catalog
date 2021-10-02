@@ -2042,6 +2042,30 @@ entries:
     version: 1.7.1-09ab50eb3f33dee44279d2ffe347f7f32799ef29
   cert-manager-app:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.11.0-7a2887461751c63417a9b541cf803782811d1f5d.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.11.0-7a2887461751c63417a9b541cf803782811d1f5d.tgz-meta/README.md
+      application.giantswarm.io/team: halo
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.11.0-7a2887461751c63417a9b541cf803782811d1f5d.tgz-meta/values.schema.json
+      config.giantswarm.io/version: 1.x.x
+    apiVersion: v1
+    appVersion: 1.5.4
+    created: "2021-10-02T09:32:31.600432717Z"
+    dependencies:
+    - name: cert-manager-giantswarm-clusterissuer
+      repository: ""
+      version: 1.1.0
+    description: A Helm chart for cert-manager
+    digest: df468a0afed5dd9384c1b0f3b49b50499fae130f4f88adce83eef581b16a6f6a
+    home: https://github.com/giantswarm/cert-manager-app
+    icon: https://s.giantswarm.io/app-icons/1/png/cert-manager-app-light.png
+    kubeVersion: '>=1.16.0-0'
+    name: cert-manager-app
+    sources:
+    - https://github.com/jetstack/cert-manager
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.11.0-7a2887461751c63417a9b541cf803782811d1f5d.tgz
+    version: 2.11.0-7a2887461751c63417a9b541cf803782811d1f5d
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.10.0.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.10.0.tgz-meta/README.md
       application.giantswarm.io/team: halo
@@ -12171,4 +12195,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/prometheus-operator-app-0.10.0-0b88773b99ad4db33ce63a918537d2f9b08882d8.tgz
     version: 0.10.0-0b88773b99ad4db33ce63a918537d2f9b08882d8
-generated: "2021-10-02T09:31:55.75567263Z"
+generated: "2021-10-02T09:32:31.592737717Z"
