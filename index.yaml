@@ -4256,6 +4256,24 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/external-dns-app-2.6.0-0901202303bc760cad898b52ceb998dd73f10db6.tgz
     version: 2.6.0-0901202303bc760cad898b52ceb998dd73f10db6
+  kiam-app:
+  - annotations:
+      application.giantswarm.io/team: phoenix
+    apiVersion: v1
+    appVersion: "4.1"
+    created: "2021-10-19T11:56:30.840720439Z"
+    dependencies:
+    - name: kiam-namespace-annotation
+      repository: ""
+      version: 0.1.0
+    description: Integrate AWS IAM with Kubernetes
+    digest: 5679bba59155cd7bbccb9ef1b3f8222c43cec5d506233b3bc0ebcb6b72b1d912
+    home: https://github.com/uswitch/kiam
+    icon: https://user-images.githubusercontent.com/44974642/63503185-ee2ce880-c4c6-11e9-9a65-c398db914289.png
+    name: kiam-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/kiam-app-2.0.0-c6e079c87c6a1e7f1abeed24c735731b10e2c1f8.tgz
+    version: 2.0.0-c6e079c87c6a1e7f1abeed24c735731b10e2c1f8
   kiam-watchdog:
   - apiVersion: v1
     appVersion: 0.4.0
@@ -6949,4 +6967,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/prometheus-operator-app-0.10.0-3a517943c29db4f82f5edff53a58a84306fd7580.tgz
     version: 0.10.0-3a517943c29db4f82f5edff53a58a84306fd7580
-generated: "2021-10-19T11:56:28.473812005Z"
+generated: "2021-10-19T11:56:30.839465316Z"
