@@ -6197,6 +6197,30 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.11.1-e2abfd03f22c827d312b0b656e5d44cd97244c9b.tgz
     version: 2.11.1-e2abfd03f22c827d312b0b656e5d44cd97244c9b
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.11.1-d87bb1fd06ece467ad02daae383a16479af06ec3.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.11.1-d87bb1fd06ece467ad02daae383a16479af06ec3.tgz-meta/README.md
+      application.giantswarm.io/team: team-cabbage
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.11.1-d87bb1fd06ece467ad02daae383a16479af06ec3.tgz-meta/values.schema.json
+      config.giantswarm.io/version: 1.x.x
+    apiVersion: v1
+    appVersion: 1.6.1
+    created: "2021-12-16T12:04:40.383567923Z"
+    dependencies:
+    - name: cert-manager-giantswarm-clusterissuer
+      repository: ""
+      version: 1.1.0
+    description: Simplifies the process of obtaining, renewing and using certificates
+    digest: 053f8d365cf67a1491ce83779e7656a4f6e55e7f51d4d05fa44fb9a531b0ab0b
+    home: https://github.com/giantswarm/cert-manager-app
+    icon: https://s.giantswarm.io/app-icons/cert-manager/1/light.svg
+    kubeVersion: '>=1.16.0-0'
+    name: cert-manager-app
+    sources:
+    - https://github.com/jetstack/cert-manager
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.11.1-d87bb1fd06ece467ad02daae383a16479af06ec3.tgz
+    version: 2.11.1-d87bb1fd06ece467ad02daae383a16479af06ec3
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.11.1-d1749865d77e0c4aac9d7a7c0bf0d85f40585975.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.11.1-d1749865d77e0c4aac9d7a7c0bf0d85f40585975.tgz-meta/README.md
       application.giantswarm.io/team: team-cabbage
@@ -20209,4 +20233,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/prometheus-operator-app-0.10.0-08081b571e989388732cc41d82d7627dc6b3a302.tgz
     version: 0.10.0-08081b571e989388732cc41d82d7627dc6b3a302
-generated: "2021-12-16T12:04:35.152204068Z"
+generated: "2021-12-16T12:04:40.375376787Z"
