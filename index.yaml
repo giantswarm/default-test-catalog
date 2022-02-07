@@ -16042,6 +16042,25 @@ entries:
     version: 0.0.0-0b1e2d56c98315bc645bde59f0401b1f872a929c
   external-dns-app:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/external-dns-app-2.9.1-c462aead82ebd47d84b8c2a5ec45e5f1ce5f2f41.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/external-dns-app-2.9.1-c462aead82ebd47d84b8c2a5ec45e5f1ce5f2f41.tgz-meta/README.md
+      application.giantswarm.io/team: team-cabbage
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/external-dns-app-2.9.1-c462aead82ebd47d84b8c2a5ec45e5f1ce5f2f41.tgz-meta/values.schema.json
+    apiVersion: v1
+    appVersion: v0.10.2
+    created: "2022-02-07T15:51:37.590254588Z"
+    description: Configure external DNS servers for Kubernetes Ingresses and Services
+    digest: 850c22c4f20ca7e53dc4e410d11bc9f74fde365c6c2707a549566251fb52be60
+    home: https://github.com/giantswarm/external-dns-app
+    icon: https://s.giantswarm.io/app-icons/external-dns/1/dark.png
+    kubeVersion: '>=1.19.0-0'
+    name: external-dns-app
+    sources:
+    - https://github.com/kubernetes-sigs/external-dns
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/external-dns-app-2.9.1-c462aead82ebd47d84b8c2a5ec45e5f1ce5f2f41.tgz
+    version: 2.9.1-c462aead82ebd47d84b8c2a5ec45e5f1ce5f2f41
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/external-dns-app-2.9.0-f64e76bbbf8bd232959bca86680ecf35981ef100.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/external-dns-app-2.9.0-f64e76bbbf8bd232959bca86680ecf35981ef100.tgz-meta/README.md
       application.giantswarm.io/team: team-cabbage
@@ -34992,4 +35011,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-0.0.0-004ce3c9378ce148a07e85e9941e8c47b0b10903.tgz
     version: 0.0.0-004ce3c9378ce148a07e85e9941e8c47b0b10903
-generated: "2022-02-07T15:51:33.5183529Z"
+generated: "2022-02-07T15:51:37.589306718Z"
