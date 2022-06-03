@@ -773,6 +773,30 @@ entries:
     version: 0.3.0-0d0fe76ab1488d7fbd85e9500df7662c7256d321
   cert-manager-app:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.13.0-f1484d896d494d625e727f417aa4e00a198a0a46.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.13.0-f1484d896d494d625e727f417aa4e00a198a0a46.tgz-meta/README.md
+      application.giantswarm.io/team: team-cabbage
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.13.0-f1484d896d494d625e727f417aa4e00a198a0a46.tgz-meta/values.schema.json
+      config.giantswarm.io/version: 1.x.x
+    apiVersion: v1
+    appVersion: 1.6.1
+    created: "2022-06-03T08:10:21.677547747Z"
+    dependencies:
+    - name: cert-manager-giantswarm-clusterissuer
+      repository: ""
+      version: 1.1.0
+    description: Simplifies the process of obtaining, renewing and using certificates
+    digest: 3ef7187b5f68f6dc8c0a6313b83c0296913c2ad3ac928c5584c97c3a5e24d828
+    home: https://github.com/giantswarm/cert-manager-app
+    icon: https://s.giantswarm.io/app-icons/cert-manager/1/light.svg
+    kubeVersion: '>=1.16.0-0'
+    name: cert-manager-app
+    sources:
+    - https://github.com/jetstack/cert-manager
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.13.0-f1484d896d494d625e727f417aa4e00a198a0a46.tgz
+    version: 2.13.0-f1484d896d494d625e727f417aa4e00a198a0a46
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.13.0-dbfe16c514e6742bf968af90c8a1c04ad96727de.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.13.0-dbfe16c514e6742bf968af90c8a1c04ad96727de.tgz-meta/README.md
       application.giantswarm.io/team: team-cabbage
@@ -6177,4 +6201,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/webhook-exporter-0.0.0-03141455d45a83ccc5e8024078513e90e6dabbcb.tgz
     version: 0.0.0-03141455d45a83ccc5e8024078513e90e6dabbcb
-generated: "2022-06-02T14:04:09.445682044Z"
+generated: "2022-06-03T08:10:21.670283418Z"
