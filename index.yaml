@@ -5129,6 +5129,34 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/cilium-0.1.1-077e686c57658e04170cf9a1f44520c34d9861e0.tgz
     version: 0.1.1-077e686c57658e04170cf9a1f44520c34d9861e0
+  cloud-provider-cloud-director:
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cloud-provider-cloud-director-0.0.0-0eac442683158f6c274e4f56110e56f8612ce9da.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cloud-provider-cloud-director-0.0.0-0eac442683158f6c274e4f56110e56f8612ce9da.tgz-meta/README.md
+      application.giantswarm.io/team: rocket
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/cloud-provider-cloud-director-0.0.0-0eac442683158f6c274e4f56110e56f8612ce9da.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: 0.0.1
+    created: "2022-06-23T15:24:26.230179699Z"
+    dependencies:
+    - name: cloud-director-named-disk-csi-driver
+      repository: ""
+      version: 0.0.1
+    - name: cloud-provider-for-cloud-director
+      repository: ""
+      version: 0.0.1
+    description: A Helm chart for cloud-provider-cloud-director with CPI and CSI
+    digest: 439c04aac015cab932ce4a4e922cb33b619b9a3bdeb065e47a8d29b8dd4a0605
+    home: https://github.com/giantswarm/cloud-provider-cloud-director-app
+    maintainers:
+    - email: team-rocket@giantswarm.io
+      name: Team Rocket
+    name: cloud-provider-cloud-director
+    sources:
+    - https://github.com/giantswarm/cloud-provider-cloud-director-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/cloud-provider-cloud-director-0.0.0-0eac442683158f6c274e4f56110e56f8612ce9da.tgz
+    version: 0.0.0-0eac442683158f6c274e4f56110e56f8612ce9da
   cloud-provider-cloud-director-app:
   - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cloud-provider-cloud-director-app-0.0.0-c71fea7f9afd442550197b862546ad7a209c6be8.tgz-meta/main.yaml
@@ -10378,4 +10406,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/webhook-exporter-0.0.0-03141455d45a83ccc5e8024078513e90e6dabbcb.tgz
     version: 0.0.0-03141455d45a83ccc5e8024078513e90e6dabbcb
-generated: "2022-06-23T14:46:17.855874823Z"
+generated: "2022-06-23T15:24:26.228928653Z"
