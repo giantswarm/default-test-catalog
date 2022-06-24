@@ -1082,6 +1082,30 @@ entries:
     version: 0.3.0-0d0fe76ab1488d7fbd85e9500df7662c7256d321
   cert-manager-app:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.15.0.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.15.0.tgz-meta/README.md
+      application.giantswarm.io/team: team-cabbage
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.15.0.tgz-meta/values.schema.json
+      config.giantswarm.io/version: 1.x.x
+    apiVersion: v1
+    appVersion: 1.7.3
+    created: "2022-06-24T10:29:41.337593164Z"
+    dependencies:
+    - name: cert-manager-giantswarm-clusterissuer
+      repository: ""
+      version: 1.1.0
+    description: Simplifies the process of obtaining, renewing and using certificates
+    digest: 8bd1ea391b89ee036da8e2bb79a4580707a7cf6fe17895933400a846322ce237
+    home: https://github.com/giantswarm/cert-manager-app
+    icon: https://s.giantswarm.io/app-icons/cert-manager/1/light.svg
+    kubeVersion: '>=1.18.0-0'
+    name: cert-manager-app
+    sources:
+    - https://github.com/cert-manager/cert-manager
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.15.0.tgz
+    version: 2.15.0
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.15.0-f8d269880487c27f0c7457c214ed2caccfad8aa6.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.15.0-f8d269880487c27f0c7457c214ed2caccfad8aa6.tgz-meta/README.md
       application.giantswarm.io/team: team-cabbage
@@ -10707,4 +10731,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/webhook-exporter-0.0.0-03141455d45a83ccc5e8024078513e90e6dabbcb.tgz
     version: 0.0.0-03141455d45a83ccc5e8024078513e90e6dabbcb
-generated: "2022-06-24T10:29:18.619444623Z"
+generated: "2022-06-24T10:29:41.334392167Z"
