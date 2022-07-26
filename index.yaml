@@ -1176,6 +1176,30 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.15.1-bc5dbef3c852e2a9449c30b9fc7cd3351894f98b.tgz
     version: 2.15.1-bc5dbef3c852e2a9449c30b9fc7cd3351894f98b
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.15.1-50f748d8ac555d86616ea2c35913a0de1dc51d2b.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.15.1-50f748d8ac555d86616ea2c35913a0de1dc51d2b.tgz-meta/README.md
+      application.giantswarm.io/team: team-cabbage
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.15.1-50f748d8ac555d86616ea2c35913a0de1dc51d2b.tgz-meta/values.schema.json
+      config.giantswarm.io/version: 1.x.x
+    apiVersion: v1
+    appVersion: 1.7.3
+    created: "2022-07-26T09:48:16.442615254Z"
+    dependencies:
+    - name: cert-manager-giantswarm-clusterissuer
+      repository: ""
+      version: 1.1.0
+    description: Simplifies the process of obtaining, renewing and using certificates
+    digest: 2ee04ea9976254707e94c080a5315a1b6fdd4a65e52845ff8c140dae20026ac3
+    home: https://github.com/giantswarm/cert-manager-app
+    icon: https://s.giantswarm.io/app-icons/cert-manager/1/light.svg
+    kubeVersion: '>=1.18.0-0'
+    name: cert-manager-app
+    sources:
+    - https://github.com/cert-manager/cert-manager
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.15.1-50f748d8ac555d86616ea2c35913a0de1dc51d2b.tgz
+    version: 2.15.1-50f748d8ac555d86616ea2c35913a0de1dc51d2b
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.15.1-44049de32fec14a68733180f55e439bc9d61b129.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.15.1-44049de32fec14a68733180f55e439bc9d61b129.tgz-meta/README.md
       application.giantswarm.io/team: team-cabbage
@@ -13350,4 +13374,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/workload-identity-operator-gcp-0.1.0-0af5b8da80db45bd5f998eaa909deba2ee13bc7a.tgz
     version: 0.1.0-0af5b8da80db45bd5f998eaa909deba2ee13bc7a
-generated: "2022-07-26T08:58:32.65252587Z"
+generated: "2022-07-26T09:48:16.43926203Z"
