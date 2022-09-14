@@ -5081,6 +5081,25 @@ entries:
     version: 0.5.0-a344a035222bfe2e87d2f9f4ee825d260dabea1f
   external-dns-app:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/external-dns-app-2.15.3-258940c5dcaec4c57f84045bb64b2b356b918e0f.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/external-dns-app-2.15.3-258940c5dcaec4c57f84045bb64b2b356b918e0f.tgz-meta/README.md
+      application.giantswarm.io/team: team-cabbage
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/external-dns-app-2.15.3-258940c5dcaec4c57f84045bb64b2b356b918e0f.tgz-meta/values.schema.json
+    apiVersion: v1
+    appVersion: v0.11.0
+    created: "2022-09-14T14:17:13.127604322Z"
+    description: Configure external DNS servers for Kubernetes Ingresses and Services
+    digest: 8c3465d1e9e815cf33754e2635c989c2c180e42b47cae8f823fa250b454c0a47
+    home: https://github.com/giantswarm/external-dns-app
+    icon: https://s.giantswarm.io/app-icons/external-dns/1/dark.png
+    kubeVersion: '>=1.19.0-0'
+    name: external-dns-app
+    sources:
+    - https://github.com/kubernetes-sigs/external-dns
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/external-dns-app-2.15.3-258940c5dcaec4c57f84045bb64b2b356b918e0f.tgz
+    version: 2.15.3-258940c5dcaec4c57f84045bb64b2b356b918e0f
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/external-dns-app-2.15.2-fcab1b3fef91ee8364420ec9eaf2b0fe9885e7f8.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/external-dns-app-2.15.2-fcab1b3fef91ee8364420ec9eaf2b0fe9885e7f8.tgz-meta/README.md
       application.giantswarm.io/team: team-cabbage
@@ -9120,4 +9139,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/workload-identity-operator-gcp-0.0.0-c6f3769deb06685398cea5a4778bc761ae904dbc.tgz
     version: 0.0.0-c6f3769deb06685398cea5a4778bc761ae904dbc
-generated: "2022-09-14T13:25:19.42620443Z"
+generated: "2022-09-14T14:17:13.126507012Z"
