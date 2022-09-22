@@ -1657,6 +1657,29 @@ entries:
     version: 2.2.0-16dc1335268156b4c8aafef12ababd077d679eea
   cert-manager-app:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.16.0-f8bbf1095775e9dd3b90df7697fc12fd53284498.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.16.0-f8bbf1095775e9dd3b90df7697fc12fd53284498.tgz-meta/README.md
+      application.giantswarm.io/team: team-cabbage
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.16.0-f8bbf1095775e9dd3b90df7697fc12fd53284498.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: 1.8.2
+    created: "2022-09-22T09:52:45.162287931Z"
+    dependencies:
+    - name: cert-manager-giantswarm-clusterissuer
+      repository: ""
+      version: 1.1.0
+    description: Simplifies the process of obtaining, renewing and using certificates.
+    digest: 15f24e8166293393a23b9f0dd0a7bbb1cb8d23d9b94525876775ce999da5a13b
+    home: https://github.com/giantswarm/cert-manager-app
+    icon: https://s.giantswarm.io/app-icons/cert-manager/1/light.svg
+    kubeVersion: '>=1.18.0-0'
+    name: cert-manager-app
+    sources:
+    - https://github.com/cert-manager/cert-manager
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.16.0-f8bbf1095775e9dd3b90df7697fc12fd53284498.tgz
+    version: 2.16.0-f8bbf1095775e9dd3b90df7697fc12fd53284498
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.16.0-f025a0e11adebd5e621ceb2834cfa105d3ec52fe.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.16.0-f025a0e11adebd5e621ceb2834cfa105d3ec52fe.tgz-meta/README.md
       application.giantswarm.io/team: team-cabbage
@@ -11420,4 +11443,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/workload-identity-operator-gcp-0.0.0-c6f3769deb06685398cea5a4778bc761ae904dbc.tgz
     version: 0.0.0-c6f3769deb06685398cea5a4778bc761ae904dbc
-generated: "2022-09-22T09:44:56.991918576Z"
+generated: "2022-09-22T09:52:45.158778357Z"
