@@ -9169,6 +9169,30 @@ entries:
   prometheus-operator-app:
   - annotations:
       application.giantswarm.io/team: atlas
+      config.giantswarm.io/version: 1.x.x
+    apiVersion: v2
+    appVersion: v0.60.1
+    created: "2022-11-08T10:32:47.719001466Z"
+    dependencies:
+    - alias: prometheus-operator-app
+      name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 41.6.0
+    description: Giant Swarm's Prometheus Operator Deployment
+    digest: 9e8a55707a5e5609a48e4e6d6bafd650f866ec38d68230ff716d8609cd5e612f
+    home: https://github.com/giantswarm/prometheus-operator-app
+    icon: https://s.giantswarm.io/app-icons/prometheus-operator/2/light.svg
+    maintainers:
+    - email: team-atlas@giantswarm.io
+      name: giantswarm/team-atlas
+    name: prometheus-operator-app
+    sources:
+    - https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/prometheus-operator-app-2.0.2-917433bd00c87c9c7dcbdce590f7fc34badd7bfc.tgz
+    version: 2.0.2-917433bd00c87c9c7dcbdce590f7fc34badd7bfc
+  - annotations:
+      application.giantswarm.io/team: atlas
     apiVersion: v2
     appVersion: v0.54.0
     created: "2022-11-07T09:09:52.008189486Z"
@@ -11620,4 +11644,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/workload-identity-operator-gcp-0.4.2-5a74eb45d0daff5d1e5855b205dfe61a693bf202.tgz
     version: 0.4.2-5a74eb45d0daff5d1e5855b205dfe61a693bf202
-generated: "2022-11-07T15:45:24.988334331Z"
+generated: "2022-11-08T10:32:47.685628451Z"
