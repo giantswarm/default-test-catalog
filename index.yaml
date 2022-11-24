@@ -13081,6 +13081,32 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/prometheus-operator-app-2.1.1-514d9809f6ef6c9a624b1294dc6fe2050f8a392c.tgz
     version: 2.1.1-514d9809f6ef6c9a624b1294dc6fe2050f8a392c
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/prometheus-operator-app-2.1.1-4dcf6d7d1b457ec55905210bc31dd568b13bcd42.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/prometheus-operator-app-2.1.1-4dcf6d7d1b457ec55905210bc31dd568b13bcd42.tgz-meta/README.md
+      application.giantswarm.io/team: atlas
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/prometheus-operator-app-2.1.1-4dcf6d7d1b457ec55905210bc31dd568b13bcd42.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: v0.60.1
+    created: "2022-11-24T21:24:10.688145113Z"
+    dependencies:
+    - alias: prometheus-operator-app
+      name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 42.0.2
+    description: Giant Swarm's Prometheus Operator Deployment
+    digest: ab7da54d4ef1cf487a5a7258a6095f6d22fc37eb1e5fb3825f33c213911deb67
+    home: https://github.com/giantswarm/prometheus-operator-app
+    icon: https://s.giantswarm.io/app-icons/prometheus-operator/2/light.svg
+    maintainers:
+    - email: team-atlas@giantswarm.io
+      name: giantswarm/team-atlas
+    name: prometheus-operator-app
+    sources:
+    - https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/prometheus-operator-app-2.1.1-4dcf6d7d1b457ec55905210bc31dd568b13bcd42.tgz
+    version: 2.1.1-4dcf6d7d1b457ec55905210bc31dd568b13bcd42
+  - annotations:
       application.giantswarm.io/team: atlas
     apiVersion: v2
     appVersion: v0.54.0
@@ -16739,4 +16765,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/workload-identity-operator-gcp-0.4.2-5a74eb45d0daff5d1e5855b205dfe61a693bf202.tgz
     version: 0.4.2-5a74eb45d0daff5d1e5855b205dfe61a693bf202
-generated: "2022-11-24T21:23:09.333282886Z"
+generated: "2022-11-24T21:24:10.658009505Z"
