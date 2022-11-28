@@ -13338,6 +13338,29 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/prometheus-operator-app-2.1.1-d8c61ccaf045d847f68ca6b941f765ff4681b8cf.tgz
     version: 2.1.1-d8c61ccaf045d847f68ca6b941f765ff4681b8cf
   - annotations:
+      application.giantswarm.io/team: atlas
+    apiVersion: v2
+    appVersion: v0.54.0
+    created: "2022-11-28T11:47:07.907506291Z"
+    dependencies:
+    - alias: prometheus-operator-app
+      name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 32.4.0
+    description: Giant Swarm's Prometheus Operator Deployment
+    digest: 2ff61c97d1b8f9985ccd00196d2d6b2e7d68aaf1c648a410a10449163781750b
+    home: https://github.com/giantswarm/prometheus-operator-app
+    icon: https://s.giantswarm.io/app-icons/prometheus-operator/2/light.svg
+    maintainers:
+    - email: mohamed@giantswarm.io
+      name: Mohamed Chiheb Ben Jemaa
+    name: prometheus-operator-app
+    sources:
+    - https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/prometheus-operator-app-2.1.1-ca81abcfa3ea07ac98e2a513f7cdaae74a4171bd.tgz
+    version: 2.1.1-ca81abcfa3ea07ac98e2a513f7cdaae74a4171bd
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/prometheus-operator-app-2.1.1-bfbc1950a44e45faf633d1a63524ef29d5854162.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/prometheus-operator-app-2.1.1-bfbc1950a44e45faf633d1a63524ef29d5854162.tgz-meta/README.md
       application.giantswarm.io/team: atlas
@@ -17373,4 +17396,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/workload-identity-operator-gcp-0.4.2-5a74eb45d0daff5d1e5855b205dfe61a693bf202.tgz
     version: 0.4.2-5a74eb45d0daff5d1e5855b205dfe61a693bf202
-generated: "2022-11-28T11:35:44.712620594Z"
+generated: "2022-11-28T11:47:07.883855643Z"
