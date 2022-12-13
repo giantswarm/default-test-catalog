@@ -1462,6 +1462,24 @@ entries:
     version: 0.3.0-08d59e5a00d4f7acb386fb04786b75bd64e38851
   cert-exporter:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cert-exporter-2.3.1.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cert-exporter-2.3.1.tgz-meta/README.md
+      application.giantswarm.io/team: phoenix
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/cert-exporter-2.3.1.tgz-meta/values.schema.json
+      config.giantswarm.io/version: 1.x.x
+    apiVersion: v1
+    appVersion: 2.3.1
+    created: "2022-12-13T11:50:39.646205931Z"
+    description: The cert-exporter walks a directory path it has gotten as input and
+      emits all NotAfter timestamps as metrics.
+    digest: d62b45079312fcc1e669f5b67053041f928f4f6c51d31b07e2c6418186f9499a
+    home: https://github.com/giantswarm/cert-exporter
+    icon: https://s.giantswarm.io/app-icons/prometheus-operator/2/dark.svg
+    name: cert-exporter
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/cert-exporter-2.3.1.tgz
+    version: 2.3.1
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cert-exporter-2.3.0-dc081a115b4d56ebbc369c4a314d6b2f4f7b3cf4.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cert-exporter-2.3.0-dc081a115b4d56ebbc369c4a314d6b2f4f7b3cf4.tgz-meta/README.md
       application.giantswarm.io/team: phoenix
@@ -11835,4 +11853,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-1.0.1-a9c5ce4898d8cd34101d707ed08a5a91f3aa6d59.tgz
     version: 1.0.1-a9c5ce4898d8cd34101d707ed08a5a91f3aa6d59
-generated: "2022-12-13T11:29:27.999311844Z"
+generated: "2022-12-13T11:50:39.645479723Z"
