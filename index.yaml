@@ -9589,6 +9589,32 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/prometheus-operator-app-2.1.2-e1e0708854b5c3aa5dce0704f56c342a15fd186f.tgz
     version: 2.1.2-e1e0708854b5c3aa5dce0704f56c342a15fd186f
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/prometheus-operator-app-2.1.2-e11a0c0ed890f3ca24088557fbf4f7300613951c.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/prometheus-operator-app-2.1.2-e11a0c0ed890f3ca24088557fbf4f7300613951c.tgz-meta/README.md
+      application.giantswarm.io/team: atlas
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/prometheus-operator-app-2.1.2-e11a0c0ed890f3ca24088557fbf4f7300613951c.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: v0.60.1
+    created: "2023-01-16T14:05:24.780344869Z"
+    dependencies:
+    - alias: prometheus-operator-app
+      name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 44.2.0
+    description: Giant Swarm's Prometheus Operator Deployment
+    digest: e9767efe9bc929e2377b394c215352a9656e6b8b631c8cc0f24f469b0d746cee
+    home: https://github.com/giantswarm/prometheus-operator-app
+    icon: https://s.giantswarm.io/app-icons/prometheus-operator/2/light.svg
+    maintainers:
+    - email: team-atlas@giantswarm.io
+      name: giantswarm/team-atlas
+    name: prometheus-operator-app
+    sources:
+    - https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/prometheus-operator-app-2.1.2-e11a0c0ed890f3ca24088557fbf4f7300613951c.tgz
+    version: 2.1.2-e11a0c0ed890f3ca24088557fbf4f7300613951c
+  - annotations:
       application.giantswarm.io/team: atlas
     apiVersion: v2
     appVersion: v0.54.0
@@ -10916,4 +10942,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-1.0.1-693b2a70bd9c352090c5f0f01572c71445711ea5.tgz
     version: 1.0.1-693b2a70bd9c352090c5f0f01572c71445711ea5
-generated: "2023-01-16T13:41:28.15010162Z"
+generated: "2023-01-16T14:05:24.755942513Z"
