@@ -4473,6 +4473,25 @@ entries:
     version: 1.0.0-21bca182338c14d820cdb624d02721173623bd70
   external-dns-app:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/external-dns-app-2.23.2-84a06be8f6ed35108a562f51275841b313daaec5.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/external-dns-app-2.23.2-84a06be8f6ed35108a562f51275841b313daaec5.tgz-meta/README.md
+      application.giantswarm.io/team: team-cabbage
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/external-dns-app-2.23.2-84a06be8f6ed35108a562f51275841b313daaec5.tgz-meta/values.schema.json
+    apiVersion: v1
+    appVersion: v0.11.0
+    created: "2023-01-23T13:06:25.185787827Z"
+    description: Configure external DNS servers for Kubernetes Ingresses and Services
+    digest: a321485bb04a7c4ad0304eccf648e1bfec58426fd75620d6a5add424e526d11e
+    home: https://github.com/giantswarm/external-dns-app
+    icon: https://s.giantswarm.io/app-icons/external-dns/1/dark.png
+    kubeVersion: '>=1.19.0-0'
+    name: external-dns-app
+    sources:
+    - https://github.com/kubernetes-sigs/external-dns
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/external-dns-app-2.23.2-84a06be8f6ed35108a562f51275841b313daaec5.tgz
+    version: 2.23.2-84a06be8f6ed35108a562f51275841b313daaec5
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/external-dns-app-2.23.2-3feaf25ec69dcd19e80e5977e20a701146f72d8b.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/external-dns-app-2.23.2-3feaf25ec69dcd19e80e5977e20a701146f72d8b.tgz-meta/README.md
       application.giantswarm.io/team: team-cabbage
@@ -12626,4 +12645,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-1.0.1-2df7d9d470dd7d68024175e6c93cc71f2b3626f4.tgz
     version: 1.0.1-2df7d9d470dd7d68024175e6c93cc71f2b3626f4
-generated: "2023-01-23T13:06:14.658513602Z"
+generated: "2023-01-23T13:06:25.184316631Z"
