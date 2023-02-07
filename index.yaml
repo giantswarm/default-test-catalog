@@ -6890,6 +6890,36 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/observability-bundle-0.1.8-0756f72e2aa3716b9db00f85b7d8a6301a1de1e6.tgz
     version: 0.1.8-0756f72e2aa3716b9db00f85b7d8a6301a1de1e6
+  prometheus-blackbox-exporter:
+  - annotations:
+      application.giantswarm.io/team: phoenix
+    apiVersion: v2
+    appVersion: 0.23.0
+    created: "2023-02-07T14:35:11.851435144Z"
+    description: Prometheus Blackbox Exporter
+    digest: 94adb90a76d713f43d20e0ecdb5fa15cd4acde72f232271281dd641ede5f538b
+    home: https://github.com/prometheus/blackbox_exporter
+    keywords:
+    - prometheus
+    - blackbox
+    - monitoring
+    maintainers:
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    - email: gianrubio@gmail.com
+      name: gianrubio
+    - email: me@sota.sh
+      name: rsotnychenko
+    - email: monotek23@gmail.com
+      name: monotek
+    name: prometheus-blackbox-exporter
+    sources:
+    - https://github.com/prometheus/blackbox_exporter
+    - https://github.com/prometheus-community/helm-charts/tree/main/charts/prometheus-blackbox-exporter
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/prometheus-blackbox-exporter-0.0.0-c79a21e75010f62c2f3c3108cb37621a3f8d20ac.tgz
+    version: 0.0.0-c79a21e75010f62c2f3c3108cb37621a3f8d20ac
   prometheus-operator-app:
   - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/prometheus-operator-app-3.0.0-f908596a435bf634832e6e9de091f95ed34d2102.tgz-meta/main.yaml
@@ -8959,4 +8989,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-1.0.1-2648be8c2f5027b87a8911eb03920e8e338cf489.tgz
     version: 1.0.1-2648be8c2f5027b87a8911eb03920e8e338cf489
-generated: "2023-02-07T08:00:56.394770316Z"
+generated: "2023-02-07T14:35:11.848838365Z"
