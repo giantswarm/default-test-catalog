@@ -989,6 +989,29 @@ entries:
     version: 2.3.1-3212a62eca81ccf379d09989171bcb34918cd86d
   cert-manager-app:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.19.0-f93f57eaa7069126de62558923926112d4f01a96.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.19.0-f93f57eaa7069126de62558923926112d4f01a96.tgz-meta/README.md
+      application.giantswarm.io/team: team-cabbage
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.19.0-f93f57eaa7069126de62558923926112d4f01a96.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: 1.8.2
+    created: "2023-02-17T14:41:00.664672132Z"
+    dependencies:
+    - name: cert-manager-giantswarm-clusterissuer
+      repository: ""
+      version: 1.2.0
+    description: Simplifies the process of obtaining, renewing and using certificates.
+    digest: 7d16194b5aaaad8f820ab137400bed76e6f3bf4c606a9397a44e55e9504919f6
+    home: https://github.com/giantswarm/cert-manager-app
+    icon: https://s.giantswarm.io/app-icons/cert-manager/1/light.svg
+    kubeVersion: '>=1.18.0-0'
+    name: cert-manager-app
+    sources:
+    - https://github.com/cert-manager/cert-manager
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.19.0-f93f57eaa7069126de62558923926112d4f01a96.tgz
+    version: 2.19.0-f93f57eaa7069126de62558923926112d4f01a96
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.19.0-3bdcbd9acbb35825650eb346118e7af829792b46.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.19.0-3bdcbd9acbb35825650eb346118e7af829792b46.tgz-meta/README.md
       application.giantswarm.io/team: team-cabbage
@@ -12906,4 +12929,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-1.0.1-2648be8c2f5027b87a8911eb03920e8e338cf489.tgz
     version: 1.0.1-2648be8c2f5027b87a8911eb03920e8e338cf489
-generated: "2023-02-17T14:39:59.518446461Z"
+generated: "2023-02-17T14:41:00.660907303Z"
