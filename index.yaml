@@ -9472,6 +9472,32 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/prometheus-operator-app-3.0.0-618dbd91e4808022784ff870a71eaa8c39f7abd6.tgz
     version: 3.0.0-618dbd91e4808022784ff870a71eaa8c39f7abd6
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/prometheus-operator-app-3.0.0-53598e3e45a3cce7d1b99585b6aedd057b92bcb2.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/prometheus-operator-app-3.0.0-53598e3e45a3cce7d1b99585b6aedd057b92bcb2.tgz-meta/README.md
+      application.giantswarm.io/team: atlas
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/prometheus-operator-app-3.0.0-53598e3e45a3cce7d1b99585b6aedd057b92bcb2.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: v0.62.0
+    created: "2023-03-06T15:06:58.922781207Z"
+    dependencies:
+    - alias: prometheus-operator-app
+      name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 45.6.0
+    description: Giant Swarm's Prometheus Operator Deployment
+    digest: e339f45d601333d05f087ca2cf7428b3e0e00560422e29d0e430f8c56f1d3640
+    home: https://github.com/giantswarm/prometheus-operator-app
+    icon: https://s.giantswarm.io/app-icons/prometheus-operator/2/light.svg
+    maintainers:
+    - email: team-atlas@giantswarm.io
+      name: giantswarm/team-atlas
+    name: prometheus-operator-app
+    sources:
+    - https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/prometheus-operator-app-3.0.0-53598e3e45a3cce7d1b99585b6aedd057b92bcb2.tgz
+    version: 3.0.0-53598e3e45a3cce7d1b99585b6aedd057b92bcb2
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/prometheus-operator-app-3.0.0-4958560e27e72120643185cc602643a5c397ad94.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/prometheus-operator-app-3.0.0-4958560e27e72120643185cc602643a5c397ad94.tgz-meta/README.md
       application.giantswarm.io/team: atlas
@@ -11519,4 +11545,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-1.0.1-867c7ed47d40c4d4af286d84e60ec0c84357c020.tgz
     version: 1.0.1-867c7ed47d40c4d4af286d84e60ec0c84357c020
-generated: "2023-03-06T15:06:13.750287097Z"
+generated: "2023-03-06T15:06:58.888687414Z"
