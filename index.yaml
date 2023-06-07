@@ -3049,6 +3049,28 @@ entries:
     version: 2.4.0-0bf5b7f0a50079294b09cf59b3ce14340cf146a4
   cert-manager:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cert-manager-2.21.0-daab1c338dbc80cd98e385654be76c3aaac147d3.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cert-manager-2.21.0-daab1c338dbc80cd98e385654be76c3aaac147d3.tgz-meta/README.md
+      application.giantswarm.io/team: team-cabbage
+    apiVersion: v2
+    appVersion: v1.12.1
+    created: "2023-06-07T07:44:27.297326969Z"
+    dependencies:
+    - name: cert-manager-giantswarm-clusterissuer
+      repository: ""
+      version: 1.2.0
+    description: Simplifies the process of obtaining, renewing and using certificates.
+    digest: 06693ed9e5e3342355fd2247b3b568ec6dc12799900cdc664464d780b698d2d0
+    home: https://github.com/giantswarm/cert-manager-app
+    icon: https://s.giantswarm.io/app-icons/cert-manager/1/light.svg
+    kubeVersion: '>=1.18.0-0'
+    name: cert-manager
+    sources:
+    - https://github.com/cert-manager/cert-manager
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/cert-manager-2.21.0-daab1c338dbc80cd98e385654be76c3aaac147d3.tgz
+    version: 2.21.0-daab1c338dbc80cd98e385654be76c3aaac147d3
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cert-manager-2.21.0-c0ea7aaae8db293fb71a113b2b360fd2f0b9bd25.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cert-manager-2.21.0-c0ea7aaae8db293fb71a113b2b360fd2f0b9bd25.tgz-meta/README.md
       application.giantswarm.io/team: team-cabbage
@@ -14411,4 +14433,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-2.0.1-1707b8254b180134b96da3cb109b6508e947988c.tgz
     version: 2.0.1-1707b8254b180134b96da3cb109b6508e947988c
-generated: "2023-06-07T07:25:43.066821935Z"
+generated: "2023-06-07T07:44:27.287577516Z"
