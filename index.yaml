@@ -3202,6 +3202,28 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/cert-manager-2.21.0-39d455f344cfb43d00ba82b54af3215ba21afe88.tgz
     version: 2.21.0-39d455f344cfb43d00ba82b54af3215ba21afe88
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cert-manager-2.21.0-03e88fd62bf872d2dbe2fdc82c4674e6c5535de7.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cert-manager-2.21.0-03e88fd62bf872d2dbe2fdc82c4674e6c5535de7.tgz-meta/README.md
+      application.giantswarm.io/team: team-cabbage
+    apiVersion: v2
+    appVersion: v1.12.1
+    created: "2023-06-07T08:15:10.827076323Z"
+    dependencies:
+    - name: cert-manager-giantswarm-clusterissuer
+      repository: ""
+      version: 1.2.0
+    description: Simplifies the process of obtaining, renewing and using certificates.
+    digest: 3f70094faac8f2131a2a3775a584747db73d578fddad7c7d9089875a0ac2f59c
+    home: https://github.com/giantswarm/cert-manager-app
+    icon: https://s.giantswarm.io/app-icons/cert-manager/1/light.svg
+    kubeVersion: '>=1.18.0-0'
+    name: cert-manager
+    sources:
+    - https://github.com/cert-manager/cert-manager
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/cert-manager-2.21.0-03e88fd62bf872d2dbe2fdc82c4674e6c5535de7.tgz
+    version: 2.21.0-03e88fd62bf872d2dbe2fdc82c4674e6c5535de7
   cert-manager-app:
   - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.21.0-fb2c0365810c0107cd3c9014f6a78f1c6d07d0c4.tgz-meta/main.yaml
@@ -14433,4 +14455,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-2.0.1-1707b8254b180134b96da3cb109b6508e947988c.tgz
     version: 2.0.1-1707b8254b180134b96da3cb109b6508e947988c
-generated: "2023-06-07T07:44:27.287577516Z"
+generated: "2023-06-07T08:15:10.820849854Z"
