@@ -11991,6 +11991,32 @@ entries:
     version: 0.3.2-0eb5652f25ffeaefbb4216b00dfc1ac0200842fd
   prometheus-operator-app:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/prometheus-operator-app-5.0.4-f07e19caeb91fdc7e4dcf55fd7af2a9c19003468.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/prometheus-operator-app-5.0.4-f07e19caeb91fdc7e4dcf55fd7af2a9c19003468.tgz-meta/README.md
+      application.giantswarm.io/team: atlas
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/prometheus-operator-app-5.0.4-f07e19caeb91fdc7e4dcf55fd7af2a9c19003468.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: v0.65.1
+    created: "2023-06-08T09:56:33.69529122Z"
+    dependencies:
+    - alias: prometheus-operator-app
+      name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 46.7.0
+    description: Giant Swarm's Prometheus Operator Deployment
+    digest: da0b655e05952300260271c0fa240e4b14d9bf5ed4ea971ada17e89861f082ee
+    home: https://github.com/giantswarm/prometheus-operator-app
+    icon: https://s.giantswarm.io/app-icons/prometheus-operator/2/light.svg
+    maintainers:
+    - email: team-atlas@giantswarm.io
+      name: giantswarm/team-atlas
+    name: prometheus-operator-app
+    sources:
+    - https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/prometheus-operator-app-5.0.4-f07e19caeb91fdc7e4dcf55fd7af2a9c19003468.tgz
+    version: 5.0.4-f07e19caeb91fdc7e4dcf55fd7af2a9c19003468
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/prometheus-operator-app-5.0.4-7f32152f305933adcad856285c29340cf8d0d7b2.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/prometheus-operator-app-5.0.4-7f32152f305933adcad856285c29340cf8d0d7b2.tgz-meta/README.md
       application.giantswarm.io/team: atlas
@@ -14823,4 +14849,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-2.0.1-1707b8254b180134b96da3cb109b6508e947988c.tgz
     version: 2.0.1-1707b8254b180134b96da3cb109b6508e947988c
-generated: "2023-06-08T09:56:22.443574906Z"
+generated: "2023-06-08T09:56:33.651927641Z"
