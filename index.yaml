@@ -3254,6 +3254,29 @@ entries:
     version: 2.4.0-0bf5b7f0a50079294b09cf59b3ce14340cf146a4
   cert-manager:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cert-manager-2.22.0-acfffffad5d96c284a00b952bd21bcac00d1acca.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cert-manager-2.22.0-acfffffad5d96c284a00b952bd21bcac00d1acca.tgz-meta/README.md
+      application.giantswarm.io/team: team-cabbage
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/cert-manager-2.22.0-acfffffad5d96c284a00b952bd21bcac00d1acca.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: v1.12.1
+    created: "2023-06-12T09:05:21.606842651Z"
+    dependencies:
+    - name: cert-manager-giantswarm-clusterissuer
+      repository: ""
+      version: 1.2.0
+    description: Simplifies the process of obtaining, renewing and using certificates.
+    digest: 86b5848fd360631650b0f2f621b4b7fdd6c4aa9a558224ad6bf87ba273c84ac8
+    home: https://github.com/giantswarm/cert-manager-app
+    icon: https://s.giantswarm.io/app-icons/cert-manager/1/light.svg
+    kubeVersion: '>=1.18.0-0'
+    name: cert-manager
+    sources:
+    - https://github.com/cert-manager/cert-manager
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/cert-manager-2.22.0-acfffffad5d96c284a00b952bd21bcac00d1acca.tgz
+    version: 2.22.0-acfffffad5d96c284a00b952bd21bcac00d1acca
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cert-manager-2.22.0-7a60bfc5d7e855280ad9800d918ff31dc4400a1f.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cert-manager-2.22.0-7a60bfc5d7e855280ad9800d918ff31dc4400a1f.tgz-meta/README.md
       application.giantswarm.io/team: team-cabbage
@@ -16006,4 +16029,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-2.0.1-1707b8254b180134b96da3cb109b6508e947988c.tgz
     version: 2.0.1-1707b8254b180134b96da3cb109b6508e947988c
-generated: "2023-06-12T08:54:48.827947869Z"
+generated: "2023-06-12T09:05:21.60221533Z"
