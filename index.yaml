@@ -3591,6 +3591,29 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.22.0-c55968310e7ece838ce8f3af3b6159b60f06e988.tgz
     version: 2.22.0-c55968310e7ece838ce8f3af3b6159b60f06e988
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.22.0-77683deea113433b113b092d041026e8eb1210b0.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.22.0-77683deea113433b113b092d041026e8eb1210b0.tgz-meta/README.md
+      application.giantswarm.io/team: team-cabbage
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.22.0-77683deea113433b113b092d041026e8eb1210b0.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: 1.8.2
+    created: "2023-06-12T11:03:41.590127889Z"
+    dependencies:
+    - name: cert-manager-giantswarm-clusterissuer
+      repository: ""
+      version: 1.2.0
+    description: Simplifies the process of obtaining, renewing and using certificates.
+    digest: 69d5b05140f68ec996b253650d3608bb6c8f94eb80c0460c561841f78b9e44a9
+    home: https://github.com/giantswarm/cert-manager-app
+    icon: https://s.giantswarm.io/app-icons/cert-manager/1/light.svg
+    kubeVersion: '>=1.18.0-0'
+    name: cert-manager-app
+    sources:
+    - https://github.com/cert-manager/cert-manager
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.22.0-77683deea113433b113b092d041026e8eb1210b0.tgz
+    version: 2.22.0-77683deea113433b113b092d041026e8eb1210b0
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.22.0-51b006d2c9c69db3cb59685f5b1228712a14ffc9.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cert-manager-app-2.22.0-51b006d2c9c69db3cb59685f5b1228712a14ffc9.tgz-meta/README.md
       application.giantswarm.io/team: team-cabbage
@@ -16104,4 +16127,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-2.0.1-1707b8254b180134b96da3cb109b6508e947988c.tgz
     version: 2.0.1-1707b8254b180134b96da3cb109b6508e947988c
-generated: "2023-06-12T10:39:17.627306857Z"
+generated: "2023-06-12T11:03:41.58450324Z"
