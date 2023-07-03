@@ -6125,6 +6125,41 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/cloud-provider-vsphere-1.4.0-2b596297738f407eba840d6be86cdecf53cdb3d9.tgz
     version: 1.4.0-2b596297738f407eba840d6be86cdecf53cdb3d9
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cloud-provider-vsphere-1.4.0-025959c895586ffc04194113895cd9de0bb0bb19.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cloud-provider-vsphere-1.4.0-025959c895586ffc04194113895cd9de0bb0bb19.tgz-meta/README.md
+      application.giantswarm.io/team: rocket
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/cloud-provider-vsphere-1.4.0-025959c895586ffc04194113895cd9de0bb0bb19.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: 0.0.1
+    created: "2023-07-03T15:03:20.574139825Z"
+    dependencies:
+    - name: cloud-provider-for-vsphere
+      repository: ""
+      version: 1.0.0
+    - name: vsphere-csi-driver
+      repository: ""
+      version: 1.0.0
+    - condition: kube-vip.enabled
+      name: kube-vip
+      repository: ""
+      version: 0.5.11
+    - condition: kube-vip-cloud-provider.enabled
+      name: kube-vip-cloud-provider
+      repository: ""
+      version: 0.2.2
+    description: A Helm chart for cloud-provider-vsphere with CPI and CSI
+    digest: 103c08e478453145144b0d2c5706eb9d8e739ff77265c223c8d228f7aeb3e3e4
+    home: https://github.com/giantswarm/cloud-provider-vsphere-app
+    maintainers:
+    - email: team-rocket@giantswarm.io
+      name: Team Rocket
+    name: cloud-provider-vsphere
+    sources:
+    - https://github.com/giantswarm/cloud-provider-vsphere-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/cloud-provider-vsphere-1.4.0-025959c895586ffc04194113895cd9de0bb0bb19.tgz
+    version: 1.4.0-025959c895586ffc04194113895cd9de0bb0bb19
   cluster-autoscaler-app:
   - annotations:
       application.giantswarm.io/team: phoenix
@@ -13071,4 +13106,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-2.0.1-429027a2afab5255f7dd04bd6a802a0367377fac.tgz
     version: 2.0.1-429027a2afab5255f7dd04bd6a802a0367377fac
-generated: "2023-07-03T14:56:21.496841549Z"
+generated: "2023-07-03T15:03:20.571738105Z"
