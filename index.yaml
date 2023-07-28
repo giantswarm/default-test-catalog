@@ -11356,6 +11356,30 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/external-dns-app-2.38.0-21c5a78636390041a1fd724a1bd6995b7f9bf724.tgz
     version: 2.38.0-21c5a78636390041a1fd724a1bd6995b7f9bf724
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/external-dns-app-2.38.0-1cee60dd827a8eb66071ca8d38345633e3b3bfb8.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/external-dns-app-2.38.0-1cee60dd827a8eb66071ca8d38345633e3b3bfb8.tgz-meta/README.md
+      application.giantswarm.io/team: team-cabbage
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/external-dns-app-2.38.0-1cee60dd827a8eb66071ca8d38345633e3b3bfb8.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: v0.11.0
+    created: "2023-07-28T08:25:50.471638489Z"
+    dependencies:
+    - condition: crd.install
+      name: crd
+      repository: ""
+      version: 0.1.0
+    description: Configure external DNS servers for Kubernetes Ingresses and Services
+    digest: 7d506649e03c8445f46ba973bc30ededb4c1920a5defbe81794d43c03accc2a0
+    home: https://github.com/giantswarm/external-dns-app
+    icon: https://s.giantswarm.io/app-icons/external-dns/1/dark.png
+    kubeVersion: '>=1.19.0-0'
+    name: external-dns-app
+    sources:
+    - https://github.com/kubernetes-sigs/external-dns
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/external-dns-app-2.38.0-1cee60dd827a8eb66071ca8d38345633e3b3bfb8.tgz
+    version: 2.38.0-1cee60dd827a8eb66071ca8d38345633e3b3bfb8
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/external-dns-app-2.38.0-07aefe316bec2d1c17c3f0488fc4287e1d9ce4e7.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/external-dns-app-2.38.0-07aefe316bec2d1c17c3f0488fc4287e1d9ce4e7.tgz-meta/README.md
       application.giantswarm.io/team: team-cabbage
@@ -20605,4 +20629,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-2.0.1-02395a915195fbd1e6db7e11291754036552b393.tgz
     version: 2.0.1-02395a915195fbd1e6db7e11291754036552b393
-generated: "2023-07-28T08:24:15.622413929Z"
+generated: "2023-07-28T08:25:50.469951755Z"
