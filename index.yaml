@@ -12899,6 +12899,28 @@ entries:
     version: 0.7.2-0433d615b380d78fa3bc515ddd2cd4945704631b
   prometheus-agent:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.6.1-29a5975ff47229b537652ea15252b04474421978.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.6.1-29a5975ff47229b537652ea15252b04474421978.tgz-meta/README.md
+      application.giantswarm.io/team: atlas
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.6.1-29a5975ff47229b537652ea15252b04474421978.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: v2.47.0
+    created: "2023-09-12T08:00:35.740772803Z"
+    dependencies:
+    - name: prometheus-agent
+      repository: ""
+      version: 0.6.2
+    description: A Helm chart for Prometheus agent.
+    digest: 97d8c64baba37810922fb86cf1093cb0ab629d5bd9cb03a3859415f79cdacfe9
+    home: https://github.com/giantswarm/prometheus-agent-app
+    kubeVersion: '>=1.19.0-0'
+    name: prometheus-agent
+    sources:
+    - https://github.com/giantswarm/prometheus-agent-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.6.1-29a5975ff47229b537652ea15252b04474421978.tgz
+    version: 0.6.1-29a5975ff47229b537652ea15252b04474421978
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.6.0.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.6.0.tgz-meta/README.md
       application.giantswarm.io/team: atlas
@@ -17955,4 +17977,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-2.0.1-26fb2ef9f02e57e4dad5c48b1c37708aad60819f.tgz
     version: 2.0.1-26fb2ef9f02e57e4dad5c48b1c37708aad60819f
-generated: "2023-09-11T13:51:39.627749337Z"
+generated: "2023-09-12T08:00:35.738939564Z"
