@@ -11560,6 +11560,28 @@ entries:
     version: 0.7.5-1b5190b2a62dede2bb9b1c71033068965cb5f232
   prometheus-agent:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.6.3-e0c1beb2fe9591356c828beadbe81838fe347abd.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.6.3-e0c1beb2fe9591356c828beadbe81838fe347abd.tgz-meta/README.md
+      application.giantswarm.io/team: atlas
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.6.3-e0c1beb2fe9591356c828beadbe81838fe347abd.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: v2.47.0
+    created: "2023-10-04T09:39:12.509303519Z"
+    dependencies:
+    - name: prometheus-agent
+      repository: ""
+      version: 0.6.4
+    description: A Helm chart for Prometheus agent.
+    digest: 3f0de9642a7e71c47b99654393ce2fc8c8cd53ede537e71552831b5a2453b3a8
+    home: https://github.com/giantswarm/prometheus-agent-app
+    kubeVersion: '>=1.19.0-0'
+    name: prometheus-agent
+    sources:
+    - https://github.com/giantswarm/prometheus-agent-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.6.3-e0c1beb2fe9591356c828beadbe81838fe347abd.tgz
+    version: 0.6.3-e0c1beb2fe9591356c828beadbe81838fe347abd
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.6.3-dc8f585bca980a701cde7a6995726d12145d3a03.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.6.3-dc8f585bca980a701cde7a6995726d12145d3a03.tgz-meta/README.md
       application.giantswarm.io/team: atlas
@@ -14670,4 +14692,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-2.0.1-8a4b22ce6c9ac0e5a552b543f769730f2ef57a5b.tgz
     version: 2.0.1-8a4b22ce6c9ac0e5a552b543f769730f2ef57a5b
-generated: "2023-10-04T09:19:50.696509624Z"
+generated: "2023-10-04T09:39:12.508119269Z"
