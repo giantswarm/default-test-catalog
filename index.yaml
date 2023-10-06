@@ -614,6 +614,26 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/azurefile-csi-driver-app-1.26.0-gs2-6251955d932a8522080b87bca43cf96af1b4c779.tgz
     version: 1.26.0-gs2-6251955d932a8522080b87bca43cf96af1b4c779
+  cadvisor:
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cadvisor-0.44.0-gs2-05dff16de9dafc0bf505732fcafeec08783bdde6.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cadvisor-0.44.0-gs2-05dff16de9dafc0bf505732fcafeec08783bdde6.tgz-meta/README.md
+      application.giantswarm.io/team: Phoenix
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/cadvisor-0.44.0-gs2-05dff16de9dafc0bf505732fcafeec08783bdde6.tgz-meta/values.schema.json
+      branch: main
+      commit: ""
+    apiVersion: v2
+    appVersion: 0.44.0
+    created: "2023-10-06T10:14:32.773290035Z"
+    description: Standalone cadvisor meant to be run outside the kubelet.
+    digest: f9e44ef981285bdc547ee96ad7f1ad8cd1c1cb273e3f4dbbc67135220509b3f8
+    home: https://github.com/giantswarm/cadvisor-app
+    name: cadvisor
+    sources:
+    - https://github.com/google/cadvisor
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/cadvisor-0.44.0-gs2-05dff16de9dafc0bf505732fcafeec08783bdde6.tgz
+    version: 0.44.0-gs2-05dff16de9dafc0bf505732fcafeec08783bdde6
   calico:
   - apiVersion: v1
     appVersion: 3.18.0
@@ -17427,4 +17447,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-2.0.1-303d428a6c04ef9a78b48b00bc163e0f5d420f00.tgz
     version: 2.0.1-303d428a6c04ef9a78b48b00bc163e0f5d420f00
-generated: "2023-10-06T10:12:43.253023082Z"
+generated: "2023-10-06T10:14:32.772259107Z"
