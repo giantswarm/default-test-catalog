@@ -13738,6 +13738,31 @@ entries:
     version: 0.4.3-062fd2f0132d29df85c9e204e3376e92648b6905
   memcached:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/memcached-0.0.0-d7308467806e8114f14eccaab72fdb321259ca33.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/memcached-0.0.0-d7308467806e8114f14eccaab72fdb321259ca33.tgz-meta/README.md
+      application.giantswarm.io/team: atlas
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/memcached-0.0.0-d7308467806e8114f14eccaab72fdb321259ca33.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: 1.6.21
+    created: "2023-10-12T09:51:25.548536125Z"
+    dependencies:
+    - name: memcached
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 6.6.2
+    description: Caching solution
+    digest: 966a70735ba98b77b2b840d72e3b6bc1c62973e23d64ebc8da7cbf30691ae077
+    home: https://github.com/giantswarm/memcached
+    maintainers:
+    - email: team-atlas@giantswarm.io
+      name: giantswarm/team-atlas
+    name: memcached
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/memcached
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/memcached-0.0.0-d7308467806e8114f14eccaab72fdb321259ca33.tgz
+    version: 0.0.0-d7308467806e8114f14eccaab72fdb321259ca33
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/memcached-0.0.0-6364e77b980552aabb875c3711a07e23c8006a2d.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/memcached-0.0.0-6364e77b980552aabb875c3711a07e23c8006a2d.tgz-meta/README.md
       application.giantswarm.io/team: atlas
@@ -21766,4 +21791,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-2.0.1-303d428a6c04ef9a78b48b00bc163e0f5d420f00.tgz
     version: 2.0.1-303d428a6c04ef9a78b48b00bc163e0f5d420f00
-generated: "2023-10-12T09:40:03.557151349Z"
+generated: "2023-10-12T09:51:25.544013058Z"
