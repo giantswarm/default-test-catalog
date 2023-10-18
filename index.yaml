@@ -400,6 +400,23 @@ entries:
     version: 2.25.0-1688018b8f42a4e0ba4de542ba860bb79b229525
   aws-pod-identity-webhook:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.13.1-e5268d96fe823b0985637efb6e088973816252a6.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.13.1-e5268d96fe823b0985637efb6e088973816252a6.tgz-meta/README.md
+      application.giantswarm.io/team: phoenix
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.13.1-e5268d96fe823b0985637efb6e088973816252a6.tgz-meta/values.schema.json
+      config.giantswarm.io/version: 1.x.x
+    apiVersion: v2
+    created: "2023-10-18T10:24:16.867902213Z"
+    description: This webhook is for mutating pods that will require AWS IAM access.
+    digest: 650f4ad78bff3fb67bda3e31dc1aaeac2f66322ca6159c553d34d1fe36672bee
+    home: https://github.com/giantswarm/aws-pod-identity-webhook
+    name: aws-pod-identity-webhook
+    sources:
+    - https://github.com/aws/amazon-eks-pod-identity-webhook
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.13.1-e5268d96fe823b0985637efb6e088973816252a6.tgz
+    version: 1.13.1-e5268d96fe823b0985637efb6e088973816252a6
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.13.0.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.13.0.tgz-meta/README.md
       application.giantswarm.io/team: phoenix
@@ -23300,4 +23317,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-2.0.1-303d428a6c04ef9a78b48b00bc163e0f5d420f00.tgz
     version: 2.0.1-303d428a6c04ef9a78b48b00bc163e0f5d420f00
-generated: "2023-10-18T09:53:40.872299786Z"
+generated: "2023-10-18T10:24:16.86681189Z"
