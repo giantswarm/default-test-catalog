@@ -14905,6 +14905,33 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/k8s-dns-node-cache-app-2.4.0-1a03229880e44270ee1f1b2ec1cab6dd6b57b6f3.tgz
     version: 2.4.0-1a03229880e44270ee1f1b2ec1cab6dd6b57b6f3
+  kube-prometheus-stack:
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-6.2.1-4513cea606f680171c64fb74d4302321544559cf.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-6.2.1-4513cea606f680171c64fb74d4302321544559cf.tgz-meta/README.md
+      application.giantswarm.io/team: atlas
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-6.2.1-4513cea606f680171c64fb74d4302321544559cf.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: v0.68.0
+    created: "2023-10-18T13:00:13.100741412Z"
+    dependencies:
+    - name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 51.5.1
+    description: Giant Swarm's Prometheus Operator Deployment
+    digest: bd30d4873c26cbf980c5ba670fd80ee06ec684e26576c68174604b3e7dadf763
+    home: https://github.com/giantswarm/kube-prometheus-stack
+    icon: https://s.giantswarm.io/app-icons/prometheus-operator/2/light.svg
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - email: team-atlas@giantswarm.io
+      name: giantswarm/team-atlas
+    name: kube-prometheus-stack
+    sources:
+    - https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-6.2.1-4513cea606f680171c64fb74d4302321544559cf.tgz
+    version: 6.2.1-4513cea606f680171c64fb74d4302321544559cf
   loadtest-app:
   - apiVersion: v1
     appVersion: 0.0.1
@@ -24143,4 +24170,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-2.0.1-303d428a6c04ef9a78b48b00bc163e0f5d420f00.tgz
     version: 2.0.1-303d428a6c04ef9a78b48b00bc163e0f5d420f00
-generated: "2023-10-18T12:58:38.251270655Z"
+generated: "2023-10-18T13:00:13.050086412Z"
