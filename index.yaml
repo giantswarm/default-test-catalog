@@ -16663,6 +16663,31 @@ entries:
     version: 0.4.3-062fd2f0132d29df85c9e204e3376e92648b6905
   memcached:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/memcached-0.1.2-ced6dc8cd722f63d5b9f9c39661ad78625e38701.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/memcached-0.1.2-ced6dc8cd722f63d5b9f9c39661ad78625e38701.tgz-meta/README.md
+      application.giantswarm.io/team: atlas
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/memcached-0.1.2-ced6dc8cd722f63d5b9f9c39661ad78625e38701.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: 1.6.21
+    created: "2023-10-19T13:06:19.821925144Z"
+    dependencies:
+    - name: memcached
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 6.6.2
+    description: Caching solution
+    digest: 0a95724e220d7c830a878cbb1e0e2405e8ced37f7fb47eff85f73e4384a13910
+    home: https://github.com/giantswarm/memcached
+    maintainers:
+    - email: team-atlas@giantswarm.io
+      name: giantswarm/team-atlas
+    name: memcached
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/memcached
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/memcached-0.1.2-ced6dc8cd722f63d5b9f9c39661ad78625e38701.tgz
+    version: 0.1.2-ced6dc8cd722f63d5b9f9c39661ad78625e38701
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/memcached-0.1.2-1f8cd393321217cca32b04a576b85ce252123119.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/memcached-0.1.2-1f8cd393321217cca32b04a576b85ce252123119.tgz-meta/README.md
       application.giantswarm.io/team: atlas
@@ -26506,4 +26531,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-2.0.1-066c2f418783cdee6ed2671981b4e6885cbb164e.tgz
     version: 2.0.1-066c2f418783cdee6ed2671981b4e6885cbb164e
-generated: "2023-10-19T11:15:47.211808422Z"
+generated: "2023-10-19T13:06:19.816296451Z"
