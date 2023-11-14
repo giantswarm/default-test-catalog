@@ -28209,6 +28209,31 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-6.1.0-6a73e60ef4bbdfdb0f8b9ef018f18c2fb7b8dca8.tgz
     version: 6.1.0-6a73e60ef4bbdfdb0f8b9ef018f18c2fb7b8dca8
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-6.1.0-69c1ea94eadf884cc3057602757adbd83e0883f1.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-6.1.0-69c1ea94eadf884cc3057602757adbd83e0883f1.tgz-meta/README.md
+      application.giantswarm.io/team: atlas
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-6.1.0-69c1ea94eadf884cc3057602757adbd83e0883f1.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: 0.68.0
+    created: "2023-11-14T11:20:14.940754154Z"
+    dependencies:
+    - name: prometheus-operator-crds
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 6.0.0
+    description: kube-prometheus-stack CustomResourceDefinitions.
+    digest: d31b66ebe3c6e10cd764567339e551926f8e03c9ac71ad556cd6a031563514bf
+    home: https://github.com/giantswarm/prometheus-operator-crd
+    icon: https://s.giantswarm.io/app-icons/prometheus-operator/2/light.svg
+    kubeVersion: '>=1.19.0-0'
+    name: prometheus-operator-crd
+    sources:
+    - https://github.com/prometheus-community/helm-charts
+    - https://github.com/prometheus-operator/kube-prometheus
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-6.1.0-69c1ea94eadf884cc3057602757adbd83e0883f1.tgz
+    version: 6.1.0-69c1ea94eadf884cc3057602757adbd83e0883f1
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-6.1.0-668ea6a5fe54b93771561a9ac819125934d0badd.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-6.1.0-668ea6a5fe54b93771561a9ac819125934d0badd.tgz-meta/README.md
       application.giantswarm.io/team: atlas
@@ -30870,4 +30895,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-2.0.1-066c2f418783cdee6ed2671981b4e6885cbb164e.tgz
     version: 2.0.1-066c2f418783cdee6ed2671981b4e6885cbb164e
-generated: "2023-11-14T11:19:12.784917263Z"
+generated: "2023-11-14T11:20:14.91561077Z"
