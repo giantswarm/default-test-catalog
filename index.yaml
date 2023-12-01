@@ -12190,6 +12190,32 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-7.0.0-2c90a9ead3fc8cb58a789a1725fd97a156cd9b4c.tgz
     version: 7.0.0-2c90a9ead3fc8cb58a789a1725fd97a156cd9b4c
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-7.0.0-20849b15844881d49b1d8457067f6b2765d83662.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-7.0.0-20849b15844881d49b1d8457067f6b2765d83662.tgz-meta/README.md
+      application.giantswarm.io/team: atlas
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-7.0.0-20849b15844881d49b1d8457067f6b2765d83662.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: v0.68.0
+    created: "2023-12-01T07:18:34.129987951Z"
+    dependencies:
+    - name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 51.9.4
+    description: Giant Swarm's Prometheus Operator Deployment
+    digest: a1a64143ca57c1a577eacf393c3a4fe244cb0ab2f24f32c3f0222dea51e50840
+    home: https://github.com/giantswarm/kube-prometheus-stack-app
+    icon: https://s.giantswarm.io/app-icons/prometheus-operator/2/light.svg
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - email: team-atlas@giantswarm.io
+      name: giantswarm/team-atlas
+    name: kube-prometheus-stack
+    sources:
+    - https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-7.0.0-20849b15844881d49b1d8457067f6b2765d83662.tgz
+    version: 7.0.0-20849b15844881d49b1d8457067f6b2765d83662
   loadtest-app:
   - apiVersion: v1
     appVersion: 0.0.1
@@ -14670,4 +14696,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/webhook-exporter-0.1.0-0e4d5d522a6a5910040ec9e5a92f50c7457d39e1.tgz
     version: 0.1.0-0e4d5d522a6a5910040ec9e5a92f50c7457d39e1
-generated: "2023-12-01T07:18:28.044052123Z"
+generated: "2023-12-01T07:18:34.09565492Z"
