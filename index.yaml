@@ -12163,6 +12163,29 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/cloud-provider-cloud-director-0.2.8-1316fbec67662345774b41070830edec51239ed5.tgz
     version: 0.2.8-1316fbec67662345774b41070830edec51239ed5
+  cloud-provider-openstack-app:
+  - annotations:
+      application.giantswarm.io/team: rocket
+    apiVersion: v2
+    appVersion: 0.0.1
+    created: "2023-12-08T14:24:00.471392133Z"
+    dependencies:
+    - name: openstack-cloud-controller-manager
+      repository: ""
+      version: 1.2.0
+    - name: openstack-cinder-csi
+      repository: ""
+      version: 2.1.0
+    description: A Helm chart for cloud-provider-openstack
+    digest: 2f6f8b658e334af73ddf77748217c833526492832a9b6077021bdba2b6800efc
+    home: https://github.com/giantswarm/cloud-provider-openstack-app
+    icon: https://s.giantswarm.io/app-icons/openstack/1/light.svg
+    name: cloud-provider-openstack-app
+    sources:
+    - https://github.com/giantswarm/cloud-provider-openstack-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/cloud-provider-openstack-app-0.7.0-574c8e76dcd4ff621b78d1089978dc01620a40dd.tgz
+    version: 0.7.0-574c8e76dcd4ff621b78d1089978dc01620a40dd
   cloud-provider-vsphere:
   - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cloud-provider-vsphere-1.5.1-f26f08897b0863981307bdbc0868b4f86e87cbb5.tgz-meta/main.yaml
@@ -20755,4 +20778,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/webhook-exporter-0.1.0-0e4d5d522a6a5910040ec9e5a92f50c7457d39e1.tgz
     version: 0.1.0-0e4d5d522a6a5910040ec9e5a92f50c7457d39e1
-generated: "2023-12-08T13:39:55.483340492Z"
+generated: "2023-12-08T14:24:00.469366992Z"
