@@ -8982,6 +8982,31 @@ entries:
     version: 0.5.0-28a07bbcdc40f67dabf8ea462f9c61013bf3b11c
   memcached:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/memcached-0.1.4-637df8681b5ad5735ca931087f47719d27e56dd7.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/memcached-0.1.4-637df8681b5ad5735ca931087f47719d27e56dd7.tgz-meta/README.md
+      application.giantswarm.io/team: atlas
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/memcached-0.1.4-637df8681b5ad5735ca931087f47719d27e56dd7.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: 1.6.21
+    created: "2024-01-04T11:10:37.245612896Z"
+    dependencies:
+    - name: memcached
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 6.7.2
+    description: Caching solution
+    digest: 9c76fcde5b351fc3a6d6d2b30e1b58e02fb1876a243f670a3116154f8a1681a6
+    home: https://github.com/giantswarm/memcached
+    maintainers:
+    - email: team-atlas@giantswarm.io
+      name: giantswarm/team-atlas
+    name: memcached
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/memcached
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/memcached-0.1.4-637df8681b5ad5735ca931087f47719d27e56dd7.tgz
+    version: 0.1.4-637df8681b5ad5735ca931087f47719d27e56dd7
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/memcached-0.1.4-4215e516c80582642b0698fef4971072e43f5c27.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/memcached-0.1.4-4215e516c80582642b0698fef4971072e43f5c27.tgz-meta/README.md
       application.giantswarm.io/team: atlas
@@ -14306,4 +14331,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/webhook-exporter-0.1.0-6157a76b5c2c0b85f0d118a2cb3b7ab14caaa862.tgz
     version: 0.1.0-6157a76b5c2c0b85f0d118a2cb3b7ab14caaa862
-generated: "2024-01-04T09:35:26.634459663Z"
+generated: "2024-01-04T11:10:37.242346749Z"
