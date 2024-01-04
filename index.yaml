@@ -11682,6 +11682,28 @@ entries:
     version: 0.10.1-05073d4c9c17396526986e9c8b03e5e6ddc990e6
   prometheus-agent:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.6.6-e897ca887e56624a7f0017f802438729fffc4211.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.6.6-e897ca887e56624a7f0017f802438729fffc4211.tgz-meta/README.md
+      application.giantswarm.io/team: atlas
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.6.6-e897ca887e56624a7f0017f802438729fffc4211.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: v2.47.1
+    created: "2024-01-04T09:35:26.635825964Z"
+    dependencies:
+    - name: prometheus-agent
+      repository: ""
+      version: 0.6.6
+    description: A Helm chart for Prometheus agent.
+    digest: 622a3a7d3b44f0311fdf1a402e2bc5b5146a9c3defa963a53bd9da3a907f8054
+    home: https://github.com/giantswarm/prometheus-agent-app
+    kubeVersion: '>=1.19.0-0'
+    name: prometheus-agent
+    sources:
+    - https://github.com/giantswarm/prometheus-agent-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.6.6-e897ca887e56624a7f0017f802438729fffc4211.tgz
+    version: 0.6.6-e897ca887e56624a7f0017f802438729fffc4211
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.6.6-de63dbb33077e6ebb7a080fb54ec1a2192f66df2.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.6.6-de63dbb33077e6ebb7a080fb54ec1a2192f66df2.tgz-meta/README.md
       application.giantswarm.io/team: atlas
@@ -14284,4 +14306,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/webhook-exporter-0.1.0-6157a76b5c2c0b85f0d118a2cb3b7ab14caaa862.tgz
     version: 0.1.0-6157a76b5c2c0b85f0d118a2cb3b7ab14caaa862
-generated: "2024-01-03T15:04:02.786600795Z"
+generated: "2024-01-04T09:35:26.634459663Z"
