@@ -18183,6 +18183,31 @@ entries:
     version: 0.4.0-21e540f7cc737d630c2b4ac3c867739f7a85d31d
   prometheus-operator-crd:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-8.0.0-f2e732fb84e6718c0d4c1e00d2f963d6aabd2960.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-8.0.0-f2e732fb84e6718c0d4c1e00d2f963d6aabd2960.tgz-meta/README.md
+      application.giantswarm.io/team: atlas
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-8.0.0-f2e732fb84e6718c0d4c1e00d2f963d6aabd2960.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: 0.68.0
+    created: "2024-01-18T15:00:11.685430043Z"
+    dependencies:
+    - name: prometheus-operator-crds
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 8.0.1
+    description: kube-prometheus-stack CustomResourceDefinitions.
+    digest: fc359dd269537daec89a8727d8eefcd70db7a31b67c8367bd48268f4590481e0
+    home: https://github.com/giantswarm/prometheus-operator-crd
+    icon: https://s.giantswarm.io/app-icons/prometheus-operator/2/light.svg
+    kubeVersion: '>=1.19.0-0'
+    name: prometheus-operator-crd
+    sources:
+    - https://github.com/prometheus-community/helm-charts
+    - https://github.com/prometheus-operator/kube-prometheus
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-8.0.0-f2e732fb84e6718c0d4c1e00d2f963d6aabd2960.tgz
+    version: 8.0.0-f2e732fb84e6718c0d4c1e00d2f963d6aabd2960
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-8.0.0-e9c63b7cb37209eda17baaed1de3225b5af08930.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-8.0.0-e9c63b7cb37209eda17baaed1de3225b5af08930.tgz-meta/README.md
       application.giantswarm.io/team: atlas
@@ -21131,4 +21156,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/webhook-exporter-0.1.0-6157a76b5c2c0b85f0d118a2cb3b7ab14caaa862.tgz
     version: 0.1.0-6157a76b5c2c0b85f0d118a2cb3b7ab14caaa862
-generated: "2024-01-18T14:58:43.298715978Z"
+generated: "2024-01-18T15:00:11.672905647Z"
