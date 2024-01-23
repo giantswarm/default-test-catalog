@@ -1,0 +1,193 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "properties": {
+        "cloud-director-named-disk-csi-driver": {
+            "type": "object",
+            "properties": {
+                "controllerStatefulset": {
+                    "type": "object",
+                    "properties": {
+                        "csiAttacher": {
+                            "type": "object",
+                            "properties": {
+                                "image": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "csiPlugin": {
+                            "type": "object",
+                            "properties": {
+                                "image": {
+                                    "type": "string"
+                                },
+                                "tag": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "csiProvisioner": {
+                            "type": "object",
+                            "properties": {
+                                "image": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                },
+                "nodeDaemonset": {
+                    "type": "object",
+                    "properties": {
+                        "csiPlugin": {
+                            "type": "object",
+                            "properties": {
+                                "image": {
+                                    "type": "string"
+                                },
+                                "tag": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "nodeDriverRegistrar": {
+                            "type": "object",
+                            "properties": {
+                                "image": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                },
+                "storageClass": {
+                    "type": "object",
+                    "properties": {
+                        "delete": {
+                            "type": "object",
+                            "properties": {
+                                "fileSystem": {
+                                    "type": "string"
+                                },
+                                "isDefault": {
+                                    "type": "boolean"
+                                },
+                                "vcdStorageProfileName": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "enabled": {
+                            "type": "boolean"
+                        },
+                        "retain": {
+                            "type": "object",
+                            "properties": {
+                                "fileSystem": {
+                                    "type": "string"
+                                },
+                                "isDefault": {
+                                    "type": "boolean"
+                                },
+                                "vcdStorageProfileName": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "cloud-provider-for-cloud-director": {
+            "type": "object",
+            "properties": {
+                "ccmDeployment": {
+                    "type": "object",
+                    "properties": {
+                        "image": {
+                            "type": "string"
+                        },
+                        "tag": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "global": {
+            "type": "object",
+            "properties": {
+                "basicAuthSecret": {
+                    "type": "object",
+                    "properties": {
+                        "create": {
+                            "type": "boolean"
+                        },
+                        "name": {
+                            "type": "string",
+                            "default": "vcloud-basic-auth"
+                        },
+                        "refreshToken": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "podSecurityStandards": {
+                    "type": "object",
+                    "properties": {
+                        "enforced": {
+                            "type": "boolean"
+                        }
+                    }
+                },
+                "vcdConfig": {
+                    "type": "object",
+                    "properties": {
+                        "clusterid": {
+                            "type": "string"
+                        },
+                        "enableVirtualServiceSharedIP": {
+                            "type": "boolean"
+                        },
+                        "immutable": {
+                            "type": "boolean"
+                        },
+                        "oneArm": {
+                            "type": "object",
+                            "properties": {
+                                "enabled": {
+                                    "type": "boolean"
+                                },
+                                "endIP": {
+                                    "type": "string"
+                                },
+                                "startIP": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "org": {
+                            "type": "string"
+                        },
+                        "ovdc": {
+                            "type": "string"
+                        },
+                        "ovdcNetwork": {
+                            "type": "string"
+                        },
+                        "site": {
+                            "type": "string"
+                        },
+                        "vAppName": {
+                            "type": "string"
+                        },
+                        "vipSubnet": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
