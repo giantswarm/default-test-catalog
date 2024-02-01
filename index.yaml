@@ -11218,6 +11218,31 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/etcd-kubernetes-resources-count-exporter-1.8.0-106c3703c027d440f2aa0ca8921a2dbcc7255756.tgz
     version: 1.8.0-106c3703c027d440f2aa0ca8921a2dbcc7255756
+  external-dns-app:
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/external-dns-app-3.0.0-6eb4db723e1fdd53291b1554ea7859d4371b771a.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/external-dns-app-3.0.0-6eb4db723e1fdd53291b1554ea7859d4371b771a.tgz-meta/README.md
+      application.giantswarm.io/team: team-cabbage
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/external-dns-app-3.0.0-6eb4db723e1fdd53291b1554ea7859d4371b771a.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: v0.11.0
+    created: "2024-02-01T09:18:25.392504316Z"
+    dependencies:
+    - condition: crd.install
+      name: crd
+      repository: ""
+      version: 0.1.0
+    description: Configure external DNS servers for Kubernetes Ingresses and Services
+    digest: 936d6e91802745ae06c8694cc57aa11cd0da0715e51a05d390a88703f5e0af4b
+    home: https://github.com/giantswarm/external-dns-app
+    icon: https://s.giantswarm.io/app-icons/external-dns/1/dark.png
+    kubeVersion: '>=1.19.0-0'
+    name: external-dns-app
+    sources:
+    - https://github.com/kubernetes-sigs/external-dns
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/external-dns-app-3.0.0-6eb4db723e1fdd53291b1554ea7859d4371b771a.tgz
+    version: 3.0.0-6eb4db723e1fdd53291b1554ea7859d4371b771a
   k8s-audit-metrics:
   - annotations:
       application.giantswarm.io/team: turtles
@@ -16030,4 +16055,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-2.0.1-03aaf184a9547454049fd3c00a435102c894192f.tgz
     version: 2.0.1-03aaf184a9547454049fd3c00a435102c894192f
-generated: "2024-02-01T00:20:22.653024253Z"
+generated: "2024-02-01T09:18:25.390487751Z"
