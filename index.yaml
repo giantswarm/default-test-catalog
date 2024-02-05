@@ -10281,6 +10281,42 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/cloud-provider-cloud-director-0.2.9-1b5f73e34e24dd8529eb101119105ef5e2a30f4c.tgz
     version: 0.2.9-1b5f73e34e24dd8529eb101119105ef5e2a30f4c
+  cloud-provider-vsphere:
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cloud-provider-vsphere-1.5.1-514a10649f1e0f85a5aae7c6a81f1a2362853e5c.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cloud-provider-vsphere-1.5.1-514a10649f1e0f85a5aae7c6a81f1a2362853e5c.tgz-meta/README.md
+      application.giantswarm.io/team: rocket
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/cloud-provider-vsphere-1.5.1-514a10649f1e0f85a5aae7c6a81f1a2362853e5c.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: 0.0.1
+    created: "2024-02-05T04:55:45.717200631Z"
+    dependencies:
+    - name: cloud-provider-for-vsphere
+      repository: ""
+      version: 1.0.0
+    - name: vsphere-csi-driver
+      repository: ""
+      version: 1.0.0
+    - condition: kube-vip.enabled
+      name: kube-vip
+      repository: ""
+      version: 0.5.11
+    - condition: kube-vip-cloud-provider.enabled
+      name: kube-vip-cloud-provider
+      repository: ""
+      version: 0.2.2
+    description: A Helm chart for cloud-provider-vsphere with CPI and CSI
+    digest: d4fd2c7403288d4c91de617ee332a7666ce4127bc823387994fb89d44e735497
+    home: https://github.com/giantswarm/cloud-provider-vsphere-app
+    maintainers:
+    - email: team-rocket@giantswarm.io
+      name: Team Rocket
+    name: cloud-provider-vsphere
+    sources:
+    - https://github.com/giantswarm/cloud-provider-vsphere-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/cloud-provider-vsphere-1.5.1-514a10649f1e0f85a5aae7c6a81f1a2362853e5c.tgz
+    version: 1.5.1-514a10649f1e0f85a5aae7c6a81f1a2362853e5c
   cluster-autoscaler-app:
   - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cluster-autoscaler-app-1.27.3-gs5-fe645fc3a4ced2f364bd6c4ddf10d579399e6e44.tgz-meta/main.yaml
@@ -16825,4 +16861,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-2.0.1-03aaf184a9547454049fd3c00a435102c894192f.tgz
     version: 2.0.1-03aaf184a9547454049fd3c00a435102c894192f
-generated: "2024-02-05T04:53:08.673967425Z"
+generated: "2024-02-05T04:55:45.713407438Z"
