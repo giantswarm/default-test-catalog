@@ -18844,6 +18844,30 @@ entries:
     version: 1.8.0-106c3703c027d440f2aa0ca8921a2dbcc7255756
   external-dns-app:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/external-dns-app-3.1.0-45cd43b6915d4653f2464c4c6f5aaa20af80af4a.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/external-dns-app-3.1.0-45cd43b6915d4653f2464c4c6f5aaa20af80af4a.tgz-meta/README.md
+      application.giantswarm.io/team: team-cabbage
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/external-dns-app-3.1.0-45cd43b6915d4653f2464c4c6f5aaa20af80af4a.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: v0.11.0
+    created: "2024-02-27T16:23:34.574078602Z"
+    dependencies:
+    - condition: crd.install
+      name: crd
+      repository: ""
+      version: 0.1.0
+    description: Configure external DNS servers for Kubernetes Ingresses and Services
+    digest: 9e03ab3d0aeeec0b1b168ecc45e96fac1fc73a1292175aa5c9564ea6804dead5
+    home: https://github.com/giantswarm/external-dns-app
+    icon: https://s.giantswarm.io/app-icons/external-dns/1/dark.png
+    kubeVersion: '>=1.19.0-0'
+    name: external-dns-app
+    sources:
+    - https://github.com/kubernetes-sigs/external-dns
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/external-dns-app-3.1.0-45cd43b6915d4653f2464c4c6f5aaa20af80af4a.tgz
+    version: 3.1.0-45cd43b6915d4653f2464c4c6f5aaa20af80af4a
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/external-dns-app-3.1.0-3265f626630612485b8e1e1e3ef24000657f5ee6.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/external-dns-app-3.1.0-3265f626630612485b8e1e1e3ef24000657f5ee6.tgz-meta/README.md
       application.giantswarm.io/team: team-cabbage
@@ -28111,4 +28135,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-2.0.1-03aaf184a9547454049fd3c00a435102c894192f.tgz
     version: 2.0.1-03aaf184a9547454049fd3c00a435102c894192f
-generated: "2024-02-27T16:23:14.40706904Z"
+generated: "2024-02-27T16:23:34.572498101Z"
