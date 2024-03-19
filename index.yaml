@@ -1358,6 +1358,40 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/cert-manager-app-3.7.3-45f63e9a0afaf2b0cf653daf266320ae87069094.tgz
     version: 3.7.3-45f63e9a0afaf2b0cf653daf266320ae87069094
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cert-manager-app-3.7.3-4377b2b0c699784359b328a53b53937a88d18c3b.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cert-manager-app-3.7.3-4377b2b0c699784359b328a53b53937a88d18c3b.tgz-meta/README.md
+      application.giantswarm.io/team: bigmac
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/cert-manager-app-3.7.3-4377b2b0c699784359b328a53b53937a88d18c3b.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: v1.14.2
+    created: "2024-03-19T09:54:49.355642412Z"
+    dependencies:
+    - alias: giantSwarmClusterIssuer
+      name: cert-manager-giantswarm-clusterissuer
+      repository: ""
+      version: 2.0.0
+    - condition: giantswarmNetworkPolicy.enabled
+      name: cert-manager-giantswarm-netpol
+      repository: ""
+      version: 0.1.0
+    - condition: ciliumNetworkPolicy.enabled
+      name: cert-manager-giantswarm-ciliumnetworkpolicies
+      repository: ""
+      version: 0.1.0
+    description: Simplifies the process of obtaining, renewing and using certificates.
+    digest: cb1141fa4a44c080bdafce8503b5a99597b6d9c6faa396049a8062257ef6b33f
+    home: https://github.com/giantswarm/cert-manager-app
+    icon: https://s.giantswarm.io/app-icons/cert-manager/1/light.svg
+    kubeVersion: '>=1.22.0-0'
+    maintainers:
+    - name: Bigmac
+    name: cert-manager-app
+    sources:
+    - https://github.com/cert-manager/cert-manager
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/cert-manager-app-3.7.3-4377b2b0c699784359b328a53b53937a88d18c3b.tgz
+    version: 3.7.3-4377b2b0c699784359b328a53b53937a88d18c3b
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cert-manager-app-3.7.3-3fdb234595bdecad1b2b94bcc1937dabe95e601c.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cert-manager-app-3.7.3-3fdb234595bdecad1b2b94bcc1937dabe95e601c.tgz-meta/README.md
       application.giantswarm.io/team: bigmac
@@ -22354,4 +22388,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-3.0.0-24c89a311fa9547d3c3b663e46b1b1b21b00a8b1.tgz
     version: 3.0.0-24c89a311fa9547d3c3b663e46b1b1b21b00a8b1
-generated: "2024-03-19T09:40:41.32000338Z"
+generated: "2024-03-19T09:54:49.349354118Z"
