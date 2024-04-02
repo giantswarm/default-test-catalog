@@ -49,6 +49,24 @@ entries:
     version: 2.28.1-0e976fe51bfca5c6421856a6b762dbf06b6b6188
   aws-pod-identity-webhook:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.14.1-ba15441191b922a84586c21d98f123f5f27ee470.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.14.1-ba15441191b922a84586c21d98f123f5f27ee470.tgz-meta/README.md
+      application.giantswarm.io/team: phoenix
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.14.1-ba15441191b922a84586c21d98f123f5f27ee470.tgz-meta/values.schema.json
+      config.giantswarm.io/version: 1.x.x
+    apiVersion: v2
+    created: "2024-04-02T08:03:00.297178546Z"
+    description: This webhook is for mutating pods that will require AWS IAM access.
+    digest: df63b6b6ab9c7d2f6cf02e1b574423ad347bccdbc17511d576589345c8ef317c
+    home: https://github.com/giantswarm/aws-pod-identity-webhook
+    icon: https://s.giantswarm.io/app-icons/aws/2/dark.svg
+    name: aws-pod-identity-webhook
+    sources:
+    - https://github.com/aws/amazon-eks-pod-identity-webhook
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.14.1-ba15441191b922a84586c21d98f123f5f27ee470.tgz
+    version: 1.14.1-ba15441191b922a84586c21d98f123f5f27ee470
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.14.1-4a9d01e47cc5574fbd27fa7ab29fa67631e7847f.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.14.1-4a9d01e47cc5574fbd27fa7ab29fa67631e7847f.tgz-meta/README.md
       application.giantswarm.io/team: phoenix
@@ -17830,4 +17848,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-3.0.0-2ccd8d9ecc17818d9edafa94a483045c6a35167e.tgz
     version: 3.0.0-2ccd8d9ecc17818d9edafa94a483045c6a35167e
-generated: "2024-04-02T07:32:38.3901668Z"
+generated: "2024-04-02T08:03:00.296200476Z"
