@@ -49,6 +49,24 @@ entries:
     version: 2.28.1-0e976fe51bfca5c6421856a6b762dbf06b6b6188
   aws-pod-identity-webhook:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.14.2.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.14.2.tgz-meta/README.md
+      application.giantswarm.io/team: phoenix
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.14.2.tgz-meta/values.schema.json
+      config.giantswarm.io/version: 1.x.x
+    apiVersion: v2
+    created: "2024-04-02T08:15:30.365644651Z"
+    description: This webhook is for mutating pods that will require AWS IAM access.
+    digest: bada552cf6d77b998f50e1a03e09dfb7aba10d6a75fb2c4786e80212ff903c23
+    home: https://github.com/giantswarm/aws-pod-identity-webhook
+    icon: https://s.giantswarm.io/app-icons/aws/2/dark.svg
+    name: aws-pod-identity-webhook
+    sources:
+    - https://github.com/aws/amazon-eks-pod-identity-webhook
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.14.2.tgz
+    version: 1.14.2
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.14.2-25620516426887d0e1c364923abbb91a336a4c7b.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.14.2-25620516426887d0e1c364923abbb91a336a4c7b.tgz-meta/README.md
       application.giantswarm.io/team: phoenix
@@ -17930,4 +17948,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-3.0.0-2ccd8d9ecc17818d9edafa94a483045c6a35167e.tgz
     version: 3.0.0-2ccd8d9ecc17818d9edafa94a483045c6a35167e
-generated: "2024-04-02T08:15:20.946174395Z"
+generated: "2024-04-02T08:15:30.364367863Z"
