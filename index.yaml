@@ -542,6 +542,24 @@ entries:
     version: 0.0.0-2106c62d6704a3ca0eb001820f9f8484e26eedd6
   aws-pod-identity-webhook:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.15.0-4f7510a722c54383cf358a360618e0cca4c72a2e.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.15.0-4f7510a722c54383cf358a360618e0cca4c72a2e.tgz-meta/README.md
+      application.giantswarm.io/team: phoenix
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.15.0-4f7510a722c54383cf358a360618e0cca4c72a2e.tgz-meta/values.schema.json
+      config.giantswarm.io/version: 1.x.x
+    apiVersion: v2
+    created: "2024-04-15T09:06:52.545699938Z"
+    description: This webhook is for mutating pods that will require AWS IAM access.
+    digest: 2fc105521a2c5afc0092d327fcc599f4f074bd7699debf451eb66af693e8c133
+    home: https://github.com/giantswarm/aws-pod-identity-webhook
+    icon: https://s.giantswarm.io/app-icons/aws/2/dark.svg
+    name: aws-pod-identity-webhook
+    sources:
+    - https://github.com/aws/amazon-eks-pod-identity-webhook
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.15.0-4f7510a722c54383cf358a360618e0cca4c72a2e.tgz
+    version: 1.15.0-4f7510a722c54383cf358a360618e0cca4c72a2e
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.14.2.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.14.2.tgz-meta/README.md
       application.giantswarm.io/team: phoenix
@@ -23641,4 +23659,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-3.0.0-1b1fa3c2e4572fdd9e702fc6deb3de6376471512.tgz
     version: 3.0.0-1b1fa3c2e4572fdd9e702fc6deb3de6376471512
-generated: "2024-04-15T09:00:46.105295082Z"
+generated: "2024-04-15T09:06:52.544438032Z"
