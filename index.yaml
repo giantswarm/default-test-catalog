@@ -10938,6 +10938,30 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/external-dns-app-3.1.0-250da028449e27c99bf76fa46250bc1c644b36da.tgz
     version: 3.1.0-250da028449e27c99bf76fa46250bc1c644b36da
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/external-dns-app-3.1.0-0c54e307b93d531ddb2500f83f212475e13b6721.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/external-dns-app-3.1.0-0c54e307b93d531ddb2500f83f212475e13b6721.tgz-meta/README.md
+      application.giantswarm.io/team: team-cabbage
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/external-dns-app-3.1.0-0c54e307b93d531ddb2500f83f212475e13b6721.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: v0.11.0
+    created: "2024-05-14T08:30:03.920044694Z"
+    dependencies:
+    - condition: crd.install
+      name: crd
+      repository: ""
+      version: 0.1.0
+    description: Configure external DNS servers for Kubernetes Ingresses and Services
+    digest: 0fe2023bbc346881418e476acf172c81490ea017f9f832138edcc5b72433dfed
+    home: https://github.com/giantswarm/external-dns-app
+    icon: https://s.giantswarm.io/app-icons/external-dns/1/dark.png
+    kubeVersion: '>=1.19.0-0'
+    name: external-dns-app
+    sources:
+    - https://github.com/kubernetes-sigs/external-dns
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/external-dns-app-3.1.0-0c54e307b93d531ddb2500f83f212475e13b6721.tgz
+    version: 3.1.0-0c54e307b93d531ddb2500f83f212475e13b6721
   k8s-audit-metrics:
   - annotations:
       application.giantswarm.io/team: turtles
@@ -16925,4 +16949,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-3.0.0-1b1fa3c2e4572fdd9e702fc6deb3de6376471512.tgz
     version: 3.0.0-1b1fa3c2e4572fdd9e702fc6deb3de6376471512
-generated: "2024-05-13T13:51:31.475301503Z"
+generated: "2024-05-14T08:30:03.91837628Z"
