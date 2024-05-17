@@ -17463,6 +17463,29 @@ entries:
     version: 1.3.2-049796c78220e0abc543da44a82d8a9080d8ecc6
   prometheus-agent:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.6.9-f799d63350e200f4e89c81c8f98f9ff1f0256b72.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.6.9-f799d63350e200f4e89c81c8f98f9ff1f0256b72.tgz-meta/README.md
+      application.giantswarm.io/team: atlas
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.6.9-f799d63350e200f4e89c81c8f98f9ff1f0256b72.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: v2.51.1
+    created: "2024-05-17T11:13:19.950386987Z"
+    dependencies:
+    - name: prometheus-agent
+      repository: ""
+      version: 0.7.0
+    description: A Helm chart for Prometheus agent.
+    digest: 3a77ebc52f165fada737b54c9fc5e1784d465339fe7cd3cf60bc6c50f7614fd0
+    home: https://github.com/giantswarm/prometheus-agent-app
+    icon: https://s.giantswarm.io/app-icons/prometheus/1/light.svg
+    kubeVersion: '>=1.19.0-0'
+    name: prometheus-agent
+    sources:
+    - https://github.com/giantswarm/prometheus-agent-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.6.9-f799d63350e200f4e89c81c8f98f9ff1f0256b72.tgz
+    version: 0.6.9-f799d63350e200f4e89c81c8f98f9ff1f0256b72
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.6.9-d89425f5dee20546240cf5c5cd29d792bf6359da.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.6.9-d89425f5dee20546240cf5c5cd29d792bf6359da.tgz-meta/README.md
       application.giantswarm.io/team: atlas
@@ -19682,4 +19705,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-3.0.0-1b1fa3c2e4572fdd9e702fc6deb3de6376471512.tgz
     version: 3.0.0-1b1fa3c2e4572fdd9e702fc6deb3de6376471512
-generated: "2024-05-17T10:31:52.677498967Z"
+generated: "2024-05-17T11:13:19.948507917Z"
