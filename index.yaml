@@ -14978,6 +14978,32 @@ entries:
     version: 0.6.0-3c09a9f9e217503efb36675861acdb9100383e30
   memcached:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/memcached-0.1.4-eee367910d1c92d8ae6f507351afa6c66b63ce41.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/memcached-0.1.4-eee367910d1c92d8ae6f507351afa6c66b63ce41.tgz-meta/README.md
+      application.giantswarm.io/team: atlas
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/memcached-0.1.4-eee367910d1c92d8ae6f507351afa6c66b63ce41.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: 1.6.21
+    created: "2024-05-18T04:05:45.55364942Z"
+    dependencies:
+    - name: memcached
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 7.1.1
+    description: Caching solution
+    digest: 5f9efc9ee92c7fe92147ae80836741eee4cec0a1d4b76c382c7144ee97144432
+    home: https://github.com/giantswarm/memcached
+    icon: https://s.giantswarm.io/app-icons/giantswarm/1/light.svg
+    maintainers:
+    - email: team-atlas@giantswarm.io
+      name: giantswarm/team-atlas
+    name: memcached
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/memcached
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/memcached-0.1.4-eee367910d1c92d8ae6f507351afa6c66b63ce41.tgz
+    version: 0.1.4-eee367910d1c92d8ae6f507351afa6c66b63ce41
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/memcached-0.1.4-ec7664247826bfcd8e4e8f84e65699abfcd1eb0d.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/memcached-0.1.4-ec7664247826bfcd8e4e8f84e65699abfcd1eb0d.tgz-meta/README.md
       application.giantswarm.io/team: atlas
@@ -19753,4 +19779,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-3.0.0-1b1fa3c2e4572fdd9e702fc6deb3de6376471512.tgz
     version: 3.0.0-1b1fa3c2e4572fdd9e702fc6deb3de6376471512
-generated: "2024-05-17T23:15:40.420241291Z"
+generated: "2024-05-18T04:05:45.549207425Z"
