@@ -8718,6 +8718,32 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-10.2.0-70bd81d711499cbde2e8455be3a60937b65abe13.tgz
     version: 10.2.0-70bd81d711499cbde2e8455be3a60937b65abe13
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-10.2.0-6757b2b50963ca39772de66a593d9dc2c62b289c.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-10.2.0-6757b2b50963ca39772de66a593d9dc2c62b289c.tgz-meta/README.md
+      application.giantswarm.io/team: atlas
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-10.2.0-6757b2b50963ca39772de66a593d9dc2c62b289c.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: v0.71.2
+    created: "2024-06-12T08:17:02.396191687Z"
+    dependencies:
+    - name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 60.1.0
+    description: Giant Swarm's Prometheus Operator Deployment
+    digest: 697d40197924956886fb61f1a1a62b4d88ba6bbf19639057293f9d53053f3e94
+    home: https://github.com/giantswarm/kube-prometheus-stack-app
+    icon: https://s.giantswarm.io/app-icons/prometheus-operator/2/light.svg
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - email: team-atlas@giantswarm.io
+      name: giantswarm/team-atlas
+    name: kube-prometheus-stack
+    sources:
+    - https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-10.2.0-6757b2b50963ca39772de66a593d9dc2c62b289c.tgz
+    version: 10.2.0-6757b2b50963ca39772de66a593d9dc2c62b289c
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-10.2.0-648172b40890aa78392020777e602d5b10d20375.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-10.2.0-648172b40890aa78392020777e602d5b10d20375.tgz-meta/README.md
       application.giantswarm.io/team: atlas
@@ -13417,4 +13443,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-3.1.0-358f30f62c377ffa4f72e9f2b9a952e05cb4465e.tgz
     version: 3.1.0-358f30f62c377ffa4f72e9f2b9a952e05cb4465e
-generated: "2024-06-10T12:05:25.54842716Z"
+generated: "2024-06-12T08:17:02.361348042Z"
