@@ -18403,6 +18403,27 @@ entries:
     version: 0.9.0-18c896387ed4d9762f257b3c8cdef2a305f5713c
   vertical-pod-autoscaler-app:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-app-5.2.3.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-app-5.2.3.tgz-meta/README.md
+      application.giantswarm.io/team: turtles
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-app-5.2.3.tgz-meta/values.schema.json
+      ui.giantswarm.io/logo: https://s.giantswarm.io/app-icons/k8s-initiator/1/dark.svg
+    apiVersion: v2
+    appVersion: 1.1.2
+    created: "2024-06-25T13:08:22.535736369Z"
+    dependencies:
+    - name: vertical-pod-autoscaler
+      repository: https://cowboysysop.github.io/charts
+      version: 9.8.2
+    description: A Helm chart for the Vertical Pod Autoscaler.
+    digest: 93994e0d4cf74977a80d7c4e0cb6fafe612373c9e27b75361738e9fa87592b42
+    home: https://github.com/giantswarm/vertical-pod-autoscaler-app
+    icon: https://s.giantswarm.io/app-icons/k8s-initiator/1/dark.svg
+    name: vertical-pod-autoscaler-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-app-5.2.3.tgz
+    version: 5.2.3
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-app-5.2.2-bf07054336d2358550cb1d6ca8479cd4589c8d85.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-app-5.2.2-bf07054336d2358550cb1d6ca8479cd4589c8d85.tgz-meta/README.md
       application.giantswarm.io/team: turtles
@@ -19075,4 +19096,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-3.1.0-14854e7aa4cbb0157c6699d6b5865c59e8825d1b.tgz
     version: 3.1.0-14854e7aa4cbb0157c6699d6b5865c59e8825d1b
-generated: "2024-06-25T13:02:23.449771858Z"
+generated: "2024-06-25T13:08:22.528183318Z"
