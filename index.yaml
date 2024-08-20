@@ -15115,6 +15115,32 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-11.0.0-0841a8c8469cbbe13231a9943555195e442e7ba9.tgz
     version: 11.0.0-0841a8c8469cbbe13231a9943555195e442e7ba9
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-11.0.0-006bf58450a64dc5f2a279ed378b951b69e8fafc.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-11.0.0-006bf58450a64dc5f2a279ed378b951b69e8fafc.tgz-meta/README.md
+      application.giantswarm.io/team: atlas
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-11.0.0-006bf58450a64dc5f2a279ed378b951b69e8fafc.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: v0.75.0
+    created: "2024-08-20T00:02:59.67002088Z"
+    dependencies:
+    - name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 62.0.0
+    description: Giant Swarm's Prometheus Operator Deployment
+    digest: 1743d67e0e73e969e0cd1a65fa7d78094ce6ee3ea75f1139ac4e3b2841776b73
+    home: https://github.com/giantswarm/kube-prometheus-stack-app
+    icon: https://s.giantswarm.io/app-icons/prometheus-operator/2/light.svg
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - email: team-atlas@giantswarm.io
+      name: giantswarm/team-atlas
+    name: kube-prometheus-stack
+    sources:
+    - https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-11.0.0-006bf58450a64dc5f2a279ed378b951b69e8fafc.tgz
+    version: 11.0.0-006bf58450a64dc5f2a279ed378b951b69e8fafc
   loadtest-app:
   - apiVersion: v1
     appVersion: 0.0.1
@@ -19520,4 +19546,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-3.1.0-0cbc7f9ac182f148348b4e575e1835d6623f72bd.tgz
     version: 3.1.0-0cbc7f9ac182f148348b4e575e1835d6623f72bd
-generated: "2024-08-19T16:13:54.50905879Z"
+generated: "2024-08-20T00:02:59.627918756Z"
