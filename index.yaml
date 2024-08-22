@@ -18253,6 +18253,38 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/node-exporter-app-1.19.0-b4bc8ec7531447b9c66bfa3707a9deae71bf12cd.tgz
     version: 1.19.0-b4bc8ec7531447b9c66bfa3707a9deae71bf12cd
   - annotations:
+      application.giantswarm.io/team: turtles
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/prometheus-community/helm-charts
+      config.giantswarm.io/version: 1.x.x
+    apiVersion: v2
+    appVersion: 1.8.2
+    created: "2024-08-22T18:12:19.328851083Z"
+    description: A Helm chart for prometheus node-exporter
+    digest: ba976ac5227b32e29bf2fa201dd44ab6aeb207f1f5fe44aa44ac0a717e3b68d6
+    home: https://github.com/giantswarm/node-exporter-app
+    icon: https://s.giantswarm.io/app-icons/prometheus/1/light.svg
+    keywords:
+    - node-exporter
+    - prometheus
+    - exporter
+    maintainers:
+    - email: gianrubio@gmail.com
+      name: gianrubio
+    - email: zanhsieh@gmail.com
+      name: zanhsieh
+    - email: rootsandtrees@posteo.de
+      name: zeritti
+    name: node-exporter-app
+    sources:
+    - https://github.com/prometheus/node_exporter/
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/node-exporter-app-1.19.0-a3b1c6527cdf0f0546302b6d7536ee2a19ef932a.tgz
+    version: 1.19.0-a3b1c6527cdf0f0546302b6d7536ee2a19ef932a
+  - annotations:
       application.giantswarm.io/team: phoenix
       config.giantswarm.io/version: 1.x.x
     apiVersion: v2
@@ -23043,4 +23075,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-3.1.0-0cbc7f9ac182f148348b4e575e1835d6623f72bd.tgz
     version: 3.1.0-0cbc7f9ac182f148348b4e575e1835d6623f72bd
-generated: "2024-08-22T12:26:11.96890108Z"
+generated: "2024-08-22T18:12:19.326386659Z"
