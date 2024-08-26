@@ -11575,6 +11575,42 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/cloud-provider-vsphere-1.11.0-817c1d97f9d213641a694fd2cf2a97ce22e3f989.tgz
     version: 1.11.0-817c1d97f9d213641a694fd2cf2a97ce22e3f989
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cloud-provider-vsphere-1.11.0-699a081cd82926f79ed73924cf8c613bd570ca66.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cloud-provider-vsphere-1.11.0-699a081cd82926f79ed73924cf8c613bd570ca66.tgz-meta/README.md
+      application.giantswarm.io/team: rocket
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/cloud-provider-vsphere-1.11.0-699a081cd82926f79ed73924cf8c613bd570ca66.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: 0.0.1
+    created: "2024-08-26T05:00:13.081676467Z"
+    dependencies:
+    - name: cloud-provider-for-vsphere
+      repository: ""
+      version: 1.30.1
+    - name: vsphere-csi-driver
+      repository: ""
+      version: 3.3.0
+    - condition: kube-vip.enabled
+      name: kube-vip
+      repository: ""
+      version: 0.6.1
+    - condition: kube-vip-cloud-provider.enabled
+      name: kube-vip-cloud-provider
+      repository: ""
+      version: 0.2.2
+    description: A Helm chart for cloud-provider-vsphere with CPI and CSI
+    digest: 879c2d8b506442d54b45673257f476f17faf9cdc85f8e4416a935a9406835039
+    home: https://github.com/giantswarm/cloud-provider-vsphere-app
+    icon: https://raw.githubusercontent.com/kubernetes/cloud-provider-vsphere/master/docs/vmware_logo.png
+    maintainers:
+    - email: team-rocket@giantswarm.io
+      name: Team Rocket
+    name: cloud-provider-vsphere
+    sources:
+    - https://github.com/giantswarm/cloud-provider-vsphere-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/cloud-provider-vsphere-1.11.0-699a081cd82926f79ed73924cf8c613bd570ca66.tgz
+    version: 1.11.0-699a081cd82926f79ed73924cf8c613bd570ca66
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cloud-provider-vsphere-1.11.0-29c5dbf3d7fc7c766eebe2773186625d38aaf913.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cloud-provider-vsphere-1.11.0-29c5dbf3d7fc7c766eebe2773186625d38aaf913.tgz-meta/README.md
       application.giantswarm.io/team: rocket
@@ -24867,4 +24903,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-3.1.0-0cbc7f9ac182f148348b4e575e1835d6623f72bd.tgz
     version: 3.1.0-0cbc7f9ac182f148348b4e575e1835d6623f72bd
-generated: "2024-08-26T05:00:09.849477729Z"
+generated: "2024-08-26T05:00:13.079227213Z"
