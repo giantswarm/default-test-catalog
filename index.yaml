@@ -105,6 +105,32 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/alloy-0.5.1-3de5dc7c15fc583ce84c4a19a9b7610d07c8bd19.tgz
     version: 0.5.1-3de5dc7c15fc583ce84c4a19a9b7610d07c8bd19
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/alloy-0.5.1-2f6a2e67a467ed446966ce0976835f03b234256c.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/alloy-0.5.1-2f6a2e67a467ed446966ce0976835f03b234256c.tgz-meta/README.md
+      application.giantswarm.io/team: atlas
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/alloy-0.5.1-2f6a2e67a467ed446966ce0976835f03b234256c.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: v1.3.1
+    created: "2024-09-04T14:38:12.062069465Z"
+    dependencies:
+    - condition: alloy.enabled
+      name: alloy
+      repository: https://grafana.github.io/helm-charts
+      version: 0.7.0
+    description: Grafana Alloy OpenTelemetry Collector
+    digest: a8e4f6acb02861c770a3edfa755cfee392ece4b24efb8b07ed7c589b98bd13d5
+    home: https://github.com/giantswarm/alloy-app
+    icon: https://s.giantswarm.io/app-icons/grafana-alloy/1/light.png
+    maintainers:
+    - email: team-atlas@giantswarm.io
+      name: giantswarm/team-atlas
+    name: alloy
+    sources:
+    - https://github.com/grafana/alloy/tree/main/operations/helm/charts/alloy
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/alloy-0.5.1-2f6a2e67a467ed446966ce0976835f03b234256c.tgz
+    version: 0.5.1-2f6a2e67a467ed446966ce0976835f03b234256c
   aws-cloud-controller-manager-app:
   - annotations:
       application.giantswarm.io/team: phoenix
@@ -17447,4 +17473,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-3.1.0-1dd8e32a92d1918c58a86265a368324d3fe22563.tgz
     version: 3.1.0-1dd8e32a92d1918c58a86265a368324d3fe22563
-generated: "2024-09-04T13:40:07.153663238Z"
+generated: "2024-09-04T14:38:12.059321809Z"
