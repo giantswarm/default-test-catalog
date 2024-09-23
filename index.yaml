@@ -2,6 +2,32 @@ apiVersion: v1
 entries:
   alloy:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/alloy-0.5.2-b82af882aed89d59ec239b622b6cbd989c0d9a0d.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/alloy-0.5.2-b82af882aed89d59ec239b622b6cbd989c0d9a0d.tgz-meta/README.md
+      application.giantswarm.io/team: atlas
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/alloy-0.5.2-b82af882aed89d59ec239b622b6cbd989c0d9a0d.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: v1.3.1
+    created: "2024-09-23T09:07:24.869115534Z"
+    dependencies:
+    - condition: alloy.enabled
+      name: alloy
+      repository: https://grafana.github.io/helm-charts
+      version: 0.7.0
+    description: Grafana Alloy OpenTelemetry Collector
+    digest: 20d0d180624b0f03ae344f84ddfd41623316ba96f1aa7fbc81f779084cc7c35f
+    home: https://github.com/giantswarm/alloy-app
+    icon: https://s.giantswarm.io/app-icons/grafana-alloy/1/light.png
+    maintainers:
+    - email: team-atlas@giantswarm.io
+      name: giantswarm/team-atlas
+    name: alloy
+    sources:
+    - https://github.com/grafana/alloy/tree/main/operations/helm/charts/alloy
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/alloy-0.5.2-b82af882aed89d59ec239b622b6cbd989c0d9a0d.tgz
+    version: 0.5.2-b82af882aed89d59ec239b622b6cbd989c0d9a0d
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/alloy-0.5.1-e86468df4388e20f485ad9f6772d1e4370d0331a.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/alloy-0.5.1-e86468df4388e20f485ad9f6772d1e4370d0331a.tgz-meta/README.md
       application.giantswarm.io/team: atlas
@@ -22185,4 +22211,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-3.1.0-1dd8e32a92d1918c58a86265a368324d3fe22563.tgz
     version: 3.1.0-1dd8e32a92d1918c58a86265a368324d3fe22563
-generated: "2024-09-23T08:16:30.40779518Z"
+generated: "2024-09-23T09:07:24.866500241Z"
