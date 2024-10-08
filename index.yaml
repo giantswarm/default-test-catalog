@@ -8271,6 +8271,30 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/external-dns-app-3.1.0-377fdecb64502a97b5b9abb0f4a4c756742a4fd2.tgz
     version: 3.1.0-377fdecb64502a97b5b9abb0f4a4c756742a4fd2
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/external-dns-app-0.0.0-28e0110fd7ea7d87961eda1404807bd496e88acb.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/external-dns-app-0.0.0-28e0110fd7ea7d87961eda1404807bd496e88acb.tgz-meta/README.md
+      application.giantswarm.io/team: team-cabbage
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/external-dns-app-0.0.0-28e0110fd7ea7d87961eda1404807bd496e88acb.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: v0.11.0
+    created: "2024-10-08T10:13:12.507610438Z"
+    dependencies:
+    - condition: crd.install
+      name: crd
+      repository: ""
+      version: 0.1.0
+    description: Configure external DNS servers for Kubernetes Ingresses and Services
+    digest: 39e3896b9bdd9ea2f916ec24ea6fb606681485aa8032f43d772323d591d505e3
+    home: https://github.com/giantswarm/external-dns-app
+    icon: https://s.giantswarm.io/app-icons/external-dns/1/dark.png
+    kubeVersion: '>=1.19.0-0'
+    name: external-dns-app
+    sources:
+    - https://github.com/kubernetes-sigs/external-dns
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/external-dns-app-0.0.0-28e0110fd7ea7d87961eda1404807bd496e88acb.tgz
+    version: 0.0.0-28e0110fd7ea7d87961eda1404807bd496e88acb
   irsa-servicemonitors:
   - annotations:
       application.giantswarm.io/team: phoenix
@@ -13465,4 +13489,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-3.1.0-1dd8e32a92d1918c58a86265a368324d3fe22563.tgz
     version: 3.1.0-1dd8e32a92d1918c58a86265a368324d3fe22563
-generated: "2024-10-08T10:11:32.746708825Z"
+generated: "2024-10-08T10:13:12.506181253Z"
