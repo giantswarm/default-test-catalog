@@ -13064,6 +13064,32 @@ entries:
     version: 0.6.0-33d205c34669baa87c0a68125086f9836f35d69b
   memcached:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/memcached-0.1.4-eb44b4d1df5446144943892226ec0faf4056ccaa.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/memcached-0.1.4-eb44b4d1df5446144943892226ec0faf4056ccaa.tgz-meta/README.md
+      application.giantswarm.io/team: atlas
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/memcached-0.1.4-eb44b4d1df5446144943892226ec0faf4056ccaa.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: 1.6.21
+    created: "2024-10-18T00:51:04.820659212Z"
+    dependencies:
+    - name: memcached
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 7.5.1
+    description: Caching solution
+    digest: a793c97251852982a78f997e9ac41cc8e143328ac6b753541c98ebcd03e78a58
+    home: https://github.com/giantswarm/memcached
+    icon: https://s.giantswarm.io/app-icons/giantswarm/1/light.svg
+    maintainers:
+    - email: team-atlas@giantswarm.io
+      name: giantswarm/team-atlas
+    name: memcached
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/memcached
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/memcached-0.1.4-eb44b4d1df5446144943892226ec0faf4056ccaa.tgz
+    version: 0.1.4-eb44b4d1df5446144943892226ec0faf4056ccaa
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/memcached-0.1.4-d93470409cffa08ac5bf18a21093d2850ceab6dd.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/memcached-0.1.4-d93470409cffa08ac5bf18a21093d2850ceab6dd.tgz-meta/README.md
       application.giantswarm.io/team: atlas
@@ -19234,4 +19260,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-0.0.0-9925886a8b029918200779e160c758cfb3c660dc.tgz
     version: 0.0.0-9925886a8b029918200779e160c758cfb3c660dc
-generated: "2024-10-17T22:05:38.791919287Z"
+generated: "2024-10-18T00:51:04.815514144Z"
