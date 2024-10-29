@@ -420,6 +420,23 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/aws-cloud-controller-manager-app-1.29.3-gs1-397058f290efd45e7560d218f61bed2088a4f364.tgz
     version: 1.29.3-gs1-397058f290efd45e7560d218f61bed2088a4f364
+  aws-ebs-csi-driver-app:
+  - annotations:
+      application.giantswarm.io/team: phoenix
+    apiVersion: v1
+    appVersion: 1.21.0
+    created: "2024-10-29T17:46:57.857635242Z"
+    description: A Helm chart for AWS EBS CSI Driver
+    digest: ab722355d9b6ee660a999803543fb6404ac7e5f8a599465165a6a08c86a87b9e
+    home: https://github.com/giantswarm/aws-ebs-csi-driver-app
+    icon: https://s.giantswarm.io/app-icons/aws/1/dark.svg
+    kubeVersion: '>=1.17.0-0'
+    name: aws-ebs-csi-driver-app
+    sources:
+    - https://raw.githubusercontent.com/giantswarm/aws-ebs-csi-driver-app/v2.30.1-b37d86c540a3b98b07ac86ed3abbe2b4761318fe/README.md
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/aws-ebs-csi-driver-app-2.30.1-b37d86c540a3b98b07ac86ed3abbe2b4761318fe.tgz
+    version: 2.30.1-b37d86c540a3b98b07ac86ed3abbe2b4761318fe
   aws-pod-identity-webhook:
   - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.17.0.tgz-meta/main.yaml
@@ -21842,4 +21859,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-0.0.0-9925886a8b029918200779e160c758cfb3c660dc.tgz
     version: 0.0.0-9925886a8b029918200779e160c758cfb3c660dc
-generated: "2024-10-29T17:43:13.928999992Z"
+generated: "2024-10-29T17:46:57.856185935Z"
