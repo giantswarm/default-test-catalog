@@ -15021,6 +15021,22 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/teleport-kube-agent-0.10.3-05dbf313a5082e189c7a11de8ac52e83933a7c49.tgz
     version: 0.10.3-05dbf313a5082e189c7a11de8ac52e83933a7c49
   test-app:
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/test-app-0.1.2.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/test-app-0.1.2.tgz-meta/README.md
+      application.giantswarm.io/team: honeybadger
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/test-app-0.1.2.tgz-meta/values.schema.json
+    apiVersion: v1
+    appVersion: v1.9.2
+    created: "2024-11-06T14:04:32.447598617Z"
+    description: A Helm chart for a test app
+    digest: 7b7c8f6cbfd03859d093cd72dfbcefbbea7770a54c2892343beba5b9e60c05b1
+    home: https://github.com/giantswarm/test-app
+    icon: https://s.giantswarm.io/app-icons/1/png/default-app-light.png
+    name: test-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/test-app-0.1.2.tgz
+    version: 0.1.2
   - apiVersion: v1
     appVersion: v1.8.0
     created: "2024-11-05T10:24:18.569226855Z"
@@ -15602,4 +15618,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-0.0.0-9925886a8b029918200779e160c758cfb3c660dc.tgz
     version: 0.0.0-9925886a8b029918200779e160c758cfb3c660dc
-generated: "2024-11-06T11:38:39.685223063Z"
+generated: "2024-11-06T14:04:32.44696993Z"
