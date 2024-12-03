@@ -193,6 +193,24 @@ entries:
     version: 2.30.1-157c4e4d3b00c2a2f705e1f01e92781c4b12079e
   aws-pod-identity-webhook:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.17.0-fdac925b1b148089e636a88ee12a0814ad035f3e.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.17.0-fdac925b1b148089e636a88ee12a0814ad035f3e.tgz-meta/README.md
+      application.giantswarm.io/team: phoenix
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.17.0-fdac925b1b148089e636a88ee12a0814ad035f3e.tgz-meta/values.schema.json
+      config.giantswarm.io/version: 1.x.x
+    apiVersion: v2
+    created: "2024-12-03T23:24:25.325330936Z"
+    description: This webhook is for mutating pods that will require AWS IAM access.
+    digest: e51f277e2cd6f0d0aa5b72d606f877e8f802186a2386fb70febaddf9e1ae582e
+    home: https://github.com/giantswarm/aws-pod-identity-webhook
+    icon: https://s.giantswarm.io/app-icons/aws/2/dark.svg
+    name: aws-pod-identity-webhook
+    sources:
+    - https://github.com/aws/amazon-eks-pod-identity-webhook
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.17.0-fdac925b1b148089e636a88ee12a0814ad035f3e.tgz
+    version: 1.17.0-fdac925b1b148089e636a88ee12a0814ad035f3e
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.17.0-644293160e94dfd93a3e26e679b7a8b95950dddd.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.17.0-644293160e94dfd93a3e26e679b7a8b95950dddd.tgz-meta/README.md
       application.giantswarm.io/team: phoenix
@@ -4478,4 +4496,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/test-app-0.1.2-7dd4a5cee907b5c529bddf60ac10a46fabde4a1b.tgz
     version: 0.1.2-7dd4a5cee907b5c529bddf60ac10a46fabde4a1b
-generated: "2024-12-03T21:13:06.821231838Z"
+generated: "2024-12-03T23:24:25.324014696Z"
