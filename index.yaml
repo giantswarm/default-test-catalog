@@ -3135,6 +3135,31 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/etcd-kubernetes-resources-count-exporter-1.10.0-3e85f6d089d5921e1e31fc7c0b3e08ca14aade52.tgz
     version: 1.10.0-3e85f6d089d5921e1e31fc7c0b3e08ca14aade52
+  external-dns-app:
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/external-dns-app-3.1.0-434cc16ab67ec765a70d46cdc3f8985b8928550c.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/external-dns-app-3.1.0-434cc16ab67ec765a70d46cdc3f8985b8928550c.tgz-meta/README.md
+      application.giantswarm.io/team: team-cabbage
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/external-dns-app-3.1.0-434cc16ab67ec765a70d46cdc3f8985b8928550c.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: v0.11.0
+    created: "2024-12-04T14:50:58.095949978Z"
+    dependencies:
+    - condition: crd.install
+      name: crd
+      repository: ""
+      version: 0.1.0
+    description: Configure external DNS servers for Kubernetes Ingresses and Services
+    digest: c43e41a110da5b6e0514a2f0f8500434c56cc3d9dd67ea0b157be1bc38cceacd
+    home: https://github.com/giantswarm/external-dns-app
+    icon: https://s.giantswarm.io/app-icons/external-dns/1/dark.png
+    kubeVersion: '>=1.19.0-0'
+    name: external-dns-app
+    sources:
+    - https://github.com/kubernetes-sigs/external-dns
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/external-dns-app-3.1.0-434cc16ab67ec765a70d46cdc3f8985b8928550c.tgz
+    version: 3.1.0-434cc16ab67ec765a70d46cdc3f8985b8928550c
   k8s-audit-metrics:
   - annotations:
       application.giantswarm.io/team: turtles
@@ -4746,4 +4771,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/test-app-0.1.2-7dd4a5cee907b5c529bddf60ac10a46fabde4a1b.tgz
     version: 0.1.2-7dd4a5cee907b5c529bddf60ac10a46fabde4a1b
-generated: "2024-12-04T14:45:24.392611708Z"
+generated: "2024-12-04T14:50:58.094200833Z"
