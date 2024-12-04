@@ -4641,6 +4641,30 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/observability-policies-0.0.1-f4ebbecad4a35bedcaaa081e24ad33cf8871ed1a.tgz
     version: 0.0.1-f4ebbecad4a35bedcaaa081e24ad33cf8871ed1a
+  prometheus-agent:
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.7.0-cd2c9604b1c537475a77dd806095915a31c6b802.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.7.0-cd2c9604b1c537475a77dd806095915a31c6b802.tgz-meta/README.md
+      application.giantswarm.io/team: atlas
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.7.0-cd2c9604b1c537475a77dd806095915a31c6b802.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: v2.51.1
+    created: "2024-12-04T17:45:15.241901345Z"
+    dependencies:
+    - name: prometheus-agent
+      repository: ""
+      version: 0.7.0
+    description: A Helm chart for Prometheus agent.
+    digest: 687238d74a6ac05e022682da546ec26a8b7d4573c5d83baf0e76fedadf466c9a
+    home: https://github.com/giantswarm/prometheus-agent-app
+    icon: https://s.giantswarm.io/app-icons/prometheus/1/light.svg
+    kubeVersion: '>=1.19.0-0'
+    name: prometheus-agent
+    sources:
+    - https://github.com/giantswarm/prometheus-agent-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.7.0-cd2c9604b1c537475a77dd806095915a31c6b802.tgz
+    version: 0.7.0-cd2c9604b1c537475a77dd806095915a31c6b802
   prometheus-operator-crd:
   - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-13.0.0-dbe5fcaa67dfa896a1c7f7aceb7db6a928b28352.tgz-meta/main.yaml
@@ -5151,4 +5175,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-3.1.1-210f7d852240f260929631c2436c30b32e897589.tgz
     version: 3.1.1-210f7d852240f260929631c2436c30b32e897589
-generated: "2024-12-04T17:29:19.735657659Z"
+generated: "2024-12-04T17:45:15.240144471Z"
