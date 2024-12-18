@@ -5161,6 +5161,30 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/external-dns-app-3.1.0-15b7779e3a8acafe18a5a4abd4743e1295b5f685.tgz
     version: 3.1.0-15b7779e3a8acafe18a5a4abd4743e1295b5f685
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/external-dns-app-3.1.0-04bdcd3e99b13b4eba1b4bb01e79290adb066152.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/external-dns-app-3.1.0-04bdcd3e99b13b4eba1b4bb01e79290adb066152.tgz-meta/README.md
+      application.giantswarm.io/team: team-cabbage
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/external-dns-app-3.1.0-04bdcd3e99b13b4eba1b4bb01e79290adb066152.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: v0.11.0
+    created: "2024-12-18T13:17:31.572911951Z"
+    dependencies:
+    - condition: crd.install
+      name: crd
+      repository: ""
+      version: 0.1.0
+    description: Configure external DNS servers for Kubernetes Ingresses and Services
+    digest: 7e187c36ad74d399c075aadbb2ea4c9c79fc7521cf1d3cbb8abec359ae21ddf0
+    home: https://github.com/giantswarm/external-dns-app
+    icon: https://s.giantswarm.io/app-icons/external-dns/1/dark.png
+    kubeVersion: '>=1.19.0-0'
+    name: external-dns-app
+    sources:
+    - https://github.com/kubernetes-sigs/external-dns
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/external-dns-app-3.1.0-04bdcd3e99b13b4eba1b4bb01e79290adb066152.tgz
+    version: 3.1.0-04bdcd3e99b13b4eba1b4bb01e79290adb066152
   giantswarm-cluster-suite:
   - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/giantswarm-cluster-suite-0.1.1-d5db6dbd59a262d9efd8b91645d21e3c8ead41fa.tgz-meta/main.yaml
@@ -8037,4 +8061,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-3.1.1-210f7d852240f260929631c2436c30b32e897589.tgz
     version: 3.1.1-210f7d852240f260929631c2436c30b32e897589
-generated: "2024-12-18T13:15:46.531174137Z"
+generated: "2024-12-18T13:17:31.571450644Z"
