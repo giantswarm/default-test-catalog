@@ -5009,6 +5009,29 @@ entries:
     version: 0.0.1-58835e46ee65cd02d1d909ced2b1397e019dbce4
   prometheus-agent:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.7.0-d667c3f4807acf7409676c371e320e5f81a3e53e.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.7.0-d667c3f4807acf7409676c371e320e5f81a3e53e.tgz-meta/README.md
+      application.giantswarm.io/team: atlas
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.7.0-d667c3f4807acf7409676c371e320e5f81a3e53e.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: v2.51.1
+    created: "2025-01-07T10:13:40.54986034Z"
+    dependencies:
+    - name: prometheus-agent
+      repository: ""
+      version: 0.7.0
+    description: A Helm chart for Prometheus agent.
+    digest: 5bbb70ca5a86f4eabd438a4c7f0bf2a274b0001bcfef1ba030b36071dfb6f808
+    home: https://github.com/giantswarm/prometheus-agent-app
+    icon: https://s.giantswarm.io/app-icons/prometheus/1/light.svg
+    kubeVersion: '>=1.19.0-0'
+    name: prometheus-agent
+    sources:
+    - https://github.com/giantswarm/prometheus-agent-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.7.0-d667c3f4807acf7409676c371e320e5f81a3e53e.tgz
+    version: 0.7.0-d667c3f4807acf7409676c371e320e5f81a3e53e
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.7.0-cd2c9604b1c537475a77dd806095915a31c6b802.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.7.0-cd2c9604b1c537475a77dd806095915a31c6b802.tgz-meta/README.md
       application.giantswarm.io/team: atlas
@@ -5358,4 +5381,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-3.1.1-210f7d852240f260929631c2436c30b32e897589.tgz
     version: 3.1.1-210f7d852240f260929631c2436c30b32e897589
-generated: "2025-01-07T10:10:00.215992226Z"
+generated: "2025-01-07T10:13:40.54807538Z"
