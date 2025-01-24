@@ -59,6 +59,25 @@ entries:
     version: 1.30.3-gs1-107861dfcce5e2674037aebb5ce37ac8751672c5
   aws-ebs-csi-driver-app:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/aws-ebs-csi-driver-app-3.0.0.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/aws-ebs-csi-driver-app-3.0.0.tgz-meta/README.md
+      application.giantswarm.io/team: phoenix
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/aws-ebs-csi-driver-app-3.0.0.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: 1.37.0
+    created: "2025-01-24T11:22:13.555386834Z"
+    description: A Helm chart for AWS EBS CSI Driver
+    digest: 24be91889951b0cb5849d7f8335642d6971c9aafeb33451cf7f0ace88fcfa920
+    home: https://github.com/giantswarm/aws-ebs-csi-driver-app
+    icon: https://s.giantswarm.io/app-icons/aws/1/dark.svg
+    kubeVersion: '>=1.17.0-0'
+    name: aws-ebs-csi-driver-app
+    sources:
+    - https://raw.githubusercontent.com/giantswarm/aws-ebs-csi-driver-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/aws-ebs-csi-driver-app-3.0.0.tgz
+    version: 3.0.0
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/aws-ebs-csi-driver-app-3.0.0-d3835a90e210343568a1de8eff82c6b209c07005.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/aws-ebs-csi-driver-app-3.0.0-d3835a90e210343568a1de8eff82c6b209c07005.tgz-meta/README.md
       application.giantswarm.io/team: phoenix
@@ -12165,4 +12184,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-3.1.1-05d778a740e0919e1ad9a8700db30f2169705a6d.tgz
     version: 3.1.1-05d778a740e0919e1ad9a8700db30f2169705a6d
-generated: "2025-01-24T10:21:57.720717526Z"
+generated: "2025-01-24T11:22:13.548481485Z"
