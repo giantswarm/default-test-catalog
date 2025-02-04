@@ -2617,6 +2617,40 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/cilium-0.31.0-594dfdc35a4443c95d5e8d68b0a6aec841868b23.tgz
     version: 0.31.0-594dfdc35a4443c95d5e8d68b0a6aec841868b23
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cilium-0.31.0-5301b61f4857785c6f542ce1c7ba2646d085dfda.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cilium-0.31.0-5301b61f4857785c6f542ce1c7ba2646d085dfda.tgz-meta/README.md
+      application.giantswarm.io/team: cabbage
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/cilium-0.31.0-5301b61f4857785c6f542ce1c7ba2646d085dfda.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: 1.16.6
+    created: "2025-02-04T15:35:02.477819553Z"
+    dependencies:
+    - alias: cniCustomConf
+      condition: cni.customConf
+      name: cilium-giantswarm-cni-customconf
+      repository: ""
+      version: 0.1.0
+    description: eBPF-based Networking, Security, and Observability
+    digest: 7918404bffd7d9545abc27a9fe056b5e902c1dd6bca9c3b028de18e5777bcb06
+    home: https://cilium.io/
+    icon: https://cdn.jsdelivr.net/gh/cilium/cilium@main/Documentation/images/logo-solo.svg
+    keywords:
+    - BPF
+    - eBPF
+    - Kubernetes
+    - Networking
+    - Security
+    - Observability
+    - Troubleshooting
+    kubeVersion: '>= 1.21.0-0'
+    name: cilium
+    sources:
+    - https://github.com/giantswarm/cilium-app
+    - https://github.com/cilium/cilium
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/cilium-0.31.0-5301b61f4857785c6f542ce1c7ba2646d085dfda.tgz
+    version: 0.31.0-5301b61f4857785c6f542ce1c7ba2646d085dfda
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cilium-0.30.0-f708519f157466fb07e429f086b9df40e3df340e.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cilium-0.30.0-f708519f157466fb07e429f086b9df40e3df340e.tgz-meta/README.md
       application.giantswarm.io/team: cabbage
@@ -10350,4 +10384,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-3.1.1-05d778a740e0919e1ad9a8700db30f2169705a6d.tgz
     version: 3.1.1-05d778a740e0919e1ad9a8700db30f2169705a6d
-generated: "2025-02-04T14:16:22.531395911Z"
+generated: "2025-02-04T15:35:02.463996523Z"
