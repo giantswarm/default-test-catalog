@@ -490,6 +490,24 @@ entries:
     version: 1.2.0-06754ef41e5c941c471ecdd891de639b537e027a
   aws-pod-identity-webhook:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.19.0-3c3cf052283c96e5d9ef7f0c25afff0897eb2b1b.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.19.0-3c3cf052283c96e5d9ef7f0c25afff0897eb2b1b.tgz-meta/README.md
+      application.giantswarm.io/team: phoenix
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.19.0-3c3cf052283c96e5d9ef7f0c25afff0897eb2b1b.tgz-meta/values.schema.json
+      config.giantswarm.io/version: 1.x.x
+    apiVersion: v2
+    created: "2025-02-12T08:31:21.449063011Z"
+    description: This webhook is for mutating pods that will require AWS IAM access.
+    digest: e5767527bb8dc6b52683beb2498694aadb8ab7c737d8008f4ac75ddcbf4e77b8
+    home: https://github.com/giantswarm/aws-pod-identity-webhook
+    icon: https://s.giantswarm.io/app-icons/aws/2/dark.svg
+    name: aws-pod-identity-webhook
+    sources:
+    - https://github.com/aws/amazon-eks-pod-identity-webhook
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.19.0-3c3cf052283c96e5d9ef7f0c25afff0897eb2b1b.tgz
+    version: 1.19.0-3c3cf052283c96e5d9ef7f0c25afff0897eb2b1b
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.18.0-caaeef7d0f243fc44fca6f112d6bfac526346ad8.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-1.18.0-caaeef7d0f243fc44fca6f112d6bfac526346ad8.tgz-meta/README.md
       application.giantswarm.io/team: phoenix
@@ -11559,4 +11577,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-3.1.1-05d778a740e0919e1ad9a8700db30f2169705a6d.tgz
     version: 3.1.1-05d778a740e0919e1ad9a8700db30f2169705a6d
-generated: "2025-02-12T08:30:52.778425144Z"
+generated: "2025-02-12T08:31:21.448051687Z"
