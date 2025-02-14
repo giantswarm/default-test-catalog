@@ -11431,6 +11431,29 @@ entries:
     version: 0.0.1-58835e46ee65cd02d1d909ced2b1397e019dbce4
   prometheus-agent:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.7.0-e65b60744e4aa0ee47abd315ce0d17b2cec83b0e.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.7.0-e65b60744e4aa0ee47abd315ce0d17b2cec83b0e.tgz-meta/README.md
+      application.giantswarm.io/team: atlas
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.7.0-e65b60744e4aa0ee47abd315ce0d17b2cec83b0e.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: v2.51.1
+    created: "2025-02-14T16:50:21.524678448Z"
+    dependencies:
+    - name: prometheus-agent
+      repository: ""
+      version: 0.7.0
+    description: A Helm chart for Prometheus agent.
+    digest: 2567247b73068eb44e9a1acab29715ba8ec78518353841cb298f0c62ceddd5c0
+    home: https://github.com/giantswarm/prometheus-agent-app
+    icon: https://s.giantswarm.io/app-icons/prometheus/1/light.svg
+    kubeVersion: '>=1.19.0-0'
+    name: prometheus-agent
+    sources:
+    - https://github.com/giantswarm/prometheus-agent-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.7.0-e65b60744e4aa0ee47abd315ce0d17b2cec83b0e.tgz
+    version: 0.7.0-e65b60744e4aa0ee47abd315ce0d17b2cec83b0e
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.7.0-d667c3f4807acf7409676c371e320e5f81a3e53e.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/prometheus-agent-0.7.0-d667c3f4807acf7409676c371e320e5f81a3e53e.tgz-meta/README.md
       application.giantswarm.io/team: atlas
@@ -13038,4 +13061,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-3.1.1-05d778a740e0919e1ad9a8700db30f2169705a6d.tgz
     version: 3.1.1-05d778a740e0919e1ad9a8700db30f2169705a6d
-generated: "2025-02-14T09:45:45.468239917Z"
+generated: "2025-02-14T16:50:21.522363418Z"
