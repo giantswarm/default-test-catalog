@@ -10343,6 +10343,32 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-13.0.1-08348e2b530e3051f2997927b263212d532b7e1c.tgz
     version: 13.0.1-08348e2b530e3051f2997927b263212d532b7e1c
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-13.0.1-0713803be1599c0942e74dfc87f5ebdb35cc1fdd.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-13.0.1-0713803be1599c0942e74dfc87f5ebdb35cc1fdd.tgz-meta/README.md
+      application.giantswarm.io/team: atlas
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-13.0.1-0713803be1599c0942e74dfc87f5ebdb35cc1fdd.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: v0.77.1
+    created: "2025-02-15T16:22:25.279141587Z"
+    dependencies:
+    - name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 69.3.1
+    description: Giant Swarm's Prometheus Operator Deployment
+    digest: 825bd7a2d5d0d24ae97b1172e1a592b754c7a69222709196e5b01988ecd155f5
+    home: https://github.com/giantswarm/kube-prometheus-stack-app
+    icon: https://s.giantswarm.io/app-icons/prometheus-operator/2/light.svg
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - email: team-atlas@giantswarm.io
+      name: giantswarm/team-atlas
+    name: kube-prometheus-stack
+    sources:
+    - https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-13.0.1-0713803be1599c0942e74dfc87f5ebdb35cc1fdd.tgz
+    version: 13.0.1-0713803be1599c0942e74dfc87f5ebdb35cc1fdd
   loadtest-app:
   - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/loadtest-app-0.6.0-ff86ac64acdb84c3afa8d8c18097ea50e0930657.tgz-meta/main.yaml
@@ -13125,4 +13151,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-3.1.1-05d778a740e0919e1ad9a8700db30f2169705a6d.tgz
     version: 3.1.1-05d778a740e0919e1ad9a8700db30f2169705a6d
-generated: "2025-02-14T21:22:14.696784577Z"
+generated: "2025-02-15T16:22:25.23110942Z"
