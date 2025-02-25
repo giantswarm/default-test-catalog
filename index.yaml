@@ -15364,6 +15364,31 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-13.0.0-21516c1f575b90f369f7b2bd1a1ee41830ad77ea.tgz
     version: 13.0.0-21516c1f575b90f369f7b2bd1a1ee41830ad77ea
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-13.0.0-10639717410f34ba9c3ebae7a8a56f3a150a4c8d.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-13.0.0-10639717410f34ba9c3ebae7a8a56f3a150a4c8d.tgz-meta/README.md
+      application.giantswarm.io/team: atlas
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-13.0.0-10639717410f34ba9c3ebae7a8a56f3a150a4c8d.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: 0.75.0
+    created: "2025-02-25T14:41:33.81239577Z"
+    dependencies:
+    - name: prometheus-operator-crds
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 18.0.1
+    description: kube-prometheus-stack CustomResourceDefinitions.
+    digest: 9ffd5a01218bb834294ed89255f3e7665d9dc0e6d451a2b8d7630fd234df1552
+    home: https://github.com/giantswarm/prometheus-operator-crd
+    icon: https://s.giantswarm.io/app-icons/prometheus-operator/2/light.svg
+    kubeVersion: '>=1.19.0-0'
+    name: prometheus-operator-crd
+    sources:
+    - https://github.com/prometheus-community/helm-charts
+    - https://github.com/prometheus-operator/kube-prometheus
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-13.0.0-10639717410f34ba9c3ebae7a8a56f3a150a4c8d.tgz
+    version: 13.0.0-10639717410f34ba9c3ebae7a8a56f3a150a4c8d
   proxmox-cloud-controller-manager:
   - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/proxmox-cloud-controller-manager-0.1.0-ceaacad0058f49d7a850d874f59c8231526b4f86.tgz-meta/main.yaml
@@ -16315,4 +16340,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-3.1.1-05d778a740e0919e1ad9a8700db30f2169705a6d.tgz
     version: 3.1.1-05d778a740e0919e1ad9a8700db30f2169705a6d
-generated: "2025-02-25T14:36:00.587388086Z"
+generated: "2025-02-25T14:41:33.787911552Z"
