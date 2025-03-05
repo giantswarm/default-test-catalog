@@ -2304,6 +2304,40 @@ entries:
     version: 1.1.2-1e8751f7285dcbd7873ebbcbab42b7e95a5c35f7
   cilium:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cilium-0.31.0.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cilium-0.31.0.tgz-meta/README.md
+      application.giantswarm.io/team: cabbage
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/cilium-0.31.0.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: 1.16.6
+    created: "2025-03-05T11:33:39.332256399Z"
+    dependencies:
+    - alias: cniCustomConf
+      condition: cni.customConf
+      name: cilium-giantswarm-cni-customconf
+      repository: ""
+      version: 0.1.0
+    description: eBPF-based Networking, Security, and Observability
+    digest: 8f5142295a5734bf086bece4794bc091e1e1e0fd9319d0763215eafc06385631
+    home: https://cilium.io/
+    icon: https://cdn.jsdelivr.net/gh/cilium/cilium@main/Documentation/images/logo-solo.svg
+    keywords:
+    - BPF
+    - eBPF
+    - Kubernetes
+    - Networking
+    - Security
+    - Observability
+    - Troubleshooting
+    kubeVersion: '>= 1.21.0-0'
+    name: cilium
+    sources:
+    - https://github.com/giantswarm/cilium-app
+    - https://github.com/cilium/cilium
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/cilium-0.31.0.tgz
+    version: 0.31.0
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cilium-0.31.0-fa3e1ab0bf8680ff5d15b76d7d76b540601c09e2.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cilium-0.31.0-fa3e1ab0bf8680ff5d15b76d7d76b540601c09e2.tgz-meta/README.md
       application.giantswarm.io/team: cabbage
@@ -8797,4 +8831,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-3.2.0-9f9438aab6cecdb4e1efb9cfbdc89aad644cd13f.tgz
     version: 3.2.0-9f9438aab6cecdb4e1efb9cfbdc89aad644cd13f
-generated: "2025-03-05T10:16:25.609045109Z"
+generated: "2025-03-05T11:33:39.313463934Z"
