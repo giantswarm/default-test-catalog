@@ -2338,6 +2338,40 @@ entries:
     version: 1.1.2-1e8751f7285dcbd7873ebbcbab42b7e95a5c35f7
   cilium:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cilium-0.31.1.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cilium-0.31.1.tgz-meta/README.md
+      application.giantswarm.io/team: cabbage
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/cilium-0.31.1.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: 1.16.6
+    created: "2025-03-07T07:40:49.517686123Z"
+    dependencies:
+    - alias: cniCustomConf
+      condition: cni.customConf
+      name: cilium-giantswarm-cni-customconf
+      repository: ""
+      version: 0.1.0
+    description: eBPF-based Networking, Security, and Observability
+    digest: 9595123fde9cdef338c863598d6acd3f58d55bdc85aa34e1df8a0c936af60774
+    home: https://cilium.io/
+    icon: https://cdn.jsdelivr.net/gh/cilium/cilium@main/Documentation/images/logo-solo.svg
+    keywords:
+    - BPF
+    - eBPF
+    - Kubernetes
+    - Networking
+    - Security
+    - Observability
+    - Troubleshooting
+    kubeVersion: '>= 1.21.0-0'
+    name: cilium
+    sources:
+    - https://github.com/giantswarm/cilium-app
+    - https://github.com/cilium/cilium
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/cilium-0.31.1.tgz
+    version: 0.31.1
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cilium-0.31.0.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cilium-0.31.0.tgz-meta/README.md
       application.giantswarm.io/team: cabbage
@@ -9264,4 +9298,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-crd-3.2.0-9f9438aab6cecdb4e1efb9cfbdc89aad644cd13f.tgz
     version: 3.2.0-9f9438aab6cecdb4e1efb9cfbdc89aad644cd13f
-generated: "2025-03-06T22:53:42.47300908Z"
+generated: "2025-03-07T07:40:49.502678492Z"
