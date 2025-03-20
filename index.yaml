@@ -3878,6 +3878,24 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/cert-manager-app-3.9.0-2dd00c8d9c40f957a20b75d3ac30edc870d4bddb.tgz
     version: 3.9.0-2dd00c8d9c40f957a20b75d3ac30edc870d4bddb
+  cert-manager-bundle:
+  - annotations:
+      application.giantswarm.io/app-type: bundle
+      application.giantswarm.io/in-cluster-app: "true"
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cert-manager-bundle-0.0.0-157a39196990c3e5120f207499684ea974302001.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cert-manager-bundle-0.0.0-157a39196990c3e5120f207499684ea974302001.tgz-meta/README.md
+      application.giantswarm.io/team: shield
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/cert-manager-bundle-0.0.0-157a39196990c3e5120f207499684ea974302001.tgz-meta/values.schema.json
+    apiVersion: v2
+    created: "2025-03-20T00:06:27.61307147Z"
+    description: cert-manager Bundle with crossplane resources
+    digest: 782851cade90254862c2233cb9279383bae76a8179f3eb88c4a779ff758004c8
+    home: https://github.com/giantswarm/cert-manager-bundle
+    icon: https://s.giantswarm.io/app-icons/cert-manager/1/light.svg
+    name: cert-manager-bundle
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/cert-manager-bundle-0.0.0-157a39196990c3e5120f207499684ea974302001.tgz
+    version: 0.0.0-157a39196990c3e5120f207499684ea974302001
   chart-operator:
   - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/chart-operator-4.0.0-ff77bfc5e4906484b5ac749d574a43e1ebdabdb9.tgz-meta/main.yaml
@@ -15894,4 +15912,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.1-020cb1cabbed11646b6c9e676705590fd7ad5e62.tgz
     version: 3.4.1-020cb1cabbed11646b6c9e676705590fd7ad5e62
-generated: "2025-03-19T21:06:47.46406794Z"
+generated: "2025-03-20T00:06:27.612611462Z"
