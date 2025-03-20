@@ -15241,6 +15241,31 @@ entries:
     version: 0.7.0-8a720eb52d2de8101aa083d15bad670f4a9f80f9
   prometheus-operator-crd:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-14.0.0-a6f117c978778a899a5c8d277d3000d3b635e3c9.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-14.0.0-a6f117c978778a899a5c8d277d3000d3b635e3c9.tgz-meta/README.md
+      application.giantswarm.io/team: atlas
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-14.0.0-a6f117c978778a899a5c8d277d3000d3b635e3c9.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: 0.75.0
+    created: "2025-03-20T17:42:50.930788179Z"
+    dependencies:
+    - name: prometheus-operator-crds
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 19.0.0
+    description: kube-prometheus-stack CustomResourceDefinitions.
+    digest: 4f8f989476270d2678deb96a034016317d4d80e3e76013dfca66b8b467b42a3a
+    home: https://github.com/giantswarm/prometheus-operator-crd
+    icon: https://s.giantswarm.io/app-icons/prometheus-operator/2/light.svg
+    kubeVersion: '>=1.19.0-0'
+    name: prometheus-operator-crd
+    sources:
+    - https://github.com/prometheus-community/helm-charts
+    - https://github.com/prometheus-operator/kube-prometheus
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-14.0.0-a6f117c978778a899a5c8d277d3000d3b635e3c9.tgz
+    version: 14.0.0-a6f117c978778a899a5c8d277d3000d3b635e3c9
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-14.0.0-732a6453c2ead4257f027cf76dc5dac2921298bd.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-14.0.0-732a6453c2ead4257f027cf76dc5dac2921298bd.tgz-meta/README.md
       application.giantswarm.io/team: atlas
@@ -16768,4 +16793,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.1-020cb1cabbed11646b6c9e676705590fd7ad5e62.tgz
     version: 3.4.1-020cb1cabbed11646b6c9e676705590fd7ad5e62
-generated: "2025-03-20T17:39:23.139801825Z"
+generated: "2025-03-20T17:42:50.913174641Z"
