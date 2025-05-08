@@ -599,6 +599,32 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/alloy-0.9.0-06f59adc1edb0d23def3e976c8b98c43e937d3b2.tgz
     version: 0.9.0-06f59adc1edb0d23def3e976c8b98c43e937d3b2
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/alloy-0.9.0-051aeead83a14e3f241ff1b35cc001b9f531d529.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/alloy-0.9.0-051aeead83a14e3f241ff1b35cc001b9f531d529.tgz-meta/README.md
+      application.giantswarm.io/team: atlas
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/alloy-0.9.0-051aeead83a14e3f241ff1b35cc001b9f531d529.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: v1.8.2
+    created: "2025-05-08T12:24:40.400920221Z"
+    dependencies:
+    - condition: alloy.enabled
+      name: alloy
+      repository: https://grafana.github.io/helm-charts
+      version: 1.0.2
+    description: Grafana Alloy OpenTelemetry Collector
+    digest: c390507a168b0a36e557ee1f37388b1fe009ddc03435fff7b94a142c4199b218
+    home: https://github.com/giantswarm/alloy-app
+    icon: https://s.giantswarm.io/app-icons/grafana-alloy/1/light.png
+    maintainers:
+    - email: team-atlas@giantswarm.io
+      name: giantswarm/team-atlas
+    name: alloy
+    sources:
+    - https://github.com/grafana/alloy/tree/main/operations/helm/charts/alloy
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/alloy-0.9.0-051aeead83a14e3f241ff1b35cc001b9f531d529.tgz
+    version: 0.9.0-051aeead83a14e3f241ff1b35cc001b9f531d529
   aws-cloud-controller-manager-app:
   - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/aws-cloud-controller-manager-app-1.30.8-gs1-a9937a717708390000edfd626afe33ce8cee4156.tgz-meta/main.yaml
@@ -21347,4 +21373,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.1-020cb1cabbed11646b6c9e676705590fd7ad5e62.tgz
     version: 3.4.1-020cb1cabbed11646b6c9e676705590fd7ad5e62
-generated: "2025-05-08T10:56:45.975763537Z"
+generated: "2025-05-08T12:24:40.398010379Z"
