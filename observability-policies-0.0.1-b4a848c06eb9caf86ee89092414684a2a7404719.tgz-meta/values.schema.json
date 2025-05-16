@@ -1,0 +1,17 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "properties": {
+        "enabled": {
+            "type": "boolean",
+            "description": "If true, all resources defined by this chart will be enabled."
+        },
+        "resources": {
+            "type": "array",
+            "description": "A list of CustomResourceDefinition names to be protected from deletion.",
+            "items": {
+                "type": "string"
+            }
+        }
+    }
+}
