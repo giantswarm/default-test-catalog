@@ -2,6 +2,32 @@ apiVersion: v1
 entries:
   alloy:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/alloy-0.10.0.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/alloy-0.10.0.tgz-meta/README.md
+      application.giantswarm.io/team: atlas
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/alloy-0.10.0.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: v1.8.3
+    created: "2025-06-02T06:59:04.593784422Z"
+    dependencies:
+    - condition: alloy.enabled
+      name: alloy
+      repository: https://grafana.github.io/helm-charts
+      version: 1.0.3
+    description: Grafana Alloy OpenTelemetry Collector
+    digest: 487fd402d3bb73c850afd5454d3811f53b0b78f5eafab0329742753b803e7810
+    home: https://github.com/giantswarm/alloy-app
+    icon: https://s.giantswarm.io/app-icons/grafana-alloy/1/light.png
+    maintainers:
+    - email: team-atlas@giantswarm.io
+      name: giantswarm/team-atlas
+    name: alloy
+    sources:
+    - https://github.com/grafana/alloy/tree/main/operations/helm/charts/alloy
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/alloy-0.10.0.tgz
+    version: 0.10.0
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/alloy-0.9.0-e689abefefc547acb3a445ac2ef2a5e14326e854.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/alloy-0.9.0-e689abefefc547acb3a445ac2ef2a5e14326e854.tgz-meta/README.md
       application.giantswarm.io/team: atlas
@@ -28690,4 +28716,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.1-020cb1cabbed11646b6c9e676705590fd7ad5e62.tgz
     version: 3.4.1-020cb1cabbed11646b6c9e676705590fd7ad5e62
-generated: "2025-06-02T06:57:59.522079895Z"
+generated: "2025-06-02T06:59:04.590224707Z"
