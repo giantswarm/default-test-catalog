@@ -28,6 +28,32 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/alloy-0.11.0.tgz
     version: 0.11.0
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/alloy-0.11.0-cee038b273d3139ed91fe4e37c3206011e1302ba.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/alloy-0.11.0-cee038b273d3139ed91fe4e37c3206011e1302ba.tgz-meta/README.md
+      application.giantswarm.io/team: atlas
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/alloy-0.11.0-cee038b273d3139ed91fe4e37c3206011e1302ba.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: v1.9.0
+    created: "2025-06-03T07:13:17.621671226Z"
+    dependencies:
+    - condition: alloy.enabled
+      name: alloy
+      repository: https://grafana.github.io/helm-charts
+      version: 1.1.0
+    description: Grafana Alloy OpenTelemetry Collector
+    digest: 524f0df1ce37aae77601b7c1e6ee76084af18ad2e304da74cf123e1f9918aacd
+    home: https://github.com/giantswarm/alloy-app
+    icon: https://s.giantswarm.io/app-icons/grafana-alloy/1/light.png
+    maintainers:
+    - email: team-atlas@giantswarm.io
+      name: giantswarm/team-atlas
+    name: alloy
+    sources:
+    - https://github.com/grafana/alloy/tree/main/operations/helm/charts/alloy
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/alloy-0.11.0-cee038b273d3139ed91fe4e37c3206011e1302ba.tgz
+    version: 0.11.0-cee038b273d3139ed91fe4e37c3206011e1302ba
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/alloy-0.11.0-5705dfbde09b446da27c26a722a6560bf4dba614.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/alloy-0.11.0-5705dfbde09b446da27c26a722a6560bf4dba614.tgz-meta/README.md
       application.giantswarm.io/team: atlas
@@ -29510,4 +29536,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.1-020cb1cabbed11646b6c9e676705590fd7ad5e62.tgz
     version: 3.4.1-020cb1cabbed11646b6c9e676705590fd7ad5e62
-generated: "2025-06-03T07:08:00.598414502Z"
+generated: "2025-06-03T07:13:17.618785912Z"
