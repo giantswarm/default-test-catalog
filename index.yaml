@@ -626,6 +626,32 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/alloy-0.11.0-4b10c76d11a6157e8bf3da071ac8212ae802b6a4.tgz
     version: 0.11.0-4b10c76d11a6157e8bf3da071ac8212ae802b6a4
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/alloy-0.11.0-3a2fb5af3cbefe22075634d1a5433f2eccb93211.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/alloy-0.11.0-3a2fb5af3cbefe22075634d1a5433f2eccb93211.tgz-meta/README.md
+      application.giantswarm.io/team: atlas
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/alloy-0.11.0-3a2fb5af3cbefe22075634d1a5433f2eccb93211.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: v1.9.1
+    created: "2025-07-10T18:52:04.777638755Z"
+    dependencies:
+    - condition: alloy.enabled
+      name: alloy
+      repository: https://grafana.github.io/helm-charts
+      version: 1.1.1
+    description: Grafana Alloy OpenTelemetry Collector
+    digest: 425e33fa31b24d67f517d1e29ab6917fd52c48a5a71cfdadb880d7fa382e402b
+    home: https://github.com/giantswarm/alloy-app
+    icon: https://s.giantswarm.io/app-icons/grafana-alloy/1/light.png
+    maintainers:
+    - email: team-atlas@giantswarm.io
+      name: giantswarm/team-atlas
+    name: alloy
+    sources:
+    - https://github.com/grafana/alloy/tree/main/operations/helm/charts/alloy
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/alloy-0.11.0-3a2fb5af3cbefe22075634d1a5433f2eccb93211.tgz
+    version: 0.11.0-3a2fb5af3cbefe22075634d1a5433f2eccb93211
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/alloy-0.11.0-3a268cfc1ab0b40722488057481ccca878203896.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/alloy-0.11.0-3a268cfc1ab0b40722488057481ccca878203896.tgz-meta/README.md
       application.giantswarm.io/team: atlas
@@ -14577,4 +14603,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.2-069842a168a2e9b22a0401807178812e100a636b.tgz
     version: 3.4.2-069842a168a2e9b22a0401807178812e100a636b
-generated: "2025-07-10T18:09:09.95109211Z"
+generated: "2025-07-10T18:52:04.772889705Z"
