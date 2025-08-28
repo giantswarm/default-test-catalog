@@ -6276,6 +6276,40 @@ entries:
     version: 1.1.2-0b13047652d43b4b984f1458fea7899b00e7b0d6
   cilium:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cilium-1.2.3-d0e3e3338f35fe1b9422cdc549ffc78d85d5fab0.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cilium-1.2.3-d0e3e3338f35fe1b9422cdc549ffc78d85d5fab0.tgz-meta/README.md
+      application.giantswarm.io/team: cabbage
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/cilium-1.2.3-d0e3e3338f35fe1b9422cdc549ffc78d85d5fab0.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: 1.17.7
+    created: "2025-08-28T00:00:55.627164645Z"
+    dependencies:
+    - alias: cniCustomConf
+      condition: cni.customConf
+      name: cilium-giantswarm-cni-customconf
+      repository: ""
+      version: 0.1.0
+    description: eBPF-based Networking, Security, and Observability
+    digest: 85a3ab306c73e47a9cd1e228f30d5f722efc3cae9271186a6708f0c5718fd252
+    home: https://cilium.io/
+    icon: https://cdn.jsdelivr.net/gh/cilium/cilium@main/Documentation/images/logo-solo.svg
+    keywords:
+    - BPF
+    - eBPF
+    - Kubernetes
+    - Networking
+    - Security
+    - Observability
+    - Troubleshooting
+    kubeVersion: '>= 1.21.0-0'
+    name: cilium
+    sources:
+    - https://github.com/giantswarm/cilium-app
+    - https://github.com/cilium/cilium
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/cilium-1.2.3-d0e3e3338f35fe1b9422cdc549ffc78d85d5fab0.tgz
+    version: 1.2.3-d0e3e3338f35fe1b9422cdc549ffc78d85d5fab0
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cilium-1.2.3-ccdf734e512488ad04a2d9f160525f6f6ea68df6.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cilium-1.2.3-ccdf734e512488ad04a2d9f160525f6f6ea68df6.tgz-meta/README.md
       application.giantswarm.io/team: cabbage
@@ -22822,4 +22856,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.2-0033eeb9d716aab64f8a277e94c367a5ad52c8c3.tgz
     version: 3.4.2-0033eeb9d716aab64f8a277e94c367a5ad52c8c3
-generated: "2025-08-27T23:59:07.42473157Z"
+generated: "2025-08-28T00:00:55.61198233Z"
