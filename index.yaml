@@ -3809,6 +3809,40 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/cert-manager-app-3.9.1-37d5ad2c046a9af38243ffb8ff7a45987cdee6d7.tgz
     version: 3.9.1-37d5ad2c046a9af38243ffb8ff7a45987cdee6d7
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cert-manager-app-3.9.1-0ee8b3dc9e12ef9bd3eb08dc5615ccc4e4602ddc.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cert-manager-app-3.9.1-0ee8b3dc9e12ef9bd3eb08dc5615ccc4e4602ddc.tgz-meta/README.md
+      application.giantswarm.io/team: shield
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/cert-manager-app-3.9.1-0ee8b3dc9e12ef9bd3eb08dc5615ccc4e4602ddc.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: v1.16.2
+    created: "2025-09-02T12:51:30.564894205Z"
+    dependencies:
+    - alias: giantSwarmClusterIssuer
+      name: cert-manager-giantswarm-clusterissuer
+      repository: ""
+      version: 2.0.0
+    - condition: giantswarmNetworkPolicy.enabled
+      name: cert-manager-giantswarm-netpol
+      repository: ""
+      version: 0.1.0
+    - condition: ciliumNetworkPolicy.enabled
+      name: cert-manager-giantswarm-ciliumnetworkpolicies
+      repository: ""
+      version: 0.1.0
+    description: Simplifies the process of obtaining, renewing and using certificates.
+    digest: 0c2426358515442aeb24396ddd82b04273fb123f59f3b44eb93419e050a20b71
+    home: https://github.com/giantswarm/cert-manager-app
+    icon: https://s.giantswarm.io/app-icons/cert-manager/1/light.svg
+    kubeVersion: '>=1.22.0-0'
+    maintainers:
+    - name: Shield
+    name: cert-manager-app
+    sources:
+    - https://github.com/cert-manager/cert-manager
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/cert-manager-app-3.9.1-0ee8b3dc9e12ef9bd3eb08dc5615ccc4e4602ddc.tgz
+    version: 3.9.1-0ee8b3dc9e12ef9bd3eb08dc5615ccc4e4602ddc
   chart-operator:
   - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/chart-operator-4.0.2-fcd073ceff3ecb27aced16d7a8e7683a73c8ee71.tgz-meta/main.yaml
@@ -16701,4 +16735,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.2-0108dad2a8e9d0cacd419801d97f97d33219cfeb.tgz
     version: 3.4.2-0108dad2a8e9d0cacd419801d97f97d33219cfeb
-generated: "2025-09-02T12:30:41.619495872Z"
+generated: "2025-09-02T12:51:30.552272655Z"
