@@ -28,6 +28,32 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/alloy-0.13.0.tgz
     version: 0.13.0
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/alloy-0.13.0-f0ebe3982bd7b4eef0c6707b5975ce4a3cbe0848.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/alloy-0.13.0-f0ebe3982bd7b4eef0c6707b5975ce4a3cbe0848.tgz-meta/README.md
+      application.giantswarm.io/team: atlas
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/alloy-0.13.0-f0ebe3982bd7b4eef0c6707b5975ce4a3cbe0848.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: v1.10.0
+    created: "2025-09-05T14:47:28.961191691Z"
+    dependencies:
+    - condition: alloy.enabled
+      name: alloy
+      repository: https://grafana.github.io/helm-charts
+      version: 1.2.1
+    description: Grafana Alloy OpenTelemetry Collector
+    digest: e28ea144689bb33331e9357164c44c7f77c91e2bb49e3f329bc36346e0295c48
+    home: https://github.com/giantswarm/alloy-app
+    icon: https://s.giantswarm.io/app-icons/grafana-alloy/1/light.png
+    maintainers:
+    - email: team-atlas@giantswarm.io
+      name: giantswarm/team-atlas
+    name: alloy
+    sources:
+    - https://github.com/grafana/alloy/tree/main/operations/helm/charts/alloy
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/alloy-0.13.0-f0ebe3982bd7b4eef0c6707b5975ce4a3cbe0848.tgz
+    version: 0.13.0-f0ebe3982bd7b4eef0c6707b5975ce4a3cbe0848
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/alloy-0.13.0-762869233a9dd55c7d98af7b9f010673595af08b.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/alloy-0.13.0-762869233a9dd55c7d98af7b9f010673595af08b.tgz-meta/README.md
       application.giantswarm.io/team: atlas
@@ -20623,4 +20649,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.2-0108dad2a8e9d0cacd419801d97f97d33219cfeb.tgz
     version: 3.4.2-0108dad2a8e9d0cacd419801d97f97d33219cfeb
-generated: "2025-09-05T14:47:24.406228698Z"
+generated: "2025-09-05T14:47:28.958438015Z"
