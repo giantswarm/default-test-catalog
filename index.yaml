@@ -28,6 +28,32 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/alloy-0.15.0.tgz
     version: 0.15.0
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/alloy-0.15.0-0b231204dc05ae33aea032cc82dcfda3c7bd4601.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/alloy-0.15.0-0b231204dc05ae33aea032cc82dcfda3c7bd4601.tgz-meta/README.md
+      application.giantswarm.io/team: atlas
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/alloy-0.15.0-0b231204dc05ae33aea032cc82dcfda3c7bd4601.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: v1.11.0
+    created: "2025-10-10T18:57:05.726115425Z"
+    dependencies:
+    - condition: alloy.enabled
+      name: alloy
+      repository: https://grafana.github.io/helm-charts
+      version: 1.3.0
+    description: Grafana Alloy OpenTelemetry Collector
+    digest: f79f99c241f1489df24a664e78d29a5e87c3aa02e3b782267936f91588f7dbd2
+    home: https://github.com/giantswarm/alloy-app
+    icon: https://s.giantswarm.io/app-icons/grafana-alloy/1/light.png
+    maintainers:
+    - email: team-atlas@giantswarm.io
+      name: giantswarm/team-atlas
+    name: alloy
+    sources:
+    - https://github.com/grafana/alloy/tree/main/operations/helm/charts/alloy
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/alloy-0.15.0-0b231204dc05ae33aea032cc82dcfda3c7bd4601.tgz
+    version: 0.15.0-0b231204dc05ae33aea032cc82dcfda3c7bd4601
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/alloy-0.14.0.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/alloy-0.14.0.tgz-meta/README.md
       application.giantswarm.io/team: atlas
@@ -15391,4 +15417,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.2-0108dad2a8e9d0cacd419801d97f97d33219cfeb.tgz
     version: 3.4.2-0108dad2a8e9d0cacd419801d97f97d33219cfeb
-generated: "2025-10-10T18:54:18.805770813Z"
+generated: "2025-10-10T18:57:05.723109643Z"
