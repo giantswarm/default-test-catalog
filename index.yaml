@@ -15471,6 +15471,31 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/node-exporter-app-1.20.5-071f5db3c0edead48530d92d7e1ee92511e691e8.tgz
     version: 1.20.5-071f5db3c0edead48530d92d7e1ee92511e691e8
+  node-problem-detector:
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/node-problem-detector-0.5.1-33cbd5e8a2fc99689a8580a5d1fd43c3c442ddd7.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/node-problem-detector-0.5.1-33cbd5e8a2fc99689a8580a5d1fd43c3c442ddd7.tgz-meta/README.md
+      application.giantswarm.io/team: phoenix
+    apiVersion: v2
+    appVersion: v0.8.20
+    created: "2025-10-23T08:55:43.710647032Z"
+    dependencies:
+    - name: node-problem-detector
+      repository: oci://ghcr.io/deliveryhero/helm-charts
+      version: 2.3.21
+    description: A helm chart for running node-problem-detector on a cluster.
+    digest: 1119984f6ee77c09ad36d994e835ce9d70ea32280f4b8d649cbc04b812d5a956
+    home: https://github.com/giantswarm/node-problem-detector-app
+    icon: https://s.giantswarm.io/app-icons/giantswarm/1/dark.svg
+    name: node-problem-detector
+    sources:
+    - https://github.com/giantswarm/node-problem-detector-app
+    - https://github.com/kubernetes/node-problem-detector
+    - https://kubernetes.io/docs/concepts/architecture/nodes/#condition
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/node-problem-detector-0.5.1-33cbd5e8a2fc99689a8580a5d1fd43c3c442ddd7.tgz
+    version: 0.5.1-33cbd5e8a2fc99689a8580a5d1fd43c3c442ddd7
   observability-bundle:
   - annotations:
       application.giantswarm.io/app-type: bundle
@@ -17972,4 +17997,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.2-0108dad2a8e9d0cacd419801d97f97d33219cfeb.tgz
     version: 3.4.2-0108dad2a8e9d0cacd419801d97f97d33219cfeb
-generated: "2025-10-23T07:49:20.35706369Z"
+generated: "2025-10-23T08:55:43.708244565Z"
