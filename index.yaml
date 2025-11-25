@@ -8976,6 +8976,30 @@ entries:
     version: 1.10.7-0df054e84c9d1fc1d24182504d76e3dae4918871
   external-dns-app:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/external-dns-app-3.2.0-e4c851bd7ea18349a51f5606af9019cf6a51c9f9.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/external-dns-app-3.2.0-e4c851bd7ea18349a51f5606af9019cf6a51c9f9.tgz-meta/README.md
+      application.giantswarm.io/team: team-cabbage
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/external-dns-app-3.2.0-e4c851bd7ea18349a51f5606af9019cf6a51c9f9.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: v0.11.0
+    created: "2025-11-25T10:15:59.854028891Z"
+    dependencies:
+    - condition: crd.install
+      name: crd
+      repository: ""
+      version: 0.1.0
+    description: Configure external DNS servers for Kubernetes Ingresses and Services
+    digest: f8626b0dcd21e3402b814d8a06d0830e1ff8f0b8469cfc1b5af8911e0a86bded
+    home: https://github.com/giantswarm/external-dns-app
+    icon: https://s.giantswarm.io/app-icons/external-dns/1/dark.png
+    kubeVersion: '>=1.19.0-0'
+    name: external-dns-app
+    sources:
+    - https://github.com/kubernetes-sigs/external-dns
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/external-dns-app-3.2.0-e4c851bd7ea18349a51f5606af9019cf6a51c9f9.tgz
+    version: 3.2.0-e4c851bd7ea18349a51f5606af9019cf6a51c9f9
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/external-dns-app-3.2.0-d713a0f1850666ad03728ac83b183f3b2fa2dd76.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/external-dns-app-3.2.0-d713a0f1850666ad03728ac83b183f3b2fa2dd76.tgz-meta/README.md
       application.giantswarm.io/team: team-cabbage
@@ -17887,4 +17911,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.2-0c7336a41ef1c9e88bac855297bb9341d4214047.tgz
     version: 3.4.2-0c7336a41ef1c9e88bac855297bb9341d4214047
-generated: "2025-11-22T01:36:11.472513479Z"
+generated: "2025-11-25T10:15:59.852321196Z"
