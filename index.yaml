@@ -537,6 +537,24 @@ entries:
     version: 1.3.0-11910ee0aded125d0df3b7e0ebd55323e6a796db
   aws-pod-identity-webhook:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-2.1.0-7617d84fc978db22b041b2386521e44b9458004a.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-2.1.0-7617d84fc978db22b041b2386521e44b9458004a.tgz-meta/README.md
+      application.giantswarm.io/team: phoenix
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-2.1.0-7617d84fc978db22b041b2386521e44b9458004a.tgz-meta/values.schema.json
+      config.giantswarm.io/version: 1.x.x
+    apiVersion: v2
+    created: "2025-12-01T11:15:15.791746911Z"
+    description: This webhook is for mutating pods that will require AWS IAM access.
+    digest: 7192ab50a004550d665d2dc03b27b8790fa6b6f0e9957150a58ca2c58d7a7aaf
+    home: https://github.com/giantswarm/aws-pod-identity-webhook
+    icon: https://s.giantswarm.io/app-icons/aws/2/dark.svg
+    name: aws-pod-identity-webhook
+    sources:
+    - https://github.com/aws/amazon-eks-pod-identity-webhook
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-2.1.0-7617d84fc978db22b041b2386521e44b9458004a.tgz
+    version: 2.1.0-7617d84fc978db22b041b2386521e44b9458004a
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-2.0.0-ddd1b560d76d02b9c0d7cda3503d635dab07dcdc.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-2.0.0-ddd1b560d76d02b9c0d7cda3503d635dab07dcdc.tgz-meta/README.md
       application.giantswarm.io/team: phoenix
@@ -8248,4 +8266,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.2-1b7ac2487cb7df93518f8c1873df2c9e1cd08420.tgz
     version: 3.4.2-1b7ac2487cb7df93518f8c1873df2c9e1cd08420
-generated: "2025-12-01T11:13:21.065541429Z"
+generated: "2025-12-01T11:15:15.790308669Z"
