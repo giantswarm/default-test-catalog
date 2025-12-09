@@ -10081,6 +10081,32 @@ entries:
     version: 18.0.0-09b875f224e2573f0f38603c0d72d4d7059f2ebd
   proxmox-cloud-controller-manager:
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/proxmox-cloud-controller-manager-0.2.1-684c2e431f283a15821e596f47cf76a24468b420.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/cloud-provider-proxmox-app/refs/tags/v0.2.1-684c2e431f283a15821e596f47cf76a24468b420/README.md
+      io.giantswarm.application.team: rocket
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/cloud-provider-proxmox-app/refs/tags/v0.2.1-684c2e431f283a15821e596f47cf76a24468b420/helm/cloud-provider-proxmox/values.schema.json
+    apiVersion: v2
+    appVersion: v0.8.0
+    created: "2025-12-09T11:02:28.828788356Z"
+    description: Cloud Controller Manager plugin for Proxmox
+    digest: 17c2551d93cc8da65be9439219f41e57cc67500c91c849075b7d98a99a723836
+    home: https://github.com/giantswarm/cloud-provider-proxmox-app
+    icon: https://raw.githubusercontent.com/sergelogvinov/proxmox-cloud-controller-manager/main/charts/proxmox-cloud-controller-manager/icon.png
+    keywords:
+    - ccm
+    - proxmox
+    - kubernetes
+    maintainers:
+    - email: team-rocket@giantswarm.io
+      name: Team Rocket
+    name: proxmox-cloud-controller-manager
+    sources:
+    - https://github.com/sergelogvinov/proxmox-cloud-controller-manager
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/proxmox-cloud-controller-manager-0.2.1-684c2e431f283a15821e596f47cf76a24468b420.tgz
+    version: 0.2.1-684c2e431f283a15821e596f47cf76a24468b420
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/proxmox-cloud-controller-manager-0.2.1-671d615853c6d5555ba40264620369dabb47d99a.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/proxmox-cloud-controller-manager-0.2.1-671d615853c6d5555ba40264620369dabb47d99a.tgz-meta/README.md
       application.giantswarm.io/team: rocket
@@ -12011,4 +12037,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.2-03183dd74788b907f76102ce4f8d9f8a9f7c5056.tgz
     version: 3.4.2-03183dd74788b907f76102ce4f8d9f8a9f7c5056
-generated: "2025-12-09T11:02:15.150935928Z"
+generated: "2025-12-09T11:02:28.827271513Z"
