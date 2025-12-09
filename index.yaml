@@ -6385,6 +6385,36 @@ entries:
     version: 2.9.1-0cd20f1dfb7417f6457410d8d01bf5fbd0a32268
   karpenter:
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/karpenter-1.4.0-feae49400c07a3cf5f75666708cfc2602b615038.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/karpenter-app/refs/tags/v1.4.0-feae49400c07a3cf5f75666708cfc2602b615038/README.md
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/karpenter-app/refs/tags/v1.4.0-feae49400c07a3cf5f75666708cfc2602b615038/helm/karpenter/values.schema.json
+    apiVersion: v2
+    appVersion: 1.5.0
+    created: "2025-12-09T12:36:32.82724574Z"
+    description: A Helm chart for Karpenter, an open-source node provisioning project
+      built for Kubernetes.
+    digest: 4356bfd38a2c044edff6f04a689ab33974584173b8b96e124464048462c3d2f2
+    home: https://github.com/giantswarm/karpenter-app
+    icon: https://s.giantswarm.io/app-icons/karpenter/1/light.svg
+    keywords:
+    - cluster
+    - node
+    - scheduler
+    - autoscaling
+    - lifecycle
+    maintainers:
+    - email: team-phoenix@giantswarm.io
+      name: giantswarm/team-phoenix
+    name: karpenter
+    sources:
+    - https://github.com/aws/karpenter/
+    - https://karpenter.sh/
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/karpenter-1.4.0-feae49400c07a3cf5f75666708cfc2602b615038.tgz
+    version: 1.4.0-feae49400c07a3cf5f75666708cfc2602b615038
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/karpenter-1.4.0-facf9c77f07c0b77c48d343856b6405cecee16c3.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/karpenter-1.4.0-facf9c77f07c0b77c48d343856b6405cecee16c3.tgz-meta/README.md
       application.giantswarm.io/team: phoenix
@@ -12158,4 +12188,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.2-03183dd74788b907f76102ce4f8d9f8a9f7c5056.tgz
     version: 3.4.2-03183dd74788b907f76102ce4f8d9f8a9f7c5056
-generated: "2025-12-09T11:32:26.868292715Z"
+generated: "2025-12-09T12:36:32.824422726Z"
