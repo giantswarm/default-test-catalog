@@ -10749,6 +10749,32 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-18.0.0-09b875f224e2573f0f38603c0d72d4d7059f2ebd.tgz
     version: 18.0.0-09b875f224e2573f0f38603c0d72d4d7059f2ebd
+  - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-18.0.0-097a77e5a054250d1f9c339c0f2192152d79ed81.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/prometheus-operator-crd/refs/tags/v18.0.0-097a77e5a054250d1f9c339c0f2192152d79ed81/README.md
+      io.giantswarm.application.restrictions.cluster-singleton: "true"
+      io.giantswarm.application.team: atlas
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/prometheus-operator-crd/refs/tags/v18.0.0-097a77e5a054250d1f9c339c0f2192152d79ed81/helm/prometheus-operator-crd/values.schema.json
+    apiVersion: v2
+    appVersion: v0.85.0
+    created: "2025-12-10T02:52:11.694739759Z"
+    dependencies:
+    - name: prometheus-operator-crds
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 23.0.0
+    description: kube-prometheus-stack CustomResourceDefinitions.
+    digest: 734afd33ed08f310534bd3c73a74f76c18db970082b64c1d49452ab4fec4391e
+    home: https://github.com/giantswarm/prometheus-operator-crd
+    icon: https://s.giantswarm.io/app-icons/prometheus-operator/2/light.svg
+    kubeVersion: '>=1.19.0-0'
+    name: prometheus-operator-crd
+    sources:
+    - https://github.com/prometheus-community/helm-charts
+    - https://github.com/prometheus-operator/kube-prometheus
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-18.0.0-097a77e5a054250d1f9c339c0f2192152d79ed81.tgz
+    version: 18.0.0-097a77e5a054250d1f9c339c0f2192152d79ed81
   proxmox-cloud-controller-manager:
   - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/proxmox-cloud-controller-manager-0.2.1-684c2e431f283a15821e596f47cf76a24468b420.tgz-meta/main.yaml
@@ -12789,4 +12815,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.2-03183dd74788b907f76102ce4f8d9f8a9f7c5056.tgz
     version: 3.4.2-03183dd74788b907f76102ce4f8d9f8a9f7c5056
-generated: "2025-12-09T19:48:24.900191119Z"
+generated: "2025-12-10T02:52:11.671354336Z"
