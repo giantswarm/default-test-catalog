@@ -4411,6 +4411,34 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/cloud-provider-cloud-director-0.5.0-6819794246bb602ce854d8c5a39796c25cc47aec.tgz
     version: 0.5.0-6819794246bb602ce854d8c5a39796c25cc47aec
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/cloud-provider-cloud-director-0.5.0-5fcb14ea31ef0fab64ce264cd2946aef559ad17d.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/cloud-provider-cloud-director-app/refs/tags/v0.5.0-5fcb14ea31ef0fab64ce264cd2946aef559ad17d/README.md
+      io.giantswarm.application.restrictions.compatible-providers: cloud-director
+      io.giantswarm.application.team: rocket
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/cloud-provider-cloud-director-app/refs/tags/v0.5.0-5fcb14ea31ef0fab64ce264cd2946aef559ad17d/helm/cloud-provider-cloud-director/values.schema.json
+    apiVersion: v2
+    appVersion: 0.0.1
+    created: "2025-12-11T13:14:31.200485769Z"
+    dependencies:
+    - name: cloud-director-named-disk-csi-driver
+      repository: ""
+      version: 0.0.1
+    - name: cloud-provider-for-cloud-director
+      repository: ""
+      version: 0.0.1
+    description: A Helm chart for cloud-provider-cloud-director with CPI and CSI
+    digest: 5e231fa4d9ca43a0f6088f203868f35f6785ba013b70605ec6131bc9633c6c86
+    home: https://github.com/giantswarm/cloud-provider-cloud-director-app
+    maintainers:
+    - email: team-rocket@giantswarm.io
+      name: Team Rocket
+    name: cloud-provider-cloud-director
+    sources:
+    - https://github.com/giantswarm/cloud-provider-cloud-director-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/cloud-provider-cloud-director-0.5.0-5fcb14ea31ef0fab64ce264cd2946aef559ad17d.tgz
+    version: 0.5.0-5fcb14ea31ef0fab64ce264cd2946aef559ad17d
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cloud-provider-cloud-director-0.5.0-233913eed54831ef51b793dcd3e6ad5c24c46963.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cloud-provider-cloud-director-0.5.0-233913eed54831ef51b793dcd3e6ad5c24c46963.tgz-meta/README.md
       application.giantswarm.io/team: rocket
@@ -14401,4 +14429,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.2-03183dd74788b907f76102ce4f8d9f8a9f7c5056.tgz
     version: 3.4.2-03183dd74788b907f76102ce4f8d9f8a9f7c5056
-generated: "2025-12-11T13:14:01.990641752Z"
+generated: "2025-12-11T13:14:31.198788081Z"
