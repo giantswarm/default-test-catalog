@@ -11031,6 +11031,27 @@ entries:
     version: 3.2.0-b002f2685dee80d4a55ad98f02906c5e7732ccd2
   observability-bundle:
   - annotations:
+      config.giantswarm.io/version: 1.x.x
+      io.giantswarm.application.app-type: bundle
+      io.giantswarm.application.in-cluster-app: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/observability-bundle-2.3.2-fefe13c01aa96564687f1e7e8d69c58906fbfeb7.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/observability-bundle/refs/tags/v2.3.2-fefe13c01aa96564687f1e7e8d69c58906fbfeb7/README.md
+      io.giantswarm.application.team: atlas
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/observability-bundle/refs/tags/v2.3.2-fefe13c01aa96564687f1e7e8d69c58906fbfeb7/helm/observability-bundle/values.schema.json
+    apiVersion: v2
+    created: "2025-12-11T12:35:20.765717906Z"
+    description: A Helm chart for Giant Swarm's collection of observability tools.
+    digest: f1893655f4b5face713eee73f4c845271a5dbc7a8de978bc71eddcb103bfab03
+    home: https://github.com/giantswarm/observability-bundle
+    icon: https://s.giantswarm.io/app-icons/giantswarm/1/light.svg
+    kubeVersion: '>=1.19.0-0'
+    name: observability-bundle
+    sources:
+    - https://github.com/giantswarm/observability-bundle
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/observability-bundle-2.3.2-fefe13c01aa96564687f1e7e8d69c58906fbfeb7.tgz
+    version: 2.3.2-fefe13c01aa96564687f1e7e8d69c58906fbfeb7
+  - annotations:
       application.giantswarm.io/app-type: bundle
       application.giantswarm.io/in-cluster-app: "true"
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/observability-bundle-2.3.2-b1046d41a2bee8555c5ccee3c33612a91becc68d.tgz-meta/main.yaml
@@ -13937,4 +13958,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.2-03183dd74788b907f76102ce4f8d9f8a9f7c5056.tgz
     version: 3.4.2-03183dd74788b907f76102ce4f8d9f8a9f7c5056
-generated: "2025-12-11T12:32:57.883861001Z"
+generated: "2025-12-11T12:35:20.764300228Z"
