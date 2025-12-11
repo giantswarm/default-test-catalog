@@ -13644,6 +13644,27 @@ entries:
     version: 1.0.1-fb63bb2f6f806ad1c865af1b9b08958e1ba6118a
   vertical-pod-autoscaler-app:
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-app-6.1.1-fdbcb97ee87c322405824ad89c3203f9988d548a.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/vertical-pod-autoscaler-app/refs/tags/v6.1.1-fdbcb97ee87c322405824ad89c3203f9988d548a/README.md
+      io.giantswarm.application.team: turtles
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/vertical-pod-autoscaler-app/refs/tags/v6.1.1-fdbcb97ee87c322405824ad89c3203f9988d548a/helm/vertical-pod-autoscaler-app/values.schema.json
+      ui.giantswarm.io/logo: https://s.giantswarm.io/app-icons/k8s-initiator/1/dark.svg
+    apiVersion: v2
+    appVersion: 1.5.1
+    created: "2025-12-11T12:50:03.748666621Z"
+    dependencies:
+    - name: vertical-pod-autoscaler
+      repository: https://cowboysysop.github.io/charts
+      version: 11.1.1
+    description: A Helm chart for the Vertical Pod Autoscaler.
+    digest: 81c1341b551e8e17f9c7ae0804784fc286880236eb82ca57636e123efb4dda82
+    home: https://github.com/giantswarm/vertical-pod-autoscaler-app
+    icon: https://s.giantswarm.io/app-icons/k8s-initiator/1/dark.svg
+    name: vertical-pod-autoscaler-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-app-6.1.1-fdbcb97ee87c322405824ad89c3203f9988d548a.tgz
+    version: 6.1.1-fdbcb97ee87c322405824ad89c3203f9988d548a
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-app-6.1.1-ed0fe97d6c2d6cfc3a9d0ddec4eb2d57370d2ce5.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-app-6.1.1-ed0fe97d6c2d6cfc3a9d0ddec4eb2d57370d2ce5.tgz-meta/README.md
       application.giantswarm.io/team: turtles
@@ -14204,4 +14225,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.2-03183dd74788b907f76102ce4f8d9f8a9f7c5056.tgz
     version: 3.4.2-03183dd74788b907f76102ce4f8d9f8a9f7c5056
-generated: "2025-12-11T12:48:46.907576148Z"
+generated: "2025-12-11T12:50:03.740553749Z"
