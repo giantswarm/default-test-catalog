@@ -11433,6 +11433,32 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-18.1.0-1754bfca4b017667f0c2ca217796f45adb09ea8e.tgz
     version: 18.1.0-1754bfca4b017667f0c2ca217796f45adb09ea8e
+  - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-18.1.0-0ee6b60506e03a6ba45c3570ef46b282e15ab80f.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/kube-prometheus-stack-app/refs/tags/v18.1.0-0ee6b60506e03a6ba45c3570ef46b282e15ab80f/README.md
+      io.giantswarm.application.team: atlas
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/kube-prometheus-stack-app/refs/tags/v18.1.0-0ee6b60506e03a6ba45c3570ef46b282e15ab80f/helm/kube-prometheus-stack/values.schema.json
+    apiVersion: v2
+    appVersion: v0.85.0
+    created: "2025-12-12T22:15:01.632599691Z"
+    dependencies:
+    - name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 80.3.1
+    description: Giant Swarm's Prometheus Operator Deployment
+    digest: 6d1c1bcecd9e6d3e0c494188a7f32e21388a8f667d0482b6c74dd0e1073f0155
+    home: https://github.com/giantswarm/kube-prometheus-stack-app
+    icon: https://s.giantswarm.io/app-icons/prometheus-operator/2/light.svg
+    kubeVersion: '>=1.25.0-0'
+    maintainers:
+    - email: team-atlas@giantswarm.io
+      name: giantswarm/team-atlas
+    name: kube-prometheus-stack
+    sources:
+    - https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-18.1.0-0ee6b60506e03a6ba45c3570ef46b282e15ab80f.tgz
+    version: 18.1.0-0ee6b60506e03a6ba45c3570ef46b282e15ab80f
   kube-vip:
   - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/kube-vip-0.2.0-992aac104cdc3cbb3a830000ac14d7610343a4a1.tgz-meta/main.yaml
@@ -15832,4 +15858,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.2-03183dd74788b907f76102ce4f8d9f8a9f7c5056.tgz
     version: 3.4.2-03183dd74788b907f76102ce4f8d9f8a9f7c5056
-generated: "2025-12-12T18:56:17.434383742Z"
+generated: "2025-12-12T22:15:01.570209435Z"
