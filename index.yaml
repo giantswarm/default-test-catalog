@@ -6339,6 +6339,28 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/giantswarm-cluster-suite-0.1.1-40550bc999757efb87f993d3e5589524a1ef6d98.tgz
     version: 0.1.1-40550bc999757efb87f993d3e5589524a1ef6d98
+  irsa-servicemonitors:
+  - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/irsa-servicemonitors-0.1.0-7b535bae4667b7327ba32010b8ec9cc3f8742479.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/irsa-servicemonitors-app/refs/tags/v0.1.0-7b535bae4667b7327ba32010b8ec9cc3f8742479/README.md
+      io.giantswarm.application.restrictions.cluster-singleton: "true"
+      io.giantswarm.application.restrictions.fixed-namespace: kube-system
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/irsa-servicemonitors-app/refs/tags/v0.1.0-7b535bae4667b7327ba32010b8ec9cc3f8742479/helm/irsa-servicemonitors/values.schema.json
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-01-05T14:39:34.016659499Z"
+    description: IRSA ServiceMonitors
+    digest: 5a46c32cab9465e2c6be1505cfcee700a3f0da5337b482aaeffab8f4909344fd
+    home: https://github.com/giantswarm/irsa-servicemonitors-app
+    icon: https://s.giantswarm.io/app-icons/giantswarm/1/dark.svg
+    keywords:
+    - monitoring
+    name: irsa-servicemonitors
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/irsa-servicemonitors-0.1.0-7b535bae4667b7327ba32010b8ec9cc3f8742479.tgz
+    version: 0.1.0-7b535bae4667b7327ba32010b8ec9cc3f8742479
   k8s-audit-metrics:
   - annotations:
       application.giantswarm.io/team: turtles
@@ -12066,4 +12088,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.2-03183dd74788b907f76102ce4f8d9f8a9f7c5056.tgz
     version: 3.4.2-03183dd74788b907f76102ce4f8d9f8a9f7c5056
-generated: "2026-01-05T14:19:55.178319504Z"
+generated: "2026-01-05T14:39:34.016198888Z"
