@@ -10873,6 +10873,37 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/priority-classes-0.3.0-28337053ed7becc7bb6153ad43c38dd33ea43c8f.tgz
     version: 0.3.0-28337053ed7becc7bb6153ad43c38dd33ea43c8f
+  prometheus-blackbox-exporter:
+  - annotations:
+      application.giantswarm.io/team: phoenix
+    apiVersion: v2
+    appVersion: 0.23.0
+    created: "2026-01-05T15:40:28.384528699Z"
+    description: Prometheus Blackbox Exporter
+    digest: e5cb438226e40716e248ff38d2af37d8b6e3252bd60ac0353dd806e5c0d3ec15
+    home: https://github.com/giantswarm/prometheus-blackbox-exporter-app
+    icon: https://s.giantswarm.io/app-icons/prometheus/1/light.svg
+    keywords:
+    - prometheus
+    - blackbox
+    - monitoring
+    maintainers:
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    - email: gianrubio@gmail.com
+      name: gianrubio
+    - email: me@sota.sh
+      name: rsotnychenko
+    - email: monotek23@gmail.com
+      name: monotek
+    name: prometheus-blackbox-exporter
+    sources:
+    - https://github.com/prometheus/blackbox_exporter
+    - https://github.com/prometheus-community/helm-charts/tree/main/charts/prometheus-blackbox-exporter
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/prometheus-blackbox-exporter-0.5.0-21d200f9f6db07d247f08facd782685b17347615.tgz
+    version: 0.5.0-21d200f9f6db07d247f08facd782685b17347615
   prometheus-operator-crd:
   - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-19.0.0.tgz-meta/main.yaml
@@ -12548,4 +12579,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.2-03183dd74788b907f76102ce4f8d9f8a9f7c5056.tgz
     version: 3.4.2-03183dd74788b907f76102ce4f8d9f8a9f7c5056
-generated: "2026-01-05T15:40:08.910293153Z"
+generated: "2026-01-05T15:40:28.381772315Z"
