@@ -10953,6 +10953,41 @@ entries:
     version: 1.23.0-0ca6cd5b7cee80e27b74ac2d40db1a22fdc13e3f
   node-exporter-app:
   - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/prometheus-community/helm-charts
+      config.giantswarm.io/version: 1.x.x
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/node-exporter-app-1.20.10-bae1d8000f20f63fe3bf077fb16f4b59a2cd67af.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/node-exporter-app/refs/tags/v1.20.10-bae1d8000f20f63fe3bf077fb16f4b59a2cd67af/README.md
+      io.giantswarm.application.team: turtles
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/node-exporter-app/refs/tags/v1.20.10-bae1d8000f20f63fe3bf077fb16f4b59a2cd67af/helm/node-exporter-app/values.schema.json
+    apiVersion: v2
+    appVersion: 1.8.2
+    created: "2026-01-06T12:17:16.702679416Z"
+    description: A Helm chart for prometheus node-exporter
+    digest: 426e3a31982557e01a4b60653161e18e982b68afb9942e1805ea8f1dd6d2bf8e
+    home: https://github.com/giantswarm/node-exporter-app
+    icon: https://s.giantswarm.io/app-icons/prometheus/1/light.svg
+    keywords:
+    - node-exporter
+    - prometheus
+    - exporter
+    maintainers:
+    - email: gianrubio@gmail.com
+      name: gianrubio
+    - email: zanhsieh@gmail.com
+      name: zanhsieh
+    - email: rootsandtrees@posteo.de
+      name: zeritti
+    name: node-exporter-app
+    sources:
+    - https://github.com/prometheus/node_exporter/
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/node-exporter-app-1.20.10-bae1d8000f20f63fe3bf077fb16f4b59a2cd67af.tgz
+    version: 1.20.10-bae1d8000f20f63fe3bf077fb16f4b59a2cd67af
+  - annotations:
       application.giantswarm.io/team: turtles
       artifacthub.io/license: Apache-2.0
       artifacthub.io/links: |
@@ -14162,4 +14197,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.2-03183dd74788b907f76102ce4f8d9f8a9f7c5056.tgz
     version: 3.4.2-03183dd74788b907f76102ce4f8d9f8a9f7c5056
-generated: "2026-01-06T12:14:44.091084243Z"
+generated: "2026-01-06T12:17:16.700885379Z"
