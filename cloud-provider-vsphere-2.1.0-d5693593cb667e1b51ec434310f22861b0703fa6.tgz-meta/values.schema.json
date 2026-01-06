@@ -1,0 +1,286 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "kamaji": {
+            "type": "object",
+            "title": "kamaji",
+            "description": "Kamaji configuration",
+            "additionalProperties": false,
+            "properties": {
+                "enabled": {
+                    "type": "boolean",
+                    "title": "enabled",
+                    "description": "Specifies whether to use Deployment instead of DaemonSet",
+                    "default": false
+                }
+            }
+        },
+        "config": {
+            "type": "object",
+            "title": "config",
+            "additionalProperties": false,
+            "properties": {
+                "caFile": {
+                    "type": "string",
+                    "title": "caFile",
+                    "default": ""
+                },
+                "datacenter": {
+                    "type": "string",
+                    "title": "datacenter",
+                    "default": "dc"
+                },
+                "enabled": {
+                    "type": "boolean",
+                    "title": "enabled",
+                    "default": false
+                },
+                "name": {
+                    "type": "string",
+                    "title": "name",
+                    "default": "vsphere-cloud-config"
+                },
+                "password": {
+                    "type": "string",
+                    "title": "password",
+                    "default": "pass"
+                },
+                "region": {
+                    "type": "string",
+                    "title": "region",
+                    "default": "k8s-region"
+                },
+                "secret": {
+                    "type": "object",
+                    "title": "secret",
+                    "additionalProperties": false,
+                    "properties": {
+                        "create": {
+                            "type": "boolean",
+                            "title": "create",
+                            "description": "Specifies whether Secret should be created from config values",
+                            "default": true
+                        },
+                        "name": {
+                            "type": "string",
+                            "title": "name",
+                            "description": "The name of the Secret referred to in the vsphere-cloud-config ConfigMap",
+                            "default": "vsphere-cloud-secret"
+                        }
+                    }
+                },
+                "thumbprint": {
+                    "type": "string",
+                    "title": "thumbprint",
+                    "default": ""
+                },
+                "username": {
+                    "type": "string",
+                    "title": "username",
+                    "default": "user"
+                },
+                "vcenter": {
+                    "type": "string",
+                    "title": "vcenter",
+                    "default": "vcenter.local"
+                },
+                "zone": {
+                    "type": "string",
+                    "title": "zone",
+                    "default": "k8s-zone"
+                }
+            }
+        },
+        "daemonset": {
+            "type": "object",
+            "title": "daemonset",
+            "description": "Daemonset configuration",
+            "additionalProperties": false,
+            "properties": {
+                "affinity": {
+                    "type": "object",
+                    "title": "affinity",
+                    "description": "Allows for the default affinities to be updated or replaced with user-defined ones"
+                },
+                "annotations": {
+                    "type": "object",
+                    "title": "annotations",
+                    "additionalProperties": false
+                },
+                "cmdline": {
+                    "type": "object",
+                    "title": "cmdline",
+                    "additionalProperties": false,
+                    "properties": {
+                        "additionalParams": {
+                            "type": "object",
+                            "title": "additionalParams",
+                            "additionalProperties": false
+                        },
+                        "cloudConfig": {
+                            "type": "object",
+                            "title": "cloudConfig",
+                            "description": "Location of the cloud configmap to be mounted on the filesystem",
+                            "additionalProperties": false,
+                            "properties": {
+                                "dir": {
+                                    "type": "string",
+                                    "title": "dir",
+                                    "default": "/etc/cloud"
+                                },
+                                "file": {
+                                    "type": "string",
+                                    "title": "file",
+                                    "default": "vsphere.conf"
+                                }
+                            }
+                        },
+                        "logging": {
+                            "type": "integer",
+                            "title": "logging",
+                            "default": 2
+                        }
+                    }
+                },
+                "dnsPolicy": {
+                    "type": "string",
+                    "title": "dnsPolicy",
+                    "default": "ClusterFirst"
+                },
+                "extraVolumes": {
+                    "type": "array",
+                    "title": "extraVolumes"
+                },
+                "extraVolumesMounts": {
+                    "type": "array",
+                    "title": "extraVolumesMounts"
+                },
+                "hostAliases": {
+                    "type": "array",
+                    "title": "hostAliases"
+                },
+                "image": {
+                    "type": "string",
+                    "title": "image",
+                    "default": "gcr.io/cloud-provider-vsphere/cpi/release/manager"
+                },
+                "podAnnotations": {
+                    "type": "object",
+                    "title": "podAnnotations",
+                    "additionalProperties": false
+                },
+                "podLabels": {
+                    "type": "object",
+                    "title": "podLabels",
+                    "additionalProperties": false
+                },
+                "pullPolicy": {
+                    "type": "string",
+                    "title": "pullPolicy",
+                    "default": "IfNotPresent"
+                },
+                "replicaCount": {
+                    "type": "integer",
+                    "title": "replicaCount",
+                    "default": 1
+                },
+                "resources": {
+                    "type": "object",
+                    "title": "resources",
+                    "additionalProperties": false
+                },
+                "tag": {
+                    "type": "string",
+                    "title": "tag",
+                    "default": "v1.34.0"
+                },
+                "tolerations": {
+                    "type": "array",
+                    "title": "tolerations",
+                    "description": "Allows for the default tolerations to be updated or replaced with user-defined ones"
+                }
+            }
+        },
+        "global": {
+            "type": "object",
+            "title": "global",
+            "description": "Global values are values that can be accessed from any chart or subchart by exactly the same name."
+        },
+        "podSecurityPolicy": {
+            "type": "object",
+            "title": "podSecurityPolicy",
+            "description": "Specify if a Pod Security Policy for kube-state-metrics must be created",
+            "additionalProperties": false,
+            "properties": {
+                "annotations": {
+                    "type": "object",
+                    "title": "annotations",
+                    "additionalProperties": false
+                },
+                "enabled": {
+                    "type": "boolean",
+                    "title": "enabled",
+                    "default": false
+                }
+            }
+        },
+        "rbac": {
+            "type": "object",
+            "title": "rbac",
+            "description": "RBAC configuration",
+            "additionalProperties": false,
+            "properties": {
+                "create": {
+                    "type": "boolean",
+                    "title": "create",
+                    "description": "Specifies whether RBAC resources should be created",
+                    "default": true
+                }
+            }
+        },
+        "securityContext": {
+            "type": "object",
+            "title": "securityContext",
+            "description": "Run containers to have security context. Default is 'nobody' (65534/65534) in distroless",
+            "additionalProperties": false,
+            "properties": {
+                "enabled": {
+                    "type": "boolean",
+                    "title": "enabled",
+                    "default": true
+                },
+                "fsGroup": {
+                    "type": "integer",
+                    "title": "fsGroup",
+                    "default": 1001
+                },
+                "runAsUser": {
+                    "type": "integer",
+                    "title": "runAsUser",
+                    "default": 1001
+                }
+            }
+        },
+        "serviceAccount": {
+            "type": "object",
+            "title": "serviceAccount",
+            "additionalProperties": false,
+            "properties": {
+                "create": {
+                    "type": "boolean",
+                    "title": "create",
+                    "description": "Specifies whether a ServiceAccount should be created",
+                    "default": true
+                },
+                "name": {
+                    "type": "string",
+                    "title": "name",
+                    "description": "The name of the ServiceAccount to use",
+                    "default": "cloud-controller-manager"
+                }
+            }
+        }
+    }
+}
