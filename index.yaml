@@ -13985,6 +13985,29 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-18.1.0-09b95e4b2d43c177e36ec1fc2a7091d9de09bd91.tgz
     version: 18.1.0-09b95e4b2d43c177e36ec1fc2a7091d9de09bd91
+  kube-state-metrics:
+  - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/kube-state-metrics-0.0.0-5ad3b37083a5dcd87558520a34c9b3a8ab746283.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/kube-state-metrics-app/refs/tags/v0.0.0-5ad3b37083a5dcd87558520a34c9b3a8ab746283/README.md
+      io.giantswarm.application.team: tenet
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/kube-state-metrics-app/refs/tags/v0.0.0-5ad3b37083a5dcd87558520a34c9b3a8ab746283/helm/kube-state-metrics/values.schema.json
+    apiVersion: v2
+    appVersion: 2.15.0
+    created: "2026-01-19T02:57:03.981964359Z"
+    dependencies:
+    - name: kube-state-metrics
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 7.1.0
+    description: Generate and expose cluster-level metrics
+    digest: 6def138dd7a4596e70fe94eee71a112f54cbcce68ba22740607d3573b0e37074
+    home: https://github.com/giantswarm/kube-state-metrics-app
+    icon: https://s.giantswarm.io/app-icons/giantswarm/1/dark.svg
+    name: kube-state-metrics
+    sources:
+    - https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-state-metrics
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/kube-state-metrics-0.0.0-5ad3b37083a5dcd87558520a34c9b3a8ab746283.tgz
+    version: 0.0.0-5ad3b37083a5dcd87558520a34c9b3a8ab746283
   kube-state-metrics-app:
   - annotations:
       config.giantswarm.io/version: 1.x.x
@@ -18500,4 +18523,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.2-03183dd74788b907f76102ce4f8d9f8a9f7c5056.tgz
     version: 3.4.2-03183dd74788b907f76102ce4f8d9f8a9f7c5056
-generated: "2026-01-16T21:41:54.710961238Z"
+generated: "2026-01-19T02:57:03.978455294Z"
