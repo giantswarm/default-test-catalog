@@ -2281,6 +2281,24 @@ entries:
   aws-pod-identity-webhook:
   - annotations:
       config.giantswarm.io/version: 1.x.x
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-2.1.0-ee83fa299cccf3ba22d7fb9d5ec8944ce59cf200.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/aws-pod-identity-webhook/ee83fa299cccf3ba22d7fb9d5ec8944ce59cf200/README.md
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/aws-pod-identity-webhook/ee83fa299cccf3ba22d7fb9d5ec8944ce59cf200/helm/aws-pod-identity-webhook/values.schema.json
+    apiVersion: v2
+    created: "2026-01-20T12:46:54.484311317Z"
+    description: This webhook is for mutating pods that will require AWS IAM access.
+    digest: 9cea0a7f279cd1e8024c30226e7e6d60bdb60d6b163524d876de62613599dc43
+    home: https://github.com/giantswarm/aws-pod-identity-webhook
+    icon: https://s.giantswarm.io/app-icons/aws/2/dark.svg
+    name: aws-pod-identity-webhook
+    sources:
+    - https://github.com/aws/amazon-eks-pod-identity-webhook
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-2.1.0-ee83fa299cccf3ba22d7fb9d5ec8944ce59cf200.tgz
+    version: 2.1.0-ee83fa299cccf3ba22d7fb9d5ec8944ce59cf200
+  - annotations:
+      config.giantswarm.io/version: 1.x.x
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-2.1.0-bba35271a9b527851b3ade2a356699c9a14c1686.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/aws-pod-identity-webhook/refs/tags/v2.1.0-bba35271a9b527851b3ade2a356699c9a14c1686/README.md
       io.giantswarm.application.team: phoenix
@@ -19577,4 +19595,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.2-03183dd74788b907f76102ce4f8d9f8a9f7c5056.tgz
     version: 3.4.2-03183dd74788b907f76102ce4f8d9f8a9f7c5056
-generated: "2026-01-20T12:42:55.734888783Z"
+generated: "2026-01-20T12:46:54.483231454Z"
