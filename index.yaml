@@ -14000,6 +14000,46 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/kamaji-etcd-0.1.0-bffab1d5a6ce67cf0e5d82fd8a76da9f37a2534c.tgz
     version: 0.1.0-bffab1d5a6ce67cf0e5d82fd8a76da9f37a2534c
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: feat
+          description: custom certmanager object names and customisations
+      artifacthub.io/links: |
+        - name: CLASTIX
+          url: https://clastix.io
+        - name: Kamaji
+          url: https://kamaji.clastix.io
+        - name: support
+          url: https://clastix.io/support
+      artifacthub.io/operator: "true"
+      artifacthub.io/operatorCapabilities: Full Lifecycle
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/kamaji-etcd-0.1.0-855918d7bdda3806d27243b953661de534abcd6b.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/clastix/kamaji-etcd/refs/tags/v0.1.0-855918d7bdda3806d27243b953661de534abcd6b/README.md
+      io.giantswarm.application.team: rocket
+      io.giantswarm.application.upstream: https://github.com/clastix/kamaji-etcd
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/clastix/kamaji-etcd/refs/tags/v0.1.0-855918d7bdda3806d27243b953661de534abcd6b/helm/kamaji-etcd/values.schema.json
+    apiVersion: v2
+    appVersion: 3.5.17
+    created: "2026-01-27T16:41:38.144700577Z"
+    description: Helm chart for deploying a multi-tenant `etcd` cluster.
+    digest: 2203e0f012a3b6b0d51ddd54d0b46fa37afe5a56871843fb7f9d177e272ea4cf
+    home: https://github.com/clastix/kamaji-etcd
+    icon: https://github.com/clastix/kamaji/raw/master/assets/logo-colored.png
+    kubeVersion: '>=1.22.0-0'
+    maintainers:
+    - email: adriano@clastix.io
+      name: Adriano Pezzuto
+      url: https://clastix.io
+    - email: dario@clastix.io
+      name: Dario Tranchitella
+      url: https://clastix.io
+    name: kamaji-etcd
+    sources:
+    - https://github.com/clastix/kamaji-etcd
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/kamaji-etcd-0.1.0-855918d7bdda3806d27243b953661de534abcd6b.tgz
+    version: 0.1.0-855918d7bdda3806d27243b953661de534abcd6b
   karpenter:
   - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/karpenter-1.4.0-feae49400c07a3cf5f75666708cfc2602b615038.tgz-meta/main.yaml
@@ -23878,4 +23918,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.2-03183dd74788b907f76102ce4f8d9f8a9f7c5056.tgz
     version: 3.4.2-03183dd74788b907f76102ce4f8d9f8a9f7c5056
-generated: "2026-01-27T16:41:17.341170079Z"
+generated: "2026-01-27T16:41:38.142970544Z"
