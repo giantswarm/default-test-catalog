@@ -21315,6 +21315,41 @@ entries:
     version: 0.3.0-28337053ed7becc7bb6153ad43c38dd33ea43c8f
   prometheus-blackbox-exporter:
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/prometheus-blackbox-exporter-0.5.0-72a278f8086ab022dc1125afa65d0255d08d7a65.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/prometheus-blackbox-exporter-app/refs/tags/v0.5.0-72a278f8086ab022dc1125afa65d0255d08d7a65/README.md
+      io.giantswarm.application.restrictions.cluster-singleton: "true"
+      io.giantswarm.application.restrictions.fixed-namespace: kube-system
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/prometheus-blackbox-exporter-app/refs/tags/v0.5.0-72a278f8086ab022dc1125afa65d0255d08d7a65/helm/prometheus-blackbox-exporter/values.schema.json
+    apiVersion: v2
+    appVersion: 0.23.0
+    created: "2026-01-28T09:37:37.640901642Z"
+    description: Prometheus Blackbox Exporter
+    digest: a279417aff8a0203d93f8dc3d63aa9435791f9a43d6d4011fbc05607e7049020
+    home: https://github.com/giantswarm/prometheus-blackbox-exporter-app
+    icon: https://s.giantswarm.io/app-icons/prometheus/1/light.svg
+    keywords:
+    - prometheus
+    - blackbox
+    - monitoring
+    maintainers:
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    - email: gianrubio@gmail.com
+      name: gianrubio
+    - email: me@sota.sh
+      name: rsotnychenko
+    - email: monotek23@gmail.com
+      name: monotek
+    name: prometheus-blackbox-exporter
+    sources:
+    - https://github.com/prometheus/blackbox_exporter
+    - https://github.com/prometheus-community/helm-charts/tree/main/charts/prometheus-blackbox-exporter
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/prometheus-blackbox-exporter-0.5.0-72a278f8086ab022dc1125afa65d0255d08d7a65.tgz
+    version: 0.5.0-72a278f8086ab022dc1125afa65d0255d08d7a65
+  - annotations:
       application.giantswarm.io/team: phoenix
     apiVersion: v2
     appVersion: 0.23.0
@@ -24049,4 +24084,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.2-03183dd74788b907f76102ce4f8d9f8a9f7c5056.tgz
     version: 3.4.2-03183dd74788b907f76102ce4f8d9f8a9f7c5056
-generated: "2026-01-28T09:37:20.441273758Z"
+generated: "2026-01-28T09:37:37.638030053Z"
