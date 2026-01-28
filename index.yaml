@@ -14175,6 +14175,36 @@ entries:
     version: 0.1.0-855918d7bdda3806d27243b953661de534abcd6b
   karpenter:
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/karpenter-2.0.0-ab51481eb5e008019e4d73cdf0ad5a16926eda24.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/karpenter-app/ab51481eb5e008019e4d73cdf0ad5a16926eda24/README.md
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/karpenter-app/ab51481eb5e008019e4d73cdf0ad5a16926eda24/helm/karpenter/values.schema.json
+    apiVersion: v2
+    appVersion: 1.5.0
+    created: "2026-01-28T16:07:29.735773706Z"
+    description: A Helm chart for Karpenter, an open-source node provisioning project
+      built for Kubernetes.
+    digest: 0b5ef91e3b1401caf99b021476997a6ec6955563e276184ad7fa3877d96434ff
+    home: https://github.com/giantswarm/karpenter-app
+    icon: https://s.giantswarm.io/app-icons/karpenter/1/light.svg
+    keywords:
+    - cluster
+    - node
+    - scheduler
+    - autoscaling
+    - lifecycle
+    maintainers:
+    - email: team-phoenix@giantswarm.io
+      name: giantswarm/team-phoenix
+    name: karpenter
+    sources:
+    - https://github.com/aws/karpenter/
+    - https://karpenter.sh/
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/karpenter-2.0.0-ab51481eb5e008019e4d73cdf0ad5a16926eda24.tgz
+    version: 2.0.0-ab51481eb5e008019e4d73cdf0ad5a16926eda24
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/karpenter-1.4.0-feae49400c07a3cf5f75666708cfc2602b615038.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/karpenter-app/refs/tags/v1.4.0-feae49400c07a3cf5f75666708cfc2602b615038/README.md
       io.giantswarm.application.team: phoenix
@@ -24250,4 +24280,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.2-03183dd74788b907f76102ce4f8d9f8a9f7c5056.tgz
     version: 3.4.2-03183dd74788b907f76102ce4f8d9f8a9f7c5056
-generated: "2026-01-28T16:06:50.162978704Z"
+generated: "2026-01-28T16:07:29.73364367Z"
