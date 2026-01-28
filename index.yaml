@@ -4454,6 +4454,26 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/azuredisk-csi-driver-app-2.0.0-68399c5110cd86553791f0beadde19f4ea51c089.tgz
     version: 2.0.0-68399c5110cd86553791f0beadde19f4ea51c089
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/azuredisk-csi-driver-app-2.0.0-110298967effcefde66df128b0ab4d7e012ef9ec.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/azuredisk-csi-driver-app/refs/tags/v2.0.0-110298967effcefde66df128b0ab4d7e012ef9ec/README.md
+      io.giantswarm.application.restrictions.cluster-singleton: "true"
+      io.giantswarm.application.restrictions.compatible-providers: azure
+      io.giantswarm.application.restrictions.fixed-namespace: kube-system
+      io.giantswarm.application.restrictions.gpu-instances: "false"
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/azuredisk-csi-driver-app/refs/tags/v2.0.0-110298967effcefde66df128b0ab4d7e012ef9ec/helm/azuredisk-csi-driver-app/values.schema.json
+    apiVersion: v2
+    appVersion: 1.33.7
+    created: "2026-01-28T17:22:44.557556911Z"
+    description: A Helm chart to run Azure CSI driver for Azure Disks.
+    digest: 701df87c8ef5236de4886f047c89c28f327806ee8e6eb9f87f535c244caf2c33
+    home: https://github.com/giantswarm/azuredisk-csi-driver-app
+    icon: https://s.giantswarm.io/app-icons/azure/1/dark.svg
+    name: azuredisk-csi-driver-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/azuredisk-csi-driver-app-2.0.0-110298967effcefde66df128b0ab4d7e012ef9ec.tgz
+    version: 2.0.0-110298967effcefde66df128b0ab4d7e012ef9ec
+  - annotations:
       application.giantswarm.io/team: phoenix
     apiVersion: v2
     appVersion: 1.33.7
@@ -24351,4 +24371,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.2-03183dd74788b907f76102ce4f8d9f8a9f7c5056.tgz
     version: 3.4.2-03183dd74788b907f76102ce4f8d9f8a9f7c5056
-generated: "2026-01-28T17:20:13.402861352Z"
+generated: "2026-01-28T17:22:44.5555451Z"
