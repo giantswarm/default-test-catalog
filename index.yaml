@@ -2,6 +2,32 @@ apiVersion: v1
 entries:
   alloy:
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/alloy-0.16.0-e737a167b4b837f72811f0bb578e66a1697c3a03.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/alloy-app/e737a167b4b837f72811f0bb578e66a1697c3a03/README.md
+      io.giantswarm.application.team: atlas
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/alloy-app/e737a167b4b837f72811f0bb578e66a1697c3a03/helm/alloy/values.schema.json
+    apiVersion: v2
+    appVersion: v1.12.0
+    created: "2026-02-02T17:11:32.671553146Z"
+    dependencies:
+    - condition: alloy.enabled
+      name: alloy
+      repository: https://grafana.github.io/helm-charts
+      version: 1.5.3
+    description: Grafana Alloy OpenTelemetry Collector
+    digest: e9a5c2d1c6b70c31350371ae626f9c6a4a05aa71cafec0705ab497de73c75228
+    home: https://github.com/giantswarm/alloy-app
+    icon: https://s.giantswarm.io/app-icons/grafana-alloy/1/light.png
+    maintainers:
+    - email: team-atlas@giantswarm.io
+      name: giantswarm/team-atlas
+    name: alloy
+    sources:
+    - https://github.com/grafana/alloy/tree/main/operations/helm/charts/alloy
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/alloy-0.16.0-e737a167b4b837f72811f0bb578e66a1697c3a03.tgz
+    version: 0.16.0-e737a167b4b837f72811f0bb578e66a1697c3a03
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/alloy-0.16.0-c9db51c3a3f1b0569502188e0102050bed592ee0.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/alloy-app/refs/tags/v0.16.0-c9db51c3a3f1b0569502188e0102050bed592ee0/README.md
       io.giantswarm.application.team: atlas
@@ -13422,4 +13448,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-0d13703225867f867c368adff0c6a160e5813278.tgz
     version: 3.4.3-0d13703225867f867c368adff0c6a160e5813278
-generated: "2026-02-02T14:44:23.852175506Z"
+generated: "2026-02-02T17:11:32.668187883Z"
