@@ -8079,6 +8079,46 @@ entries:
           url: https://clastix.io/support
       artifacthub.io/operator: "true"
       artifacthub.io/operatorCapabilities: Full Lifecycle
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/kamaji-etcd-0.2.0.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/clastix/kamaji-etcd/refs/tags/v0.2.0/README.md
+      io.giantswarm.application.team: rocket
+      io.giantswarm.application.upstream: https://github.com/clastix/kamaji-etcd
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/clastix/kamaji-etcd/refs/tags/v0.2.0/helm/kamaji-etcd/values.schema.json
+    apiVersion: v2
+    appVersion: 3.5.17
+    created: "2026-02-02T20:28:40.887695203Z"
+    description: Helm chart for deploying a multi-tenant `etcd` cluster.
+    digest: e03f5010ed28725cae795960cfbe608dc0cc3806fe29d316ab16c3c5da813964
+    home: https://github.com/clastix/kamaji-etcd
+    icon: https://github.com/clastix/kamaji/raw/master/assets/logo-colored.png
+    kubeVersion: '>=1.22.0-0'
+    maintainers:
+    - email: adriano@clastix.io
+      name: Adriano Pezzuto
+      url: https://clastix.io
+    - email: dario@clastix.io
+      name: Dario Tranchitella
+      url: https://clastix.io
+    name: kamaji-etcd
+    sources:
+    - https://github.com/clastix/kamaji-etcd
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/kamaji-etcd-0.2.0.tgz
+    version: 0.2.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: feat
+          description: custom certmanager object names and customisations
+      artifacthub.io/links: |
+        - name: CLASTIX
+          url: https://clastix.io
+        - name: Kamaji
+          url: https://kamaji.clastix.io
+        - name: support
+          url: https://clastix.io/support
+      artifacthub.io/operator: "true"
+      artifacthub.io/operatorCapabilities: Full Lifecycle
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/kamaji-etcd-0.2.0-3fc3f0b59c8ae0902eed11f2be3eca1babdf41a1.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/clastix/kamaji-etcd/refs/tags/v0.2.0-3fc3f0b59c8ae0902eed11f2be3eca1babdf41a1/README.md
       io.giantswarm.application.team: rocket
@@ -13448,4 +13488,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-0d13703225867f867c368adff0c6a160e5813278.tgz
     version: 3.4.3-0d13703225867f867c368adff0c6a160e5813278
-generated: "2026-02-02T17:11:32.668187883Z"
+generated: "2026-02-02T20:28:40.884979569Z"
