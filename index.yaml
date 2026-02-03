@@ -5350,6 +5350,27 @@ entries:
     version: 1.2.4-141575f7dbb9a2e871a3e947917d302961e58b77
   cilium-servicemonitors:
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/cilium-servicemonitors-0.1.3-f2fd3bd68c99ea2122e31d2fa89c2f4b0839362e.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/cilium-servicemonitors-app/f2fd3bd68c99ea2122e31d2fa89c2f4b0839362e/README.md
+      io.giantswarm.application.restrictions.cluster-singleton: "true"
+      io.giantswarm.application.restrictions.fixed-namespace: kube-system
+      io.giantswarm.application.team: cabbage
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/cilium-servicemonitors-app/f2fd3bd68c99ea2122e31d2fa89c2f4b0839362e/helm/cilium-servicemonitors/values.schema.json
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-02-03T11:56:29.617280349Z"
+    description: Cilium ServiceMonitors
+    digest: 3e67b334ecded816c9c0d4f13a2ea3473055488f0126732b665e7ffafa066d66
+    home: https://github.com/giantswarm/cilium-servicemonitors-app
+    icon: https://s.giantswarm.io/app-icons/cilium/1/dark.svg
+    keywords:
+    - monitoring
+    name: cilium-servicemonitors
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/cilium-servicemonitors-0.1.3-f2fd3bd68c99ea2122e31d2fa89c2f4b0839362e.tgz
+    version: 0.1.3-f2fd3bd68c99ea2122e31d2fa89c2f4b0839362e
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/cilium-servicemonitors-0.1.3-6a0a46e9d782f276e7ae550cfe17b31adef61e96.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/cilium-servicemonitors-app/refs/tags/v0.1.3-6a0a46e9d782f276e7ae550cfe17b31adef61e96/README.md
       io.giantswarm.application.restrictions.cluster-singleton: "true"
@@ -14114,4 +14135,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-0d13703225867f867c368adff0c6a160e5813278.tgz
     version: 3.4.3-0d13703225867f867c368adff0c6a160e5813278
-generated: "2026-02-03T11:55:07.163648769Z"
+generated: "2026-02-03T11:56:29.616642948Z"
