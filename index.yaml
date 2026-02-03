@@ -10597,6 +10597,37 @@ entries:
     version: 1.4.0-061d31247efb87f91edc554e576f040430233345
   karpenter-bundle:
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/karpenter-bundle-2.0.0-f94d31c12dcbb9436471f5a741c5d273b91ee212.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/karpenter-app/f94d31c12dcbb9436471f5a741c5d273b91ee212/README.md
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/karpenter-app/f94d31c12dcbb9436471f5a741c5d273b91ee212/helm/karpenter-bundle/values.schema.json
+    apiVersion: v2
+    appVersion: 1.5.0
+    created: "2026-02-03T12:16:15.405370897Z"
+    description: A Helm chart bundle that deploys Karpenter with AWS Crossplane resources
+      (IAM roles, SQS queues, CloudWatch rules).
+    digest: 160bb8989a01534324921d7998d06be1471c8cb62cc7ec7a5f0f5352ffb5fc63
+    home: https://github.com/giantswarm/karpenter-app
+    icon: https://s.giantswarm.io/app-icons/karpenter/1/light.svg
+    keywords:
+    - cluster
+    - node
+    - scheduler
+    - autoscaling
+    - lifecycle
+    - bundle
+    - crossplane
+    maintainers:
+    - email: team-phoenix@giantswarm.io
+      name: giantswarm/team-phoenix
+    name: karpenter-bundle
+    sources:
+    - https://github.com/aws/karpenter/
+    - https://karpenter.sh/
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/karpenter-bundle-2.0.0-f94d31c12dcbb9436471f5a741c5d273b91ee212.tgz
+    version: 2.0.0-f94d31c12dcbb9436471f5a741c5d273b91ee212
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/karpenter-bundle-2.0.0-ab51481eb5e008019e4d73cdf0ad5a16926eda24.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/karpenter-app/ab51481eb5e008019e4d73cdf0ad5a16926eda24/README.md
       io.giantswarm.application.team: phoenix
@@ -14807,4 +14838,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-0d13703225867f867c368adff0c6a160e5813278.tgz
     version: 3.4.3-0d13703225867f867c368adff0c6a160e5813278
-generated: "2026-02-03T12:16:12.016941441Z"
+generated: "2026-02-03T12:16:15.404014866Z"
