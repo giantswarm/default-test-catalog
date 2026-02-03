@@ -2756,6 +2756,26 @@ entries:
     version: 0.1.0-166f4683832c888430d96fd4e0334a15bdbf28c2
   azuredisk-csi-driver-app:
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/azuredisk-csi-driver-app-2.1.0-cbc91851b02552b815b6aee481211732b3156398.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/azuredisk-csi-driver-app/cbc91851b02552b815b6aee481211732b3156398/README.md
+      io.giantswarm.application.restrictions.cluster-singleton: "true"
+      io.giantswarm.application.restrictions.compatible-providers: azure
+      io.giantswarm.application.restrictions.fixed-namespace: kube-system
+      io.giantswarm.application.restrictions.gpu-instances: "false"
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/azuredisk-csi-driver-app/cbc91851b02552b815b6aee481211732b3156398/helm/azuredisk-csi-driver-app/values.schema.json
+    apiVersion: v2
+    appVersion: 1.34.0
+    created: "2026-02-03T11:37:15.996555273Z"
+    description: A Helm chart to run Azure CSI driver for Azure Disks.
+    digest: 4ddec63a5b22bd89da5f19eaac6477a295e774da48c18390dec53acb0bb50876
+    home: https://github.com/giantswarm/azuredisk-csi-driver-app
+    icon: https://s.giantswarm.io/app-icons/azure/1/dark.svg
+    name: azuredisk-csi-driver-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/azuredisk-csi-driver-app-2.1.0-cbc91851b02552b815b6aee481211732b3156398.tgz
+    version: 2.1.0-cbc91851b02552b815b6aee481211732b3156398
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/azuredisk-csi-driver-app-2.1.0-c62db4cafbd0915759c555ef8a007914ac9e5e8e.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/azuredisk-csi-driver-app/c62db4cafbd0915759c555ef8a007914ac9e5e8e/README.md
       io.giantswarm.application.restrictions.cluster-singleton: "true"
@@ -13724,4 +13744,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-0d13703225867f867c368adff0c6a160e5813278.tgz
     version: 3.4.3-0d13703225867f867c368adff0c6a160e5813278
-generated: "2026-02-03T11:36:53.587548087Z"
+generated: "2026-02-03T11:37:15.992934922Z"
