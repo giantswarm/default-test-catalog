@@ -8605,6 +8605,25 @@ entries:
     version: 0.10.11-1af48e46786834d0997773e7e7676f6c7c2bd709
   k8s-dns-node-cache-app:
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/k8s-dns-node-cache-app-2.9.1-f1bfa4b357bc1e1c4b2397f1e8458aaea06e7da1.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/k8s-dns-node-cache-app/f1bfa4b357bc1e1c4b2397f1e8458aaea06e7da1/README.md
+      io.giantswarm.application.restrictions.cluster-singleton: "true"
+      io.giantswarm.application.restrictions.fixed-namespace: kube-system
+      io.giantswarm.application.restrictions.gpu-instances: "false"
+      io.giantswarm.application.team: cabbage
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/k8s-dns-node-cache-app/f1bfa4b357bc1e1c4b2397f1e8458aaea06e7da1/helm/k8s-dns-node-cache-app/values.schema.json
+    apiVersion: v2
+    appVersion: 1.26.4
+    created: "2026-02-03T12:39:51.207305241Z"
+    description: A Helm chart to run NodeLocal DNSCache in Kubernetes clusters
+    digest: 8e9d6a57c90089c9ab8d0f27c9d3a5861e62b10470b9f1fd6dd00bb4a08679c9
+    home: https://github.com/giantswarm/k8s-dns-node-cache-app
+    icon: https://s.giantswarm.io/app-icons/giantswarm/1/dark.svg
+    name: k8s-dns-node-cache-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/k8s-dns-node-cache-app-2.9.1-f1bfa4b357bc1e1c4b2397f1e8458aaea06e7da1.tgz
+    version: 2.9.1-f1bfa4b357bc1e1c4b2397f1e8458aaea06e7da1
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/k8s-dns-node-cache-app-2.9.1-d1b9cd19a2a26eb5ecee21efe5abd54bca0ecdb7.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/k8s-dns-node-cache-app/refs/tags/v2.9.1-d1b9cd19a2a26eb5ecee21efe5abd54bca0ecdb7/README.md
       io.giantswarm.application.restrictions.cluster-singleton: "true"
@@ -14874,4 +14893,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-0d13703225867f867c368adff0c6a160e5813278.tgz
     version: 3.4.3-0d13703225867f867c368adff0c6a160e5813278
-generated: "2026-02-03T12:17:49.648152545Z"
+generated: "2026-02-03T12:39:51.20654628Z"
