@@ -12096,6 +12096,30 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/node-problem-detector-0.5.2-fe36a39aa1f083bf00ab532fb56065117a74df11.tgz
     version: 0.5.2-fe36a39aa1f083bf00ab532fb56065117a74df11
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/node-problem-detector-0.5.2-164c7ff84544ca0970f0f75b49658f57269f63ef.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/node-problem-detector-0.5.2-164c7ff84544ca0970f0f75b49658f57269f63ef.tgz-meta/README.md
+      application.giantswarm.io/team: phoenix
+    apiVersion: v2
+    appVersion: v0.8.20
+    created: "2026-02-03T11:50:43.68081828Z"
+    dependencies:
+    - name: node-problem-detector
+      repository: oci://ghcr.io/deliveryhero/helm-charts
+      version: 2.3.21
+    description: A helm chart for running node-problem-detector on a cluster.
+    digest: 68c61e46ad130fc49131682d2110d925884bb3d4ab54b5062665d6d55c70b0d1
+    home: https://github.com/giantswarm/node-problem-detector-app
+    icon: https://s.giantswarm.io/app-icons/giantswarm/1/dark.svg
+    name: node-problem-detector
+    sources:
+    - https://github.com/giantswarm/node-problem-detector-app
+    - https://github.com/kubernetes/node-problem-detector
+    - https://kubernetes.io/docs/concepts/architecture/nodes/#condition
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/node-problem-detector-0.5.2-164c7ff84544ca0970f0f75b49658f57269f63ef.tgz
+    version: 0.5.2-164c7ff84544ca0970f0f75b49658f57269f63ef
   observability-bundle:
   - annotations:
       config.giantswarm.io/version: 1.x.x
@@ -14013,4 +14037,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-0d13703225867f867c368adff0c6a160e5813278.tgz
     version: 3.4.3-0d13703225867f867c368adff0c6a160e5813278
-generated: "2026-02-03T11:48:09.388407135Z"
+generated: "2026-02-03T11:50:43.679360666Z"
