@@ -4019,6 +4019,26 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/cert-manager-app-3.9.3-d3fe5d134467cd59078a7089e1c68c333c76f655.tgz
     version: 3.9.3-d3fe5d134467cd59078a7089e1c68c333c76f655
+  cert-manager-bundle:
+  - annotations:
+      application.giantswarm.io/app-type: bundle
+      application.giantswarm.io/in-cluster-app: "true"
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cert-manager-bundle-0.0.1-0b15c38dac2c98f5171fbf63d3bdf0d61af3ccf3.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cert-manager-bundle-0.0.1-0b15c38dac2c98f5171fbf63d3bdf0d61af3ccf3.tgz-meta/README.md
+      application.giantswarm.io/team: shield
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/cert-manager-bundle-0.0.1-0b15c38dac2c98f5171fbf63d3bdf0d61af3ccf3.tgz-meta/values.schema.json
+      io.giantswarm.application.audience: all
+      io.giantswarm.application.managed: "true"
+    apiVersion: v2
+    created: "2026-02-05T12:37:39.17258503Z"
+    description: cert-manager Bundle with crossplane resources
+    digest: e82e9392aed582036a627cfe06f088270d6076e7a77e4f820edfc82b2b5ef387
+    home: https://github.com/giantswarm/cert-manager-bundle
+    icon: https://s.giantswarm.io/app-icons/cert-manager/1/light.svg
+    name: cert-manager-bundle
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/cert-manager-bundle-0.0.1-0b15c38dac2c98f5171fbf63d3bdf0d61af3ccf3.tgz
+    version: 0.0.1-0b15c38dac2c98f5171fbf63d3bdf0d61af3ccf3
   chart-operator:
   - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/chart-operator-4.2.0-d78517dc803f0f94abcdc6c74ce2d010abf74008.tgz-meta/main.yaml
@@ -17055,4 +17075,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-0d13703225867f867c368adff0c6a160e5813278.tgz
     version: 3.4.3-0d13703225867f867c368adff0c6a160e5813278
-generated: "2026-02-05T12:37:37.527049899Z"
+generated: "2026-02-05T12:37:39.172008544Z"
