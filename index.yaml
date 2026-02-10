@@ -10718,6 +10718,25 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/k8s-dns-node-cache-app-2.9.1-d1b9cd19a2a26eb5ecee21efe5abd54bca0ecdb7.tgz
     version: 2.9.1-d1b9cd19a2a26eb5ecee21efe5abd54bca0ecdb7
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/k8s-dns-node-cache-app-2.9.1-c2b904ba757569de83e89f55f7cddd3ba28d0860.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/k8s-dns-node-cache-app/c2b904ba757569de83e89f55f7cddd3ba28d0860/README.md
+      io.giantswarm.application.restrictions.cluster-singleton: "true"
+      io.giantswarm.application.restrictions.fixed-namespace: kube-system
+      io.giantswarm.application.restrictions.gpu-instances: "false"
+      io.giantswarm.application.team: cabbage
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/k8s-dns-node-cache-app/c2b904ba757569de83e89f55f7cddd3ba28d0860/helm/k8s-dns-node-cache-app/values.schema.json
+    apiVersion: v2
+    appVersion: 1.26.7
+    created: "2026-02-10T09:54:33.168633243Z"
+    description: A Helm chart to run NodeLocal DNSCache in Kubernetes clusters
+    digest: c0b562a71bcc844651912e3df79f6eae30048693054f938d0621305a27fd388b
+    home: https://github.com/giantswarm/k8s-dns-node-cache-app
+    icon: https://s.giantswarm.io/app-icons/giantswarm/1/dark.svg
+    name: k8s-dns-node-cache-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/k8s-dns-node-cache-app-2.9.1-c2b904ba757569de83e89f55f7cddd3ba28d0860.tgz
+    version: 2.9.1-c2b904ba757569de83e89f55f7cddd3ba28d0860
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/k8s-dns-node-cache-app-2.9.1-bc8eebfaf9e5663d976d37dad717bc39da5adf44.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/k8s-dns-node-cache-app/refs/tags/v2.9.1-bc8eebfaf9e5663d976d37dad717bc39da5adf44/README.md
       io.giantswarm.application.restrictions.cluster-singleton: "true"
@@ -18880,4 +18899,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef.tgz
     version: 3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef
-generated: "2026-02-10T09:53:51.160718136Z"
+generated: "2026-02-10T09:54:33.167542856Z"
