@@ -17694,6 +17694,26 @@ entries:
     version: 0.5.2-164c7ff84544ca0970f0f75b49658f57269f63ef
   observability-bundle:
   - annotations:
+      io.giantswarm.application.app-type: bundle
+      io.giantswarm.application.in-cluster-app: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/observability-bundle-2.6.0-9eb32e849bb029a3d911d79744cea4e26de739a3.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/observability-bundle/9eb32e849bb029a3d911d79744cea4e26de739a3/README.md
+      io.giantswarm.application.team: atlas
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/observability-bundle/9eb32e849bb029a3d911d79744cea4e26de739a3/helm/observability-bundle/values.schema.json
+    apiVersion: v2
+    created: "2026-02-12T13:49:03.389935542Z"
+    description: A Helm chart for Giant Swarm's collection of observability tools.
+    digest: 6a0dfff08831a1ae1e00d1daff5192af2544388b02f8e2e68464abca517b640a
+    home: https://github.com/giantswarm/observability-bundle
+    icon: https://s.giantswarm.io/app-icons/giantswarm/1/light.svg
+    kubeVersion: '>=1.19.0-0'
+    name: observability-bundle
+    sources:
+    - https://github.com/giantswarm/observability-bundle
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/observability-bundle-2.6.0-9eb32e849bb029a3d911d79744cea4e26de739a3.tgz
+    version: 2.6.0-9eb32e849bb029a3d911d79744cea4e26de739a3
+  - annotations:
       config.giantswarm.io/version: 1.x.x
       io.giantswarm.application.app-type: bundle
       io.giantswarm.application.in-cluster-app: "true"
@@ -20404,4 +20424,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef.tgz
     version: 3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef
-generated: "2026-02-12T13:47:04.330068354Z"
+generated: "2026-02-12T13:49:03.388335005Z"
