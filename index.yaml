@@ -19629,6 +19629,29 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/proxmox-cloud-controller-manager-0.2.1-14f20230214f89e9a65f4563de8f01efc9c9df34.tgz
     version: 0.2.1-14f20230214f89e9a65f4563de8f01efc9c9df34
+  security-bundle:
+  - annotations:
+      io.giantswarm.application.app-type: bundle
+      io.giantswarm.application.audience: all
+      io.giantswarm.application.in-cluster-app: "true"
+      io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/security-bundle-1.17.0-cd7b4ed615a21b310edd58bb1b45223f88428239.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/security-bundle/cd7b4ed615a21b310edd58bb1b45223f88428239/README.md
+      io.giantswarm.application.team: shield
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/security-bundle/cd7b4ed615a21b310edd58bb1b45223f88428239/helm/security-bundle/values.schema.json
+    apiVersion: v2
+    created: "2026-02-12T16:09:40.521958218Z"
+    description: A Helm chart for Giant Swarm's collection of open-source security
+      tools.
+    digest: 20f6289a64a0eee231b040cf51d5836227f4a16c9d538418ae0abcacd622988a
+    home: https://github.com/giantswarm/security-bundle
+    icon: https://s.giantswarm.io/app-icons/giantswarm/1/dark.svg
+    name: security-bundle
+    sources:
+    - https://github.com/giantswarm/security-bundle
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/security-bundle-1.17.0-cd7b4ed615a21b310edd58bb1b45223f88428239.tgz
+    version: 1.17.0-cd7b4ed615a21b310edd58bb1b45223f88428239
   shoot:
   - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/shoot-3.0.0-fef9361c72181c821aad6fd3c0de99fac3488ab5.tgz-meta/main.yaml
@@ -21048,4 +21071,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef.tgz
     version: 3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef
-generated: "2026-02-12T15:45:33.479170355Z"
+generated: "2026-02-12T16:09:40.520828296Z"
