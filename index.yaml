@@ -13838,6 +13838,44 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/external-dns-crossplane-resources-0.1.6-248dc5c60f42ff7f1949f158d5fd744a79bba3df.tgz
     version: 0.1.6-248dc5c60f42ff7f1949f158d5fd744a79bba3df
+  falco:
+  - annotations:
+      io.giantswarm.application.audience: all
+      io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/falco/2/logo_dark.svg
+      io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/falco-0.11.1-53be2f57b3facb72ae3b5f2602200889cc8cf281.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/falco-app/53be2f57b3facb72ae3b5f2602200889cc8cf281/README.md
+      io.giantswarm.application.team: shield
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/falco-app/53be2f57b3facb72ae3b5f2602200889cc8cf281/helm/falco/values.schema.json
+    apiVersion: v2
+    appVersion: 0.41.3
+    created: "2026-02-18T16:24:42.902728777Z"
+    dependencies:
+    - condition: falco.enabled
+      name: falco
+      repository: ""
+      version: 6.2.5
+    - condition: falcosidekick.enabled
+      name: falcosidekick
+      repository: ""
+      version: 0.10.2
+    - condition: k8s-metacollector.enabled
+      name: k8s-metacollector
+      repository: ""
+      version: 0.1.10
+    description: A Helm chart for falco
+    digest: 04dd48721186f80475c61fd1484fc096353c31fd2f68467bb31b649db50a1f96
+    home: https://github.com/giantswarm/falco-app
+    icon: https://s.giantswarm.io/app-icons/falco/2/icon_dark.svg
+    maintainers:
+    - name: Giant Swarm applications team
+      url: https://github.com/giantswarm/falco-app
+    name: falco
+    sources:
+    - https://github.com/giantswarm/falco-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/falco-0.11.1-53be2f57b3facb72ae3b5f2602200889cc8cf281.tgz
+    version: 0.11.1-53be2f57b3facb72ae3b5f2602200889cc8cf281
   giantswarm-cluster-suite:
   - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/giantswarm-cluster-suite-0.1.1-d53d6f64fb406f2944be11a5f7abc8db976b2860.tgz-meta/main.yaml
@@ -25960,4 +25998,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef.tgz
     version: 3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef
-generated: "2026-02-18T16:24:39.514185374Z"
+generated: "2026-02-18T16:24:42.885903911Z"
