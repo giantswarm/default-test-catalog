@@ -4724,6 +4724,26 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/azuredisk-csi-driver-app-2.1.0-8816a50c9ee4fc523cd3d2853ec89b77443fef5b.tgz
     version: 2.1.0-8816a50c9ee4fc523cd3d2853ec89b77443fef5b
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/azuredisk-csi-driver-app-2.1.0-7b417c73b64f80cfdaab30733d558f19baa429bc.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/azuredisk-csi-driver-app/7b417c73b64f80cfdaab30733d558f19baa429bc/README.md
+      io.giantswarm.application.restrictions.cluster-singleton: "true"
+      io.giantswarm.application.restrictions.compatible-providers: azure
+      io.giantswarm.application.restrictions.fixed-namespace: kube-system
+      io.giantswarm.application.restrictions.gpu-instances: "false"
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/azuredisk-csi-driver-app/7b417c73b64f80cfdaab30733d558f19baa429bc/helm/azuredisk-csi-driver-app/values.schema.json
+    apiVersion: v2
+    appVersion: 1.34.0
+    created: "2026-02-18T12:53:26.506204797Z"
+    description: A Helm chart to run Azure CSI driver for Azure Disks.
+    digest: ff182c8bb95f9eeaf3b58d0d8a7d7d06ee12f96db9bb57c15ac6f6b99c8ec27f
+    home: https://github.com/giantswarm/azuredisk-csi-driver-app
+    icon: https://s.giantswarm.io/app-icons/azure/1/dark.svg
+    name: azuredisk-csi-driver-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/azuredisk-csi-driver-app-2.1.0-7b417c73b64f80cfdaab30733d558f19baa429bc.tgz
+    version: 2.1.0-7b417c73b64f80cfdaab30733d558f19baa429bc
+  - annotations:
       application.giantswarm.io/team: phoenix
     apiVersion: v2
     appVersion: 1.34.0
@@ -25351,4 +25371,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef.tgz
     version: 3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef
-generated: "2026-02-18T12:47:29.654221501Z"
+generated: "2026-02-18T12:53:26.50449004Z"
