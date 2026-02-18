@@ -20912,6 +20912,37 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/kubescape-0.0.6-81eaaa5b1c697bde0a40721ccc24e36871bf7cf3.tgz
     version: 0.0.6-81eaaa5b1c697bde0a40721ccc24e36871bf7cf3
+  - annotations:
+      io.giantswarm.application.audience: all
+      io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/kubescape-0.0.6-418b743b41888081b174dc0d43dd5769954bcb48.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/kubescape/418b743b41888081b174dc0d43dd5769954bcb48/README.md
+      io.giantswarm.application.team: shield
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/kubescape/418b743b41888081b174dc0d43dd5769954bcb48/helm/kubescape/values.schema.json
+    apiVersion: v2
+    created: "2026-02-18T16:40:22.553068369Z"
+    dependencies:
+    - condition: exceptions.enabled
+      name: exceptions
+      repository: ""
+      version: 0.0.0
+    - name: dependency_chart
+      repository: ""
+      version: 0.0.0
+    - name: kubescape-operator
+      repository: ""
+      version: '>1.28.0'
+    description: This chart contains the kubescape operator chart and custom Giant
+      Swarm resources.
+    digest: c9cd36843dab82d2ee76e461044f6a6cd93bda7e67335df3ecf6a8629b188291
+    home: https://github.com/giantswarm/kubescape
+    icon: https://s.giantswarm.io/app-icons/kubescape/1/color.svg
+    name: kubescape
+    sources:
+    - https://github.com/kubescape/helm-charts
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/kubescape-0.0.6-418b743b41888081b174dc0d43dd5769954bcb48.tgz
+    version: 0.0.6-418b743b41888081b174dc0d43dd5769954bcb48
   kyverno:
   - annotations:
       config.giantswarm.io/version: 1.x.x
@@ -26319,4 +26350,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef.tgz
     version: 3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef
-generated: "2026-02-18T16:38:26.893352309Z"
+generated: "2026-02-18T16:40:22.545190782Z"
