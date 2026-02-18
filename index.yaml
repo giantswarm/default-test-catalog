@@ -19425,6 +19425,28 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/kube-state-metrics-0.0.0-5ad3b37083a5dcd87558520a34c9b3a8ab746283.tgz
     version: 0.0.0-5ad3b37083a5dcd87558520a34c9b3a8ab746283
+  - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/kube-state-metrics-0.0.0-402df25345f5b6b1f070f4fe80c8e5fb43671cc8.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/kube-state-metrics-app/402df25345f5b6b1f070f4fe80c8e5fb43671cc8/README.md
+      io.giantswarm.application.team: tenet
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/kube-state-metrics-app/402df25345f5b6b1f070f4fe80c8e5fb43671cc8/helm/kube-state-metrics/values.schema.json
+    apiVersion: v2
+    appVersion: 2.15.0
+    created: "2026-02-18T10:55:34.622961085Z"
+    dependencies:
+    - name: kube-state-metrics
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 7.1.0
+    description: Generate and expose cluster-level metrics
+    digest: 540c8227ad451513edd7c8e088e1b6560f1d23989a6b7ccd67db0eaa0c6cb9dc
+    home: https://github.com/giantswarm/kube-state-metrics-app
+    icon: https://s.giantswarm.io/app-icons/giantswarm/1/dark.svg
+    name: kube-state-metrics
+    sources:
+    - https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-state-metrics
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/kube-state-metrics-0.0.0-402df25345f5b6b1f070f4fe80c8e5fb43671cc8.tgz
+    version: 0.0.0-402df25345f5b6b1f070f4fe80c8e5fb43671cc8
   kube-state-metrics-app:
   - annotations:
       config.giantswarm.io/version: 1.x.x
@@ -24383,4 +24405,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef.tgz
     version: 3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef
-generated: "2026-02-18T10:48:24.047724174Z"
+generated: "2026-02-18T10:55:34.618288145Z"
