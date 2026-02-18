@@ -25343,6 +25343,34 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/test-app-1.0.1-25b844c99ba1bc850b52f656ae90dc8255dc350f.tgz
     version: 1.0.1-25b844c99ba1bc850b52f656ae90dc8255dc350f
+  trivy:
+  - annotations:
+      io.giantswarm.application.audience: all
+      io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/trivy-0.14.1-0f726304c76f7154abbf78853308791eed4add18.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/trivy-app/0f726304c76f7154abbf78853308791eed4add18/README.md
+      io.giantswarm.application.team: shield
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/trivy-app/0f726304c76f7154abbf78853308791eed4add18/helm/trivy/values.schema.json
+    apiVersion: v2
+    appVersion: 0.63.0
+    created: "2026-02-18T16:26:07.607772864Z"
+    dependencies:
+    - name: trivy
+      repository: ""
+      version: 0.15.0
+    description: A Helm chart for trivy
+    digest: 01f43a12cd914102f78625c37a7bd496b92718e0e3f8a58b939f3945bbfd2f94
+    home: https://github.com/giantswarm/trivy-app
+    icon: https://s.giantswarm.io/app-icons/trivy/1/light.svg
+    maintainers:
+    - name: Giant Swarm applications team
+      url: https://github.com/giantswarm/trivy-app
+    name: trivy
+    sources:
+    - https://github.com/giantswarm/trivy-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/trivy-0.14.1-0f726304c76f7154abbf78853308791eed4add18.tgz
+    version: 0.14.1-0f726304c76f7154abbf78853308791eed4add18
   trivy-operator:
   - annotations:
       io.giantswarm.application.audience: all
@@ -26215,4 +26243,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef.tgz
     version: 3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef
-generated: "2026-02-18T16:25:15.636265613Z"
+generated: "2026-02-18T16:26:07.606400135Z"
