@@ -106,6 +106,32 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/alloy-0.16.1-d41cee629d283edea27adeff2d853f5102dc9e84.tgz
     version: 0.16.1-d41cee629d283edea27adeff2d853f5102dc9e84
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/alloy-0.16.1-c2be6e478d969d925bedeac9d3520797309afe2f.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/alloy-app/c2be6e478d969d925bedeac9d3520797309afe2f/README.md
+      io.giantswarm.application.team: atlas
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/alloy-app/c2be6e478d969d925bedeac9d3520797309afe2f/helm/alloy/values.schema.json
+    apiVersion: v2
+    appVersion: v1.12.0
+    created: "2026-02-19T08:28:54.862918117Z"
+    dependencies:
+    - condition: alloy.enabled
+      name: alloy
+      repository: https://grafana.github.io/helm-charts
+      version: 1.5.0
+    description: Grafana Alloy OpenTelemetry Collector
+    digest: 17e425fffa6650657d03dabb7114cc8c52dec9d9f72338b873078eb3b448b6a5
+    home: https://github.com/giantswarm/alloy-app
+    icon: https://s.giantswarm.io/app-icons/grafana-alloy/1/light.png
+    maintainers:
+    - email: team-atlas@giantswarm.io
+      name: giantswarm/team-atlas
+    name: alloy
+    sources:
+    - https://github.com/grafana/alloy/tree/main/operations/helm/charts/alloy
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/alloy-0.16.1-c2be6e478d969d925bedeac9d3520797309afe2f.tgz
+    version: 0.16.1-c2be6e478d969d925bedeac9d3520797309afe2f
+  - annotations:
       io.giantswarm.application.audience: all
       io.giantswarm.application.managed: "true"
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/alloy-0.16.1-80fc6857c6152db2df792dd697bfecbced643cc9.tgz-meta/main.yaml
@@ -27278,4 +27304,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef.tgz
     version: 3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef
-generated: "2026-02-19T08:28:43.625774335Z"
+generated: "2026-02-19T08:28:54.859543719Z"
