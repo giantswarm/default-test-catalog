@@ -6211,6 +6211,42 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/cert-manager-app-3.9.4-4d882a37ed79a4b7650a561bff857bf811e70def.tgz
     version: 3.9.4-4d882a37ed79a4b7650a561bff857bf811e70def
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cert-manager-app-3.9.4-4d0868ff267f12689fe65665119f8bedd3fdf7f6.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cert-manager-app-3.9.4-4d0868ff267f12689fe65665119f8bedd3fdf7f6.tgz-meta/README.md
+      application.giantswarm.io/team: shield
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/default-test-catalog/cert-manager-app-3.9.4-4d0868ff267f12689fe65665119f8bedd3fdf7f6.tgz-meta/values.schema.json
+      io.giantswarm.application.audience: all
+      io.giantswarm.application.managed: "true"
+    apiVersion: v2
+    appVersion: v1.18.2
+    created: "2026-02-19T17:48:38.580075275Z"
+    dependencies:
+    - alias: giantSwarmClusterIssuer
+      name: cert-manager-giantswarm-clusterissuer
+      repository: ""
+      version: 2.0.0
+    - condition: giantswarmNetworkPolicy.enabled
+      name: cert-manager-giantswarm-netpol
+      repository: ""
+      version: 0.1.0
+    - condition: ciliumNetworkPolicy.enabled
+      name: cert-manager-giantswarm-ciliumnetworkpolicies
+      repository: ""
+      version: 0.1.0
+    description: Simplifies the process of obtaining, renewing and using certificates.
+    digest: 3058f3114a3135b8e71f7ffaf9fc7d7b46e7083bfbbe54fbd6f9e0f3658b4238
+    home: https://github.com/giantswarm/cert-manager-app
+    icon: https://s.giantswarm.io/app-icons/cert-manager/1/light.svg
+    kubeVersion: '>=1.22.0-0'
+    maintainers:
+    - name: Shield
+    name: cert-manager-app
+    sources:
+    - https://github.com/cert-manager/cert-manager
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/cert-manager-app-3.9.4-4d0868ff267f12689fe65665119f8bedd3fdf7f6.tgz
+    version: 3.9.4-4d0868ff267f12689fe65665119f8bedd3fdf7f6
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/cert-manager-app-3.9.4-489cbc41004aa14f0d9670752d37d4627423ff2b.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/cert-manager-app-3.9.4-489cbc41004aa14f0d9670752d37d4627423ff2b.tgz-meta/README.md
       application.giantswarm.io/team: shield
@@ -30261,4 +30297,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef.tgz
     version: 3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef
-generated: "2026-02-19T17:48:11.174673519Z"
+generated: "2026-02-19T17:48:38.570674706Z"
