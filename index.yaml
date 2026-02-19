@@ -27465,6 +27465,34 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/trivy-operator-0.12.1-94ad498f7e7483c930287adf69b2466fa1502b2a.tgz
     version: 0.12.1-94ad498f7e7483c930287adf69b2466fa1502b2a
+  - annotations:
+      io.giantswarm.application.audience: all
+      io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/trivy-operator-0.12.1-82305af195ef5a2d1ffbe698fcb9c7d2285b3ce2.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/trivy-operator-app/82305af195ef5a2d1ffbe698fcb9c7d2285b3ce2/README.md
+      io.giantswarm.application.team: shield
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/trivy-operator-app/82305af195ef5a2d1ffbe698fcb9c7d2285b3ce2/helm/trivy-operator/values.schema.json
+    apiVersion: v2
+    appVersion: 0.27.3
+    created: "2026-02-19T14:13:10.130267608Z"
+    dependencies:
+    - name: trivy-operator
+      repository: ""
+      version: 0.30.0
+    description: A Giant Swarm App for trivy-operator, the cluster security tool from
+      Aqua Security.
+    digest: fc9ba80d868eb53361f9b2fddf642f02170151805e2a237324aaba13e9510dd8
+    home: https://github.com/giantswarm/trivy-operator-app
+    icon: https://s.giantswarm.io/app-icons/trivy/1/light.svg
+    maintainers:
+    - name: Giant Swarm applications team
+      url: https://github.com/giantswarm/trivy-operator-app
+    name: trivy-operator
+    sources:
+    - https://github.com/aquasecurity/trivy-operator
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/trivy-operator-0.12.1-82305af195ef5a2d1ffbe698fcb9c7d2285b3ce2.tgz
+    version: 0.12.1-82305af195ef5a2d1ffbe698fcb9c7d2285b3ce2
   vertical-pod-autoscaler-app:
   - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/vertical-pod-autoscaler-app-6.1.1-d9c2f83ccce92271de9a2573cecac7edec334495.tgz-meta/main.yaml
@@ -28308,4 +28336,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef.tgz
     version: 3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef
-generated: "2026-02-19T14:13:05.534735196Z"
+generated: "2026-02-19T14:13:10.125127604Z"
