@@ -1565,6 +1565,27 @@ entries:
     version: 0.16.0-01d1d8b2f9c45da5065bd1e468abafaeedbdf33a
   aws-cloud-controller-manager-app:
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/aws-cloud-controller-manager-app-2.0.0-ea582c82d90aaac0ec333a8e7e1647efc921245a.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/aws-cloud-controller-manager-app/ea582c82d90aaac0ec333a8e7e1647efc921245a/README.md
+      io.giantswarm.application.restrictions.cluster-singleton: "true"
+      io.giantswarm.application.restrictions.compatible-providers: aws
+      io.giantswarm.application.restrictions.fixed-namespace: kube-system
+      io.giantswarm.application.restrictions.gpu-instances: "false"
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/aws-cloud-controller-manager-app/ea582c82d90aaac0ec333a8e7e1647efc921245a/helm/aws-cloud-controller-manager-app/values.schema.json
+      ui.giantswarm.io/logo: https://s.giantswarm.io/app-icons/aws/2/dark.svg
+    apiVersion: v1
+    appVersion: 1.34.0
+    created: "2026-02-20T18:13:50.406170486Z"
+    description: A Helm chart to run AWS Cloud Controller Manager.
+    digest: 66b28cb1cd7d17d11ee85c6f108ccf0676c017402aa4db950b7e9d0c97739947
+    home: https://github.com/giantswarm/aws-cloud-controller-manager-app
+    icon: https://s.giantswarm.io/app-icons/aws/2/dark.svg
+    name: aws-cloud-controller-manager-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/aws-cloud-controller-manager-app-2.0.0-ea582c82d90aaac0ec333a8e7e1647efc921245a.tgz
+    version: 2.0.0-ea582c82d90aaac0ec333a8e7e1647efc921245a
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/aws-cloud-controller-manager-app-2.0.0-c7125098ae3c19f65e2eeebae3021988b8bb01ef.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/aws-cloud-controller-manager-app/c7125098ae3c19f65e2eeebae3021988b8bb01ef/README.md
       io.giantswarm.application.restrictions.cluster-singleton: "true"
@@ -31816,4 +31837,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef.tgz
     version: 3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef
-generated: "2026-02-20T18:12:16.874007797Z"
+generated: "2026-02-20T18:13:50.405429283Z"
