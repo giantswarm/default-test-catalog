@@ -5882,6 +5882,26 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/azurefile-csi-driver-app-2.0.0-900828e6839324381fc3dc22528a72f2425e26f0.tgz
     version: 2.0.0-900828e6839324381fc3dc22528a72f2425e26f0
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/azurefile-csi-driver-app-2.0.0-893f34efc7ce03806db10900c9485a6588c40151.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/azurefile-csi-driver-app/893f34efc7ce03806db10900c9485a6588c40151/README.md
+      io.giantswarm.application.restrictions.cluster-singleton: "true"
+      io.giantswarm.application.restrictions.compatible-providers: azure
+      io.giantswarm.application.restrictions.fixed-namespace: kube-system
+      io.giantswarm.application.restrictions.gpu-instances: "false"
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/azurefile-csi-driver-app/893f34efc7ce03806db10900c9485a6588c40151/helm/azurefile-csi-driver-app/values.schema.json
+    apiVersion: v2
+    appVersion: 1.34.2
+    created: "2026-02-27T17:38:14.544617359Z"
+    description: A Helm chart to run Azure CSI driver for Azure File.
+    digest: a737765ac5794af00578df0fda5dc471ce7a0a667e03d941b6a8106f68137e4c
+    home: https://github.com/giantswarm/azurefile-csi-driver-app
+    icon: https://s.giantswarm.io/app-icons/azure/1/dark.svg
+    name: azurefile-csi-driver-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/azurefile-csi-driver-app-2.0.0-893f34efc7ce03806db10900c9485a6588c40151.tgz
+    version: 2.0.0-893f34efc7ce03806db10900c9485a6588c40151
+  - annotations:
       application.giantswarm.io/team: phoenix
     apiVersion: v1
     appVersion: 1.34.2
@@ -38727,4 +38747,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef.tgz
     version: 3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef
-generated: "2026-02-27T17:37:57.92492798Z"
+generated: "2026-02-27T17:38:14.541558251Z"
