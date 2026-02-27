@@ -12787,6 +12787,28 @@ entries:
     version: 1.2.4-141575f7dbb9a2e871a3e947917d302961e58b77
   cilium-servicemonitors:
   - annotations:
+      io.giantswarm.application.audience: all
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/cilium-servicemonitors-0.1.4-5537088bae96c3fe920aaec6dd6eb1caeb291c04.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/cilium-servicemonitors-app/5537088bae96c3fe920aaec6dd6eb1caeb291c04/README.md
+      io.giantswarm.application.restrictions.cluster-singleton: "true"
+      io.giantswarm.application.restrictions.fixed-namespace: kube-system
+      io.giantswarm.application.team: cabbage
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/cilium-servicemonitors-app/5537088bae96c3fe920aaec6dd6eb1caeb291c04/helm/cilium-servicemonitors/values.schema.json
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-02-27T17:37:04.805497994Z"
+    description: Cilium ServiceMonitors
+    digest: 4089de4bdfaa9a9a95208637dc806c8cd653b5ebe6922437c96d267b2a9a402b
+    home: https://github.com/giantswarm/cilium-servicemonitors-app
+    icon: https://s.giantswarm.io/app-icons/cilium/1/dark.svg
+    keywords:
+    - monitoring
+    name: cilium-servicemonitors
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/cilium-servicemonitors-0.1.4-5537088bae96c3fe920aaec6dd6eb1caeb291c04.tgz
+    version: 0.1.4-5537088bae96c3fe920aaec6dd6eb1caeb291c04
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/cilium-servicemonitors-0.1.3-f2fd3bd68c99ea2122e31d2fa89c2f4b0839362e.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/cilium-servicemonitors-app/f2fd3bd68c99ea2122e31d2fa89c2f4b0839362e/README.md
       io.giantswarm.application.restrictions.cluster-singleton: "true"
@@ -38589,4 +38611,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef.tgz
     version: 3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef
-generated: "2026-02-27T17:36:59.754697781Z"
+generated: "2026-02-27T17:37:04.804489227Z"
