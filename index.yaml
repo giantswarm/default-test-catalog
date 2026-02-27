@@ -54,6 +54,32 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/alloy-0.17.0-ab61baeff0be73f3602b972f7999983b56c1eb07.tgz
     version: 0.17.0-ab61baeff0be73f3602b972f7999983b56c1eb07
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/alloy-0.17.0-a7e2f762fcf4974afcda4557753fec2135cc023d.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/alloy-app/a7e2f762fcf4974afcda4557753fec2135cc023d/README.md
+      io.giantswarm.application.team: atlas
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/alloy-app/a7e2f762fcf4974afcda4557753fec2135cc023d/helm/alloy/values.schema.json
+    apiVersion: v2
+    appVersion: v1.13.0
+    created: "2026-02-27T18:14:45.223500349Z"
+    dependencies:
+    - condition: alloy.enabled
+      name: alloy
+      repository: https://grafana.github.io/helm-charts
+      version: 1.6.0
+    description: Grafana Alloy OpenTelemetry Collector
+    digest: ba4f83568d2a24118c1dbc8a4d8cdd94ef1a32c4d952dae47257af8c9d661f82
+    home: https://github.com/giantswarm/alloy-app
+    icon: https://s.giantswarm.io/app-icons/grafana-alloy/1/light.png
+    maintainers:
+    - email: team-atlas@giantswarm.io
+      name: giantswarm/team-atlas
+    name: alloy
+    sources:
+    - https://github.com/grafana/alloy/tree/main/operations/helm/charts/alloy
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/alloy-0.17.0-a7e2f762fcf4974afcda4557753fec2135cc023d.tgz
+    version: 0.17.0-a7e2f762fcf4974afcda4557753fec2135cc023d
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/alloy-0.16.1.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/alloy-app/refs/tags/v0.16.1/README.md
       io.giantswarm.application.team: atlas
@@ -39728,4 +39754,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef.tgz
     version: 3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef
-generated: "2026-02-27T18:14:39.058385966Z"
+generated: "2026-02-27T18:14:45.219483394Z"
