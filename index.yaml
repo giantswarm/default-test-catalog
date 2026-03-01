@@ -16303,6 +16303,37 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/karpenter-bundle-2.1.0-d0b57638260ac964e9bd99ed6147f015b157b65a.tgz
     version: 2.1.0-d0b57638260ac964e9bd99ed6147f015b157b65a
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/karpenter-bundle-2.1.0-8f51899091487886e0afd3b667d71a8388a2d469.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/karpenter-app/8f51899091487886e0afd3b667d71a8388a2d469/README.md
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/karpenter-app/8f51899091487886e0afd3b667d71a8388a2d469/helm/karpenter-bundle/values.schema.json
+    apiVersion: v2
+    appVersion: 1.5.0
+    created: "2026-03-01T15:05:41.530384231Z"
+    description: A Helm chart bundle that deploys Karpenter with AWS Crossplane resources
+      (IAM roles, SQS queues, CloudWatch rules).
+    digest: d339c9c8fb8f74aa29071763aef8c426b4753a77e1939ee3ba4ed73906935b61
+    home: https://github.com/giantswarm/karpenter-app
+    icon: https://s.giantswarm.io/app-icons/karpenter/1/light.svg
+    keywords:
+    - cluster
+    - node
+    - scheduler
+    - autoscaling
+    - lifecycle
+    - bundle
+    - crossplane
+    maintainers:
+    - email: team-phoenix@giantswarm.io
+      name: giantswarm/team-phoenix
+    name: karpenter-bundle
+    sources:
+    - https://github.com/aws/karpenter/
+    - https://karpenter.sh/
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/karpenter-bundle-2.1.0-8f51899091487886e0afd3b667d71a8388a2d469.tgz
+    version: 2.1.0-8f51899091487886e0afd3b667d71a8388a2d469
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/karpenter-bundle-2.1.0-5c4ebd512cfa495ecfd651c46872c7ec8415f557.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/karpenter-app/5c4ebd512cfa495ecfd651c46872c7ec8415f557/README.md
       io.giantswarm.application.team: phoenix
@@ -29422,4 +29453,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef.tgz
     version: 3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef
-generated: "2026-03-01T15:05:33.452835723Z"
+generated: "2026-03-01T15:05:41.52907232Z"
