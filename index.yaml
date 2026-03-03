@@ -24569,6 +24569,26 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/observability-bundle-2.6.0-c2dcfe1d3bc17363d0d98aebea3275eb38e608a7.tgz
     version: 2.6.0-c2dcfe1d3bc17363d0d98aebea3275eb38e608a7
   - annotations:
+      io.giantswarm.application.app-type: bundle
+      io.giantswarm.application.in-cluster-app: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/observability-bundle-2.6.0-b7ab0117c310318da670155cf0547a2822975fc7.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/observability-bundle/b7ab0117c310318da670155cf0547a2822975fc7/README.md
+      io.giantswarm.application.team: atlas
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/observability-bundle/b7ab0117c310318da670155cf0547a2822975fc7/helm/observability-bundle/values.schema.json
+    apiVersion: v2
+    created: "2026-03-03T10:56:47.905020192Z"
+    description: A Helm chart for Giant Swarm's collection of observability tools.
+    digest: b105e8ff60786ea60059160d9bd390af0a51c188e4adfb1f67feaec448108e48
+    home: https://github.com/giantswarm/observability-bundle
+    icon: https://s.giantswarm.io/app-icons/giantswarm/1/light.svg
+    kubeVersion: '>=1.25.0-0'
+    name: observability-bundle
+    sources:
+    - https://github.com/giantswarm/observability-bundle
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/observability-bundle-2.6.0-b7ab0117c310318da670155cf0547a2822975fc7.tgz
+    version: 2.6.0-b7ab0117c310318da670155cf0547a2822975fc7
+  - annotations:
       config.giantswarm.io/version: 1.x.x
       io.giantswarm.application.app-type: bundle
       io.giantswarm.application.in-cluster-app: "true"
@@ -30691,4 +30711,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef.tgz
     version: 3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef
-generated: "2026-03-03T10:45:59.161434309Z"
+generated: "2026-03-03T10:56:47.903472293Z"
