@@ -1521,6 +1521,27 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/aws-ebs-csi-driver-4.1.1-d474018191d6b66c15cee610ee6e6d679716fd62.tgz
     version: 4.1.1-d474018191d6b66c15cee610ee6e6d679716fd62
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/aws-ebs-csi-driver-4.1.1-cad9e303121f366c84ea439a909d05adbe0d8118.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/aws-ebs-csi-driver-app/cad9e303121f366c84ea439a909d05adbe0d8118/README.md
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/aws-ebs-csi-driver-app/cad9e303121f366c84ea439a909d05adbe0d8118/helm/aws-ebs-csi-driver/values.schema.json
+    apiVersion: v2
+    appVersion: 4.1.1-cad9e303121f366c84ea439a909d05adbe0d8118
+    created: "2026-03-05T18:24:00.74085509Z"
+    dependencies:
+    - alias: upstream
+      name: aws-ebs-csi-driver
+      repository: https://kubernetes-sigs.github.io/aws-ebs-csi-driver
+      version: 2.56.1
+    description: A Helm chart for the AWS EBS CSI Driver.
+    digest: 418a7827bf0a9c41aef9be83ed2e7b42b3f5c8301ae85d05fff468d0d4a6f92b
+    home: https://github.com/giantswarm/aws-ebs-csi-driver-app
+    icon: https://s.giantswarm.io/app-icons/aws/2/dark.svg
+    name: aws-ebs-csi-driver
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/aws-ebs-csi-driver-4.1.1-cad9e303121f366c84ea439a909d05adbe0d8118.tgz
+    version: 4.1.1-cad9e303121f366c84ea439a909d05adbe0d8118
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/aws-ebs-csi-driver-4.1.1-c17d1145488c5601924aaa63597b91f7607641fe.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/aws-ebs-csi-driver-app/c17d1145488c5601924aaa63597b91f7607641fe/README.md
       io.giantswarm.application.team: phoenix
@@ -34523,4 +34544,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef.tgz
     version: 3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef
-generated: "2026-03-05T18:07:54.478520902Z"
+generated: "2026-03-05T18:24:00.733537719Z"
