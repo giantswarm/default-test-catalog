@@ -2043,6 +2043,31 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/aws-node-termination-handler-1.23.1-fb2e7dd4f074cc0c9cc22fd0475b24b70863c6cf.tgz
     version: 1.23.1-fb2e7dd4f074cc0c9cc22fd0475b24b70863c6cf
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/aws-node-termination-handler-1.23.1-d18e5e812eea4d1ad1508c59c0a71eb731b4fc0d.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/aws-node-termination-handler-app/d18e5e812eea4d1ad1508c59c0a71eb731b4fc0d/README.md
+      io.giantswarm.application.restrictions.compatible-providers: aws
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/aws-node-termination-handler-app/d18e5e812eea4d1ad1508c59c0a71eb731b4fc0d/helm/aws-node-termination-handler/values.schema.json
+    apiVersion: v2
+    appVersion: 1.25.2
+    created: "2026-03-05T08:33:52.736365535Z"
+    dependencies:
+    - alias: upstream
+      name: aws-node-termination-handler
+      repository: https://aws.github.io/eks-charts
+      version: 0.21.0
+    description: Deploy components for the aws-node-termination-handler app
+    digest: f5af94d6bbb5b463cb15b3707832e545c3c2140895289ac518dc2bcbbd6a4655
+    home: https://github.com/giantswarm/aws-node-termination-handler-app
+    icon: https://s.giantswarm.io/app-icons/aws/2/light.svg
+    name: aws-node-termination-handler
+    sources:
+    - https://raw.githubusercontent.com/giantswarm/aws-node-termination-handler-app/v[[
+      .Version ]]/README.md
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/aws-node-termination-handler-1.23.1-d18e5e812eea4d1ad1508c59c0a71eb731b4fc0d.tgz
+    version: 1.23.1-d18e5e812eea4d1ad1508c59c0a71eb731b4fc0d
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/aws-node-termination-handler-1.23.1-cea3206af9055e191ae6b08f52768d2c8f5b2b5b.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/aws-node-termination-handler-app/cea3206af9055e191ae6b08f52768d2c8f5b2b5b/README.md
       io.giantswarm.application.restrictions.compatible-providers: aws
@@ -33466,4 +33491,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef.tgz
     version: 3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef
-generated: "2026-03-05T08:09:46.552393527Z"
+generated: "2026-03-05T08:33:52.734277999Z"
