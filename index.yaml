@@ -1590,6 +1590,27 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/aws-ebs-csi-driver-4.1.1-0ba52ce5528dbed13f0115d6882ab37e9a8897f3.tgz
     version: 4.1.1-0ba52ce5528dbed13f0115d6882ab37e9a8897f3
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/aws-ebs-csi-driver-4.1.1-02e3d73abca73cfd03971e08e94fb095c1d4cb53.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/aws-ebs-csi-driver-app/02e3d73abca73cfd03971e08e94fb095c1d4cb53/README.md
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/aws-ebs-csi-driver-app/02e3d73abca73cfd03971e08e94fb095c1d4cb53/helm/aws-ebs-csi-driver/values.schema.json
+    apiVersion: v2
+    appVersion: 1.56.0
+    created: "2026-03-05T12:10:34.726975398Z"
+    dependencies:
+    - alias: upstream
+      name: aws-ebs-csi-driver
+      repository: https://kubernetes-sigs.github.io/aws-ebs-csi-driver
+      version: 2.56.1
+    description: A Helm chart for the AWS EBS CSI Driver.
+    digest: 323e224acfaade4f99e4a5fc796c2ef42c723379ab40875d80f99618c2cc811d
+    home: https://github.com/giantswarm/aws-ebs-csi-driver-app
+    icon: https://s.giantswarm.io/app-icons/aws/2/dark.svg
+    name: aws-ebs-csi-driver
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/aws-ebs-csi-driver-4.1.1-02e3d73abca73cfd03971e08e94fb095c1d4cb53.tgz
+    version: 4.1.1-02e3d73abca73cfd03971e08e94fb095c1d4cb53
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/aws-ebs-csi-driver-4.1.0-d584b38e5bd833b418c9433ae95e8ab2511014f9.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/aws-ebs-csi-driver-app/d584b38e5bd833b418c9433ae95e8ab2511014f9/README.md
       io.giantswarm.application.team: phoenix
@@ -33566,4 +33587,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef.tgz
     version: 3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef
-generated: "2026-03-05T11:40:32.940923197Z"
+generated: "2026-03-05T12:10:34.722819608Z"
