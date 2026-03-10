@@ -1643,6 +1643,27 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/aws-cloud-controller-manager-app-2.0.0-3e5aaa964beb28bd3365ceee927aacc393566be4.tgz
     version: 2.0.0-3e5aaa964beb28bd3365ceee927aacc393566be4
+  - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/aws-cloud-controller-manager-app-2.0.0-3b7b360ca5d1623f65bec556ee94086e7b3357e9.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/aws-cloud-controller-manager-app/3b7b360ca5d1623f65bec556ee94086e7b3357e9/README.md
+      io.giantswarm.application.restrictions.cluster-singleton: "true"
+      io.giantswarm.application.restrictions.compatible-providers: aws
+      io.giantswarm.application.restrictions.fixed-namespace: kube-system
+      io.giantswarm.application.restrictions.gpu-instances: "false"
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/aws-cloud-controller-manager-app/3b7b360ca5d1623f65bec556ee94086e7b3357e9/helm/aws-cloud-controller-manager-app/values.schema.json
+      ui.giantswarm.io/logo: https://s.giantswarm.io/app-icons/aws/2/dark.svg
+    apiVersion: v1
+    appVersion: 1.35.0
+    created: "2026-03-10T13:16:24.811917649Z"
+    description: A Helm chart to run AWS Cloud Controller Manager.
+    digest: 45403cc2f190549e0b260e4c7e53020325c8dd1bb956d35b1e9d390c7d940469
+    home: https://github.com/giantswarm/aws-cloud-controller-manager-app
+    icon: https://s.giantswarm.io/app-icons/aws/2/dark.svg
+    name: aws-cloud-controller-manager-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/aws-cloud-controller-manager-app-2.0.0-3b7b360ca5d1623f65bec556ee94086e7b3357e9.tgz
+    version: 2.0.0-3b7b360ca5d1623f65bec556ee94086e7b3357e9
   aws-ebs-csi-driver:
   - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/aws-ebs-csi-driver-4.1.2-a5849697d5c0a8cade32eedb13bb0b24a3e69f9a.tgz-meta/main.yaml
@@ -38146,4 +38167,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef.tgz
     version: 3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef
-generated: "2026-03-10T13:12:56.624833393Z"
+generated: "2026-03-10T13:16:24.811154469Z"
