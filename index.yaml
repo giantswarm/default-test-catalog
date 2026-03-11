@@ -3723,6 +3723,30 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/aws-node-termination-handler-1.3.0-20dd2758eac919f6ceab77f14e20913c64b6458a.tgz
     version: 1.3.0-20dd2758eac919f6ceab77f14e20913c64b6458a
+  - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/aws-node-termination-handler-1.3.0-19b98606062b33289b46032cbe227a68abd342a9.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/aws-nth-bundle/19b98606062b33289b46032cbe227a68abd342a9/README.md
+      io.giantswarm.application.restrictions.compatible-providers: aws
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/aws-nth-bundle/19b98606062b33289b46032cbe227a68abd342a9/helm/aws-node-termination-handler/values.schema.json
+    apiVersion: v2
+    appVersion: 1.25.2
+    created: "2026-03-11T14:11:42.78815109Z"
+    dependencies:
+    - alias: upstream
+      name: aws-node-termination-handler
+      repository: https://aws.github.io/eks-charts
+      version: 0.21.0
+    description: Deploy components for the aws-node-termination-handler app
+    digest: 7c295ee1053f8c2414dd1e475a63c9a7e05ceaba8808121498812ebb323a1a46
+    home: https://github.com/giantswarm/aws-nth-bundle
+    icon: https://s.giantswarm.io/app-icons/aws/2/light.svg
+    name: aws-node-termination-handler
+    sources:
+    - https://raw.githubusercontent.com/giantswarm/aws-nth-bundle/v[[ .Version ]]/README.md
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/aws-node-termination-handler-1.3.0-19b98606062b33289b46032cbe227a68abd342a9.tgz
+    version: 1.3.0-19b98606062b33289b46032cbe227a68abd342a9
   aws-node-termination-handler-bundle:
   - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/aws-node-termination-handler-bundle-1.23.1-fc4d904e18770ad59ed9eaac9ca2154875e67336.tgz-meta/main.yaml
@@ -40651,4 +40675,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef.tgz
     version: 3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef
-generated: "2026-03-11T14:11:21.271012343Z"
+generated: "2026-03-11T14:11:42.786252028Z"
