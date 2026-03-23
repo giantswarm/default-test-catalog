@@ -31905,6 +31905,32 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-20.2.0-40034105f001789d6186d0a803d032a6c45c89f1.tgz
     version: 20.2.0-40034105f001789d6186d0a803d032a6c45c89f1
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-20.2.0-3c3cbdcbbec7835481bfcfe1ea79a7059eea7b50.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/kube-prometheus-stack-app/3c3cbdcbbec7835481bfcfe1ea79a7059eea7b50/README.md
+      io.giantswarm.application.team: atlas
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/kube-prometheus-stack-app/3c3cbdcbbec7835481bfcfe1ea79a7059eea7b50/helm/kube-prometheus-stack/values.schema.json
+    apiVersion: v2
+    appVersion: v0.89.0
+    created: "2026-03-23T14:41:08.316099164Z"
+    dependencies:
+    - name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 82.13.5
+    description: Giant Swarm's Prometheus Operator Deployment
+    digest: 523b1f279f75184b6d41a413caee911cd9f27266b0f37f97445e974f69915a2b
+    home: https://github.com/giantswarm/kube-prometheus-stack-app
+    icon: https://s.giantswarm.io/app-icons/prometheus-operator/2/light.svg
+    kubeVersion: '>=1.25.0-0'
+    maintainers:
+    - email: team-atlas@giantswarm.io
+      name: giantswarm/team-atlas
+    name: kube-prometheus-stack
+    sources:
+    - https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-20.2.0-3c3cbdcbbec7835481bfcfe1ea79a7059eea7b50.tgz
+    version: 20.2.0-3c3cbdcbbec7835481bfcfe1ea79a7059eea7b50
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-20.2.0-3aaca4e0a1337f8ae16afb4c61f8d3e24d92cecf.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/kube-prometheus-stack-app/3aaca4e0a1337f8ae16afb4c61f8d3e24d92cecf/README.md
       io.giantswarm.application.team: atlas
@@ -58519,4 +58545,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef.tgz
     version: 3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef
-generated: "2026-03-23T14:35:12.722310293Z"
+generated: "2026-03-23T14:41:08.266336039Z"
