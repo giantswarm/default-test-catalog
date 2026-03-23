@@ -34365,6 +34365,28 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/kube-state-metrics-0.0.0-29559fb8c763b827bcb740735dfea311fb2445fb.tgz
     version: 0.0.0-29559fb8c763b827bcb740735dfea311fb2445fb
+  - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/kube-state-metrics-0.0.0-0d15470235185438bb2c5a35434a3507a827338b.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/kube-state-metrics-app/0d15470235185438bb2c5a35434a3507a827338b/README.md
+      io.giantswarm.application.team: tenet
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/kube-state-metrics-app/0d15470235185438bb2c5a35434a3507a827338b/helm/kube-state-metrics/values.schema.json
+    apiVersion: v2
+    appVersion: 2.15.0
+    created: "2026-03-23T16:40:14.512965112Z"
+    dependencies:
+    - name: kube-state-metrics
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 7.2.2
+    description: Generate and expose cluster-level metrics
+    digest: a8f401c7800fb5f59db14dd49f9b2634a1b3ae68dd4ddf58ce626c2f09af30be
+    home: https://github.com/giantswarm/kube-state-metrics-app
+    icon: https://s.giantswarm.io/app-icons/giantswarm/1/dark.svg
+    name: kube-state-metrics
+    sources:
+    - https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-state-metrics
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/kube-state-metrics-0.0.0-0d15470235185438bb2c5a35434a3507a827338b.tgz
+    version: 0.0.0-0d15470235185438bb2c5a35434a3507a827338b
   kube-vip:
   - annotations:
       io.giantswarm.application.audience: all
@@ -58633,4 +58655,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef.tgz
     version: 3.4.3-00d5bd47425d4f37b7a84f4eebd5be99a01125ef
-generated: "2026-03-23T16:37:19.686906009Z"
+generated: "2026-03-23T16:40:14.510064219Z"
