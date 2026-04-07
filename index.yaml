@@ -36565,6 +36565,32 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/kyverno-crds-1.17.0-088351446c55150f857d78f6656d16bd47f91ed2.tgz
     version: 1.17.0-088351446c55150f857d78f6656d16bd47f91ed2
+  - annotations:
+      io.giantswarm.application.audience: all
+      io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/kyverno-crds-1.17.0-05de5ce441a41bffaf979fc93a85987d130bfed4.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/kyverno-crds/05de5ce441a41bffaf979fc93a85987d130bfed4/README.md
+      io.giantswarm.application.team: shield
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/kyverno-crds/05de5ce441a41bffaf979fc93a85987d130bfed4/helm/kyverno-crds/values.schema.json
+    apiVersion: v2
+    created: "2026-04-07T17:30:52.025770863Z"
+    dependencies:
+    - name: crds
+      repository: ""
+      version: 3.7.1
+    - name: kyverno-api
+      repository: ""
+      version: v0.0.0
+    description: This app contains the Kyverno CRDs.
+    digest: f2296b0fa4aeab50ed63fca16fddd2a18095b2e496a870e9ac070238b27ef9f4
+    home: https://github.com/giantswarm/kyverno-crds
+    icon: https://s.giantswarm.io/app-icons/kyverno/1/light.svg
+    name: kyverno-crds
+    sources:
+    - https://github.com/kyverno/kyverno
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/kyverno-crds-1.17.0-05de5ce441a41bffaf979fc93a85987d130bfed4.tgz
+    version: 1.17.0-05de5ce441a41bffaf979fc93a85987d130bfed4
   kyverno-policies:
   - annotations:
       io.giantswarm.application.audience: all
@@ -46475,4 +46501,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-13e075d55929c7605e031030c9a97491d3be6330.tgz
     version: 3.4.3-13e075d55929c7605e031030c9a97491d3be6330
-generated: "2026-04-07T17:30:29.08782766Z"
+generated: "2026-04-07T17:30:51.993408679Z"
