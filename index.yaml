@@ -17085,6 +17085,26 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/k8s-dns-node-cache-app-2.9.2-ceb42beb9900c4ff96afb34bfcdd96d11afcda9d.tgz
     version: 2.9.2-ceb42beb9900c4ff96afb34bfcdd96d11afcda9d
+  - annotations:
+      io.giantswarm.application.audience: all
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/k8s-dns-node-cache-app-2.9.2-38510f54c4810fdf5d8911b3fa71002e8cb43a5a.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/k8s-dns-node-cache-app/38510f54c4810fdf5d8911b3fa71002e8cb43a5a/README.md
+      io.giantswarm.application.restrictions.cluster-singleton: "true"
+      io.giantswarm.application.restrictions.fixed-namespace: kube-system
+      io.giantswarm.application.restrictions.gpu-instances: "false"
+      io.giantswarm.application.team: cabbage
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/k8s-dns-node-cache-app/38510f54c4810fdf5d8911b3fa71002e8cb43a5a/helm/k8s-dns-node-cache-app/values.schema.json
+    apiVersion: v2
+    appVersion: 1.26.7
+    created: "2026-04-09T14:36:43.755277349Z"
+    description: A Helm chart to run NodeLocal DNSCache in Kubernetes clusters
+    digest: 52b87ee20e805d47ce361968e6222d5923b3445b08d2bd3b06b6b8185f61b3fa
+    home: https://github.com/giantswarm/k8s-dns-node-cache-app
+    icon: https://s.giantswarm.io/app-icons/giantswarm/1/dark.svg
+    name: k8s-dns-node-cache-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/k8s-dns-node-cache-app-2.9.2-38510f54c4810fdf5d8911b3fa71002e8cb43a5a.tgz
+    version: 2.9.2-38510f54c4810fdf5d8911b3fa71002e8cb43a5a
   kamaji-etcd:
   - annotations:
       artifacthub.io/changes: |
@@ -49890,4 +49910,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-13e075d55929c7605e031030c9a97491d3be6330.tgz
     version: 3.4.3-13e075d55929c7605e031030c9a97491d3be6330
-generated: "2026-04-09T02:48:14.718167501Z"
+generated: "2026-04-09T14:36:43.754490504Z"
