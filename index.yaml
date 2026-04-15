@@ -50181,6 +50181,23 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/teleport-kube-agent-0.10.8-4644b7bc595fd8b7a01ecee243f3d104b2b486cc.tgz
     version: 0.10.8-4644b7bc595fd8b7a01ecee243f3d104b2b486cc
+  test-app:
+  - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/test-app-1.0.1-bf663b59ee171322cd6b24081d1c93847e86eb03.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/test-app/refs/tags/v1.0.1-bf663b59ee171322cd6b24081d1c93847e86eb03/README.md
+      io.giantswarm.application.team: honeybadger
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/test-app/refs/tags/v1.0.1-bf663b59ee171322cd6b24081d1c93847e86eb03/helm/test-app/values.schema.json
+    apiVersion: v2
+    appVersion: v2.13.0
+    created: "2026-04-15T10:43:31.928358388Z"
+    description: A Helm chart for a test app
+    digest: e37e333a249e2b26a089adbe1c24baf01903f13863f50703d411a099e8c65383
+    home: https://github.com/giantswarm/test-app
+    icon: https://s.giantswarm.io/app-icons/1/png/default-app-light.png
+    name: test-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/test-app-1.0.1-bf663b59ee171322cd6b24081d1c93847e86eb03.tgz
+    version: 1.0.1-bf663b59ee171322cd6b24081d1c93847e86eb03
   trivy:
   - annotations:
       io.giantswarm.application.audience: all
@@ -52808,4 +52825,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-13e075d55929c7605e031030c9a97491d3be6330.tgz
     version: 3.4.3-13e075d55929c7605e031030c9a97491d3be6330
-generated: "2026-04-15T10:43:23.600048483Z"
+generated: "2026-04-15T10:43:31.927479122Z"
