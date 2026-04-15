@@ -27290,6 +27290,28 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/kube-state-metrics-0.0.0-29559fb8c763b827bcb740735dfea311fb2445fb.tgz
     version: 0.0.0-29559fb8c763b827bcb740735dfea311fb2445fb
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/kube-state-metrics-0.0.0-26c1653c4f6971be9f77a6fb3558d28fa1a4afa4.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/kube-state-metrics-app/26c1653c4f6971be9f77a6fb3558d28fa1a4afa4/README.md
+      io.giantswarm.application.team: tenet
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/kube-state-metrics-app/26c1653c4f6971be9f77a6fb3558d28fa1a4afa4/helm/kube-state-metrics/values.schema.json
+    apiVersion: v2
+    appVersion: 2.15.0
+    created: "2026-04-15T10:35:19.787990046Z"
+    dependencies:
+    - name: kube-state-metrics
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 7.2.2
+    description: Generate and expose cluster-level metrics
+    digest: c6b2cb2d726a46f94761a247065f158b4dd9dd5d5267ac49fa60a36a01249ee9
+    home: https://github.com/giantswarm/kube-state-metrics-app
+    icon: https://s.giantswarm.io/app-icons/giantswarm/1/dark.svg
+    name: kube-state-metrics
+    sources:
+    - https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-state-metrics
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/kube-state-metrics-0.0.0-26c1653c4f6971be9f77a6fb3558d28fa1a4afa4.tgz
+    version: 0.0.0-26c1653c4f6971be9f77a6fb3558d28fa1a4afa4
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/kube-state-metrics-0.0.0-0d15470235185438bb2c5a35434a3507a827338b.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/kube-state-metrics-app/0d15470235185438bb2c5a35434a3507a827338b/README.md
       io.giantswarm.application.team: tenet
@@ -52440,4 +52462,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-13e075d55929c7605e031030c9a97491d3be6330.tgz
     version: 3.4.3-13e075d55929c7605e031030c9a97491d3be6330
-generated: "2026-04-15T10:34:44.089549392Z"
+generated: "2026-04-15T10:35:19.785539531Z"
