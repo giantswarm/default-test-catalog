@@ -43961,6 +43961,31 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/node-exporter-app-1.20.11-61f3333ae2121d646fe395f18c6d2413abc2e7a9.tgz
     version: 1.20.11-61f3333ae2121d646fe395f18c6d2413abc2e7a9
+  node-problem-detector:
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/node-problem-detector-0.5.2-760328b71da2b83525c10ff07095ebc79dd22a93.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/node-problem-detector-0.5.2-760328b71da2b83525c10ff07095ebc79dd22a93.tgz-meta/README.md
+      application.giantswarm.io/team: phoenix
+    apiVersion: v2
+    appVersion: v0.8.20
+    created: "2026-04-15T10:42:52.234995483Z"
+    dependencies:
+    - name: node-problem-detector
+      repository: oci://ghcr.io/deliveryhero/helm-charts
+      version: 2.3.21
+    description: A helm chart for running node-problem-detector on a cluster.
+    digest: 4ff0f14d37f3b67d53767e3559a2bda13c702498c17a37746db02f7a37ef9a30
+    home: https://github.com/giantswarm/node-problem-detector-app
+    icon: https://s.giantswarm.io/app-icons/giantswarm/1/dark.svg
+    name: node-problem-detector
+    sources:
+    - https://github.com/giantswarm/node-problem-detector-app
+    - https://github.com/kubernetes/node-problem-detector
+    - https://kubernetes.io/docs/concepts/architecture/nodes/#condition
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/node-problem-detector-0.5.2-760328b71da2b83525c10ff07095ebc79dd22a93.tgz
+    version: 0.5.2-760328b71da2b83525c10ff07095ebc79dd22a93
   observability-bundle:
   - annotations:
       io.giantswarm.application.app-type: bundle
@@ -52745,4 +52770,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-13e075d55929c7605e031030c9a97491d3be6330.tgz
     version: 3.4.3-13e075d55929c7605e031030c9a97491d3be6330
-generated: "2026-04-15T10:42:16.010590038Z"
+generated: "2026-04-15T10:42:52.232687635Z"
