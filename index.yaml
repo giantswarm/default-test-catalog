@@ -38065,6 +38065,37 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/kubescape-0.0.6-000b9364ca514aa65e0dc2c179fb7f202936344c.tgz
     version: 0.0.6-000b9364ca514aa65e0dc2c179fb7f202936344c
+  - annotations:
+      io.giantswarm.application.audience: all
+      io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/kubescape-0.0.0-b84b65d8a3e7eb6eaf2ca65e8b8610fc5a595194.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/kubescape-app/b84b65d8a3e7eb6eaf2ca65e8b8610fc5a595194/README.md
+      io.giantswarm.application.team: shield
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/kubescape-app/b84b65d8a3e7eb6eaf2ca65e8b8610fc5a595194/helm/kubescape/values.schema.json
+    apiVersion: v2
+    created: "2026-04-16T11:15:53.330830781Z"
+    dependencies:
+    - condition: exceptions.enabled
+      name: exceptions
+      repository: ""
+      version: 0.0.0
+    - name: dependency_chart
+      repository: ""
+      version: 0.0.0
+    - name: kubescape-operator
+      repository: ""
+      version: '>1.28.0'
+    description: This chart contains the kubescape operator chart and custom Giant
+      Swarm resources.
+    digest: eabcbae54fc75c919dbb2817e33ad2adfde15fd07368637adadebfa0426f6346
+    home: https://github.com/giantswarm/kubescape-app
+    icon: https://s.giantswarm.io/app-icons/kubescape/1/color.svg
+    name: kubescape
+    sources:
+    - https://github.com/kubescape/helm-charts
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/kubescape-0.0.0-b84b65d8a3e7eb6eaf2ca65e8b8610fc5a595194.tgz
+    version: 0.0.0-b84b65d8a3e7eb6eaf2ca65e8b8610fc5a595194
   kyverno:
   - annotations:
       config.giantswarm.io/version: 1.x.x
@@ -58337,4 +58368,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-13e075d55929c7605e031030c9a97491d3be6330.tgz
     version: 3.4.3-13e075d55929c7605e031030c9a97491d3be6330
-generated: "2026-04-16T11:15:49.856465173Z"
+generated: "2026-04-16T11:15:53.324130078Z"
