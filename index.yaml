@@ -35876,6 +35876,37 @@ entries:
   - annotations:
       io.giantswarm.application.audience: all
       io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/kubescape-0.0.6-3a0607026d09a25ec2ae1dc2a8887a2921d49a6e.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/kubescape-app/3a0607026d09a25ec2ae1dc2a8887a2921d49a6e/README.md
+      io.giantswarm.application.team: shield
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/kubescape-app/3a0607026d09a25ec2ae1dc2a8887a2921d49a6e/helm/kubescape/values.schema.json
+    apiVersion: v2
+    created: "2026-04-16T10:37:33.141223998Z"
+    dependencies:
+    - condition: exceptions.enabled
+      name: exceptions
+      repository: ""
+      version: 0.0.0
+    - name: dependency_chart
+      repository: ""
+      version: 0.0.0
+    - name: kubescape-operator
+      repository: ""
+      version: '>1.28.0'
+    description: This chart contains the kubescape operator chart and custom Giant
+      Swarm resources.
+    digest: 42ec7f6e5969c01db726ba48e2d9b420bb1a1563eba8088d0aed802fbf80511e
+    home: https://github.com/giantswarm/kubescape-app
+    icon: https://s.giantswarm.io/app-icons/kubescape/1/color.svg
+    name: kubescape
+    sources:
+    - https://github.com/kubescape/helm-charts
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/kubescape-0.0.6-3a0607026d09a25ec2ae1dc2a8887a2921d49a6e.tgz
+    version: 0.0.6-3a0607026d09a25ec2ae1dc2a8887a2921d49a6e
+  - annotations:
+      io.giantswarm.application.audience: all
+      io.giantswarm.application.managed: "true"
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/kubescape-0.0.6-396620f38c53c21067f7272f8d5d02205da72cd9.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/kubescape-app/396620f38c53c21067f7272f8d5d02205da72cd9/README.md
       io.giantswarm.application.team: shield
@@ -57179,4 +57210,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-13e075d55929c7605e031030c9a97491d3be6330.tgz
     version: 3.4.3-13e075d55929c7605e031030c9a97491d3be6330
-generated: "2026-04-16T10:32:39.467170054Z"
+generated: "2026-04-16T10:37:33.135006034Z"
