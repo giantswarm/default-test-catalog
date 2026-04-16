@@ -47275,6 +47275,35 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/kyverno-policies-0.25.0-03b7fe68bd87a0dcf0c7d25409c3d70d936bcdd1.tgz
     version: 0.25.0-03b7fe68bd87a0dcf0c7d25409c3d70d936bcdd1
+  - annotations:
+      io.giantswarm.application.audience: all
+      io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/kyverno-policies-0.0.0-57ef41ce1ce6be506bd90b364c7b2e1c3e2495a0.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/kyverno-policies/57ef41ce1ce6be506bd90b364c7b2e1c3e2495a0/README.md
+      io.giantswarm.application.restrictions.cluster-singleton: "true"
+      io.giantswarm.application.team: shield
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/kyverno-policies/57ef41ce1ce6be506bd90b364c7b2e1c3e2495a0/helm/kyverno-policies/values.schema.json
+    apiVersion: v2
+    created: "2026-04-16T11:16:03.946151822Z"
+    dependencies:
+    - name: kyverno-policies
+      repository: ""
+      version: 3.7.0
+    description: 'Kubernetes Pod Security Standards implemented as Kyverno policies '
+    digest: c32558656623af0b1e921deb2510621834635dca40b9157b8a8b9f3fcaf3adbe
+    home: https://github.com/giantswarm/kyverno-policies
+    icon: https://s.giantswarm.io/app-icons/kyverno/1/light.svg
+    keywords:
+    - kubernetes
+    - policy-agent
+    - validating-webhook
+    - admission-controller
+    name: kyverno-policies
+    sources:
+    - https://github.com/giantswarm/kyverno-policies
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/kyverno-policies-0.0.0-57ef41ce1ce6be506bd90b364c7b2e1c3e2495a0.tgz
+    version: 0.0.0-57ef41ce1ce6be506bd90b364c7b2e1c3e2495a0
   kyverno-policy-operator:
   - annotations:
       io.giantswarm.application.audience: all
@@ -58406,4 +58435,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-13e075d55929c7605e031030c9a97491d3be6330.tgz
     version: 3.4.3-13e075d55929c7605e031030c9a97491d3be6330
-generated: "2026-04-16T11:15:58.868685482Z"
+generated: "2026-04-16T11:16:03.944193468Z"
