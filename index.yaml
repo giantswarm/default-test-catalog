@@ -9542,6 +9542,27 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/azuredisk-csi-driver-app-2.1.0-ed2972a90bfe5b5ef1c8cf896e30515c45d0132d.tgz
     version: 2.1.0-ed2972a90bfe5b5ef1c8cf896e30515c45d0132d
+  azurefile-csi-driver-app:
+  - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/azurefile-csi-driver-app-2.0.0-dcbdb6aaac3c1e2110121805a7c1b9d2361e73f4.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/azurefile-csi-driver-app/dcbdb6aaac3c1e2110121805a7c1b9d2361e73f4/README.md
+      io.giantswarm.application.restrictions.cluster-singleton: "true"
+      io.giantswarm.application.restrictions.compatible-providers: azure
+      io.giantswarm.application.restrictions.fixed-namespace: kube-system
+      io.giantswarm.application.restrictions.gpu-instances: "false"
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/azurefile-csi-driver-app/dcbdb6aaac3c1e2110121805a7c1b9d2361e73f4/helm/azurefile-csi-driver-app/values.schema.json
+    apiVersion: v2
+    appVersion: 1.34.2
+    created: "2026-04-17T15:24:55.915793522Z"
+    description: A Helm chart to run Azure CSI driver for Azure File.
+    digest: 548cda95b208f1c2a025334a1352fb59962042dfe6bfeabfdfe94d01a6fdae3c
+    home: https://github.com/giantswarm/azurefile-csi-driver-app
+    icon: https://s.giantswarm.io/app-icons/azure/1/dark.svg
+    name: azurefile-csi-driver-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/azurefile-csi-driver-app-2.0.0-dcbdb6aaac3c1e2110121805a7c1b9d2361e73f4.tgz
+    version: 2.0.0-dcbdb6aaac3c1e2110121805a7c1b9d2361e73f4
   capa-karpenter-taint-remover:
   - annotations:
       io.giantswarm.application.audience: all
@@ -62529,4 +62550,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-13e075d55929c7605e031030c9a97491d3be6330.tgz
     version: 3.4.3-13e075d55929c7605e031030c9a97491d3be6330
-generated: "2026-04-17T15:23:32.000441327Z"
+generated: "2026-04-17T15:24:55.912592329Z"
