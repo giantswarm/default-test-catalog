@@ -2,6 +2,32 @@ apiVersion: v1
 entries:
   alloy:
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/alloy-0.18.0-acb3de2fc54165a04e1b34fdc7f8a100c796e8fe.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/alloy-app/acb3de2fc54165a04e1b34fdc7f8a100c796e8fe/README.md
+      io.giantswarm.application.team: atlas
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/alloy-app/acb3de2fc54165a04e1b34fdc7f8a100c796e8fe/helm/alloy/values.schema.json
+    apiVersion: v2
+    appVersion: v1.15.0
+    created: "2026-04-17T09:20:12.782609525Z"
+    dependencies:
+    - condition: alloy.enabled
+      name: alloy
+      repository: https://grafana.github.io/helm-charts
+      version: 1.7.0
+    description: Grafana Alloy OpenTelemetry Collector
+    digest: d6663e1f0bc07f22fac88945c96f7bca8a327e94e3c00db1d3df1537bea75555
+    home: https://github.com/giantswarm/alloy-app
+    icon: https://s.giantswarm.io/app-icons/grafana-alloy/1/light.png
+    maintainers:
+    - email: team-atlas@giantswarm.io
+      name: giantswarm/team-atlas
+    name: alloy
+    sources:
+    - https://github.com/grafana/alloy/tree/main/operations/helm/charts/alloy
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/alloy-0.18.0-acb3de2fc54165a04e1b34fdc7f8a100c796e8fe.tgz
+    version: 0.18.0-acb3de2fc54165a04e1b34fdc7f8a100c796e8fe
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/alloy-0.18.0-892790b1a4830f0063c7b4c1c1ce50c13fa125ba.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/alloy-app/892790b1a4830f0063c7b4c1c1ce50c13fa125ba/README.md
       io.giantswarm.application.team: atlas
@@ -61097,4 +61123,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-13e075d55929c7605e031030c9a97491d3be6330.tgz
     version: 3.4.3-13e075d55929c7605e031030c9a97491d3be6330
-generated: "2026-04-17T08:00:22.234843124Z"
+generated: "2026-04-17T09:20:12.778237556Z"
