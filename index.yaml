@@ -9296,6 +9296,27 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/azure-private-dns-crossplane-resources-0.1.1-6e935b86dbea944606d695e6f7a25de2005aadb4.tgz
     version: 0.1.1-6e935b86dbea944606d695e6f7a25de2005aadb4
+  azuredisk-csi-driver-app:
+  - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/azuredisk-csi-driver-app-2.1.0-ed2972a90bfe5b5ef1c8cf896e30515c45d0132d.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/azuredisk-csi-driver-app/ed2972a90bfe5b5ef1c8cf896e30515c45d0132d/README.md
+      io.giantswarm.application.restrictions.cluster-singleton: "true"
+      io.giantswarm.application.restrictions.compatible-providers: azure
+      io.giantswarm.application.restrictions.fixed-namespace: kube-system
+      io.giantswarm.application.restrictions.gpu-instances: "false"
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/azuredisk-csi-driver-app/ed2972a90bfe5b5ef1c8cf896e30515c45d0132d/helm/azuredisk-csi-driver-app/values.schema.json
+    apiVersion: v2
+    appVersion: 1.34.0
+    created: "2026-04-17T14:59:27.682698116Z"
+    description: A Helm chart to run Azure CSI driver for Azure Disks.
+    digest: f47e391e7233878f7d47b1a80215c959845aa843455d19ba744c920ca6f6fe53
+    home: https://github.com/giantswarm/azuredisk-csi-driver-app
+    icon: https://s.giantswarm.io/app-icons/azure/1/dark.svg
+    name: azuredisk-csi-driver-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/azuredisk-csi-driver-app-2.1.0-ed2972a90bfe5b5ef1c8cf896e30515c45d0132d.tgz
+    version: 2.1.0-ed2972a90bfe5b5ef1c8cf896e30515c45d0132d
   capa-karpenter-taint-remover:
   - annotations:
       io.giantswarm.application.audience: all
@@ -61195,4 +61216,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-13e075d55929c7605e031030c9a97491d3be6330.tgz
     version: 3.4.3-13e075d55929c7605e031030c9a97491d3be6330
-generated: "2026-04-17T11:41:57.774290546Z"
+generated: "2026-04-17T14:59:27.680916391Z"
