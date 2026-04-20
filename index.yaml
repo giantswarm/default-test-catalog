@@ -3101,6 +3101,32 @@ entries:
   - annotations:
       io.giantswarm.application.audience: all
       io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/aws-ebs-csi-driver-4.2.0-d5bc4cd65830f14aa1eae4abe3ca97ad78921743.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/aws-ebs-csi-driver-app/d5bc4cd65830f14aa1eae4abe3ca97ad78921743/README.md
+      io.giantswarm.application.restrictions.cluster-singleton: "true"
+      io.giantswarm.application.restrictions.compatible-providers: aws
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.upstream-chart-url: https://github.com/kubernetes-sigs/aws-ebs-csi-driver
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/aws-ebs-csi-driver-app/d5bc4cd65830f14aa1eae4abe3ca97ad78921743/helm/aws-ebs-csi-driver/values.schema.json
+    apiVersion: v2
+    appVersion: 4.2.0-d5bc4cd65830f14aa1eae4abe3ca97ad78921743
+    created: "2026-04-20T21:52:09.137882574Z"
+    dependencies:
+    - alias: upstream
+      name: aws-ebs-csi-driver
+      repository: https://kubernetes-sigs.github.io/aws-ebs-csi-driver
+      version: 2.59.0
+    description: A Helm chart for the AWS EBS CSI Driver.
+    digest: fab26b30a00f8af7f3d6dc23cea1263bdbd8b5dead323e97d3d505342045dbf9
+    home: https://github.com/giantswarm/aws-ebs-csi-driver-app
+    icon: https://s.giantswarm.io/app-icons/aws/2/dark.svg
+    name: aws-ebs-csi-driver
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/aws-ebs-csi-driver-4.2.0-d5bc4cd65830f14aa1eae4abe3ca97ad78921743.tgz
+    version: 4.2.0-d5bc4cd65830f14aa1eae4abe3ca97ad78921743
+  - annotations:
+      io.giantswarm.application.audience: all
+      io.giantswarm.application.managed: "true"
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/aws-ebs-csi-driver-4.2.0-d4345e53cda127f88ea8bd31a4ee5013855d28dd.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/aws-ebs-csi-driver-app/d4345e53cda127f88ea8bd31a4ee5013855d28dd/README.md
       io.giantswarm.application.restrictions.cluster-singleton: "true"
@@ -65179,4 +65205,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-13e075d55929c7605e031030c9a97491d3be6330.tgz
     version: 3.4.3-13e075d55929c7605e031030c9a97491d3be6330
-generated: "2026-04-20T18:18:51.160502322Z"
+generated: "2026-04-20T21:52:09.133835397Z"
