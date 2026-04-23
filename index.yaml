@@ -58148,6 +58148,31 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-20.0.0-f0357a7c43cb1c135f6cef2cd88e30087620c260.tgz
     version: 20.0.0-f0357a7c43cb1c135f6cef2cd88e30087620c260
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-20.0.0-ebb44dc4f2eec24229d693b6747ec7563523aabf.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/prometheus-operator-crd/ebb44dc4f2eec24229d693b6747ec7563523aabf/README.md
+      io.giantswarm.application.team: atlas
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/prometheus-operator-crd/ebb44dc4f2eec24229d693b6747ec7563523aabf/helm/prometheus-operator-crd/values.schema.json
+    apiVersion: v2
+    appVersion: v0.89.0
+    created: "2026-04-23T07:03:02.70560818Z"
+    dependencies:
+    - name: prometheus-operator-crds
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 27.0.1
+    description: kube-prometheus-stack CustomResourceDefinitions.
+    digest: 6ab087f5c2a3a7aefa261827952d71471fc07f557943128783a2860546cf6819
+    home: https://github.com/giantswarm/prometheus-operator-crd
+    icon: https://s.giantswarm.io/app-icons/prometheus-operator/2/light.svg
+    kubeVersion: '>=1.19.0-0'
+    name: prometheus-operator-crd
+    sources:
+    - https://github.com/prometheus-community/helm-charts
+    - https://github.com/prometheus-operator/kube-prometheus
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-20.0.0-ebb44dc4f2eec24229d693b6747ec7563523aabf.tgz
+    version: 20.0.0-ebb44dc4f2eec24229d693b6747ec7563523aabf
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-20.0.0-d2519d5e75a35b4dde465c6f24ad93066ea2cd2b.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/prometheus-operator-crd/d2519d5e75a35b4dde465c6f24ad93066ea2cd2b/README.md
       io.giantswarm.application.team: atlas
@@ -68853,4 +68878,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-13e075d55929c7605e031030c9a97491d3be6330.tgz
     version: 3.4.3-13e075d55929c7605e031030c9a97491d3be6330
-generated: "2026-04-23T07:02:45.745349476Z"
+generated: "2026-04-23T07:03:02.677105649Z"
