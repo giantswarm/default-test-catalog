@@ -10980,6 +10980,26 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/azurefile-csi-driver-app-2.0.0-7349b57a004bb57b58d7fba04a069277ec53eaba.tgz
     version: 2.0.0-7349b57a004bb57b58d7fba04a069277ec53eaba
+  - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/azurefile-csi-driver-app-2.0.0-705da04b4725b01af12c630190a6706cc0d5295b.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/azurefile-csi-driver-app/705da04b4725b01af12c630190a6706cc0d5295b/README.md
+      io.giantswarm.application.restrictions.cluster-singleton: "true"
+      io.giantswarm.application.restrictions.compatible-providers: azure
+      io.giantswarm.application.restrictions.fixed-namespace: kube-system
+      io.giantswarm.application.restrictions.gpu-instances: "false"
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/azurefile-csi-driver-app/705da04b4725b01af12c630190a6706cc0d5295b/helm/azurefile-csi-driver-app/values.schema.json
+    apiVersion: v2
+    appVersion: 1.34.2
+    created: "2026-04-23T06:48:32.01212759Z"
+    description: A Helm chart to run Azure CSI driver for Azure File.
+    digest: 234e55b52cd1ca1cbb009ce21b66e22e1d421aef0e0414c82e56cc7afb66c3c6
+    home: https://github.com/giantswarm/azurefile-csi-driver-app
+    icon: https://s.giantswarm.io/app-icons/azure/1/dark.svg
+    name: azurefile-csi-driver-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/azurefile-csi-driver-app-2.0.0-705da04b4725b01af12c630190a6706cc0d5295b.tgz
+    version: 2.0.0-705da04b4725b01af12c630190a6706cc0d5295b
   capa-karpenter-taint-remover:
   - annotations:
       io.giantswarm.application.audience: all
@@ -68245,4 +68265,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-13e075d55929c7605e031030c9a97491d3be6330.tgz
     version: 3.4.3-13e075d55929c7605e031030c9a97491d3be6330
-generated: "2026-04-23T06:47:03.17821363Z"
+generated: "2026-04-23T06:48:32.009037103Z"
