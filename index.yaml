@@ -5820,6 +5820,29 @@ entries:
   - annotations:
       io.giantswarm.application.audience: all
       io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/aws-ebs-csi-driver-bundle-4.2.0.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/aws-ebs-csi-driver-app/refs/tags/v4.2.0/README.md
+      io.giantswarm.application.restrictions.cluster-singleton: "true"
+      io.giantswarm.application.restrictions.compatible-providers: aws
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/aws-ebs-csi-driver-app/refs/tags/v4.2.0/helm/aws-ebs-csi-driver-bundle/values.schema.json
+    apiVersion: v2
+    appVersion: 4.2.0
+    created: "2026-04-29T08:58:48.712040027Z"
+    description: A Helm chart for AWS EBS CSI Driver with IAM resources
+    digest: 429145e0df9ce1a659e318172aa3eb43ef3a5dc61734dfb7528a7752218e52c4
+    home: https://github.com/giantswarm/aws-ebs-csi-driver-app
+    icon: https://s.giantswarm.io/app-icons/aws/2/dark.svg
+    kubeVersion: '>=1.17.0-0'
+    name: aws-ebs-csi-driver-bundle
+    sources:
+    - https://github.com/giantswarm/aws-ebs-csi-driver-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/aws-ebs-csi-driver-bundle-4.2.0.tgz
+    version: 4.2.0
+  - annotations:
+      io.giantswarm.application.audience: all
+      io.giantswarm.application.managed: "true"
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/aws-ebs-csi-driver-bundle-4.2.0-fb45d273e97e8c32a1d50f2302f57b9e14f47391.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/aws-ebs-csi-driver-app/fb45d273e97e8c32a1d50f2302f57b9e14f47391/README.md
       io.giantswarm.application.restrictions.cluster-singleton: "true"
@@ -80431,4 +80454,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-13e075d55929c7605e031030c9a97491d3be6330.tgz
     version: 3.4.3-13e075d55929c7605e031030c9a97491d3be6330
-generated: "2026-04-29T08:58:08.614828699Z"
+generated: "2026-04-29T08:58:48.710869545Z"
