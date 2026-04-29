@@ -9538,6 +9538,30 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/aws-node-termination-handler-1.4.0-76a260083aab2b07ec34075524051f5db62167cc.tgz
     version: 1.4.0-76a260083aab2b07ec34075524051f5db62167cc
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/aws-node-termination-handler-1.4.0-75716bad175ecc147a76a3b91aa292b34c3f2a8f.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/aws-nth-bundle/75716bad175ecc147a76a3b91aa292b34c3f2a8f/README.md
+      io.giantswarm.application.restrictions.compatible-providers: aws
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/aws-nth-bundle/75716bad175ecc147a76a3b91aa292b34c3f2a8f/helm/aws-node-termination-handler/values.schema.json
+    apiVersion: v2
+    appVersion: 1.25.2
+    created: "2026-04-29T17:11:30.30709141Z"
+    dependencies:
+    - alias: upstream
+      name: aws-node-termination-handler
+      repository: oci://public.ecr.aws/aws-ec2/helm
+      version: 0.27.5
+    description: Deploy components for the aws-node-termination-handler app
+    digest: e9c8af2d6d74f2632cb080e49e89e261c1c3a50c3bb9aafa8c514c601709cbca
+    home: https://github.com/giantswarm/aws-nth-bundle
+    icon: https://s.giantswarm.io/app-icons/aws/2/light.svg
+    name: aws-node-termination-handler
+    sources:
+    - https://raw.githubusercontent.com/giantswarm/aws-nth-bundle/v[[ .Version ]]/README.md
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/aws-node-termination-handler-1.4.0-75716bad175ecc147a76a3b91aa292b34c3f2a8f.tgz
+    version: 1.4.0-75716bad175ecc147a76a3b91aa292b34c3f2a8f
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/aws-node-termination-handler-1.4.0-750bdf8bd6c67847b4d2d10ddefc23a856b44ecd.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/aws-nth-bundle/750bdf8bd6c67847b4d2d10ddefc23a856b44ecd/README.md
       io.giantswarm.application.restrictions.compatible-providers: aws
@@ -82227,4 +82251,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-13e075d55929c7605e031030c9a97491d3be6330.tgz
     version: 3.4.3-13e075d55929c7605e031030c9a97491d3be6330
-generated: "2026-04-29T17:11:24.188083434Z"
+generated: "2026-04-29T17:11:30.305203965Z"
