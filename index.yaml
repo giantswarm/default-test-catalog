@@ -4278,6 +4278,30 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/aws-node-termination-handler-2.0.0-f57d1466b6587f430556cf3ac43e82721ff262dc.tgz
     version: 2.0.0-f57d1466b6587f430556cf3ac43e82721ff262dc
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/aws-node-termination-handler-2.0.0-51dd31d0e59abb7ba459a2ff48770ec0beb615e3.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/aws-nth-bundle/51dd31d0e59abb7ba459a2ff48770ec0beb615e3/README.md
+      io.giantswarm.application.restrictions.compatible-providers: aws
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/aws-nth-bundle/51dd31d0e59abb7ba459a2ff48770ec0beb615e3/helm/aws-node-termination-handler/values.schema.json
+    apiVersion: v2
+    appVersion: 2.0.0-51dd31d0e59abb7ba459a2ff48770ec0beb615e3
+    created: "2026-05-06T14:22:00.508239902Z"
+    dependencies:
+    - alias: upstream
+      name: aws-node-termination-handler
+      repository: oci://public.ecr.aws/aws-ec2/helm
+      version: 0.27.5
+    description: Deploy components for the aws-node-termination-handler app
+    digest: 5356ccdc5919b3df4e0fa4cee7d86f8e9b8abbf5d814e45c1645b52995ba226d
+    home: https://github.com/giantswarm/aws-nth-bundle
+    icon: https://s.giantswarm.io/app-icons/aws/2/light.svg
+    name: aws-node-termination-handler
+    sources:
+    - https://raw.githubusercontent.com/giantswarm/aws-nth-bundle/v[[ .Version ]]/README.md
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/aws-node-termination-handler-2.0.0-51dd31d0e59abb7ba459a2ff48770ec0beb615e3.tgz
+    version: 2.0.0-51dd31d0e59abb7ba459a2ff48770ec0beb615e3
+  - annotations:
       io.giantswarm.application.audience: giantswarm
       io.giantswarm.application.managed: "true"
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/aws-node-termination-handler-1.23.1-82be476097267638b06e9ce0bbb68937349ab984.tgz-meta/main.yaml
@@ -49312,4 +49336,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-0925e7cd5a07af06792e443ac8353856038c0905.tgz
     version: 3.4.3-0925e7cd5a07af06792e443ac8353856038c0905
-generated: "2026-05-06T14:21:56.777483847Z"
+generated: "2026-05-06T14:22:00.506368752Z"
