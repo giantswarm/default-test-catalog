@@ -33698,6 +33698,28 @@ entries:
     version: 20.0.0-9b1794cd28c087d87f317b2f36208c402c5e43e1
   kube-state-metrics:
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/kube-state-metrics-0.0.0-f0de069e56e3097c46d7c981163732257c98f55c.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/kube-state-metrics-app/f0de069e56e3097c46d7c981163732257c98f55c/README.md
+      io.giantswarm.application.team: tenet
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/kube-state-metrics-app/f0de069e56e3097c46d7c981163732257c98f55c/helm/kube-state-metrics/values.schema.json
+    apiVersion: v2
+    appVersion: 2.15.0
+    created: "2026-05-07T14:56:53.869498601Z"
+    dependencies:
+    - name: kube-state-metrics
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 7.3.0
+    description: Generate and expose cluster-level metrics
+    digest: cd8e26906c82fd23b3adb52f67d5bc023441cd99c3225ed91ec7f561d6b9212b
+    home: https://github.com/giantswarm/kube-state-metrics-app
+    icon: https://s.giantswarm.io/app-icons/giantswarm/1/dark.svg
+    name: kube-state-metrics
+    sources:
+    - https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-state-metrics
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/kube-state-metrics-0.0.0-f0de069e56e3097c46d7c981163732257c98f55c.tgz
+    version: 0.0.0-f0de069e56e3097c46d7c981163732257c98f55c
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/kube-state-metrics-0.0.0-ac9ce995a24a3eb15bd351f7c22e16ddeecf108d.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/kube-state-metrics-app/ac9ce995a24a3eb15bd351f7c22e16ddeecf108d/README.md
       io.giantswarm.application.team: tenet
@@ -54224,4 +54246,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-0925e7cd5a07af06792e443ac8353856038c0905.tgz
     version: 3.4.3-0925e7cd5a07af06792e443ac8353856038c0905
-generated: "2026-05-07T14:54:23.807269816Z"
+generated: "2026-05-07T14:56:53.866948934Z"
