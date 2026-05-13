@@ -24294,6 +24294,31 @@ entries:
     version: 3.5.0-cdabaf5e7ce7fba1ef1345c7519d2dbea404db8c
   - annotations:
       io.giantswarm.application.audience: all
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/external-dns-app-3.5.0-7fed9d6110ae2b92fad788c922af021574c596f8.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/external-dns-app/7fed9d6110ae2b92fad788c922af021574c596f8/README.md
+      io.giantswarm.application.team: cabbage
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/external-dns-app/7fed9d6110ae2b92fad788c922af021574c596f8/helm/external-dns-app/values.schema.json
+    apiVersion: v2
+    appVersion: 0.21.0
+    created: "2026-05-13T12:21:28.766712618Z"
+    dependencies:
+    - condition: crd.install
+      name: kubectl-apply-job
+      repository: oci://giantswarmpublic.azurecr.io/giantswarm-playground-catalog
+      version: 0.11.0
+    description: Configure external DNS servers for Kubernetes Ingresses and Services
+    digest: 6b093b8f06dc63183c22d08c6bffd16eeed9afac6f0950d36404b867c584451f
+    home: https://github.com/giantswarm/external-dns-app
+    icon: https://s.giantswarm.io/app-icons/external-dns/1/dark.png
+    kubeVersion: '>=1.19.0-0'
+    name: external-dns-app
+    sources:
+    - https://github.com/kubernetes-sigs/external-dns
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/external-dns-app-3.5.0-7fed9d6110ae2b92fad788c922af021574c596f8.tgz
+    version: 3.5.0-7fed9d6110ae2b92fad788c922af021574c596f8
+  - annotations:
+      io.giantswarm.application.audience: all
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/external-dns-app-3.5.0-7048a408194d8a1089517775999a12a12556933e.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/external-dns-app/7048a408194d8a1089517775999a12a12556933e/README.md
       io.giantswarm.application.team: cabbage
@@ -60588,4 +60613,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-0925e7cd5a07af06792e443ac8353856038c0905.tgz
     version: 3.4.3-0925e7cd5a07af06792e443ac8353856038c0905
-generated: "2026-05-13T12:21:19.364436039Z"
+generated: "2026-05-13T12:21:28.763791703Z"
