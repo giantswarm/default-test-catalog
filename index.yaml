@@ -55731,6 +55731,32 @@ entries:
     version: 20.0.0-012d77db965971ec4cf4c0147b8552ac2a4c9ef5
   proxmox-cloud-controller-manager:
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/proxmox-cloud-controller-manager-0.4.1-f050ff01f11e11e34d4e04baf2cc532f82791bd6.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/cloud-provider-proxmox-app/f050ff01f11e11e34d4e04baf2cc532f82791bd6/README.md
+      io.giantswarm.application.team: rocket
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/cloud-provider-proxmox-app/f050ff01f11e11e34d4e04baf2cc532f82791bd6/helm/cloud-provider-proxmox/values.schema.json
+    apiVersion: v2
+    appVersion: v0.12.3
+    created: "2026-05-19T09:35:18.856499888Z"
+    description: Cloud Controller Manager plugin for Proxmox
+    digest: 8a7ebd91e0cdf03f63031ea3e29f9fde1f79c54a77610f8cebeda3549089a842
+    home: https://github.com/giantswarm/cloud-provider-proxmox-app
+    icon: https://raw.githubusercontent.com/sergelogvinov/proxmox-cloud-controller-manager/main/charts/proxmox-cloud-controller-manager/icon.png
+    keywords:
+    - ccm
+    - proxmox
+    - kubernetes
+    maintainers:
+    - email: team-rocket@giantswarm.io
+      name: Team Rocket
+    name: proxmox-cloud-controller-manager
+    sources:
+    - https://github.com/sergelogvinov/proxmox-cloud-controller-manager
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/proxmox-cloud-controller-manager-0.4.1-f050ff01f11e11e34d4e04baf2cc532f82791bd6.tgz
+    version: 0.4.1-f050ff01f11e11e34d4e04baf2cc532f82791bd6
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/proxmox-cloud-controller-manager-0.4.1-c55a051768d9b2844a8a9c550a8e3a49bbdef33b.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/cloud-provider-proxmox-app/c55a051768d9b2844a8a9c550a8e3a49bbdef33b/README.md
       io.giantswarm.application.team: rocket
@@ -68033,4 +68059,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-0925e7cd5a07af06792e443ac8353856038c0905.tgz
     version: 3.4.3-0925e7cd5a07af06792e443ac8353856038c0905
-generated: "2026-05-19T09:33:53.529687365Z"
+generated: "2026-05-19T09:35:18.854743147Z"
