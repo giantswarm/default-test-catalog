@@ -17119,6 +17119,26 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/azurefile-csi-driver-app-2.0.0-dcbdb6aaac3c1e2110121805a7c1b9d2361e73f4.tgz
     version: 2.0.0-dcbdb6aaac3c1e2110121805a7c1b9d2361e73f4
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/azurefile-csi-driver-app-2.0.0-96f3f11af581f02ea83bf7e8b476813f38f05190.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/azurefile-csi-driver-app/96f3f11af581f02ea83bf7e8b476813f38f05190/README.md
+      io.giantswarm.application.restrictions.cluster-singleton: "true"
+      io.giantswarm.application.restrictions.compatible-providers: azure
+      io.giantswarm.application.restrictions.fixed-namespace: kube-system
+      io.giantswarm.application.restrictions.gpu-instances: "false"
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/azurefile-csi-driver-app/96f3f11af581f02ea83bf7e8b476813f38f05190/helm/azurefile-csi-driver-app/values.schema.json
+    apiVersion: v2
+    appVersion: 1.34.2
+    created: "2026-05-20T16:42:21.648599288Z"
+    description: A Helm chart to run Azure CSI driver for Azure File.
+    digest: db616086fc41488d22ec24d9058170618eb751674bb735cdcf6cb147e6edbf08
+    home: https://github.com/giantswarm/azurefile-csi-driver-app
+    icon: https://s.giantswarm.io/app-icons/azure/1/dark.svg
+    name: azurefile-csi-driver-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/azurefile-csi-driver-app-2.0.0-96f3f11af581f02ea83bf7e8b476813f38f05190.tgz
+    version: 2.0.0-96f3f11af581f02ea83bf7e8b476813f38f05190
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/azurefile-csi-driver-app-2.0.0-7349b57a004bb57b58d7fba04a069277ec53eaba.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/azurefile-csi-driver-app/7349b57a004bb57b58d7fba04a069277ec53eaba/README.md
       io.giantswarm.application.restrictions.cluster-singleton: "true"
@@ -75274,4 +75294,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-0925e7cd5a07af06792e443ac8353856038c0905.tgz
     version: 3.4.3-0925e7cd5a07af06792e443ac8353856038c0905
-generated: "2026-05-20T16:41:01.595882892Z"
+generated: "2026-05-20T16:42:21.646624974Z"
