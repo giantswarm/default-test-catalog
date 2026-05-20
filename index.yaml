@@ -55460,6 +55460,35 @@ entries:
   - annotations:
       io.giantswarm.application.audience: all
       io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/kyverno-policies-0.25.0-0a451b4e0f9a5028c8829576419bb374c103c842.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/kyverno-policies/0a451b4e0f9a5028c8829576419bb374c103c842/README.md
+      io.giantswarm.application.restrictions.cluster-singleton: "true"
+      io.giantswarm.application.team: shield
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/kyverno-policies/0a451b4e0f9a5028c8829576419bb374c103c842/helm/kyverno-policies/values.schema.json
+    apiVersion: v2
+    created: "2026-05-20T12:45:58.32972083Z"
+    dependencies:
+    - name: kyverno-policies
+      repository: ""
+      version: 3.7.2
+    description: 'Kubernetes Pod Security Standards implemented as Kyverno policies '
+    digest: d8757b7c9391bd940ea0380b6e56ca7f68eb3c36f5ed0284073ce2cf14fe9fcd
+    home: https://github.com/giantswarm/kyverno-policies
+    icon: https://s.giantswarm.io/app-icons/kyverno/1/light.svg
+    keywords:
+    - kubernetes
+    - policy-agent
+    - validating-webhook
+    - admission-controller
+    name: kyverno-policies
+    sources:
+    - https://github.com/giantswarm/kyverno-policies
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/kyverno-policies-0.25.0-0a451b4e0f9a5028c8829576419bb374c103c842.tgz
+    version: 0.25.0-0a451b4e0f9a5028c8829576419bb374c103c842
+  - annotations:
+      io.giantswarm.application.audience: all
+      io.giantswarm.application.managed: "true"
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/kyverno-policies-0.25.0-071920d018ddf05cbc78324df00e07b5376ce652.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/kyverno-policies/071920d018ddf05cbc78324df00e07b5376ce652/README.md
       io.giantswarm.application.restrictions.cluster-singleton: "true"
@@ -73646,4 +73675,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-0925e7cd5a07af06792e443ac8353856038c0905.tgz
     version: 3.4.3-0925e7cd5a07af06792e443ac8353856038c0905
-generated: "2026-05-20T12:39:04.011337676Z"
+generated: "2026-05-20T12:45:58.327821431Z"
