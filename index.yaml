@@ -28,6 +28,32 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/alloy-0.19.0.tgz
     version: 0.19.0
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/alloy-0.19.0-e063f05eb552a3e250c5eeda110d55b91d5cc5a3.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/alloy-app/e063f05eb552a3e250c5eeda110d55b91d5cc5a3/README.md
+      io.giantswarm.application.team: atlas
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/alloy-app/e063f05eb552a3e250c5eeda110d55b91d5cc5a3/helm/alloy/values.schema.json
+    apiVersion: v2
+    appVersion: v1.16.1
+    created: "2026-05-26T07:41:11.18267269Z"
+    dependencies:
+    - condition: alloy.enabled
+      name: alloy
+      repository: https://grafana.github.io/helm-charts
+      version: 1.8.1
+    description: Grafana Alloy OpenTelemetry Collector
+    digest: 05604921dec50482f019d50b8873585d95ab2206cc8063f69ddd3b85022e3a3b
+    home: https://github.com/giantswarm/alloy-app
+    icon: https://s.giantswarm.io/app-icons/grafana-alloy/1/light.png
+    maintainers:
+    - email: team-atlas@giantswarm.io
+      name: giantswarm/team-atlas
+    name: alloy
+    sources:
+    - https://github.com/grafana/alloy/tree/main/operations/helm/charts/alloy
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/alloy-0.19.0-e063f05eb552a3e250c5eeda110d55b91d5cc5a3.tgz
+    version: 0.19.0-e063f05eb552a3e250c5eeda110d55b91d5cc5a3
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/alloy-0.18.0-fd3f4b0646ba8fdaf5706c14b95561aef7eb5f37.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/alloy-app/fd3f4b0646ba8fdaf5706c14b95561aef7eb5f37/README.md
       io.giantswarm.application.team: atlas
@@ -81598,4 +81624,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-0925e7cd5a07af06792e443ac8353856038c0905.tgz
     version: 3.4.3-0925e7cd5a07af06792e443ac8353856038c0905
-generated: "2026-05-26T07:40:13.661343214Z"
+generated: "2026-05-26T07:41:11.177837947Z"
