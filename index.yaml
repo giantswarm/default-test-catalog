@@ -15347,6 +15347,40 @@ entries:
     version: 1.1.3-33bd0acab58d1fc5beb0cccb851f42ebfdf86225
   cilium:
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/cilium-1.4.5-dev.renovate-architect-9-x.2026-06-02.17-44-46.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/cilium-app/refs/tags/v1.4.5-dev.renovate-architect-9-x.2026-06-02.17-44-46/README.md
+      io.giantswarm.application.team: cabbage
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/cilium-app/refs/tags/v1.4.5-dev.renovate-architect-9-x.2026-06-02.17-44-46/helm/cilium/values.schema.json
+    apiVersion: v2
+    appVersion: 1.4.5-dev.renovate-architect-9-x.2026-06-02.17-44-46
+    created: "2026-06-02T17:45:15.401961185Z"
+    dependencies:
+    - alias: cniCustomConf
+      condition: cni.customConf
+      name: cilium-giantswarm-cni-customconf
+      repository: ""
+      version: 0.1.0
+    description: eBPF-based Networking, Security, and Observability
+    digest: 223854dbba4569db96e8103a9d2d61e3f44f55f7a87365d4e46bb795c66f3d72
+    home: https://github.com/giantswarm/cilium-app
+    icon: https://s.giantswarm.io/app-icons/cilium/1/light.svg
+    keywords:
+    - BPF
+    - eBPF
+    - Kubernetes
+    - Networking
+    - Security
+    - Observability
+    - Troubleshooting
+    kubeVersion: '>= 1.21.0-0'
+    name: cilium
+    sources:
+    - https://github.com/giantswarm/cilium-app
+    - https://github.com/cilium/cilium
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/cilium-1.4.5-dev.renovate-architect-9-x.2026-06-02.17-44-46.tgz
+    version: 1.4.5-dev.renovate-architect-9-x.2026-06-02.17-44-46
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/cilium-1.4.5-dev.renovate-architect-9-x.2026-06-01.14-13-18.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/cilium-app/refs/tags/v1.4.5-dev.renovate-architect-9-x.2026-06-01.14-13-18/README.md
       io.giantswarm.application.team: cabbage
@@ -49443,4 +49477,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-0925e7cd5a07af06792e443ac8353856038c0905.tgz
     version: 3.4.3-0925e7cd5a07af06792e443ac8353856038c0905
-generated: "2026-06-02T17:45:04.676519969Z"
+generated: "2026-06-02T17:45:15.373519171Z"
