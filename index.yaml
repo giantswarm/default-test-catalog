@@ -22319,6 +22319,31 @@ entries:
   external-dns-app:
   - annotations:
       io.giantswarm.application.audience: all
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/external-dns-app-3.5.1-dev.renovate-architect-9-x.2026-06-03.18-52-34.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/external-dns-app/refs/tags/v3.5.1-dev.renovate-architect-9-x.2026-06-03.18-52-34/README.md
+      io.giantswarm.application.team: cabbage
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/external-dns-app/refs/tags/v3.5.1-dev.renovate-architect-9-x.2026-06-03.18-52-34/helm/external-dns-app/values.schema.json
+    apiVersion: v2
+    appVersion: 3.5.1-dev.renovate-architect-9-x.2026-06-03.18-52-34
+    created: "2026-06-03T18:53:07.655191368Z"
+    dependencies:
+    - condition: crd.install
+      name: kubectl-apply-job
+      repository: oci://giantswarmpublic.azurecr.io/giantswarm-playground-catalog
+      version: 0.11.0
+    description: Configure external DNS servers for Kubernetes Ingresses and Services
+    digest: 01d8fea1144e9f55c924598d7c5d0a4f8e7f6962abad56cb30a18c034c94dd5a
+    home: https://github.com/giantswarm/external-dns-app
+    icon: https://s.giantswarm.io/app-icons/external-dns/1/dark.png
+    kubeVersion: '>=1.19.0-0'
+    name: external-dns-app
+    sources:
+    - https://github.com/kubernetes-sigs/external-dns
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/external-dns-app-3.5.1-dev.renovate-architect-9-x.2026-06-03.18-52-34.tgz
+    version: 3.5.1-dev.renovate-architect-9-x.2026-06-03.18-52-34
+  - annotations:
+      io.giantswarm.application.audience: all
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/external-dns-app-3.5.1-dev.renovate-architect-9-x.2026-06-02.16-38-32.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/external-dns-app/refs/tags/v3.5.1-dev.renovate-architect-9-x.2026-06-02.16-38-32/README.md
       io.giantswarm.application.team: cabbage
@@ -53074,4 +53099,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-0925e7cd5a07af06792e443ac8353856038c0905.tgz
     version: 3.4.3-0925e7cd5a07af06792e443ac8353856038c0905
-generated: "2026-06-03T18:51:08.318195215Z"
+generated: "2026-06-03T18:53:07.653050792Z"
