@@ -13867,6 +13867,26 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/azurefile-csi-driver-app-2.0.0-96f3f11af581f02ea83bf7e8b476813f38f05190.tgz
     version: 2.0.0-96f3f11af581f02ea83bf7e8b476813f38f05190
+  - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/azurefile-csi-driver-app-2.0.0-3ab15317b76d2b17634d537a552a1f18ca65b479.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/azurefile-csi-driver-app/3ab15317b76d2b17634d537a552a1f18ca65b479/README.md
+      io.giantswarm.application.restrictions.cluster-singleton: "true"
+      io.giantswarm.application.restrictions.compatible-providers: azure
+      io.giantswarm.application.restrictions.fixed-namespace: kube-system
+      io.giantswarm.application.restrictions.gpu-instances: "false"
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/azurefile-csi-driver-app/3ab15317b76d2b17634d537a552a1f18ca65b479/helm/azurefile-csi-driver-app/values.schema.json
+    apiVersion: v2
+    appVersion: 1.34.2
+    created: "2026-06-10T08:04:04.278483732Z"
+    description: A Helm chart to run Azure CSI driver for Azure File.
+    digest: 343826356b31efb56fa4ec7ccb68facbd93722556c49433f2e68c54ec7c87542
+    home: https://github.com/giantswarm/azurefile-csi-driver-app
+    icon: https://s.giantswarm.io/app-icons/azure/1/dark.svg
+    name: azurefile-csi-driver-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/azurefile-csi-driver-app-2.0.0-3ab15317b76d2b17634d537a552a1f18ca65b479.tgz
+    version: 2.0.0-3ab15317b76d2b17634d537a552a1f18ca65b479
   capa-karpenter-taint-remover:
   - annotations:
       io.giantswarm.application.audience: all
@@ -62925,4 +62945,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-0925e7cd5a07af06792e443ac8353856038c0905.tgz
     version: 3.4.3-0925e7cd5a07af06792e443ac8353856038c0905
-generated: "2026-06-10T08:03:22.505842562Z"
+generated: "2026-06-10T08:04:04.275335077Z"
