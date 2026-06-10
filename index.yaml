@@ -2865,6 +2865,31 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/aws-cloud-controller-manager-app-2.1.0-182c1cc474214e2dd2962b5c15f56905fb8a2460.tgz
     version: 2.1.0-182c1cc474214e2dd2962b5c15f56905fb8a2460
+  - annotations:
+      io.giantswarm.application.audience: all
+      io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/aws-cloud-controller-manager-app-2.1.0-104755ac92f2a6b93f501daad0c41fc119e5ed65.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/aws-cloud-controller-manager-app/104755ac92f2a6b93f501daad0c41fc119e5ed65/README.md
+      io.giantswarm.application.restrictions.cluster-singleton: "true"
+      io.giantswarm.application.restrictions.compatible-providers: aws
+      io.giantswarm.application.restrictions.fixed-namespace: kube-system
+      io.giantswarm.application.restrictions.gpu-instances: "false"
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.upstream-chart-url: https://github.com/kubernetes/cloud-provider-aws
+      io.giantswarm.application.upstream-chart-version: 1.35.0
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/aws-cloud-controller-manager-app/104755ac92f2a6b93f501daad0c41fc119e5ed65/helm/aws-cloud-controller-manager-app/values.schema.json
+      ui.giantswarm.io/logo: https://s.giantswarm.io/app-icons/aws/2/dark.svg
+    apiVersion: v1
+    appVersion: 1.35.0
+    created: "2026-06-10T08:30:50.576820696Z"
+    description: A Helm chart to run AWS Cloud Controller Manager.
+    digest: de49693fb645648ceb380b56fefa5aa079d58c737731642ae7293edd4ff59b2e
+    home: https://github.com/giantswarm/aws-cloud-controller-manager-app
+    icon: https://s.giantswarm.io/app-icons/aws/2/dark.svg
+    name: aws-cloud-controller-manager-app
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/aws-cloud-controller-manager-app-2.1.0-104755ac92f2a6b93f501daad0c41fc119e5ed65.tgz
+    version: 2.1.0-104755ac92f2a6b93f501daad0c41fc119e5ed65
   aws-ebs-csi-driver:
   - annotations:
       io.giantswarm.application.audience: all
@@ -63869,4 +63894,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-0925e7cd5a07af06792e443ac8353856038c0905.tgz
     version: 3.4.3-0925e7cd5a07af06792e443ac8353856038c0905
-generated: "2026-06-10T08:30:31.092286633Z"
+generated: "2026-06-10T08:30:50.575344704Z"
