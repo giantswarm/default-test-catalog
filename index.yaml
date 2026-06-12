@@ -28083,6 +28083,31 @@ entries:
     version: 3.5.1-dev.renovate-kubectl-apply-job-0-x.2026-06-08.08-53-37
   - annotations:
       io.giantswarm.application.audience: all
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/external-dns-app-3.5.1-dev.renovate-ku--ply-job-0-x.2026-06-12.06-35-01.h4500e7c.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/external-dns-app/refs/tags/v3.5.1-dev.renovate-ku--ply-job-0-x.2026-06-12.06-35-01.h4500e7c/README.md
+      io.giantswarm.application.team: cabbage
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/external-dns-app/refs/tags/v3.5.1-dev.renovate-ku--ply-job-0-x.2026-06-12.06-35-01.h4500e7c/helm/external-dns-app/values.schema.json
+    apiVersion: v2
+    appVersion: 0.21.0
+    created: "2026-06-12T06:35:36.724605555Z"
+    dependencies:
+    - condition: crd.install
+      name: kubectl-apply-job
+      repository: oci://giantswarmpublic.azurecr.io/giantswarm-playground-catalog
+      version: 0.11.1
+    description: Configure external DNS servers for Kubernetes Ingresses and Services
+    digest: 688a366e8a7deef78bcee16a5e052d688db2c03c624a32081ed5e91965d9a1cf
+    home: https://github.com/giantswarm/external-dns-app
+    icon: https://s.giantswarm.io/app-icons/external-dns/1/dark.png
+    kubeVersion: '>=1.19.0-0'
+    name: external-dns-app
+    sources:
+    - https://github.com/kubernetes-sigs/external-dns
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/external-dns-app-3.5.1-dev.renovate-ku--ply-job-0-x.2026-06-12.06-35-01.h4500e7c.tgz
+    version: 3.5.1-dev.renovate-ku--ply-job-0-x.2026-06-12.06-35-01.h4500e7c
+  - annotations:
+      io.giantswarm.application.audience: all
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/external-dns-app-3.5.1-dev.renovate-ku--ply-job-0-x.2026-06-11.16-05-31.h1a64a39.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/external-dns-app/refs/tags/v3.5.1-dev.renovate-ku--ply-job-0-x.2026-06-11.16-05-31.h1a64a39/README.md
       io.giantswarm.application.team: cabbage
@@ -70474,4 +70499,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-0925e7cd5a07af06792e443ac8353856038c0905.tgz
     version: 3.4.3-0925e7cd5a07af06792e443ac8353856038c0905
-generated: "2026-06-12T06:34:02.364867113Z"
+generated: "2026-06-12T06:35:36.722269645Z"
