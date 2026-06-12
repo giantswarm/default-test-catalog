@@ -35914,6 +35914,49 @@ entries:
   - annotations:
       io.giantswarm.application.audience: all
       io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/karpenter-2.4.0-8e91a3fad02ed36868790b5bdd736612c5b79e06.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/karpenter-app/8e91a3fad02ed36868790b5bdd736612c5b79e06/README.md
+      io.giantswarm.application.restrictions.compatible-providers: aws
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.upstream-chart-url: https://github.com/aws/karpenter
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/karpenter-app/8e91a3fad02ed36868790b5bdd736612c5b79e06/helm/karpenter/values.schema.json
+    apiVersion: v2
+    appVersion: 2.4.0-8e91a3fad02ed36868790b5bdd736612c5b79e06
+    created: "2026-06-12T15:39:21.143437633Z"
+    dependencies:
+    - alias: upstream
+      name: karpenter
+      repository: oci://public.ecr.aws/karpenter
+      version: 1.8.1
+    - alias: upstream-crd
+      name: karpenter-crd
+      repository: oci://public.ecr.aws/karpenter
+      version: 1.13.0
+    description: A Helm chart for Karpenter, an open-source node provisioning project
+      built for Kubernetes.
+    digest: a8a1ae413d4fe0f560a6d449fe0ba833179a733cb6f64ea2ed42434b8e6cb9c0
+    home: https://github.com/giantswarm/karpenter-app
+    icon: https://s.giantswarm.io/app-icons/karpenter/1/light.svg
+    keywords:
+    - cluster
+    - node
+    - scheduler
+    - autoscaling
+    - lifecycle
+    maintainers:
+    - email: team-phoenix@giantswarm.io
+      name: giantswarm/team-phoenix
+    name: karpenter
+    sources:
+    - https://github.com/aws/karpenter/
+    - https://karpenter.sh/
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/karpenter-2.4.0-8e91a3fad02ed36868790b5bdd736612c5b79e06.tgz
+    version: 2.4.0-8e91a3fad02ed36868790b5bdd736612c5b79e06
+  - annotations:
+      io.giantswarm.application.audience: all
+      io.giantswarm.application.managed: "true"
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/karpenter-2.4.0-8945b72d6f71501ee0b8e66452b75f443eeb06d5.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/karpenter-app/8945b72d6f71501ee0b8e66452b75f443eeb06d5/README.md
       io.giantswarm.application.restrictions.compatible-providers: aws
@@ -71045,4 +71088,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-0925e7cd5a07af06792e443ac8353856038c0905.tgz
     version: 3.4.3-0925e7cd5a07af06792e443ac8353856038c0905
-generated: "2026-06-12T15:38:50.883985108Z"
+generated: "2026-06-12T15:39:21.139560382Z"
