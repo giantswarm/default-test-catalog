@@ -9764,6 +9764,30 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/aws-node-termination-handler-2.0.2-dev.use-gs-registry.2026-06-17.12-57-39.h824ec8d.tgz
     version: 2.0.2-dev.use-gs-registry.2026-06-17.12-57-39.h824ec8d
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/aws-node-termination-handler-2.0.2-dev.renovate-si--ter-api-1-x.2026-06-18.13-20-42.h36ee6a0.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/aws-nth-bundle/refs/tags/v2.0.2-dev.renovate-si--ter-api-1-x.2026-06-18.13-20-42.h36ee6a0/README.md
+      io.giantswarm.application.restrictions.compatible-providers: aws
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/aws-nth-bundle/refs/tags/v2.0.2-dev.renovate-si--ter-api-1-x.2026-06-18.13-20-42.h36ee6a0/helm/aws-node-termination-handler/values.schema.json
+    apiVersion: v2
+    appVersion: 1.25.2
+    created: "2026-06-18T13:21:29.003380325Z"
+    dependencies:
+    - alias: upstream
+      name: aws-node-termination-handler
+      repository: oci://public.ecr.aws/aws-ec2/helm
+      version: 0.27.5
+    description: Deploy components for the aws-node-termination-handler app
+    digest: 6fc433804e23661c816b48722be269aa8abf6950f7df51fbf04fb0c5d330f9e0
+    home: https://github.com/giantswarm/aws-nth-bundle
+    icon: https://s.giantswarm.io/app-icons/aws/2/light.svg
+    name: aws-node-termination-handler
+    sources:
+    - https://raw.githubusercontent.com/giantswarm/aws-nth-bundle/v[[ .Version ]]/README.md
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/aws-node-termination-handler-2.0.2-dev.renovate-si--ter-api-1-x.2026-06-18.13-20-42.h36ee6a0.tgz
+    version: 2.0.2-dev.renovate-si--ter-api-1-x.2026-06-18.13-20-42.h36ee6a0
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/aws-node-termination-handler-2.0.2-dev.renovate-si--ter-api-1-x.2026-06-17.13-03-34.hce19a14.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/aws-nth-bundle/refs/tags/v2.0.2-dev.renovate-si--ter-api-1-x.2026-06-17.13-03-34.hce19a14/README.md
       io.giantswarm.application.restrictions.compatible-providers: aws
@@ -81000,4 +81024,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-0925e7cd5a07af06792e443ac8353856038c0905.tgz
     version: 3.4.3-0925e7cd5a07af06792e443ac8353856038c0905
-generated: "2026-06-18T13:21:12.739799421Z"
+generated: "2026-06-18T13:21:28.999348921Z"
