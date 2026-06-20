@@ -48391,6 +48391,40 @@ entries:
   - annotations:
       io.giantswarm.application.audience: all
       io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/karpenter-bundle-2.4.0-141c286965414d5aca38123163ec5860fc6089dc.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/karpenter-app/141c286965414d5aca38123163ec5860fc6089dc/README.md
+      io.giantswarm.application.restrictions.compatible-providers: aws
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/karpenter-app/141c286965414d5aca38123163ec5860fc6089dc/helm/karpenter-bundle/values.schema.json
+    apiVersion: v2
+    appVersion: 2.4.0-141c286965414d5aca38123163ec5860fc6089dc
+    created: "2026-06-20T17:11:29.545559514Z"
+    description: A Helm chart bundle that deploys Karpenter with AWS Crossplane resources
+      (IAM roles, SQS queues, CloudWatch rules).
+    digest: af07e7592cd22f717c06435116f53319fa6e2f3bf54cb4fd26d273689429a758
+    home: https://github.com/giantswarm/karpenter-app
+    icon: https://s.giantswarm.io/app-icons/karpenter/1/light.svg
+    keywords:
+    - cluster
+    - node
+    - scheduler
+    - autoscaling
+    - lifecycle
+    - bundle
+    - crossplane
+    maintainers:
+    - email: team-phoenix@giantswarm.io
+      name: giantswarm/team-phoenix
+    name: karpenter-bundle
+    sources:
+    - https://github.com/aws/karpenter/
+    - https://karpenter.sh/
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/karpenter-bundle-2.4.0-141c286965414d5aca38123163ec5860fc6089dc.tgz
+    version: 2.4.0-141c286965414d5aca38123163ec5860fc6089dc
+  - annotations:
+      io.giantswarm.application.audience: all
+      io.giantswarm.application.managed: "true"
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/karpenter-bundle-2.4.0-138c9227bad8073f17b19e6427a2ed14d2cee5ff.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/karpenter-app/138c9227bad8073f17b19e6427a2ed14d2cee5ff/README.md
       io.giantswarm.application.restrictions.compatible-providers: aws
@@ -85689,4 +85723,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-0925e7cd5a07af06792e443ac8353856038c0905.tgz
     version: 3.4.3-0925e7cd5a07af06792e443ac8353856038c0905
-generated: "2026-06-20T17:10:42.143480864Z"
+generated: "2026-06-20T17:11:29.544857941Z"
