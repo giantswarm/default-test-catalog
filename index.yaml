@@ -10858,6 +10858,27 @@ entries:
     version: 4.2.0-069109ccf33473a0cf17aeae68d68104235416a9
   aws-ebs-csi-driver-servicemonitors:
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/aws-ebs-csi-driver-servicemonitors-0.1.2-f4411ac52c53a7b215388586ff3df2b4ceadddb1.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/aws-ebs-csi-driver-servicemonitors-app/refs/tags/v0.1.2-f4411ac52c53a7b215388586ff3df2b4ceadddb1/README.md
+      io.giantswarm.application.restrictions.cluster-singleton: "true"
+      io.giantswarm.application.restrictions.fixed-namespace: kube-system
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/aws-ebs-csi-driver-servicemonitors-app/refs/tags/v0.1.2-f4411ac52c53a7b215388586ff3df2b4ceadddb1/helm/aws-ebs-csi-driver-servicemonitors/values.schema.json
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-06-23T08:42:15.157973914Z"
+    description: AWS EBS CSI driver ServiceMonitors
+    digest: e8bcbaa2731a964a610fd398881ab44f09bf87a43eae30d46cecbbf02521a7fb
+    home: https://github.com/giantswarm/aws-ebs-csi-driver-servicemonitors-app
+    icon: https://s.giantswarm.io/app-icons/giantswarm/1/dark.svg
+    keywords:
+    - monitoring
+    name: aws-ebs-csi-driver-servicemonitors
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/aws-ebs-csi-driver-servicemonitors-0.1.2-f4411ac52c53a7b215388586ff3df2b4ceadddb1.tgz
+    version: 0.1.2-f4411ac52c53a7b215388586ff3df2b4ceadddb1
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/aws-ebs-csi-driver-servicemonitors-0.1.2-cf766eb749f8df7d16b0945680f4d8778eb4cfd4.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/aws-ebs-csi-driver-servicemonitors-app/refs/tags/v0.1.2-cf766eb749f8df7d16b0945680f4d8778eb4cfd4/README.md
       io.giantswarm.application.restrictions.cluster-singleton: "true"
@@ -94403,4 +94424,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-0925e7cd5a07af06792e443ac8353856038c0905.tgz
     version: 3.4.3-0925e7cd5a07af06792e443ac8353856038c0905
-generated: "2026-06-23T08:41:58.390659623Z"
+generated: "2026-06-23T08:42:15.157194461Z"
