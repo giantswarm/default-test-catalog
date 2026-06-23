@@ -71184,6 +71184,30 @@ entries:
     version: 1.20.11-04d844085520e1ccafde47c54fd3187c426a9598
   node-problem-detector:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/node-problem-detector-0.5.2-d4d37d29226b7ae5c32998f1002c8b7359f1f694.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/node-problem-detector-0.5.2-d4d37d29226b7ae5c32998f1002c8b7359f1f694.tgz-meta/README.md
+      application.giantswarm.io/team: phoenix
+    apiVersion: v2
+    appVersion: v0.8.20
+    created: "2026-06-23T09:01:22.439703452Z"
+    dependencies:
+    - name: node-problem-detector
+      repository: oci://ghcr.io/deliveryhero/helm-charts
+      version: 2.3.21
+    description: A helm chart for running node-problem-detector on a cluster.
+    digest: 31cab79d74655cfd9d9c8aa638205a7191feb4ad294c5b950a356589755b1f78
+    home: https://github.com/giantswarm/node-problem-detector-app
+    icon: https://s.giantswarm.io/app-icons/giantswarm/1/dark.svg
+    name: node-problem-detector
+    sources:
+    - https://github.com/giantswarm/node-problem-detector-app
+    - https://github.com/kubernetes/node-problem-detector
+    - https://kubernetes.io/docs/concepts/architecture/nodes/#condition
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/node-problem-detector-0.5.2-d4d37d29226b7ae5c32998f1002c8b7359f1f694.tgz
+    version: 0.5.2-d4d37d29226b7ae5c32998f1002c8b7359f1f694
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/default-test-catalog/node-problem-detector-0.5.2-a96126643fb442c9c19d01a31df807614a84731b.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/default-test-catalog/node-problem-detector-0.5.2-a96126643fb442c9c19d01a31df807614a84731b.tgz-meta/README.md
       application.giantswarm.io/team: phoenix
@@ -95664,4 +95688,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-0925e7cd5a07af06792e443ac8353856038c0905.tgz
     version: 3.4.3-0925e7cd5a07af06792e443ac8353856038c0905
-generated: "2026-06-23T09:00:40.435752376Z"
+generated: "2026-06-23T09:01:22.438201743Z"
