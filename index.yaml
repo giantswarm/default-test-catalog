@@ -75079,6 +75079,41 @@ entries:
     version: 0.3.1-62683e3f57aa9abb2860a9a5f2c6651964105a84
   prometheus-blackbox-exporter:
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/prometheus-blackbox-exporter-0.8.0-8fd8c07523d500cf1ef3dc4ad9cd9ef813c7ee98.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/prometheus-blackbox-exporter-app/refs/tags/v0.8.0-8fd8c07523d500cf1ef3dc4ad9cd9ef813c7ee98/README.md
+      io.giantswarm.application.restrictions.cluster-singleton: "true"
+      io.giantswarm.application.restrictions.fixed-namespace: kube-system
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/prometheus-blackbox-exporter-app/refs/tags/v0.8.0-8fd8c07523d500cf1ef3dc4ad9cd9ef813c7ee98/helm/prometheus-blackbox-exporter/values.schema.json
+    apiVersion: v2
+    appVersion: 0.23.0
+    created: "2026-06-23T09:13:38.530532248Z"
+    description: Prometheus Blackbox Exporter
+    digest: fa04ac499e6c695ec7c202021d8f9dd4958accb8c4923c23ed56c339c3e74a38
+    home: https://github.com/giantswarm/prometheus-blackbox-exporter-app
+    icon: https://s.giantswarm.io/app-icons/prometheus/1/light.svg
+    keywords:
+    - prometheus
+    - blackbox
+    - monitoring
+    maintainers:
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    - email: gianrubio@gmail.com
+      name: gianrubio
+    - email: me@sota.sh
+      name: rsotnychenko
+    - email: monotek23@gmail.com
+      name: monotek
+    name: prometheus-blackbox-exporter
+    sources:
+    - https://github.com/prometheus/blackbox_exporter
+    - https://github.com/prometheus-community/helm-charts/tree/main/charts/prometheus-blackbox-exporter
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/prometheus-blackbox-exporter-0.8.0-8fd8c07523d500cf1ef3dc4ad9cd9ef813c7ee98.tgz
+    version: 0.8.0-8fd8c07523d500cf1ef3dc4ad9cd9ef813c7ee98
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/prometheus-blackbox-exporter-0.8.0-7302b09e92e0213bb8b3cca3233a95fd1d08ee29.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/prometheus-blackbox-exporter-app/refs/tags/v0.8.0-7302b09e92e0213bb8b3cca3233a95fd1d08ee29/README.md
       io.giantswarm.application.restrictions.cluster-singleton: "true"
@@ -96331,4 +96366,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-0925e7cd5a07af06792e443ac8353856038c0905.tgz
     version: 3.4.3-0925e7cd5a07af06792e443ac8353856038c0905
-generated: "2026-06-23T09:12:46.949579273Z"
+generated: "2026-06-23T09:13:38.528705684Z"
