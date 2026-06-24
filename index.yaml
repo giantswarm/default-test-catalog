@@ -29111,6 +29111,40 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/cilium-1.4.6-dev.teams-alignment-branch.2026-06-23.08-27-02.h55303e5.tgz
     version: 1.4.6-dev.teams-alignment-branch.2026-06-23.08-27-02.h55303e5
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/cilium-1.4.6-dev.renovate-e2--ependencies.2026-06-24.19-00-25.hf35f47d.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/cilium-app/refs/tags/v1.4.6-dev.renovate-e2--ependencies.2026-06-24.19-00-25.hf35f47d/README.md
+      io.giantswarm.application.team: cabbage
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/cilium-app/refs/tags/v1.4.6-dev.renovate-e2--ependencies.2026-06-24.19-00-25.hf35f47d/helm/cilium/values.schema.json
+    apiVersion: v2
+    appVersion: 1.19.5
+    created: "2026-06-24T19:00:54.063775419Z"
+    dependencies:
+    - alias: cniCustomConf
+      condition: cni.customConf
+      name: cilium-giantswarm-cni-customconf
+      repository: ""
+      version: 0.1.0
+    description: eBPF-based Networking, Security, and Observability
+    digest: 40a3d2dabab74d1a4373c565dc7fbe8f7203d668d21f62e381604cd0db8d000a
+    home: https://github.com/giantswarm/cilium-app
+    icon: https://s.giantswarm.io/app-icons/cilium/1/light.svg
+    keywords:
+    - BPF
+    - eBPF
+    - Kubernetes
+    - Networking
+    - Security
+    - Observability
+    - Troubleshooting
+    kubeVersion: '>= 1.21.0-0'
+    name: cilium
+    sources:
+    - https://github.com/giantswarm/cilium-app
+    - https://github.com/cilium/cilium
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/cilium-1.4.6-dev.renovate-e2--ependencies.2026-06-24.19-00-25.hf35f47d.tgz
+    version: 1.4.6-dev.renovate-e2--ependencies.2026-06-24.19-00-25.hf35f47d
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/cilium-1.4.6-dev.renovate-e2--ependencies.2026-06-24.12-50-56.hbab8b77.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/cilium-app/refs/tags/v1.4.6-dev.renovate-e2--ependencies.2026-06-24.12-50-56.hbab8b77/README.md
       io.giantswarm.application.team: cabbage
@@ -98794,4 +98828,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-0925e7cd5a07af06792e443ac8353856038c0905.tgz
     version: 3.4.3-0925e7cd5a07af06792e443ac8353856038c0905
-generated: "2026-06-24T18:59:21.802008883Z"
+generated: "2026-06-24T19:00:54.040455527Z"
