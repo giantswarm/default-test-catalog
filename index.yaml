@@ -80486,6 +80486,31 @@ entries:
     version: 0.7.0-0166e582b9267facbd78cb4f852047dfe6dfabb2
   prometheus-operator-crd:
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-22.0.0.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/prometheus-operator-crd/refs/tags/v22.0.0/README.md
+      io.giantswarm.application.team: atlas
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/prometheus-operator-crd/refs/tags/v22.0.0/helm/prometheus-operator-crd/values.schema.json
+    apiVersion: v2
+    appVersion: v0.92.0
+    created: "2026-06-29T12:28:12.396459609Z"
+    dependencies:
+    - name: prometheus-operator-crds
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 30.0.0
+    description: kube-prometheus-stack CustomResourceDefinitions.
+    digest: fd751e91afa476d1b4bf459a16c22bd773e75619916640beea0eeda8994bcf43
+    home: https://github.com/giantswarm/prometheus-operator-crd
+    icon: https://s.giantswarm.io/app-icons/prometheus-operator/2/light.svg
+    kubeVersion: '>=1.19.0-0'
+    name: prometheus-operator-crd
+    sources:
+    - https://github.com/prometheus-community/helm-charts
+    - https://github.com/prometheus-operator/kube-prometheus
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-22.0.0.tgz
+    version: 22.0.0
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-21.0.1-dev.teams-alignment-branch.2026-06-23.08-39-58.h8145028.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/prometheus-operator-crd/refs/tags/v21.0.1-dev.teams-alignment-branch.2026-06-23.08-39-58.h8145028/README.md
       io.giantswarm.application.team: atlas
@@ -102710,4 +102735,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-0925e7cd5a07af06792e443ac8353856038c0905.tgz
     version: 3.4.3-0925e7cd5a07af06792e443ac8353856038c0905
-generated: "2026-06-29T12:27:14.767732596Z"
+generated: "2026-06-29T12:28:12.36869056Z"
