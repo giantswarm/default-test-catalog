@@ -57773,6 +57773,32 @@ entries:
     version: 0.5.1-0fcce2db91d4dce63191ec90b1a7e0d955bf0332
   kube-prometheus-stack:
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-22.0.0.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/kube-prometheus-stack-app/refs/tags/v22.0.0/README.md
+      io.giantswarm.application.team: atlas
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/kube-prometheus-stack-app/refs/tags/v22.0.0/helm/kube-prometheus-stack/values.schema.json
+    apiVersion: v2
+    appVersion: v0.92.0
+    created: "2026-06-29T13:08:41.619342616Z"
+    dependencies:
+    - name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 87.3.0
+    description: Giant Swarm's Prometheus Operator Deployment
+    digest: 82a51e309e7cdf532ad3e57343f395b61962b1e7a5b97971b77f6ee22fa0ce82
+    home: https://github.com/giantswarm/kube-prometheus-stack-app
+    icon: https://s.giantswarm.io/app-icons/prometheus-operator/2/light.svg
+    kubeVersion: '>=1.25.0-0'
+    maintainers:
+    - email: team-atlas@giantswarm.io
+      name: giantswarm/team-atlas
+    name: kube-prometheus-stack
+    sources:
+    - https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-22.0.0.tgz
+    version: 22.0.0
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/kube-prometheus-stack-21.0.2-dev.renovate-k--stack-87-x.2026-06-29.12-33-16.hec898fc.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/kube-prometheus-stack-app/refs/tags/v21.0.2-dev.renovate-k--stack-87-x.2026-06-29.12-33-16.hec898fc/README.md
       io.giantswarm.application.team: atlas
@@ -103087,4 +103113,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-0925e7cd5a07af06792e443ac8353856038c0905.tgz
     version: 3.4.3-0925e7cd5a07af06792e443ac8353856038c0905
-generated: "2026-06-29T13:07:13.568831743Z"
+generated: "2026-06-29T13:08:41.548287034Z"
