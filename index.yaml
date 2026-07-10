@@ -12216,6 +12216,30 @@ entries:
       config.giantswarm.io/version: 1.x.x
       io.giantswarm.application.audience: all
       io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-2.3.0-5eb83056a15761249f872e5c830cbe9883f4f0b9.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/aws-pod-identity-webhook/5eb83056a15761249f872e5c830cbe9883f4f0b9/README.md
+      io.giantswarm.application.restrictions.cluster-singleton: "true"
+      io.giantswarm.application.restrictions.compatible-providers: aws
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.upstream-chart-url: https://github.com/aws/amazon-eks-pod-identity-webhook
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/aws-pod-identity-webhook/5eb83056a15761249f872e5c830cbe9883f4f0b9/helm/aws-pod-identity-webhook/values.schema.json
+    apiVersion: v2
+    appVersion: 2.3.0-5eb83056a15761249f872e5c830cbe9883f4f0b9
+    created: "2026-07-10T10:13:39.739990053Z"
+    description: This webhook is for mutating pods that will require AWS IAM access.
+    digest: b92334dd4677fbc45958b35a65ef150ebd6cc7cb91ed88f8413fcac8d20c7525
+    home: https://github.com/giantswarm/aws-pod-identity-webhook
+    icon: https://s.giantswarm.io/app-icons/aws/2/dark.svg
+    name: aws-pod-identity-webhook
+    sources:
+    - https://github.com/aws/amazon-eks-pod-identity-webhook
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-2.3.0-5eb83056a15761249f872e5c830cbe9883f4f0b9.tgz
+    version: 2.3.0-5eb83056a15761249f872e5c830cbe9883f4f0b9
+  - annotations:
+      config.giantswarm.io/version: 1.x.x
+      io.giantswarm.application.audience: all
+      io.giantswarm.application.managed: "true"
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-2.3.0-4fc140df79b57f47dc7b97e9aabd9ca761c99bd4.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/aws-pod-identity-webhook/4fc140df79b57f47dc7b97e9aabd9ca761c99bd4/README.md
       io.giantswarm.application.restrictions.cluster-singleton: "true"
@@ -70105,4 +70129,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-14fd9810fc3a0da5191a5808c5c81f1b977c9461.tgz
     version: 3.4.3-14fd9810fc3a0da5191a5808c5c81f1b977c9461
-generated: "2026-07-10T10:13:28.203242798Z"
+generated: "2026-07-10T10:13:39.739043257Z"
