@@ -8142,6 +8142,30 @@ entries:
     version: 0.1.2-266f7638d6a647883cbfd70febfcff028454ed23
   aws-node-termination-handler:
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/aws-node-termination-handler-2.1.1-dev.teams-alignment-branch.2026-07-11.12-45-48.h3da995e.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/aws-nth-bundle/refs/tags/v2.1.1-dev.teams-alignment-branch.2026-07-11.12-45-48.h3da995e/README.md
+      io.giantswarm.application.restrictions.compatible-providers: aws
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/aws-nth-bundle/refs/tags/v2.1.1-dev.teams-alignment-branch.2026-07-11.12-45-48.h3da995e/helm/aws-node-termination-handler/values.schema.json
+    apiVersion: v2
+    appVersion: 1.25.2
+    created: "2026-07-11T12:46:11.256963581Z"
+    dependencies:
+    - alias: upstream
+      name: aws-node-termination-handler
+      repository: oci://public.ecr.aws/aws-ec2/helm
+      version: 0.27.5
+    description: Deploy components for the aws-node-termination-handler app
+    digest: 25afd608a2fcb4a1f9cbf074e8a51baa705e4a8f18f05ba318909d072e4275b1
+    home: https://github.com/giantswarm/aws-nth-bundle
+    icon: https://s.giantswarm.io/app-icons/aws/2/light.svg
+    name: aws-node-termination-handler
+    sources:
+    - https://raw.githubusercontent.com/giantswarm/aws-nth-bundle/v[[ .Version ]]/README.md
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/aws-node-termination-handler-2.1.1-dev.teams-alignment-branch.2026-07-11.12-45-48.h3da995e.tgz
+    version: 2.1.1-dev.teams-alignment-branch.2026-07-11.12-45-48.h3da995e
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/aws-node-termination-handler-2.1.1-dev.teams-alignment-branch.2026-07-07.07-14-23.h1a6189d.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/aws-nth-bundle/refs/tags/v2.1.1-dev.teams-alignment-branch.2026-07-07.07-14-23.h1a6189d/README.md
       io.giantswarm.application.restrictions.compatible-providers: aws
@@ -72153,4 +72177,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-14fd9810fc3a0da5191a5808c5c81f1b977c9461.tgz
     version: 3.4.3-14fd9810fc3a0da5191a5808c5c81f1b977c9461
-generated: "2026-07-11T12:45:47.585134948Z"
+generated: "2026-07-11T12:46:11.253961057Z"
