@@ -43767,6 +43767,28 @@ entries:
     version: 21.0.1-dev.fix-appversion.2026-06-16.15-48-27.h1fd1a00
   kube-state-metrics:
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/kube-state-metrics-0.0.0-dev.teams-alignment-branch.2026-07-11.20-00-58.h0468aa5.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/kube-state-metrics-app/refs/tags/v0.0.0-dev.teams-alignment-branch.2026-07-11.20-00-58.h0468aa5/README.md
+      io.giantswarm.application.team: tenet
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/kube-state-metrics-app/refs/tags/v0.0.0-dev.teams-alignment-branch.2026-07-11.20-00-58.h0468aa5/helm/kube-state-metrics/values.schema.json
+    apiVersion: v2
+    appVersion: 0.0.0-dev.teams-alignment-branch.2026-07-11.20-00-58.h0468aa5
+    created: "2026-07-11T20:01:31.804839801Z"
+    dependencies:
+    - name: kube-state-metrics
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 7.5.2
+    description: Generate and expose cluster-level metrics
+    digest: 21a6e1cdc12744405b6ad2410d7273623bde50681c593b098d87c7e152dc7662
+    home: https://github.com/giantswarm/kube-state-metrics-app
+    icon: https://s.giantswarm.io/app-icons/giantswarm/1/dark.svg
+    name: kube-state-metrics
+    sources:
+    - https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-state-metrics
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/kube-state-metrics-0.0.0-dev.teams-alignment-branch.2026-07-11.20-00-58.h0468aa5.tgz
+    version: 0.0.0-dev.teams-alignment-branch.2026-07-11.20-00-58.h0468aa5
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/kube-state-metrics-0.0.0-dev.teams-alignment-branch.2026-07-11.12-47-07.h44197f9.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/kube-state-metrics-app/refs/tags/v0.0.0-dev.teams-alignment-branch.2026-07-11.12-47-07.h44197f9/README.md
       io.giantswarm.application.team: tenet
@@ -73764,4 +73786,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-14fd9810fc3a0da5191a5808c5c81f1b977c9461.tgz
     version: 3.4.3-14fd9810fc3a0da5191a5808c5c81f1b977c9461
-generated: "2026-07-11T20:00:15.4143704Z"
+generated: "2026-07-11T20:01:31.801090577Z"
