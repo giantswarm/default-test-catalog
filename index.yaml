@@ -29321,6 +29321,31 @@ entries:
   external-dns-app:
   - annotations:
       io.giantswarm.application.audience: all
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/external-dns-app-3.5.1-dev.teams-alignment-branch.2026-07-11.20-12-11.hb1e23ea.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/external-dns-app/refs/tags/v3.5.1-dev.teams-alignment-branch.2026-07-11.20-12-11.hb1e23ea/README.md
+      io.giantswarm.application.team: cabbage
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/external-dns-app/refs/tags/v3.5.1-dev.teams-alignment-branch.2026-07-11.20-12-11.hb1e23ea/helm/external-dns-app/values.schema.json
+    apiVersion: v2
+    appVersion: 0.21.0
+    created: "2026-07-11T20:12:40.668156024Z"
+    dependencies:
+    - condition: crd.install
+      name: kubectl-apply-job
+      repository: oci://gsoci.azurecr.io/charts/giantswarm
+      version: 0.12.0
+    description: Configure external DNS servers for Kubernetes Ingresses and Services
+    digest: 117e48574666643585a6afcc1ac6404687087b156b47eecbb695296f560efd2a
+    home: https://github.com/giantswarm/external-dns-app
+    icon: https://s.giantswarm.io/app-icons/external-dns/1/dark.png
+    kubeVersion: '>=1.19.0-0'
+    name: external-dns-app
+    sources:
+    - https://github.com/kubernetes-sigs/external-dns
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/external-dns-app-3.5.1-dev.teams-alignment-branch.2026-07-11.20-12-11.hb1e23ea.tgz
+    version: 3.5.1-dev.teams-alignment-branch.2026-07-11.20-12-11.hb1e23ea
+  - annotations:
+      io.giantswarm.application.audience: all
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/external-dns-app-3.5.1-dev.teams-alignment-branch.2026-07-11.12-41-19.h634ab8e.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/external-dns-app/refs/tags/v3.5.1-dev.teams-alignment-branch.2026-07-11.12-41-19.h634ab8e/README.md
       io.giantswarm.application.team: cabbage
@@ -74233,4 +74258,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-14fd9810fc3a0da5191a5808c5c81f1b977c9461.tgz
     version: 3.4.3-14fd9810fc3a0da5191a5808c5c81f1b977c9461
-generated: "2026-07-11T20:11:53.731140929Z"
+generated: "2026-07-11T20:12:40.66599353Z"
