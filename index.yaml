@@ -34707,6 +34707,49 @@ entries:
   - annotations:
       io.giantswarm.application.audience: all
       io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/karpenter-2.4.1-dev.teams-alignment-branch.2026-07-11.12-40-39.hb693609.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/karpenter-app/refs/tags/v2.4.1-dev.teams-alignment-branch.2026-07-11.12-40-39.hb693609/README.md
+      io.giantswarm.application.restrictions.compatible-providers: aws
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.upstream-chart-url: https://github.com/aws/karpenter
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/karpenter-app/refs/tags/v2.4.1-dev.teams-alignment-branch.2026-07-11.12-40-39.hb693609/helm/karpenter/values.schema.json
+    apiVersion: v2
+    appVersion: 2.4.1-dev.teams-alignment-branch.2026-07-11.12-40-39.hb693609
+    created: "2026-07-11T12:41:07.332399223Z"
+    dependencies:
+    - alias: upstream
+      name: karpenter
+      repository: oci://public.ecr.aws/karpenter
+      version: 1.8.1
+    - alias: upstream-crd
+      name: karpenter-crd
+      repository: oci://public.ecr.aws/karpenter
+      version: 1.8.1
+    description: A Helm chart for Karpenter, an open-source node provisioning project
+      built for Kubernetes.
+    digest: d31962d34e2daed8c6a1a6c12a26f5783206ec25dac28c3bf16b8a3483367687
+    home: https://github.com/giantswarm/karpenter-app
+    icon: https://s.giantswarm.io/app-icons/karpenter/1/light.svg
+    keywords:
+    - cluster
+    - node
+    - scheduler
+    - autoscaling
+    - lifecycle
+    maintainers:
+    - email: team-phoenix@giantswarm.io
+      name: giantswarm/team-phoenix
+    name: karpenter
+    sources:
+    - https://github.com/aws/karpenter/
+    - https://karpenter.sh/
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/karpenter-2.4.1-dev.teams-alignment-branch.2026-07-11.12-40-39.hb693609.tgz
+    version: 2.4.1-dev.teams-alignment-branch.2026-07-11.12-40-39.hb693609
+  - annotations:
+      io.giantswarm.application.audience: all
+      io.giantswarm.application.managed: "true"
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/karpenter-2.4.1-dev.renovate-karpenter-1-x.2026-07-11.02-33-47.h0b5db64.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/karpenter-app/refs/tags/v2.4.1-dev.renovate-karpenter-1-x.2026-07-11.02-33-47.h0b5db64/README.md
       io.giantswarm.application.restrictions.compatible-providers: aws
@@ -71819,4 +71862,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-14fd9810fc3a0da5191a5808c5c81f1b977c9461.tgz
     version: 3.4.3-14fd9810fc3a0da5191a5808c5c81f1b977c9461
-generated: "2026-07-11T12:40:50.107886094Z"
+generated: "2026-07-11T12:41:07.326799797Z"
