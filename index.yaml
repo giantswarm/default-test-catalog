@@ -30558,6 +30558,41 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/external-dns-app-3.5.1-dev.renovate-ac--heckout-7-x.2026-06-18.19-30-30.h4c5e62e.tgz
     version: 3.5.1-dev.renovate-ac--heckout-7-x.2026-06-18.19-30-30.h4c5e62e
   - annotations:
+      artifacthub.io/category: networking
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Support
+          url: https://github.com/giantswarm/external-dns-app/issues
+        - name: Upstream project
+          url: https://github.com/kubernetes-sigs/external-dns
+      io.giantswarm.application.audience: all
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/external-dns-app-3.5.1-dev.chore-artif--ub-metadata.2026-07-15.10-35-21.h0f83215.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/external-dns-app/refs/tags/v3.5.1-dev.chore-artif--ub-metadata.2026-07-15.10-35-21.h0f83215/README.md
+      io.giantswarm.application.team: cabbage
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/external-dns-app/refs/tags/v3.5.1-dev.chore-artif--ub-metadata.2026-07-15.10-35-21.h0f83215/helm/external-dns-app/values.schema.json
+    apiVersion: v2
+    appVersion: 0.21.0
+    created: "2026-07-15T10:35:53.781867105Z"
+    dependencies:
+    - condition: crd.install
+      name: kubectl-apply-job
+      repository: oci://gsoci.azurecr.io/charts/giantswarm
+      version: 0.12.0
+    description: Configure external DNS servers for Kubernetes Ingresses and Services
+    digest: c6e780a14b0f6b90743a81b919bc322f0e19321042ca370bab5c4f651c19489e
+    home: https://github.com/giantswarm/external-dns-app
+    icon: https://s.giantswarm.io/app-icons/external-dns/1/dark.png
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - name: Giant Swarm
+      url: https://github.com/giantswarm
+    name: external-dns-app
+    sources:
+    - https://github.com/kubernetes-sigs/external-dns
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/external-dns-app-3.5.1-dev.chore-artif--ub-metadata.2026-07-15.10-35-21.h0f83215.tgz
+    version: 3.5.1-dev.chore-artif--ub-metadata.2026-07-15.10-35-21.h0f83215
+  - annotations:
       io.giantswarm.application.audience: all
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/external-dns-app-3.5.1-dev.bundled-updates.2026-06-24.13-18-48.hef1a9e2.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/external-dns-app/refs/tags/v3.5.1-dev.bundled-updates.2026-06-24.13-18-48.hef1a9e2/README.md
@@ -75520,4 +75555,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-14fd9810fc3a0da5191a5808c5c81f1b977c9461.tgz
     version: 3.4.3-14fd9810fc3a0da5191a5808c5c81f1b977c9461
-generated: "2026-07-15T08:26:04.650415177Z"
+generated: "2026-07-15T10:35:53.779526645Z"
