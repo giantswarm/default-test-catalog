@@ -18859,6 +18859,51 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/cert-manager-app-4.1.2-dev.renovate-architect-9-x.2026-07-24.16-36-49.hff56ca6.tgz
     version: 4.1.2-dev.renovate-architect-9-x.2026-07-24.16-36-49.hff56ca6
   - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Support
+          url: https://github.com/giantswarm/cert-manager-app/issues
+        - name: Upstream project
+          url: https://github.com/cert-manager/cert-manager
+      io.giantswarm.application.audience: all
+      io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/cert-manager-app-4.1.2-dev.main-update-chart.2026-07-24.23-08-41.h6365e30.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/cert-manager-app/refs/tags/v4.1.2-dev.main-update-chart.2026-07-24.23-08-41.h6365e30/README.md
+      io.giantswarm.application.team: shield
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/cert-manager-app/refs/tags/v4.1.2-dev.main-update-chart.2026-07-24.23-08-41.h6365e30/helm/cert-manager/values.schema.json
+    apiVersion: v2
+    appVersion: 4.1.2-dev.main-update-chart.2026-07-24.23-08-41.h6365e30
+    created: "2026-07-24T23:09:12.605750748Z"
+    dependencies:
+    - name: cert-manager
+      repository: ""
+      version: v1.21.0
+    - alias: giantSwarmClusterIssuer
+      name: cert-manager-giantswarm-clusterissuer
+      repository: ""
+      version: 2.0.0
+    - condition: giantswarmNetworkPolicy.enabled
+      name: cert-manager-giantswarm-netpol
+      repository: ""
+      version: 0.1.0
+    - condition: ciliumNetworkPolicy.enabled
+      name: cert-manager-giantswarm-ciliumnetworkpolicies
+      repository: ""
+      version: 0.1.0
+    description: Simplifies the process of obtaining, renewing and using certificates.
+    digest: 0b8bb6a5d3c97485ef613fc6edb3824648fbbf8afbba5355094c815b0f5ec163
+    home: https://github.com/giantswarm/cert-manager-app
+    icon: https://s.giantswarm.io/app-icons/cert-manager/1/light.svg
+    kubeVersion: '>=1.22.0-0'
+    maintainers:
+    - name: Shield
+    name: cert-manager-app
+    sources:
+    - https://github.com/cert-manager/cert-manager
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/cert-manager-app-4.1.2-dev.main-update-chart.2026-07-24.23-08-41.h6365e30.tgz
+    version: 4.1.2-dev.main-update-chart.2026-07-24.23-08-41.h6365e30
+  - annotations:
       io.giantswarm.application.audience: all
       io.giantswarm.application.managed: "true"
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/cert-manager-app-4.1.1-dev.teams-alignment-branch.2026-07-11.19-51-30.hc1a5eca.tgz-meta/main.yaml
@@ -84276,4 +84321,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-14fd9810fc3a0da5191a5808c5c81f1b977c9461.tgz
     version: 3.4.3-14fd9810fc3a0da5191a5808c5c81f1b977c9461
-generated: "2026-07-24T23:08:03.254901173Z"
+generated: "2026-07-24T23:09:12.592024205Z"
