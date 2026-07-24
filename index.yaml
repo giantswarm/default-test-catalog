@@ -54342,6 +54342,50 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/kyverno-0.24.3-dev.renovate-g--kubectl-1-x.2026-06-10.00-27-49.hf130f06.tgz
     version: 0.24.3-dev.renovate-g--kubectl-1-x.2026-06-10.00-27-49.hf130f06
   - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Support
+          url: https://github.com/giantswarm/kyverno-app/issues
+        - name: Upstream project
+          url: https://github.com/kyverno/kyverno
+      config.giantswarm.io/version: 1.x.x
+      io.giantswarm.application.audience: all
+      io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/kyverno-0.24.3-dev.renovate-architect-9-x.2026-07-24.16-40-49.h27d48e0.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/kyverno-app/refs/tags/v0.24.3-dev.renovate-architect-9-x.2026-07-24.16-40-49.h27d48e0/README.md
+      io.giantswarm.application.restrictions.cluster-singleton: "true"
+      io.giantswarm.application.team: shield
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/kyverno-app/refs/tags/v0.24.3-dev.renovate-architect-9-x.2026-07-24.16-40-49.h27d48e0/helm/kyverno/values.schema.json
+    apiVersion: v2
+    appVersion: 0.24.3-dev.renovate-architect-9-x.2026-07-24.16-40-49.h27d48e0
+    created: "2026-07-24T16:41:45.700208108Z"
+    dependencies:
+    - name: policy-reporter
+      repository: ""
+      version: 3.7.4
+    - name: kyverno
+      repository: ""
+      version: 3.7.2
+    description: 'Kyverno is a policy engine designed for Kubernetes. It can validate,
+      mutate, and generate configurations using admission controls and background
+      scans. Kyverno policies are Kubernetes resources and do not require learning
+      a new language. '
+    digest: c76b5fc6b0e86a7d40753f543d019aefbf4bbf5a91a96e5caa1a3eecfadfacde
+    home: https://github.com/giantswarm/kyverno-app
+    icon: https://s.giantswarm.io/app-icons/kyverno/1/light.svg
+    keywords:
+    - kubernetes
+    - policy-agent
+    - validating-webhook
+    - admission-controller
+    name: kyverno
+    sources:
+    - https://github.com/kyverno/kyverno
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/kyverno-0.24.3-dev.renovate-architect-9-x.2026-07-24.16-40-49.h27d48e0.tgz
+    version: 0.24.3-dev.renovate-architect-9-x.2026-07-24.16-40-49.h27d48e0
+  - annotations:
       config.giantswarm.io/version: 1.x.x
       io.giantswarm.application.audience: all
       io.giantswarm.application.managed: "true"
@@ -83085,4 +83129,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-14fd9810fc3a0da5191a5808c5c81f1b977c9461.tgz
     version: 3.4.3-14fd9810fc3a0da5191a5808c5c81f1b977c9461
-generated: "2026-07-24T16:38:37.511825314Z"
+generated: "2026-07-24T16:41:45.667122406Z"
