@@ -34562,6 +34562,37 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/external-dns-app-3.5.1-dev.renovate-e2--ependencies.2026-06-24.14-12-18.h3944ab6.tgz
     version: 3.5.1-dev.renovate-e2--ependencies.2026-06-24.14-12-18.h3944ab6
   - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Support
+          url: https://github.com/giantswarm/external-dns-app/issues
+        - name: Upstream project
+          url: https://github.com/kubernetes-sigs/external-dns
+      io.giantswarm.application.audience: all
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/external-dns-app-3.5.1-dev.renovate-architect-9-x.2026-07-24.15-13-12.hf4b208f.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/external-dns-app/refs/tags/v3.5.1-dev.renovate-architect-9-x.2026-07-24.15-13-12.hf4b208f/README.md
+      io.giantswarm.application.team: cabbage
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/external-dns-app/refs/tags/v3.5.1-dev.renovate-architect-9-x.2026-07-24.15-13-12.hf4b208f/helm/external-dns-app/values.schema.json
+    apiVersion: v2
+    appVersion: 0.21.0
+    created: "2026-07-24T15:13:52.429795418Z"
+    dependencies:
+    - condition: crd.install
+      name: kubectl-apply-job
+      repository: oci://gsoci.azurecr.io/charts/giantswarm
+      version: 0.12.0
+    description: Configure external DNS servers for Kubernetes Ingresses and Services
+    digest: 46503ff3f8fbe1b73b15877e3d2b8c37ec975253637dd96c8b8bfbe41679b0be
+    home: https://github.com/giantswarm/external-dns-app
+    icon: https://s.giantswarm.io/app-icons/external-dns/1/dark.png
+    kubeVersion: '>=1.19.0-0'
+    name: external-dns-app
+    sources:
+    - https://github.com/kubernetes-sigs/external-dns
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/external-dns-app-3.5.1-dev.renovate-architect-9-x.2026-07-24.15-13-12.hf4b208f.tgz
+    version: 3.5.1-dev.renovate-architect-9-x.2026-07-24.15-13-12.hf4b208f
+  - annotations:
       io.giantswarm.application.audience: all
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/external-dns-app-3.5.1-dev.renovate-architect-9-x.2026-07-07.08-51-14.hd1115e2.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/external-dns-app/refs/tags/v3.5.1-dev.renovate-architect-9-x.2026-07-07.08-51-14.hd1115e2/README.md
@@ -82844,4 +82875,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-14fd9810fc3a0da5191a5808c5c81f1b977c9461.tgz
     version: 3.4.3-14fd9810fc3a0da5191a5808c5c81f1b977c9461
-generated: "2026-07-24T15:11:59.223722028Z"
+generated: "2026-07-24T15:13:52.426955014Z"
