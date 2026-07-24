@@ -14990,6 +14990,36 @@ entries:
     version: 2.0.1-0eb3e8e85616d15b72355924a672a45184b2f67b
   aws-pod-identity-webhook:
   - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Support
+          url: https://github.com/giantswarm/aws-pod-identity-webhook/issues
+        - name: Upstream project
+          url: https://github.com/aws/amazon-eks-pod-identity-webhook
+      config.giantswarm.io/version: 1.x.x
+      io.giantswarm.application.audience: all
+      io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-2.3.1-dev.renovate-architect-9-x.2026-07-24.20-39-33.hfd75621.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/aws-pod-identity-webhook/refs/tags/v2.3.1-dev.renovate-architect-9-x.2026-07-24.20-39-33.hfd75621/README.md
+      io.giantswarm.application.restrictions.cluster-singleton: "true"
+      io.giantswarm.application.restrictions.compatible-providers: aws
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.upstream-chart-url: https://github.com/aws/amazon-eks-pod-identity-webhook
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/aws-pod-identity-webhook/refs/tags/v2.3.1-dev.renovate-architect-9-x.2026-07-24.20-39-33.hfd75621/helm/aws-pod-identity-webhook/values.schema.json
+    apiVersion: v2
+    appVersion: 2.3.1-dev.renovate-architect-9-x.2026-07-24.20-39-33.hfd75621
+    created: "2026-07-24T20:44:59.778715555Z"
+    description: This webhook is for mutating pods that will require AWS IAM access.
+    digest: 44aa24552573b8a72628d5c3c9601f8b68382d4eb0587d0fe9e29860de68ba8c
+    home: https://github.com/giantswarm/aws-pod-identity-webhook
+    icon: https://s.giantswarm.io/app-icons/aws/2/dark.svg
+    name: aws-pod-identity-webhook
+    sources:
+    - https://github.com/aws/amazon-eks-pod-identity-webhook
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/aws-pod-identity-webhook-2.3.1-dev.renovate-architect-9-x.2026-07-24.20-39-33.hfd75621.tgz
+    version: 2.3.1-dev.renovate-architect-9-x.2026-07-24.20-39-33.hfd75621
+  - annotations:
       config.giantswarm.io/version: 1.x.x
       io.giantswarm.application.audience: all
       io.giantswarm.application.managed: "true"
@@ -84020,4 +84050,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-14fd9810fc3a0da5191a5808c5c81f1b977c9461.tgz
     version: 3.4.3-14fd9810fc3a0da5191a5808c5c81f1b977c9461
-generated: "2026-07-24T20:41:51.43920637Z"
+generated: "2026-07-24T20:44:59.777803426Z"
