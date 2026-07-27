@@ -69311,6 +69311,31 @@ entries:
     version: 0.8.0-484ef72f439ba7b408d9ed98d597500fd978350d
   prometheus-operator-crd:
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-22.0.1-dev.teams-alignment-branch.2026-07-27.15-26-42.hfa445ae.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/prometheus-operator-crd/refs/tags/v22.0.1-dev.teams-alignment-branch.2026-07-27.15-26-42.hfa445ae/README.md
+      io.giantswarm.application.team: atlas
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/prometheus-operator-crd/refs/tags/v22.0.1-dev.teams-alignment-branch.2026-07-27.15-26-42.hfa445ae/helm/prometheus-operator-crd/values.schema.json
+    apiVersion: v2
+    appVersion: v0.92.0
+    created: "2026-07-27T15:27:30.362894693Z"
+    dependencies:
+    - name: prometheus-operator-crds
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 30.0.0
+    description: kube-prometheus-stack CustomResourceDefinitions.
+    digest: 5b182359ab67ef11f6fa498a0290c39dd96d19f034e8fb2915498d87cf0c936e
+    home: https://github.com/giantswarm/prometheus-operator-crd
+    icon: https://s.giantswarm.io/app-icons/prometheus-operator/2/light.svg
+    kubeVersion: '>=1.19.0-0'
+    name: prometheus-operator-crd
+    sources:
+    - https://github.com/prometheus-community/helm-charts
+    - https://github.com/prometheus-operator/kube-prometheus
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-22.0.1-dev.teams-alignment-branch.2026-07-27.15-26-42.hfa445ae.tgz
+    version: 22.0.1-dev.teams-alignment-branch.2026-07-27.15-26-42.hfa445ae
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-22.0.1-dev.teams-alignment-branch.2026-07-11.19-55-34.h53fbe6d.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/prometheus-operator-crd/refs/tags/v22.0.1-dev.teams-alignment-branch.2026-07-11.19-55-34.h53fbe6d/README.md
       io.giantswarm.application.team: atlas
@@ -86706,4 +86731,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-14fd9810fc3a0da5191a5808c5c81f1b977c9461.tgz
     version: 3.4.3-14fd9810fc3a0da5191a5808c5c81f1b977c9461
-generated: "2026-07-27T15:26:46.036963112Z"
+generated: "2026-07-27T15:27:30.342051175Z"
