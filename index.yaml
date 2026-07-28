@@ -44977,6 +44977,47 @@ entries:
       artifacthub.io/changes: |
         - kind: added
           description: Persistent Volume Claim retention policy
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: CLASTIX
+          url: https://clastix.io
+        - name: Kamaji
+          url: https://kamaji.clastix.io
+        - name: support
+          url: https://clastix.io/support
+      artifacthub.io/operator: "true"
+      artifacthub.io/operatorCapabilities: Full Lifecycle
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/kamaji-etcd-0.3.2-dev.teams-alignment-branch.2026-07-28.14-22-03.h8d64598.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/kamaji-etcd-app/refs/tags/v0.3.2-dev.teams-alignment-branch.2026-07-28.14-22-03.h8d64598/README.md
+      io.giantswarm.application.team: rocket
+      io.giantswarm.application.upstream: https://github.com/clastix/kamaji-etcd
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/kamaji-etcd-app/refs/tags/v0.3.2-dev.teams-alignment-branch.2026-07-28.14-22-03.h8d64598/helm/kamaji-etcd/values.schema.json
+    apiVersion: v2
+    appVersion: 0.3.2-dev.teams-alignment-branch.2026-07-28.14-22-03.h8d64598
+    created: "2026-07-28T14:22:38.035844759Z"
+    description: Helm chart for deploying a multi-tenant `etcd` cluster.
+    digest: f80722b12b6699b81a3a1b91d35c18557e470fb81ad37ad12d84e63be1c79ec0
+    home: https://github.com/giantswarm/kamaji-etcd-app
+    icon: https://s.giantswarm.io/app-icons/kamaji/2/light.svg
+    kubeVersion: '>=1.22.0-0'
+    maintainers:
+    - email: adriano@clastix.io
+      name: Adriano Pezzuto
+      url: https://clastix.io
+    - email: dario@clastix.io
+      name: Dario Tranchitella
+      url: https://clastix.io
+    name: kamaji-etcd
+    sources:
+    - https://github.com/clastix/kamaji-etcd
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/kamaji-etcd-0.3.2-dev.teams-alignment-branch.2026-07-28.14-22-03.h8d64598.tgz
+    version: 0.3.2-dev.teams-alignment-branch.2026-07-28.14-22-03.h8d64598
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Persistent Volume Claim retention policy
       artifacthub.io/links: |
         - name: CLASTIX
           url: https://clastix.io
@@ -90256,4 +90297,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-14fd9810fc3a0da5191a5808c5c81f1b977c9461.tgz
     version: 3.4.3-14fd9810fc3a0da5191a5808c5c81f1b977c9461
-generated: "2026-07-28T13:59:59.941919267Z"
+generated: "2026-07-28T14:22:38.034124196Z"
