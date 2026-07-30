@@ -72447,6 +72447,41 @@ entries:
     version: 0.3.2-dev.renovate-architect-9-x.2026-06-01.18-01-50
   prometheus-blackbox-exporter:
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/prometheus-blackbox-exporter-0.9.1-dev.teams-alignment-branch.2026-07-30.09-43-42.h703fb9a.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/prometheus-blackbox-exporter-app/refs/tags/v0.9.1-dev.teams-alignment-branch.2026-07-30.09-43-42.h703fb9a/README.md
+      io.giantswarm.application.restrictions.cluster-singleton: "true"
+      io.giantswarm.application.restrictions.fixed-namespace: kube-system
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/prometheus-blackbox-exporter-app/refs/tags/v0.9.1-dev.teams-alignment-branch.2026-07-30.09-43-42.h703fb9a/helm/prometheus-blackbox-exporter/values.schema.json
+    apiVersion: v2
+    appVersion: 0.9.1-dev.teams-alignment-branch.2026-07-30.09-43-42.h703fb9a
+    created: "2026-07-30T09:44:20.920398599Z"
+    description: Prometheus Blackbox Exporter
+    digest: e7a581ea34805b7d347a4ce6a6edd0e86681aab73ba5b9ecb5d70e311f1071b2
+    home: https://github.com/giantswarm/prometheus-blackbox-exporter-app
+    icon: https://s.giantswarm.io/app-icons/prometheus/1/light.svg
+    keywords:
+    - prometheus
+    - blackbox
+    - monitoring
+    maintainers:
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    - email: gianrubio@gmail.com
+      name: gianrubio
+    - email: me@sota.sh
+      name: rsotnychenko
+    - email: monotek23@gmail.com
+      name: monotek
+    name: prometheus-blackbox-exporter
+    sources:
+    - https://github.com/prometheus/blackbox_exporter
+    - https://github.com/prometheus-community/helm-charts/tree/main/charts/prometheus-blackbox-exporter
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/prometheus-blackbox-exporter-0.9.1-dev.teams-alignment-branch.2026-07-30.09-43-42.h703fb9a.tgz
+    version: 0.9.1-dev.teams-alignment-branch.2026-07-30.09-43-42.h703fb9a
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/prometheus-blackbox-exporter-0.9.1-dev.teams-alignment-branch.2026-07-27.15-56-34.hf409a4d.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/prometheus-blackbox-exporter-app/refs/tags/v0.9.1-dev.teams-alignment-branch.2026-07-27.15-56-34.hf409a4d/README.md
       io.giantswarm.application.restrictions.cluster-singleton: "true"
@@ -91545,4 +91580,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.3-14fd9810fc3a0da5191a5808c5c81f1b977c9461.tgz
     version: 3.4.3-14fd9810fc3a0da5191a5808c5c81f1b977c9461
-generated: "2026-07-30T09:43:20.968200706Z"
+generated: "2026-07-30T09:44:20.918569038Z"
