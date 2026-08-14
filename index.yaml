@@ -16296,6 +16296,46 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/cilium-1.5.1-dev.cabbage-rem--istry-patch.2026-08-06.14-53-00.ha895fd0.tgz
     version: 1.5.1-dev.cabbage-rem--istry-patch.2026-08-06.14-53-00.ha895fd0
   - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Support
+          url: https://github.com/giantswarm/cilium-app/issues
+        - name: Upstream project
+          url: https://github.com/cilium/cilium
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/cilium-1.5.1-dev.add-release-pr-body.2026-08-14.07-45-30.h9f6a46a.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/cilium-app/refs/tags/v1.5.1-dev.add-release-pr-body.2026-08-14.07-45-30.h9f6a46a/README.md
+      io.giantswarm.application.team: cabbage
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/cilium-app/refs/tags/v1.5.1-dev.add-release-pr-body.2026-08-14.07-45-30.h9f6a46a/helm/cilium/values.schema.json
+    apiVersion: v2
+    appVersion: 1.19.6
+    created: "2026-08-14T07:45:57.034912434Z"
+    dependencies:
+    - alias: cniCustomConf
+      condition: cni.customConf
+      name: cilium-giantswarm-cni-customconf
+      repository: ""
+      version: 0.1.0
+    description: eBPF-based Networking, Security, and Observability
+    digest: 431ef1fe836fdaaf562973a927e852a9289a609a3217763ae3bf15f19b37c3d9
+    home: https://github.com/giantswarm/cilium-app
+    icon: https://s.giantswarm.io/app-icons/cilium/1/light.svg
+    keywords:
+    - BPF
+    - eBPF
+    - Kubernetes
+    - Networking
+    - Security
+    - Observability
+    - Troubleshooting
+    kubeVersion: '>= 1.21.0-0'
+    name: cilium
+    sources:
+    - https://github.com/giantswarm/cilium-app
+    - https://github.com/cilium/cilium
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/cilium-1.5.1-dev.add-release-pr-body.2026-08-14.07-45-30.h9f6a46a.tgz
+    version: 1.5.1-dev.add-release-pr-body.2026-08-14.07-45-30.h9f6a46a
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/cilium-1.4.6-dev.teams-alignment-branch.2026-07-11.19-55-02.h99fd917.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/cilium-app/refs/tags/v1.4.6-dev.teams-alignment-branch.2026-07-11.19-55-02.h99fd917/README.md
       io.giantswarm.application.team: cabbage
@@ -45947,4 +45987,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.5-dev.fix-chart-rendering.2026-07-28.13-59-21.h2365282.tgz
     version: 3.4.5-dev.fix-chart-rendering.2026-07-28.13-59-21.h2365282
-generated: "2026-08-14T07:45:48.377214056Z"
+generated: "2026-08-14T07:45:57.015347686Z"
