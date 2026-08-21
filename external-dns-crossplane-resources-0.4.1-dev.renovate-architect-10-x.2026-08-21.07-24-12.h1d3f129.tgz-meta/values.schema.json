@@ -1,0 +1,76 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "properties": {
+        "provider": {
+            "type": "string",
+            "enum": ["aws", "aks", "azure"]
+        },
+        "accountID": {
+            "type": "string"
+        },
+        "awsPartition": {
+            "type": "string"
+        },
+        "clusterName": {
+            "type": "string"
+        },
+        "serviceAccount": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "namespace": {
+                    "type": "string"
+                }
+            }
+        },
+        "oidcDomain": {
+            "type": "string"
+        },
+        "oidcDomains": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "aws": {
+            "type": "object",
+            "properties": {
+                "accountID": {
+                    "type": "string"
+                },
+                "awsPartition": {
+                    "type": "string"
+                },
+                "oidcDomain": {
+                    "type": "string"
+                },
+                "oidcDomains": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "azure": {
+            "type": "object",
+            "properties": {
+                "location": {
+                    "type": "string"
+                },
+                "resourceGroupName": {
+                    "type": "string"
+                },
+                "subscriptionID": {
+                    "type": "string"
+                },
+                "mountPath": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
