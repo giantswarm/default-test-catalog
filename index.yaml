@@ -30477,6 +30477,37 @@ entries:
         - name: Upstream project
           url: https://github.com/kubernetes-sigs/external-dns
       io.giantswarm.application.audience: all
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/external-dns-app-3.5.1-dev.renovate-e2--ependencies.2026-08-21.22-52-49.h258596b.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/external-dns-app/refs/tags/v3.5.1-dev.renovate-e2--ependencies.2026-08-21.22-52-49.h258596b/README.md
+      io.giantswarm.application.team: cabbage
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/external-dns-app/refs/tags/v3.5.1-dev.renovate-e2--ependencies.2026-08-21.22-52-49.h258596b/helm/external-dns-app/values.schema.json
+    apiVersion: v2
+    appVersion: 0.21.0
+    created: "2026-08-21T22:53:19.724056891Z"
+    dependencies:
+    - condition: crd.install
+      name: kubectl-apply-job
+      repository: oci://gsoci.azurecr.io/charts/giantswarm
+      version: 0.12.0
+    description: Configure external DNS servers for Kubernetes Ingresses and Services
+    digest: df927adb2cd709d439da35fbdede0886faaf893fed7f81903e755dd60c2691f2
+    home: https://github.com/giantswarm/external-dns-app
+    icon: https://s.giantswarm.io/app-icons/external-dns/1/dark.png
+    kubeVersion: '>=1.19.0-0'
+    name: external-dns-app
+    sources:
+    - https://github.com/kubernetes-sigs/external-dns
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/external-dns-app-3.5.1-dev.renovate-e2--ependencies.2026-08-21.22-52-49.h258596b.tgz
+    version: 3.5.1-dev.renovate-e2--ependencies.2026-08-21.22-52-49.h258596b
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Support
+          url: https://github.com/giantswarm/external-dns-app/issues
+        - name: Upstream project
+          url: https://github.com/kubernetes-sigs/external-dns
+      io.giantswarm.application.audience: all
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/external-dns-app-3.5.1-dev.renovate-e2--ependencies.2026-08-21.07-35-14.heb0c44d.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/external-dns-app/refs/tags/v3.5.1-dev.renovate-e2--ependencies.2026-08-21.07-35-14.heb0c44d/README.md
       io.giantswarm.application.team: cabbage
@@ -65256,4 +65287,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.5-dev.fix-chart-rendering.2026-07-28.13-59-21.h2365282.tgz
     version: 3.4.5-dev.fix-chart-rendering.2026-07-28.13-59-21.h2365282
-generated: "2026-08-21T21:29:52.033893299Z"
+generated: "2026-08-21T22:53:19.720404284Z"
