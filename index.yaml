@@ -46849,6 +46849,44 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/kubescape-0.1.1-dev.main-update-chart.2026-07-22.22-45-17.h19fecc8.tgz
     version: 0.1.1-dev.main-update-chart.2026-07-22.22-45-17.h19fecc8
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Support
+          url: https://github.com/giantswarm/kubescape-app/issues
+        - name: Upstream project
+          url: https://github.com/kubescape/helm-charts
+      io.giantswarm.application.audience: all
+      io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/kubescape-0.1.1-dev.main-release-patch.2026-08-25.11-00-02.h0d5256f.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/kubescape-app/refs/tags/v0.1.1-dev.main-release-patch.2026-08-25.11-00-02.h0d5256f/README.md
+      io.giantswarm.application.team: shield
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/kubescape-app/refs/tags/v0.1.1-dev.main-release-patch.2026-08-25.11-00-02.h0d5256f/helm/kubescape/values.schema.json
+    apiVersion: v2
+    appVersion: 0.1.1-dev.main-release-patch.2026-08-25.11-00-02.h0d5256f
+    created: "2026-08-25T11:19:13.030431209Z"
+    dependencies:
+    - condition: exceptions.enabled
+      name: exceptions
+      repository: ""
+      version: 0.0.0
+    - name: dependency_chart
+      repository: ""
+      version: 0.0.0
+    - name: kubescape-operator
+      repository: ""
+      version: 1.40.2
+    description: This chart contains the kubescape operator chart and custom Giant
+      Swarm resources.
+    digest: f548bda2528b233c4aef5f1579d73fb6799112f028081d949b833df0641e65bc
+    home: https://github.com/giantswarm/kubescape-app
+    icon: https://s.giantswarm.io/app-icons/kubescape/1/color.svg
+    name: kubescape
+    sources:
+    - https://github.com/kubescape/helm-charts
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/kubescape-0.1.1-dev.main-release-patch.2026-08-25.11-00-02.h0d5256f.tgz
+    version: 0.1.1-dev.main-release-patch.2026-08-25.11-00-02.h0d5256f
   kyverno:
   - annotations:
       artifacthub.io/license: Apache-2.0
@@ -68594,4 +68632,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.5-dev.fix-chart-rendering.2026-07-28.13-59-21.h2365282.tgz
     version: 3.4.5-dev.fix-chart-rendering.2026-07-28.13-59-21.h2365282
-generated: "2026-08-25T11:05:19.422603119Z"
+generated: "2026-08-25T11:19:13.018599847Z"
