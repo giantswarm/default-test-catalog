@@ -73062,6 +73062,41 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/prometheus-blackbox-exporter-0.9.1-dev.fix-internal-dns-modules.2026-08-31.10-53-20.hd6ee877.tgz
     version: 0.9.1-dev.fix-internal-dns-modules.2026-08-31.10-53-20.hd6ee877
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/prometheus-blackbox-exporter-0.9.1-dev.add-egress-probe-domains.2026-09-02.08-17-13.h42c4a24.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/prometheus-blackbox-exporter-app/refs/tags/v0.9.1-dev.add-egress-probe-domains.2026-09-02.08-17-13.h42c4a24/README.md
+      io.giantswarm.application.restrictions.cluster-singleton: "true"
+      io.giantswarm.application.restrictions.fixed-namespace: kube-system
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/prometheus-blackbox-exporter-app/refs/tags/v0.9.1-dev.add-egress-probe-domains.2026-09-02.08-17-13.h42c4a24/helm/prometheus-blackbox-exporter/values.schema.json
+    apiVersion: v2
+    appVersion: 0.9.1-dev.add-egress-probe-domains.2026-09-02.08-17-13.h42c4a24
+    created: "2026-09-02T08:17:42.565558937Z"
+    description: Prometheus Blackbox Exporter
+    digest: 2aa1e468c504951235f3933b6b64c8323555a105f4d839019f796cf121a7956d
+    home: https://github.com/giantswarm/prometheus-blackbox-exporter-app
+    icon: https://s.giantswarm.io/app-icons/prometheus/1/light.svg
+    keywords:
+    - prometheus
+    - blackbox
+    - monitoring
+    maintainers:
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    - email: gianrubio@gmail.com
+      name: gianrubio
+    - email: me@sota.sh
+      name: rsotnychenko
+    - email: monotek23@gmail.com
+      name: monotek
+    name: prometheus-blackbox-exporter
+    sources:
+    - https://github.com/prometheus/blackbox_exporter
+    - https://github.com/prometheus-community/helm-charts/tree/main/charts/prometheus-blackbox-exporter
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/prometheus-blackbox-exporter-0.9.1-dev.add-egress-probe-domains.2026-09-02.08-17-13.h42c4a24.tgz
+    version: 0.9.1-dev.add-egress-probe-domains.2026-09-02.08-17-13.h42c4a24
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/prometheus-blackbox-exporter-0.9.1-dev.add-egress-probe-domains.2026-08-27.08-25-07.h18d135a.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/prometheus-blackbox-exporter-app/refs/tags/v0.9.1-dev.add-egress-probe-domains.2026-08-27.08-25-07.h18d135a/README.md
       io.giantswarm.application.restrictions.cluster-singleton: "true"
@@ -90725,4 +90760,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.5-dev.fix-chart-rendering.2026-07-28.13-59-21.h2365282.tgz
     version: 3.4.5-dev.fix-chart-rendering.2026-07-28.13-59-21.h2365282
-generated: "2026-09-02T08:02:29.726004147Z"
+generated: "2026-09-02T08:17:42.562656827Z"
