@@ -1,0 +1,15 @@
+annotations:
+  application.giantswarm.io/audience: all
+  application.giantswarm.io/managed: 'true'
+  application.giantswarm.io/restrictions/clusterSingleton: 'true'
+  application.giantswarm.io/restrictions/fixedNamespace: kube-system
+  application.giantswarm.io/team: cabbage
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: !!python/object/new:app_build_suite.build_steps.helm_consts.BlockLiteralStr
+  - "- name: Support\n  url: https://github.com/giantswarm/cilium-servicemonitors-app/issues\n"
+chartApiVersion: v2
+chartFile: cilium-servicemonitors-0.2.1-dev.chart-metadata-standards.2026-09-02.10-16-46.h307122e.tgz
+dateCreated: '2026-09-02T10:17:08.275674Z'
+digest: 824dd50f4038c1202efd65b7fc931e5ae58eded8eaeaa3d45caa75caf0268345
+home: https://github.com/giantswarm/cilium-servicemonitors-app
+icon: https://s.giantswarm.io/app-icons/cilium/1/dark.svg
