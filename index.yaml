@@ -78102,6 +78102,37 @@ entries:
     version: 0.8.0-7ad3aec18ee3c6f520f2df5bb72378e4cc8cc10e
   prometheus-operator-crd:
   - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Support
+          url: https://github.com/giantswarm/prometheus-operator-crd/issues
+        - name: Upstream project
+          url: https://github.com/prometheus-community/helm-charts
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-23.0.1-dev.renovate-architect-10-x.2026-09-04.14-55-17.hd51dc14.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/prometheus-operator-crd/refs/tags/v23.0.1-dev.renovate-architect-10-x.2026-09-04.14-55-17.hd51dc14/README.md
+      io.giantswarm.application.team: atlas
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/prometheus-operator-crd/refs/tags/v23.0.1-dev.renovate-architect-10-x.2026-09-04.14-55-17.hd51dc14/helm/prometheus-operator-crd/values.schema.json
+    apiVersion: v2
+    appVersion: v0.92.0
+    created: "2026-09-04T14:55:55.547922256Z"
+    dependencies:
+    - name: prometheus-operator-crds
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 31.0.1
+    description: kube-prometheus-stack CustomResourceDefinitions.
+    digest: 11da432f13ed40dd34db9e36e3f5254b321a59edfc678e2524555d798e3651f8
+    home: https://github.com/giantswarm/prometheus-operator-crd
+    icon: https://s.giantswarm.io/app-icons/prometheus-operator/2/light.svg
+    kubeVersion: '>=1.19.0-0'
+    name: prometheus-operator-crd
+    sources:
+    - https://github.com/prometheus-community/helm-charts
+    - https://github.com/prometheus-operator/kube-prometheus
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-23.0.1-dev.renovate-architect-10-x.2026-09-04.14-55-17.hd51dc14.tgz
+    version: 23.0.1-dev.renovate-architect-10-x.2026-09-04.14-55-17.hd51dc14
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-22.0.1-dev.teams-alignment-branch.2026-07-27.15-26-42.hfa445ae.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/prometheus-operator-crd/refs/tags/v22.0.1-dev.teams-alignment-branch.2026-07-27.15-26-42.hfa445ae/README.md
       io.giantswarm.application.team: atlas
@@ -97262,4 +97293,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.5-dev.fix-chart-rendering.2026-07-28.13-59-21.h2365282.tgz
     version: 3.4.5-dev.fix-chart-rendering.2026-07-28.13-59-21.h2365282
-generated: "2026-09-04T14:52:12.581185505Z"
+generated: "2026-09-04T14:55:55.525707037Z"
