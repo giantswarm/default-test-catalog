@@ -1,0 +1,214 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "properties": {
+        "affinity": {
+            "type": "object",
+            "properties": {
+                "nodeAffinity": {
+                    "type": "object",
+                    "properties": {
+                        "requiredDuringSchedulingIgnoredDuringExecution": {
+                            "type": "object",
+                            "properties": {
+                                "nodeSelectorTerms": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "matchExpressions": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "key": {
+                                                            "type": "string"
+                                                        },
+                                                        "operator": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "annotations": {
+            "type": "object"
+        },
+        "args": {
+            "type": "array"
+        },
+        "automountServiceAccountToken": {
+            "type": "boolean"
+        },
+        "caCertPath": {
+            "type": "string"
+        },
+        "clientCertPath": {
+            "type": "string"
+        },
+        "clientKeyPath": {
+            "type": "string"
+        },
+        "defragRule": {
+            "type": "string"
+        },
+        "endpoints": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "etcdStorageQuotaBytes": {
+            "type": "integer"
+        },
+        "hostNetwork": {
+            "type": "boolean"
+        },
+        "image": {
+            "type": "object",
+            "properties": {
+                "image": {
+                    "type": "string"
+                },
+                "pullPolicy": {
+                    "type": "string"
+                },
+                "registry": {
+                    "type": "string"
+                },
+                "tag": {
+                    "type": "string"
+                }
+            }
+        },
+        "imagePullSecrets": {
+            "type": "array"
+        },
+        "jobAnnotations": {
+            "type": "object"
+        },
+        "jobLabels": {
+            "type": "object"
+        },
+        "labels": {
+            "type": "object"
+        },
+        "moveLeader": {
+            "type": "boolean"
+        },
+        "nodeSelector": {
+            "type": "object"
+        },
+        "podAnnotations": {
+            "type": "object"
+        },
+        "podLabels": {
+            "type": "object"
+        },
+        "podSecurityContext": {
+            "type": "object"
+        },
+        "policyException": {
+            "type": "object",
+            "properties": {
+                "namespace": {
+                    "type": "string"
+                }
+            }
+        },
+        "resources": {
+            "type": "object",
+            "properties": {
+                "limits": {
+                    "type": "object",
+                    "properties": {
+                        "memory": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "requests": {
+                    "type": "object",
+                    "properties": {
+                        "cpu": {
+                            "type": "string"
+                        },
+                        "memory": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "restartPolicy": {
+            "type": "string"
+        },
+        "schedule": {
+            "type": "string"
+        },
+        "securityContext": {
+            "type": "object",
+            "properties": {
+                "allowPrivilegeEscalation": {
+                    "type": "boolean"
+                },
+                "capabilities": {
+                    "type": "object",
+                    "properties": {
+                        "drop": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+                "readOnlyRootFilesystem": {
+                    "type": "boolean"
+                },
+                "runAsGroup": {
+                    "type": "integer"
+                },
+                "runAsNonRoot": {
+                    "type": "boolean"
+                },
+                "runAsUser": {
+                    "type": "integer"
+                },
+                "seccompProfile": {
+                    "type": "object",
+                    "properties": {
+                        "type": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "tolerations": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "effect": {
+                        "type": "string"
+                    },
+                    "key": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "useClusterEndpoints": {
+            "type": "boolean"
+        }
+    }
+}
