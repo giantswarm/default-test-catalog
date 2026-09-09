@@ -1,0 +1,43 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "additionalProperties": true,
+    "properties": {
+        "clusterID": {
+            "type": "string"
+        },
+        "helmRelease": {
+            "type": "object",
+            "properties": {
+                "dependsOn": {
+                    "type": "object",
+                    "description": "HelmReleases the karpenter HelmRelease depends on, keyed by name without the cluster ID prefix. Each value is evaluated as a Go template, so a dependency can be made conditional; only values resulting in `true` are kept.",
+                    "additionalProperties": {
+                        "type": [
+                            "boolean",
+                            "string"
+                        ]
+                    }
+                }
+            }
+        },
+        "nodeIamRole": {
+            "type": "object",
+            "properties": {
+                "create": {
+                    "type": "boolean",
+                    "description": "Create the IAM role and instance profile for karpenter-launched nodes. Required on EKS clusters, where no worker instance profile exists."
+                }
+            }
+        },
+        "ociRepositoryUrl": {
+            "type": "string"
+        },
+        "region": {
+            "type": "string"
+        },
+        "workersIamRole": {
+            "type": "string"
+        }
+    }
+}
