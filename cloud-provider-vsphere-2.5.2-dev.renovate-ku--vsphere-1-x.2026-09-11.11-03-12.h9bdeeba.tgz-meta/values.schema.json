@@ -1,0 +1,607 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false,
+  "properties": {
+    "config": {
+      "additionalProperties": false,
+      "properties": {
+        "caFile": {
+          "default": "",
+          "title": "caFile",
+          "type": "string"
+        },
+        "datacenter": {
+          "default": "dc",
+          "title": "datacenter",
+          "type": "string"
+        },
+        "enabled": {
+          "default": false,
+          "title": "enabled",
+          "type": "boolean"
+        },
+        "name": {
+          "default": "vsphere-cloud-config",
+          "title": "name",
+          "type": "string"
+        },
+        "nodes": {
+          "additionalProperties": false,
+          "properties": {
+            "excludeExternalNetworkSubnetCidr": {
+              "default": "",
+              "description": "Never select External IP addresses within the provided subnet ranges (highest precedence)",
+              "title": "excludeExternalNetworkSubnetCidr",
+              "type": "string"
+            },
+            "excludeInternalNetworkSubnetCidr": {
+              "default": "",
+              "description": "Never select Internal IP addresses within the provided subnet ranges (highest precedence)",
+              "title": "excludeInternalNetworkSubnetCidr",
+              "type": "string"
+            },
+            "externalNetworkSubnetCidr": {
+              "default": "",
+              "description": "Select the first address within the provided subnet for the node External IP",
+              "title": "externalNetworkSubnetCidr",
+              "type": "string"
+            },
+            "externalVmNetworkName": {
+              "default": "",
+              "description": "Select the first address on the VM network matching the provided name for the node External IP",
+              "title": "externalVmNetworkName",
+              "type": "string"
+            },
+            "internalNetworkSubnetCidr": {
+              "default": "",
+              "description": "Select the first address within the provided subnet for the node Internal IP",
+              "title": "internalNetworkSubnetCidr",
+              "type": "string"
+            },
+            "internalVmNetworkName": {
+              "default": "",
+              "description": "Select the first address on the VM network matching the provided name for the node Internal IP",
+              "title": "internalVmNetworkName",
+              "type": "string"
+            }
+          },
+          "required": [
+            "internalNetworkSubnetCidr",
+            "externalNetworkSubnetCidr",
+            "internalVmNetworkName",
+            "externalVmNetworkName",
+            "excludeInternalNetworkSubnetCidr",
+            "excludeExternalNetworkSubnetCidr"
+          ],
+          "title": "nodes",
+          "type": "object"
+        },
+        "password": {
+          "default": "pass",
+          "title": "password",
+          "type": "string"
+        },
+        "region": {
+          "default": "k8s-region",
+          "title": "region",
+          "type": "string"
+        },
+        "secret": {
+          "additionalProperties": false,
+          "properties": {
+            "create": {
+              "default": true,
+              "description": "Specifies whether Secret should be created from config values",
+              "title": "create",
+              "type": "boolean"
+            },
+            "name": {
+              "default": "vsphere-cloud-secret",
+              "description": "The name of the Secret referred to in the vsphere-cloud-config ConfigMap\nIf your Kubernetes platform provides this secret, set create to false and adjust the secret name",
+              "title": "name",
+              "type": "string"
+            }
+          },
+          "required": [
+            "create",
+            "name"
+          ],
+          "title": "secret",
+          "type": "object"
+        },
+        "thumbprint": {
+          "default": "",
+          "title": "thumbprint",
+          "type": "string"
+        },
+        "username": {
+          "default": "user",
+          "title": "username",
+          "type": "string"
+        },
+        "vcenter": {
+          "default": "vcenter.local",
+          "title": "vcenter",
+          "type": "string"
+        },
+        "zone": {
+          "default": "k8s-zone",
+          "title": "zone",
+          "type": "string"
+        }
+      },
+      "required": [
+        "enabled",
+        "name",
+        "vcenter",
+        "username",
+        "password",
+        "datacenter",
+        "region",
+        "zone",
+        "thumbprint",
+        "caFile",
+        "nodes",
+        "secret"
+      ],
+      "title": "config",
+      "type": "object"
+    },
+    "daemonset": {
+      "additionalProperties": false,
+      "description": "Daemonset configuration",
+      "properties": {
+        "affinity": {
+          "additionalProperties": false,
+          "description": "# Allows for the default affinities to be updated or replaced with user-defined ones",
+          "properties": {
+            "nodeAffinity": {
+              "additionalProperties": false,
+              "properties": {
+                "requiredDuringSchedulingIgnoredDuringExecution": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "nodeSelectorTerms": {
+                      "items": {
+                        "anyOf": [
+                          {
+                            "additionalProperties": false,
+                            "properties": {
+                              "matchExpressions": {
+                                "items": {
+                                  "anyOf": [
+                                    {
+                                      "additionalProperties": false,
+                                      "properties": {
+                                        "key": {
+                                          "default": "node-role.kubernetes.io/control-plane",
+                                          "title": "key",
+                                          "type": "string"
+                                        },
+                                        "operator": {
+                                          "default": "Exists",
+                                          "title": "operator",
+                                          "type": "string"
+                                        }
+                                      },
+                                      "required": [
+                                        "key",
+                                        "operator"
+                                      ],
+                                      "type": "object"
+                                    }
+                                  ],
+                                  "required": []
+                                },
+                                "title": "matchExpressions",
+                                "type": "array"
+                              }
+                            },
+                            "required": [
+                              "matchExpressions"
+                            ],
+                            "type": "object"
+                          }
+                        ],
+                        "required": []
+                      },
+                      "title": "nodeSelectorTerms",
+                      "type": "array"
+                    }
+                  },
+                  "required": [
+                    "nodeSelectorTerms"
+                  ],
+                  "title": "requiredDuringSchedulingIgnoredDuringExecution",
+                  "type": "object"
+                }
+              },
+              "required": [
+                "requiredDuringSchedulingIgnoredDuringExecution"
+              ],
+              "title": "nodeAffinity",
+              "type": "object"
+            }
+          },
+          "required": [
+            "nodeAffinity"
+          ],
+          "title": "affinity",
+          "type": "object"
+        },
+        "annotations": {
+          "additionalProperties": false,
+          "required": [],
+          "title": "annotations",
+          "type": "object"
+        },
+        "cmdline": {
+          "additionalProperties": false,
+          "properties": {
+            "additionalParams": {
+              "additionalProperties": false,
+              "required": [],
+              "title": "additionalParams",
+              "type": "object"
+            },
+            "cloudConfig": {
+              "additionalProperties": false,
+              "description": "Location of the cloud configmap to be mounted on the filesystem",
+              "properties": {
+                "dir": {
+                  "default": "/etc/cloud",
+                  "title": "dir",
+                  "type": "string"
+                },
+                "file": {
+                  "default": "vsphere.conf",
+                  "title": "file",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "dir",
+                "file"
+              ],
+              "title": "cloudConfig",
+              "type": "object"
+            },
+            "logging": {
+              "default": 2,
+              "title": "logging",
+              "type": "integer"
+            }
+          },
+          "required": [
+            "logging",
+            "cloudConfig",
+            "additionalParams"
+          ],
+          "title": "cmdline",
+          "type": "object"
+        },
+        "dnsPolicy": {
+          "default": "ClusterFirst",
+          "title": "dnsPolicy",
+          "type": "string"
+        },
+        "extraVolumes": {
+          "items": {
+            "required": []
+          },
+          "title": "extraVolumes",
+          "type": "array"
+        },
+        "extraVolumesMounts": {
+          "items": {
+            "required": []
+          },
+          "title": "extraVolumesMounts",
+          "type": "array"
+        },
+        "hostAliases": {
+          "items": {
+            "required": []
+          },
+          "title": "hostAliases",
+          "type": "array"
+        },
+        "image": {
+          "default": "gsoci.azurecr.io/giantswarm/cloud-provider-vsphere",
+          "title": "image",
+          "type": "string"
+        },
+        "podAnnotations": {
+          "additionalProperties": false,
+          "description": "limits:\n  cpu: 500m\n  memory: 512Mi\nrequests:\n   cpu: 256m\n   memory: 128Mi",
+          "required": [],
+          "title": "podAnnotations",
+          "type": "object"
+        },
+        "podLabels": {
+          "additionalProperties": false,
+          "description": "# Additional pod labels\n# ref: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/",
+          "required": [],
+          "title": "podLabels",
+          "type": "object"
+        },
+        "pullPolicy": {
+          "default": "IfNotPresent",
+          "title": "pullPolicy",
+          "type": "string"
+        },
+        "replicaCount": {
+          "default": 1,
+          "title": "replicaCount",
+          "type": "integer"
+        },
+        "resources": {
+          "additionalProperties": false,
+          "required": [],
+          "title": "resources",
+          "type": "object"
+        },
+        "tag": {
+          "default": "v1.37.0",
+          "title": "tag",
+          "type": "string"
+        },
+        "tolerations": {
+          "description": "# Allows for the default tolerations to be updated or replaced with user-defined ones",
+          "items": {
+            "anyOf": [
+              {
+                "additionalProperties": false,
+                "properties": {
+                  "effect": {
+                    "default": "NoSchedule",
+                    "title": "effect",
+                    "type": "string"
+                  },
+                  "key": {
+                    "default": "node.cloudprovider.kubernetes.io/uninitialized",
+                    "title": "key",
+                    "type": "string"
+                  },
+                  "value": {
+                    "default": "true",
+                    "title": "value",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "key",
+                  "value",
+                  "effect"
+                ],
+                "type": "object"
+              },
+              {
+                "additionalProperties": false,
+                "properties": {
+                  "effect": {
+                    "default": "NoSchedule",
+                    "title": "effect",
+                    "type": "string"
+                  },
+                  "key": {
+                    "default": "node-role.kubernetes.io/control-plane",
+                    "title": "key",
+                    "type": "string"
+                  },
+                  "operator": {
+                    "default": "Exists",
+                    "title": "operator",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "key",
+                  "effect",
+                  "operator"
+                ],
+                "type": "object"
+              },
+              {
+                "additionalProperties": false,
+                "properties": {
+                  "effect": {
+                    "default": "NoSchedule",
+                    "title": "effect",
+                    "type": "string"
+                  },
+                  "key": {
+                    "default": "node.kubernetes.io/not-ready",
+                    "title": "key",
+                    "type": "string"
+                  },
+                  "operator": {
+                    "default": "Exists",
+                    "title": "operator",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "key",
+                  "effect",
+                  "operator"
+                ],
+                "type": "object"
+              },
+              {
+                "additionalProperties": false,
+                "properties": {
+                  "effect": {
+                    "default": "NoExecute",
+                    "title": "effect",
+                    "type": "string"
+                  },
+                  "key": {
+                    "default": "CriticalAddonsOnly",
+                    "title": "key",
+                    "type": "string"
+                  },
+                  "operator": {
+                    "default": "Exists",
+                    "title": "operator",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "key",
+                  "effect",
+                  "operator"
+                ],
+                "type": "object"
+              }
+            ],
+            "required": []
+          },
+          "title": "tolerations",
+          "type": "array"
+        }
+      },
+      "required": [
+        "annotations",
+        "image",
+        "tag",
+        "pullPolicy",
+        "dnsPolicy",
+        "cmdline",
+        "replicaCount",
+        "resources",
+        "podAnnotations",
+        "podLabels",
+        "tolerations",
+        "affinity",
+        "extraVolumes",
+        "extraVolumesMounts",
+        "hostAliases"
+      ],
+      "title": "daemonset",
+      "type": "object"
+    },
+    "global": {
+      "description": "Global values are values that can be accessed from any chart or subchart by exactly the same name.",
+      "required": [],
+      "title": "global",
+      "type": "object"
+    },
+    "kamaji": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "default": false,
+          "title": "enabled",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "enabled"
+      ],
+      "title": "kamaji",
+      "type": "object"
+    },
+    "podSecurityPolicy": {
+      "additionalProperties": false,
+      "description": "# Specify if a Pod Security Policy for kube-state-metrics must be created\n# Ref: https://kubernetes.io/docs/concepts/policy/pod-security-policy/",
+      "properties": {
+        "annotations": {
+          "additionalProperties": false,
+          "required": [],
+          "title": "annotations",
+          "type": "object"
+        },
+        "enabled": {
+          "default": false,
+          "title": "enabled",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "enabled",
+        "annotations"
+      ],
+      "title": "podSecurityPolicy",
+      "type": "object"
+    },
+    "rbac": {
+      "additionalProperties": false,
+      "description": "RBAC configuration",
+      "properties": {
+        "create": {
+          "default": true,
+          "description": "Specifies whether RBAC resources should be created",
+          "title": "create",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "create"
+      ],
+      "title": "rbac",
+      "type": "object"
+    },
+    "securityContext": {
+      "additionalProperties": false,
+      "description": "Run containers to have security context. Default is 'nobody' (65534/65534) in distroless",
+      "properties": {
+        "enabled": {
+          "default": true,
+          "title": "enabled",
+          "type": "boolean"
+        },
+        "fsGroup": {
+          "default": 1001,
+          "title": "fsGroup",
+          "type": "integer"
+        },
+        "runAsUser": {
+          "default": 1001,
+          "title": "runAsUser",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "enabled",
+        "runAsUser",
+        "fsGroup"
+      ],
+      "title": "securityContext",
+      "type": "object"
+    },
+    "serviceAccount": {
+      "additionalProperties": false,
+      "properties": {
+        "create": {
+          "default": true,
+          "description": "Specifies whether a ServiceAccount should be created",
+          "title": "create",
+          "type": "boolean"
+        },
+        "name": {
+          "default": "cloud-controller-manager",
+          "description": "The name of the ServiceAccount to use.",
+          "title": "name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "create",
+        "name"
+      ],
+      "title": "serviceAccount",
+      "type": "object"
+    }
+  },
+  "required": [
+    "kamaji",
+    "config",
+    "podSecurityPolicy",
+    "securityContext",
+    "rbac",
+    "serviceAccount",
+    "daemonset"
+  ],
+  "type": "object"
+}
