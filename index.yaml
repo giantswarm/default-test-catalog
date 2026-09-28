@@ -122155,6 +122155,47 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/prometheus-blackbox-exporter-0.10.1-r5aa25357t20260923204446h6848291.tgz
     version: 0.10.1-r5aa25357t20260923204446h6848291
   - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Support
+          url: https://github.com/giantswarm/prometheus-blackbox-exporter-app/issues
+        - name: Upstream project
+          url: https://github.com/prometheus/blackbox_exporter
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/prometheus-blackbox-exporter-0.10.1-dev.fix-helm-chart-label.2026-09-28.20-34-09.hf2349cb.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/prometheus-blackbox-exporter-app/refs/tags/v0.10.1-dev.fix-helm-chart-label.2026-09-28.20-34-09.hf2349cb/README.md
+      io.giantswarm.application.restrictions.cluster-singleton: "true"
+      io.giantswarm.application.restrictions.fixed-namespace: kube-system
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/prometheus-blackbox-exporter-app/refs/tags/v0.10.1-dev.fix-helm-chart-label.2026-09-28.20-34-09.hf2349cb/helm/prometheus-blackbox-exporter/values.schema.json
+    apiVersion: v2
+    appVersion: 0.10.1-dev.fix-helm-chart-label.2026-09-28.20-34-09.hf2349cb
+    created: "2026-09-28T20:34:57.952486964Z"
+    description: Prometheus Blackbox Exporter
+    digest: 9eb223247b5cabaf99699d33d072cfc5adfff7c6f33a7a34a0d011d9562f0263
+    home: https://github.com/giantswarm/prometheus-blackbox-exporter-app
+    icon: https://s.giantswarm.io/app-icons/prometheus/1/light.svg
+    keywords:
+    - prometheus
+    - blackbox
+    - monitoring
+    maintainers:
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    - email: gianrubio@gmail.com
+      name: gianrubio
+    - email: me@sota.sh
+      name: rsotnychenko
+    - email: monotek23@gmail.com
+      name: monotek
+    name: prometheus-blackbox-exporter
+    sources:
+    - https://github.com/prometheus/blackbox_exporter
+    - https://github.com/prometheus-community/helm-charts/tree/main/charts/prometheus-blackbox-exporter
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/prometheus-blackbox-exporter-0.10.1-dev.fix-helm-chart-label.2026-09-28.20-34-09.hf2349cb.tgz
+    version: 0.10.1-dev.fix-helm-chart-label.2026-09-28.20-34-09.hf2349cb
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/prometheus-blackbox-exporter-0.9.1-dev.teams-alignment-branch.2026-09-22.15-11-06.hc14690b.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/prometheus-blackbox-exporter-app/refs/tags/v0.9.1-dev.teams-alignment-branch.2026-09-22.15-11-06.hc14690b/README.md
       io.giantswarm.application.restrictions.cluster-singleton: "true"
@@ -151515,4 +151556,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.5-dev.fix-chart-rendering.2026-07-28.13-59-21.h2365282.tgz
     version: 3.4.5-dev.fix-chart-rendering.2026-07-28.13-59-21.h2365282
-generated: "2026-09-28T20:34:39.322843815Z"
+generated: "2026-09-28T20:34:57.950575827Z"
