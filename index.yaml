@@ -21521,6 +21521,36 @@ entries:
     - https://giantswarm.github.io/default-test-catalog/aws-node-termination-handler-2.1.2-r573bac21t20260929005032h24cd45b.tgz
     version: 2.1.2-r573bac21t20260929005032h24cd45b
   - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Support
+          url: https://github.com/giantswarm/aws-nth-bundle/issues
+        - name: Upstream project
+          url: https://raw.githubusercontent.com/giantswarm/aws-nth-bundle/v[[ .Version ]]/README.md
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/aws-node-termination-handler-2.1.2-r4e460b1ft20260929005203hc2e779c.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/aws-nth-bundle/refs/tags/v2.1.2-r4e460b1ft20260929005203hc2e779c/README.md
+      io.giantswarm.application.restrictions.compatible-providers: aws
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/aws-nth-bundle/refs/tags/v2.1.2-r4e460b1ft20260929005203hc2e779c/helm/aws-node-termination-handler/values.schema.json
+    apiVersion: v2
+    appVersion: 1.25.2
+    created: "2026-09-29T00:52:37.794029397Z"
+    dependencies:
+    - alias: upstream
+      name: aws-node-termination-handler
+      repository: oci://public.ecr.aws/aws-ec2/helm
+      version: 0.27.5
+    description: Deploy components for the aws-node-termination-handler app
+    digest: 909a5999050d9ac1f1e073d445ad7cc4402971c95bbf8dafa08be73ece1e58db
+    home: https://github.com/giantswarm/aws-nth-bundle
+    icon: https://s.giantswarm.io/app-icons/aws/2/light.svg
+    name: aws-node-termination-handler
+    sources:
+    - https://raw.githubusercontent.com/giantswarm/aws-nth-bundle/v[[ .Version ]]/README.md
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/aws-node-termination-handler-2.1.2-r4e460b1ft20260929005203hc2e779c.tgz
+    version: 2.1.2-r4e460b1ft20260929005203hc2e779c
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/aws-node-termination-handler-2.1.2-dev.teams-alignment-branch.2026-09-04.15-44-23.h25a170b.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/aws-nth-bundle/refs/tags/v2.1.2-dev.teams-alignment-branch.2026-09-04.15-44-23.h25a170b/README.md
       io.giantswarm.application.restrictions.compatible-providers: aws
@@ -152263,4 +152293,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.5-dev.fix-chart-rendering.2026-07-28.13-59-21.h2365282.tgz
     version: 3.4.5-dev.fix-chart-rendering.2026-07-28.13-59-21.h2365282
-generated: "2026-09-29T00:52:24.961316512Z"
+generated: "2026-09-29T00:52:37.79209922Z"
