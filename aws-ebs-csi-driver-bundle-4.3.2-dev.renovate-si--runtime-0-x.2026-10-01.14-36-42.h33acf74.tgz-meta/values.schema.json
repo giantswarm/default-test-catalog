@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "additionalProperties": true,
+    "properties": {
+        "helmRelease": {
+            "type": "object",
+            "properties": {
+                "dependsOn": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "ociRepositoryUrl": {
+            "type": "string"
+        }
+    }
+}
