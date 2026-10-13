@@ -1384,6 +1384,38 @@ entries:
           url: https://github.com/giantswarm/alloy-app/issues
         - name: Upstream project
           url: https://github.com/grafana/alloy/tree/main/operations/helm/charts/alloy
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/alloy-0.24.1-r4ad014bat20261013144431hb1ca414.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/alloy-app/refs/tags/v0.24.1-r4ad014bat20261013144431hb1ca414/README.md
+      io.giantswarm.application.team: atlas
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/alloy-app/refs/tags/v0.24.1-r4ad014bat20261013144431hb1ca414/helm/alloy/values.schema.json
+    apiVersion: v2
+    appVersion: v1.20.0
+    created: "2026-10-13T14:45:17.779930812Z"
+    dependencies:
+    - condition: alloy.enabled
+      name: alloy
+      repository: https://grafana.github.io/helm-charts
+      version: 1.13.1
+    description: Grafana Alloy OpenTelemetry Collector
+    digest: dfbaf830542ff5a924c8b7ca38fdc197a560587fe139ba8d1e5bffe478fb0aa8
+    home: https://github.com/giantswarm/alloy-app
+    icon: https://s.giantswarm.io/app-icons/grafana-alloy/1/light.png
+    maintainers:
+    - email: team-atlas@giantswarm.io
+      name: giantswarm/team-atlas
+    name: alloy
+    sources:
+    - https://github.com/grafana/alloy/tree/main/operations/helm/charts/alloy
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/alloy-0.24.1-r4ad014bat20261013144431hb1ca414.tgz
+    version: 0.24.1-r4ad014bat20261013144431hb1ca414
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Support
+          url: https://github.com/giantswarm/alloy-app/issues
+        - name: Upstream project
+          url: https://github.com/grafana/alloy/tree/main/operations/helm/charts/alloy
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/alloy-0.24.1-r4ad014bat20261013011955h6df0739.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/alloy-app/refs/tags/v0.24.1-r4ad014bat20261013011955h6df0739/README.md
       io.giantswarm.application.team: atlas
@@ -139133,4 +139165,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.7-dev.renovate-architect-10-x.2026-08-31.14-37-03.hc17a45d.tgz
     version: 3.4.7-dev.renovate-architect-10-x.2026-08-31.14-37-03.hc17a45d
-generated: "2026-10-13T14:45:07.574098314Z"
+generated: "2026-10-13T14:45:17.775380454Z"
