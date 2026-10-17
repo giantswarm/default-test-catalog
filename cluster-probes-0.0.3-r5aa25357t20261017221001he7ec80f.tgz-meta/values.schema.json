@@ -1,0 +1,64 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "properties": {
+        "apiServerPort": {
+            "type": "integer"
+        },
+        "baseDomain": {
+            "type": "string"
+        },
+        "blackboxExporter": {
+            "type": "object",
+            "properties": {
+                "namespace": {
+                    "type": "string"
+                },
+                "selector": {
+                    "type": "object",
+                    "properties": {
+                        "matchLabels": {
+                            "type": "object",
+                            "properties": {
+                                "app.kubernetes.io/instance": {
+                                    "type": "string"
+                                },
+                                "app.kubernetes.io/name": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "clusterName": {
+            "type": "string"
+        },
+        "interval": {
+            "type": "string"
+        },
+        "module": {
+            "type": "string"
+        },
+        "scrapeTimeout": {
+            "type": "string"
+        },
+        "serviceMonitor": {
+            "type": "object",
+            "properties": {
+                "enabled": {
+                    "type": "boolean"
+                },
+                "labels": {
+                    "type": "object",
+                    "properties": {
+                        "observability.giantswarm.io/tenant": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
