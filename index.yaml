@@ -118639,6 +118639,50 @@ entries:
       config.giantswarm.io/version: 1.x.x
       io.giantswarm.application.audience: all
       io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/kyverno-0.25.4-r5aa25357t20261019055333h7e6a0a4.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/kyverno-app/refs/tags/v0.25.4-r5aa25357t20261019055333h7e6a0a4/README.md
+      io.giantswarm.application.restrictions.cluster-singleton: "true"
+      io.giantswarm.application.team: shield
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/kyverno-app/refs/tags/v0.25.4-r5aa25357t20261019055333h7e6a0a4/helm/kyverno/values.schema.json
+    apiVersion: v2
+    appVersion: 0.25.4-r5aa25357t20261019055333h7e6a0a4
+    created: "2026-10-19T05:54:10.963519561Z"
+    dependencies:
+    - name: policy-reporter
+      repository: ""
+      version: 3.11.1
+    - name: kyverno
+      repository: ""
+      version: 3.8.2
+    description: 'Kyverno is a policy engine designed for Kubernetes. It can validate,
+      mutate, and generate configurations using admission controls and background
+      scans. Kyverno policies are Kubernetes resources and do not require learning
+      a new language. '
+    digest: 87265232887b3b943d8a097fb5c8cbec70d6dd5eea67a0824d131ac523e9783e
+    home: https://github.com/giantswarm/kyverno-app
+    icon: https://s.giantswarm.io/app-icons/kyverno/1/light.svg
+    keywords:
+    - kubernetes
+    - policy-agent
+    - validating-webhook
+    - admission-controller
+    name: kyverno
+    sources:
+    - https://github.com/kyverno/kyverno
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/kyverno-0.25.4-r5aa25357t20261019055333h7e6a0a4.tgz
+    version: 0.25.4-r5aa25357t20261019055333h7e6a0a4
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Support
+          url: https://github.com/giantswarm/kyverno-app/issues
+        - name: Upstream project
+          url: https://github.com/kyverno/kyverno
+      config.giantswarm.io/version: 1.x.x
+      io.giantswarm.application.audience: all
+      io.giantswarm.application.managed: "true"
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/kyverno-0.25.4-r5aa25357t20261019003204h93be0a4.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/kyverno-app/refs/tags/v0.25.4-r5aa25357t20261019003204h93be0a4/README.md
       io.giantswarm.application.restrictions.cluster-singleton: "true"
@@ -192926,4 +192970,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.7-dev.renovate-architect-10-x.2026-08-31.14-37-03.hc17a45d.tgz
     version: 3.4.7-dev.renovate-architect-10-x.2026-08-31.14-37-03.hc17a45d
-generated: "2026-10-19T05:53:06.03999055Z"
+generated: "2026-10-19T05:54:10.92771294Z"
