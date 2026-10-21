@@ -131137,6 +131137,44 @@ entries:
           url: https://github.com/kubescape/helm-charts
       io.giantswarm.application.audience: all
       io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/kubescape-0.1.3-rc3150f17t20261021163419hf57f1df.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/kubescape-app/refs/tags/v0.1.3-rc3150f17t20261021163419hf57f1df/README.md
+      io.giantswarm.application.team: shield
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/kubescape-app/refs/tags/v0.1.3-rc3150f17t20261021163419hf57f1df/helm/kubescape/values.schema.json
+    apiVersion: v2
+    appVersion: 0.1.3-rc3150f17t20261021163419hf57f1df
+    created: "2026-10-21T16:45:09.383397757Z"
+    dependencies:
+    - condition: exceptions.enabled
+      name: exceptions
+      repository: ""
+      version: 0.0.0
+    - name: dependency_chart
+      repository: ""
+      version: 0.0.0
+    - name: kubescape-operator
+      repository: ""
+      version: 1.40.4
+    description: This chart contains the kubescape operator chart and custom Giant
+      Swarm resources.
+    digest: ce48b09341b4fe1cdcf07ccd6c0b228d86251606f0b563e4e9d7f21e32e8adea
+    home: https://github.com/giantswarm/kubescape-app
+    icon: https://s.giantswarm.io/app-icons/kubescape/1/color.svg
+    name: kubescape
+    sources:
+    - https://github.com/kubescape/helm-charts
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/kubescape-0.1.3-rc3150f17t20261021163419hf57f1df.tgz
+    version: 0.1.3-rc3150f17t20261021163419hf57f1df
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Support
+          url: https://github.com/giantswarm/kubescape-app/issues
+        - name: Upstream project
+          url: https://github.com/kubescape/helm-charts
+      io.giantswarm.application.audience: all
+      io.giantswarm.application.managed: "true"
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/kubescape-0.1.3-r5aa25357t20261021143407h6b69078.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/kubescape-app/refs/tags/v0.1.3-r5aa25357t20261021143407h6b69078/README.md
       io.giantswarm.application.team: shield
@@ -219800,4 +219838,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.7-dev.renovate-architect-10-x.2026-08-31.14-37-03.hc17a45d.tgz
     version: 3.4.7-dev.renovate-architect-10-x.2026-08-31.14-37-03.hc17a45d
-generated: "2026-10-21T16:44:48.598887281Z"
+generated: "2026-10-21T16:45:09.374956479Z"
