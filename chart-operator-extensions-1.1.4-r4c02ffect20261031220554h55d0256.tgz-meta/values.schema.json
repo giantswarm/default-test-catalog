@@ -1,0 +1,56 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "properties": {
+        "monitoring": {
+            "type": "object",
+            "properties": {
+                "serviceMonitors": {
+                    "type": "object",
+                    "properties": {
+                        "operator": {
+                            "type": "object",
+                            "properties": {
+                                "enabled": {
+                                    "type": "boolean"
+                                },
+                                "metricRelabelings": {
+                                    "type": "object"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "relabelings": {
+                                    "type": "object"
+                                },
+                                "scrapeInterval": {
+                                    "type": "string"
+                                },
+                                "scrapeTimeout": {
+                                    "type": "string"
+                                },
+                                "selectors": {
+                                    "type": "object",
+                                    "properties": {
+                                        "app": {
+                                            "type": "string"
+                                        },
+                                        "app.kubernetes.io/name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "targetPort": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "team": {
+            "type": "string"
+        }
+    }
+}
