@@ -23637,6 +23637,36 @@ entries:
           url: https://github.com/giantswarm/aws-nth-bundle/issues
         - name: Upstream project
           url: https://raw.githubusercontent.com/giantswarm/aws-nth-bundle/v[[ .Version ]]/README.md
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/aws-node-termination-handler-2.1.2-rc590e11at20261103122238hce401de.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/aws-nth-bundle/refs/tags/v2.1.2-rc590e11at20261103122238hce401de/README.md
+      io.giantswarm.application.restrictions.compatible-providers: aws
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/aws-nth-bundle/refs/tags/v2.1.2-rc590e11at20261103122238hce401de/helm/aws-node-termination-handler/values.schema.json
+    apiVersion: v2
+    appVersion: 1.25.2
+    created: "2026-11-03T12:23:15.063616198Z"
+    dependencies:
+    - alias: upstream
+      name: aws-node-termination-handler
+      repository: oci://public.ecr.aws/aws-ec2/helm
+      version: 0.27.5
+    description: Deploy components for the aws-node-termination-handler app
+    digest: bd2484c76a9ee6fa536c3bcc3fd0a7b5aac1241c10db0fda595a9997a6031f8d
+    home: https://github.com/giantswarm/aws-nth-bundle
+    icon: https://s.giantswarm.io/app-icons/aws/2/light.svg
+    name: aws-node-termination-handler
+    sources:
+    - https://raw.githubusercontent.com/giantswarm/aws-nth-bundle/v[[ .Version ]]/README.md
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/aws-node-termination-handler-2.1.2-rc590e11at20261103122238hce401de.tgz
+    version: 2.1.2-rc590e11at20261103122238hce401de
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Support
+          url: https://github.com/giantswarm/aws-nth-bundle/issues
+        - name: Upstream project
+          url: https://raw.githubusercontent.com/giantswarm/aws-nth-bundle/v[[ .Version ]]/README.md
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/aws-node-termination-handler-2.1.2-rc590e11at20261102225247hed44429.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/aws-nth-bundle/refs/tags/v2.1.2-rc590e11at20261102225247hed44429/README.md
       io.giantswarm.application.restrictions.compatible-providers: aws
@@ -214196,4 +214226,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.7-r0be501fdt20261013004800hb67a7bf.tgz
     version: 3.4.7-r0be501fdt20261013004800hb67a7bf
-generated: "2026-11-03T12:22:54.1017713Z"
+generated: "2026-11-03T12:23:15.060398567Z"
