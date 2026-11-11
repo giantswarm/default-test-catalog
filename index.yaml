@@ -113116,6 +113116,47 @@ entries:
           url: https://clastix.io/support
       artifacthub.io/operator: "true"
       artifacthub.io/operatorCapabilities: Full Lifecycle
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/kamaji-etcd-0.4.1-r4c02ffect20261111221121haa84835.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/kamaji-etcd-app/refs/tags/v0.4.1-r4c02ffect20261111221121haa84835/README.md
+      io.giantswarm.application.team: rocket
+      io.giantswarm.application.upstream: https://github.com/clastix/kamaji-etcd
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/kamaji-etcd-app/refs/tags/v0.4.1-r4c02ffect20261111221121haa84835/helm/kamaji-etcd/values.schema.json
+    apiVersion: v2
+    appVersion: 3.6.12
+    created: "2026-11-11T22:11:38.309932091Z"
+    description: Helm chart for deploying a multi-tenant `etcd` cluster.
+    digest: 4e3113242cd79e79725c09ad0ee03cecaa691acb9c9be14e7414e1caf788b2db
+    home: https://github.com/giantswarm/kamaji-etcd-app
+    icon: https://s.giantswarm.io/app-icons/kamaji/2/light.svg
+    kubeVersion: '>=1.22.0-0'
+    maintainers:
+    - email: adriano@clastix.io
+      name: Adriano Pezzuto
+      url: https://clastix.io
+    - email: dario@clastix.io
+      name: Dario Tranchitella
+      url: https://clastix.io
+    name: kamaji-etcd
+    sources:
+    - https://github.com/clastix/kamaji-etcd
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/kamaji-etcd-0.4.1-r4c02ffect20261111221121haa84835.tgz
+    version: 0.4.1-r4c02ffect20261111221121haa84835
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Persistent Volume Claim retention policy
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: CLASTIX
+          url: https://clastix.io
+        - name: Kamaji
+          url: https://kamaji.clastix.io
+        - name: support
+          url: https://clastix.io/support
+      artifacthub.io/operator: "true"
+      artifacthub.io/operatorCapabilities: Full Lifecycle
       io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/kamaji-etcd-0.4.1-r4c02ffect20261110221414h06a8a49.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/kamaji-etcd-app/refs/tags/v0.4.1-r4c02ffect20261110221414h06a8a49/README.md
       io.giantswarm.application.team: rocket
@@ -256032,4 +256073,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.7-r00f7c2f7t20261110221943h1ad01dd.tgz
     version: 3.4.7-r00f7c2f7t20261110221943h1ad01dd
-generated: "2026-11-11T22:11:35.44901764Z"
+generated: "2026-11-11T22:11:38.306956131Z"
