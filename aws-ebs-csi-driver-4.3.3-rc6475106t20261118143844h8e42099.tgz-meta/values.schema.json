@@ -1,0 +1,45 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "additionalProperties": true,
+    "properties": {
+        "clusterID": {
+            "type": "string"
+        },
+        "upstream": {
+            "type": "object",
+            "additionalProperties": true
+        },
+        "networkPolicy": {
+            "type": "object",
+            "additionalProperties": true
+        },
+        "verticalPodAutoscaler": {
+            "type": "object",
+            "additionalProperties": true
+        },
+        "global": {
+            "type": "object",
+            "additionalProperties": true
+        },
+        "kyvernoPolicyExceptions": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "enabled": {
+                    "type": "boolean"
+                },
+                "legacy": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "enabled": {
+                            "type": "boolean",
+                            "description": "Renders the kyverno.io/v2 PolicyException, which applies to ClusterPolicies only. Will be used as a global switch in a future release."
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
