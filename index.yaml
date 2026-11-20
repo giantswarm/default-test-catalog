@@ -242136,6 +242136,37 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-24.0.1-r4c02ffect20261008004231h32881d7.tgz
     version: 24.0.1-r4c02ffect20261008004231h32881d7
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Support
+          url: https://github.com/giantswarm/prometheus-operator-crd/issues
+        - name: Upstream project
+          url: https://github.com/prometheus-community/helm-charts
+      io.giantswarm.application.metadata: https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-24.0.1-r0e98a562t20261120152849h878c5bd.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/prometheus-operator-crd/refs/tags/v24.0.1-r0e98a562t20261120152849h878c5bd/README.md
+      io.giantswarm.application.team: atlas
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/prometheus-operator-crd/refs/tags/v24.0.1-r0e98a562t20261120152849h878c5bd/helm/prometheus-operator-crd/values.schema.json
+    apiVersion: v2
+    appVersion: v0.95.2
+    created: "2026-11-20T15:40:27.901365597Z"
+    dependencies:
+    - name: prometheus-operator-crds
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 33.0.2
+    description: kube-prometheus-stack CustomResourceDefinitions.
+    digest: 5ed05fcfb085a518039cadb3b6e64d39531e33fa3f13bc09c52935970f40bd23
+    home: https://github.com/giantswarm/prometheus-operator-crd
+    icon: https://s.giantswarm.io/app-icons/prometheus-operator/2/light.svg
+    kubeVersion: '>=1.19.0-0'
+    name: prometheus-operator-crd
+    sources:
+    - https://github.com/prometheus-community/helm-charts
+    - https://github.com/prometheus-operator/kube-prometheus
+    type: application
+    urls:
+    - https://giantswarm.github.io/default-test-catalog/prometheus-operator-crd-24.0.1-r0e98a562t20261120152849h878c5bd.tgz
+    version: 24.0.1-r0e98a562t20261120152849h878c5bd
   proxmox-cloud-controller-manager:
   - annotations:
       artifacthub.io/license: Apache-2.0
@@ -305528,4 +305559,4 @@ entries:
     urls:
     - https://giantswarm.github.io/default-test-catalog/vsphere-csi-driver-3.4.7-r00f7c2f7t20261110221943h1ad01dd.tgz
     version: 3.4.7-r00f7c2f7t20261110221943h1ad01dd
-generated: "2026-11-20T15:32:36.655716492Z"
+generated: "2026-11-20T15:40:27.881964575Z"
