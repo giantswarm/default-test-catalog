@@ -1,0 +1,236 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "baseDomain": {
+            "type": "string"
+        },
+        "bootstrapMode": {
+            "type": "object",
+            "additionalProperties": true
+        },
+        "chartOperator": {
+            "type": "object",
+            "additionalProperties": true
+        },
+        "ciliumLocalRedirectPolicy": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "enabled": {
+                    "type": [
+                        "null",
+                        "boolean"
+                    ],
+                    "description": "Redirect traffic for the cluster DNS Service to the node-local cache with a CiliumLocalRedirectPolicy. When unset, follows `ciliumNetworkPolicy.enabled`."
+                }
+            }
+        },
+        "ciliumNetworkPolicy": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+                "egress": {
+                    "type": "array",
+                    "description": "Replaces the default CiliumNetworkPolicy egress rules when set.",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": true
+                    }
+                },
+                "enabled": {
+                    "type": "boolean",
+                    "description": "Render a CiliumNetworkPolicy. When false, a plain NetworkPolicy is rendered instead."
+                },
+                "ingress": {
+                    "type": "array",
+                    "description": "Replaces the default CiliumNetworkPolicy ingress rules when set.",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": true
+                    }
+                }
+            }
+        },
+        "cluster": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+                "kubernetes": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "DNS": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "IP": {
+                                    "type": "string"
+                                },
+                                "serviceName": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "LOCAL": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "IP": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "clusterDomain": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "clusterCA": {
+            "type": "string"
+        },
+        "clusterCIDR": {
+            "type": "string"
+        },
+        "clusterDNSIP": {
+            "type": "string"
+        },
+        "clusterID": {
+            "type": "string"
+        },
+        "configmap": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "cache": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "denial": {
+                            "type": "integer"
+                        },
+                        "success": {
+                            "type": "integer"
+                        }
+                    }
+                },
+                "log": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "enabled": {
+                            "type": "boolean"
+                        }
+                    }
+                },
+                "noAAAAResponse": {
+                    "type": "boolean"
+                }
+            }
+        },
+        "externalDNSIP": {
+            "type": "string"
+        },
+        "gcpProject": {
+            "type": "string"
+        },
+        "global": {
+            "type": [
+                "object",
+                "null"
+            ],
+            "description": "Global values shared between all subcharts and the platform.",
+            "additionalProperties": true,
+            "properties": {
+                "podSecurityStandards": {
+                    "type": "object",
+                    "additionalProperties": true
+                }
+            }
+        },
+        "helm": {
+            "type": "object",
+            "additionalProperties": true
+        },
+        "image": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "registry": {
+                    "type": "string"
+                },
+                "tag": {
+                    "type": "string"
+                }
+            }
+        },
+        "managementCluster": {
+            "type": "string"
+        },
+        "name": {
+            "type": "string"
+        },
+        "namespace": {
+            "type": "string"
+        },
+        "ports": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "liveness": {
+                    "type": "integer"
+                },
+                "prometheus": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "coredns": {
+                            "type": "integer"
+                        },
+                        "nodecache": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            }
+        },
+        "provider": {
+            "type": "string"
+        },
+        "resources": {
+            "type": "object",
+            "additionalProperties": true
+        },
+        "serviceType": {
+            "type": "string"
+        },
+        "subscriptionID": {
+            "type": "string"
+        },
+        "updateStrategy": {
+            "type": "object",
+            "additionalProperties": true
+        },
+        "upstreamService": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "appName": {
+                    "type": "string"
+                },
+                "podPort": {
+                    "type": "integer"
+                },
+                "servicePort": {
+                    "type": "integer"
+                }
+            }
+        }
+    }
+}
